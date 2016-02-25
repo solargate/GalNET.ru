@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:src="@android:drawable/sym_def_app_icon" />
-
+<!-- TODO: Тест заголовка
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,5 +30,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="android.studio@android.com" />
-
+-->
 </LinearLayout>
