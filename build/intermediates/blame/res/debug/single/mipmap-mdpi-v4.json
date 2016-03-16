@@ -1,6 +1,6 @@
 [
     {
-        "merged": "/home/solarwind/dev/android-studio-ws/GalNET.ru/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_launcher.png",
-        "source": "/home/solarwind/dev/android-studio-ws/GalNET.ru/src/main/res/mipmap-mdpi/ic_launcher.png"
+        "merged": "D:\\dev\\android-studio-ws\\GalNET.ru\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\ic_launcher.png",
+        "source": "D:\\dev\\android-studio-ws\\GalNET.ru\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     }
 ]
