@@ -2,6 +2,7 @@ package ru.solarpalmteam.galnetru;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -12,12 +13,16 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import ru.solarpalmteam.galnetru.rss.RSSItem;
 import ru.solarpalmteam.galnetru.rss.RSSProcessTask;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private DatabaseEngine de;
+    DatabaseEngine de;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,12 +34,21 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        List<RSSItem> listContent = de.readContentAll();
+
+        Log.d(Global.TAG, "!!! LIST: " + listContent);
+
+        for (int i = 0; i < listContent.size(); i++)
+            Log.d(Global.TAG, "!!! READ: " + listContent.get(i).getTitle());
+
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // TODO: TEST. Обработчик - чтение RSS
                 RSSProcessTask task = new RSSProcessTask();
+                task.setContext(getApplicationContext());
                 task.execute(Global.RSS_FEED_GALNET_NEWS);
 
             }
