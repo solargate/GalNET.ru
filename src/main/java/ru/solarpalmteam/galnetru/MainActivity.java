@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.d(Global.TAG, "Create");
         super.onCreate(savedInstanceState);
 
         de = new DatabaseEngine(this);
@@ -62,6 +63,22 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        Log.d(Global.TAG, "Resume");
+        de = new DatabaseEngine(this);
+
+        List<RSSItem> listContent = de.readContentAll();
+
+        Log.d(Global.TAG, "!!! LIST: " + listContent);
+
+        for (int i = 0; i < listContent.size(); i++)
+            Log.d(Global.TAG, "!!! READ: " + listContent.get(i).getTitle());
+
     }
 
     @Override
