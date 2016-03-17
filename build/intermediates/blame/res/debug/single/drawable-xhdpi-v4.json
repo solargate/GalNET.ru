@@ -8,12 +8,12 @@
         "source": "/home/solarwind/dev/android-studio-ws/GalNET.ru/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-xhdpi/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
-        "merged": "/home/solarwind/dev/android-studio-ws/GalNET.ru/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png",
-        "source": "/home/solarwind/dev/android-studio-ws/GalNET.ru/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-xhdpi/abc_textfield_search_activated_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/home/solarwind/dev/android-studio-ws/GalNET.ru/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_switch_track_mtrl_alpha.9.png",
         "source": "/home/solarwind/dev/android-studio-ws/GalNET.ru/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-xhdpi/abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/solarwind/dev/android-studio-ws/GalNET.ru/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "/home/solarwind/dev/android-studio-ws/GalNET.ru/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-xhdpi/abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/solarwind/dev/android-studio-ws/GalNET.ru/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png",

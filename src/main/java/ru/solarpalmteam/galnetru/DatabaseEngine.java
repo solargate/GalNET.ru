@@ -37,9 +37,6 @@ public class DatabaseEngine {
         ContentValues  cv = new ContentValues();
         cv.put(FIELD_KEY_GUID, rssItem.getGuid());
         cv.put(FIELD_TITLE, rssItem.getTitle());
-
-        Log.d(Global.TAG, "INSERT TITLE: " + rssItem.getTitle());
-
         cv.put(FIELD_LINK, rssItem.getLink());
         cv.put(FIELD_DESCRIPTION, rssItem.getDescription());
         // TODO: Добавить pubdate
@@ -47,31 +44,20 @@ public class DatabaseEngine {
     }
 
     public List<RSSItem> readContentAll() {
-        //RSSItem currentItem = new RSSItem();
         List<RSSItem> returnList = new ArrayList<RSSItem>();
-
         Cursor c = db.query(DB_TABLE_CONTENT, null, null, null, null, null, null);
-
         if (c != null) {
             if (c.moveToFirst()) {
                 do {
                     RSSItem currentItem = new RSSItem();
-
                     currentItem.setTitle(c.getString(c.getColumnIndex(FIELD_TITLE)));
                     currentItem.setLink(c.getString(c.getColumnIndex(FIELD_LINK)));
                     currentItem.setDescription(c.getString(c.getColumnIndex(FIELD_DESCRIPTION)));
-
-                    Log.d(Global.TAG, "currentItem TITLE: " + currentItem.getTitle());
-
                     returnList.add(currentItem);
                 } while (c.moveToNext());
             }
             c.close();
         }
-
-        //Log.d(Global.TAG, "!!! returnList: " + returnList);
-        for (int i = 0; i < returnList.size(); i++)
-            Log.d(Global.TAG, "!!! returnList: " + returnList.get(i).getTitle());
 
         return returnList;
     }

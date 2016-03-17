@@ -34,7 +34,6 @@ public class RSSProcessTask extends AsyncTask<String, Void, List<RSSItem> > {
 
     @Override
     protected void onPostExecute(List<RSSItem> rssItems) {
-        //super.onPostExecute(rssItems);
 
         for (int i = 0; i < rssItems.size(); i++)
             Log.i(Global.TAG, rssItems.get(i).getTitle());

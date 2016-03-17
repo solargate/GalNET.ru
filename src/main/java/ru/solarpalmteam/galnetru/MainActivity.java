@@ -2,6 +2,8 @@ package ru.solarpalmteam.galnetru;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -13,7 +15,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import ru.solarpalmteam.galnetru.rss.RSSItem;
@@ -21,6 +22,10 @@ import ru.solarpalmteam.galnetru.rss.RSSProcessTask;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    RecyclerView mRecyclerView;
+    NewsRecyclerAdapter mAdapter;
+    RecyclerView.LayoutManager mLayoutManager;
 
     DatabaseEngine de;
 
@@ -35,13 +40,20 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        /*
         List<RSSItem> listContent = de.readContentAll();
 
         Log.d(Global.TAG, "!!! LIST: " + listContent);
 
         for (int i = 0; i < listContent.size(); i++)
             Log.d(Global.TAG, "!!! READ: " + listContent.get(i).getTitle());
+        */
 
+        mRecyclerView = (RecyclerView) findViewById(R.id.news_recycler_view);
+        mLayoutManager = new LinearLayoutManager(this);
+        mRecyclerView.setLayoutManager(mLayoutManager);
+        mAdapter = new NewsRecyclerAdapter(de.readContentAll()); // !!!
+        mRecyclerView.setAdapter(mAdapter);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -69,6 +81,7 @@ public class MainActivity extends AppCompatActivity
     protected void onResume() {
         super.onResume();
 
+        /*
         Log.d(Global.TAG, "Resume");
         de = new DatabaseEngine(this);
 
@@ -78,6 +91,11 @@ public class MainActivity extends AppCompatActivity
 
         for (int i = 0; i < listContent.size(); i++)
             Log.d(Global.TAG, "!!! READ: " + listContent.get(i).getTitle());
+        */
+
+        //mRecyclerView = (RecyclerView) findViewById(R.id.news_recycler_view);
+        //mAdapter = new NewsRecyclerAdapter(de.readContentAll()); // !!!
+        //mRecyclerView.setAdapter(mAdapter);
 
     }
 
