@@ -17,6 +17,8 @@ public class RSSParseHandler extends DefaultHandler {
     private boolean parsingTitle;
     private boolean parsingLink;
     private boolean parsingDescription;
+    private boolean parsingGUID;
+    private boolean parsingPubDate;
 
     public RSSParseHandler() {
         rssItems = new ArrayList<RSSItem>();
@@ -36,6 +38,10 @@ public class RSSParseHandler extends DefaultHandler {
             parsingLink = true;
         } else if (Global.RSS_TAG_DESCRIPTION.equals(qName)) {
             parsingDescription = true;
+        } else if (Global.RSS_TAG_GUID.equals(qName)) {
+            parsingGUID = true;
+        } else if (Global.RSS_TAG_PUBDATE.equals(qName)) {
+            parsingPubDate = true;
         }
     }
 
@@ -50,6 +56,10 @@ public class RSSParseHandler extends DefaultHandler {
             parsingLink = false;
         } else if (Global.RSS_TAG_DESCRIPTION.equals(qName)) {
             parsingDescription = false;
+        } else if (Global.RSS_TAG_GUID.equals(qName)) {
+            parsingGUID = false;
+        } else if (Global.RSS_TAG_PUBDATE.equals(qName)) {
+            parsingPubDate = false;
         }
     }
 
@@ -67,6 +77,16 @@ public class RSSParseHandler extends DefaultHandler {
             if (currentItem != null) {
                 currentItem.setDescription(new String(ch, start, length));
                 parsingDescription = false;
+            }
+        } else if (parsingGUID) {
+            if (currentItem != null) {
+                currentItem.setGuid(new String(ch, start, length));
+                parsingGUID = false;
+            }
+        } else if (parsingPubDate) {
+            if (currentItem != null) {
+                currentItem.setPubDate(new String(ch, start, length));
+                parsingPubDate = false;
             }
         }
     }

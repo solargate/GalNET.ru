@@ -5,6 +5,8 @@ public class RSSItem {
     private String title;
     private String link;
     private String description;
+    private String guid;
+    private String pubDate;
 
     public String getTitle() {
         return title;
@@ -28,6 +30,22 @@ public class RSSItem {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getGuid() {
+        return guid;
+    }
+
+    public void setGuid(String guid) {
+        this.guid = guid;
+    }
+
+    public String getPubDate() {
+        return pubDate;
+    }
+
+    public void setPubDate(String pubDate) {
+        this.pubDate = pubDate;
     }
 
     @Override
