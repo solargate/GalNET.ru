@@ -9,27 +9,27 @@ import org.xml.sax.helpers.DefaultHandler;
 
 import ru.solarpalmteam.galnetru.Global;
 
-public class RssParseHandler extends DefaultHandler {
+public class RSSParseHandler extends DefaultHandler {
 
-    private List<RssItem> rssItems;
+    private List<RSSItem> rssItems;
 
-    private RssItem currentItem;
+    private RSSItem currentItem;
     private boolean parsingTitle;
     private boolean parsingLink;
     private boolean parsingDescription;
 
-    public RssParseHandler() {
-        rssItems = new ArrayList<RssItem>();
+    public RSSParseHandler() {
+        rssItems = new ArrayList<RSSItem>();
     }
 
-    public List<RssItem> getItems() {
+    public List<RSSItem> getItems() {
         return rssItems;
     }
 
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
         if (Global.RSS_TAG_ITEM.equals(qName)) {
-            currentItem = new RssItem();
+            currentItem = new RSSItem();
         } else if (Global.RSS_TAG_TITLE.equals(qName)) {
             parsingTitle = true;
         } else if (Global.RSS_TAG_LINK.equals(qName)) {

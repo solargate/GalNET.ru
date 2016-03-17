@@ -12,7 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import ru.solarpalmteam.galnetru.rss.RssProcessTask;
+import ru.solarpalmteam.galnetru.rss.RSSProcessTask;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 // TODO: TEST. Обработчик - чтение RSS
-                RssProcessTask task = new RssProcessTask();
+                RSSProcessTask task = new RSSProcessTask();
                 task.execute(Global.RSS_FEED_GALNET_NEWS);
 
             }

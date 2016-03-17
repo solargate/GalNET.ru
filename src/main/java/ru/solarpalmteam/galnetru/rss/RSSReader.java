@@ -5,20 +5,20 @@ import java.util.List;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 
-public class RssReader {
+public class RSSReader {
 
     private String rssUrl;
 
-    public RssReader(String rssUrl) {
+    public RSSReader(String rssUrl) {
         this.rssUrl = rssUrl;
     }
 
-    public List<RssItem> getItems() throws Exception {
+    public List<RSSItem> getItems() throws Exception {
 
         SAXParserFactory saxFactory = SAXParserFactory.newInstance();
         SAXParser saxParser = saxFactory.newSAXParser();
 
-        RssParseHandler handler = new RssParseHandler();
+        RSSParseHandler handler = new RSSParseHandler();
 
         saxParser.parse(rssUrl, handler);
 

@@ -1,6 +1,6 @@
 package ru.solarpalmteam.galnetru.rss;
 
-public class RssItem {
+public class RSSItem {
 
     private String title;
     private String link;

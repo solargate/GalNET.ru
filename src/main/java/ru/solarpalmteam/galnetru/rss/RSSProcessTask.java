@@ -7,13 +7,13 @@ import java.util.List;
 
 import ru.solarpalmteam.galnetru.Global;
 
-public class RssProcessTask extends AsyncTask<String, Void, List<RssItem> > {
+public class RSSProcessTask extends AsyncTask<String, Void, List<RSSItem> > {
 
     @Override
-    protected List<RssItem> doInBackground(String... urls) {
+    protected List<RSSItem> doInBackground(String... urls) {
 
         try {
-            RssReader rssReader = new RssReader(urls[0]);
+            RSSReader rssReader = new RSSReader(urls[0]);
             return  rssReader.getItems();
         } catch (Exception e) {
             Log.e(Global.TAG, e.getMessage());
@@ -23,7 +23,7 @@ public class RssProcessTask extends AsyncTask<String, Void, List<RssItem> > {
     }
 
     @Override
-    protected void onPostExecute(List<RssItem> rssItems) {
+    protected void onPostExecute(List<RSSItem> rssItems) {
         //super.onPostExecute(rssItems);
 
         for (int i = 0; i < rssItems.size(); i++)
