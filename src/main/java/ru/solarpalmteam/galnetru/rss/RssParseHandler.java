@@ -7,6 +7,8 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
+import ru.solarpalmteam.galnetru.Global;
+
 public class RssParseHandler extends DefaultHandler {
 
     private List<RssItem> rssItems;
@@ -26,27 +28,27 @@ public class RssParseHandler extends DefaultHandler {
 
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
-        if ("item".equals(qName)) {
+        if (Global.RSS_TAG_ITEM.equals(qName)) {
             currentItem = new RssItem();
-        } else if ("title".equals(qName)) {
+        } else if (Global.RSS_TAG_TITLE.equals(qName)) {
             parsingTitle = true;
-        } else if ("link".equals(qName)) {
+        } else if (Global.RSS_TAG_LINK.equals(qName)) {
             parsingLink = true;
-        } else if ("description".equals(qName)) {
+        } else if (Global.RSS_TAG_DESCRIPTION.equals(qName)) {
             parsingDescription = true;
         }
     }
 
     @Override
     public void endElement(String uri, String localName, String qName) throws SAXException {
-        if ("item".equals(qName)) {
+        if (Global.RSS_TAG_ITEM.equals(qName)) {
             rssItems.add(currentItem);
             currentItem = null;
-        } else if ("title".equals(qName)) {
+        } else if (Global.RSS_TAG_TITLE.equals(qName)) {
             parsingTitle = false;
-        } else if ("link".equals(qName)) {
+        } else if (Global.RSS_TAG_LINK.equals(qName)) {
             parsingLink = false;
-        } else if ("description".equals(qName)) {
+        } else if (Global.RSS_TAG_DESCRIPTION.equals(qName)) {
             parsingDescription = false;
         }
     }

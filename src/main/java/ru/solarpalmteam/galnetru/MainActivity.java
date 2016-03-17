@@ -1,10 +1,7 @@
 package ru.solarpalmteam.galnetru;
 
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,13 +11,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ListView;
-import android.widget.Toast;
 
-import java.util.List;
-
-import ru.solarpalmteam.galnetru.rss.RssItem;
-import ru.solarpalmteam.galnetru.rss.RssReader;
+import ru.solarpalmteam.galnetru.rss.RssProcessTask;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -37,11 +29,8 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 // TODO: TEST. Обработчик - чтение RSS
-                //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                //        .setAction("Action", null).show();
-
-                GetRSSDataTask task = new GetRSSDataTask();
-                task.execute("http://galnet.ru/feed/1.rss");
+                RssProcessTask task = new RssProcessTask();
+                task.execute(Global.RSS_FEED_GALNET_NEWS);
 
             }
         });
@@ -111,32 +100,5 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }
-}
-
-class GetRSSDataTask extends AsyncTask<String, Void, List<RssItem> > {
-
-    @Override
-    protected List<RssItem> doInBackground(String... urls) {
-
-        try {
-
-            Log.i("GALNETRU", "TEST 1");
-
-            RssReader rssReader = new RssReader(urls[0]);
-
-            return  rssReader.getItems();
-        } catch (Exception e) {
-            Log.e("GALNETRU", e.getMessage());
-        }
-
-        return null;
-    }
-
-    @Override
-    protected void onPostExecute(List<RssItem> rssItems) {
-        //super.onPostExecute(rssItems);
-
-        //for (int i = 0; i < rssItems.size(); i++)
     }
 }
