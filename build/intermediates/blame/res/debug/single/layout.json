@@ -60,12 +60,12 @@
         "source": "/home/solarwind/dev/android-studio-ws/GalNET.ru/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_search_view.xml"
     },
     {
-        "merged": "/home/solarwind/dev/android-studio-ws/GalNET.ru/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
-        "source": "/home/solarwind/dev/android-studio-ws/GalNET.ru/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_layout.xml"
-    },
-    {
         "merged": "/home/solarwind/dev/android-studio-ws/GalNET.ru/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
         "source": "/home/solarwind/dev/android-studio-ws/GalNET.ru/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/home/solarwind/dev/android-studio-ws/GalNET.ru/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
+        "source": "/home/solarwind/dev/android-studio-ws/GalNET.ru/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_layout.xml"
     },
     {
         "merged": "/home/solarwind/dev/android-studio-ws/GalNET.ru/build/intermediates/res/merged/debug/layout/nav_header_main.xml",

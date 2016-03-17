@@ -15,19 +15,16 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import java.util.List;
-
-import ru.solarpalmteam.galnetru.rss.RSSItem;
 import ru.solarpalmteam.galnetru.rss.RSSProcessTask;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    DatabaseEngine de;
+
     RecyclerView mRecyclerView;
     NewsRecyclerAdapter mAdapter;
     RecyclerView.LayoutManager mLayoutManager;
-
-    DatabaseEngine de;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,15 +36,6 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        /*
-        List<RSSItem> listContent = de.readContentAll();
-
-        Log.d(Global.TAG, "!!! LIST: " + listContent);
-
-        for (int i = 0; i < listContent.size(); i++)
-            Log.d(Global.TAG, "!!! READ: " + listContent.get(i).getTitle());
-        */
 
         mRecyclerView = (RecyclerView) findViewById(R.id.news_recycler_view);
         mLayoutManager = new LinearLayoutManager(this);
@@ -80,23 +68,6 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onResume() {
         super.onResume();
-
-        /*
-        Log.d(Global.TAG, "Resume");
-        de = new DatabaseEngine(this);
-
-        List<RSSItem> listContent = de.readContentAll();
-
-        Log.d(Global.TAG, "!!! LIST: " + listContent);
-
-        for (int i = 0; i < listContent.size(); i++)
-            Log.d(Global.TAG, "!!! READ: " + listContent.get(i).getTitle());
-        */
-
-        //mRecyclerView = (RecyclerView) findViewById(R.id.news_recycler_view);
-        //mAdapter = new NewsRecyclerAdapter(de.readContentAll()); // !!!
-        //mRecyclerView.setAdapter(mAdapter);
-
     }
 
     @Override
