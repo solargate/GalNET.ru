@@ -15,7 +15,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import ru.solarpalmteam.galnetru.rss.RSSProcessTask;
+import ru.solarpalmteam.galnetru.rss.RSSMaster;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -25,6 +25,11 @@ public class MainActivity extends AppCompatActivity
     RecyclerView mRecyclerView;
     NewsRecyclerAdapter mAdapter;
     RecyclerView.LayoutManager mLayoutManager;
+
+    private void setNewsRecyclerAdapter(String feedType) {
+        mAdapter = new NewsRecyclerAdapter(de.readContent(feedType)); // TODO: Сделать более правильно
+        mRecyclerView.setAdapter(mAdapter);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,18 +45,17 @@ public class MainActivity extends AppCompatActivity
         mRecyclerView = (RecyclerView) findViewById(R.id.news_recycler_view);
         mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
-        mAdapter = new NewsRecyclerAdapter(de.readContentAll()); // !!!
-        mRecyclerView.setAdapter(mAdapter);
+        //mAdapter = new NewsRecyclerAdapter(de.readContent(Global.FEED_TYPE_ALL)); // TODO: Сделать более правильно
+        //mRecyclerView.setAdapter(mAdapter);
+        setNewsRecyclerAdapter(Global.FEED_TYPE_ALL);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // TODO: TEST. Обработчик - чтение RSS
-                RSSProcessTask task = new RSSProcessTask();
-                task.setContext(getApplicationContext());
-                task.execute(Global.RSS_FEED_GALNET_NEWS);
-
+                RSSMaster rssMaster = new RSSMaster(getApplicationContext());
+                rssMaster.startReadingRSS();
             }
         });
 
@@ -119,7 +123,8 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
-
+            // TEST
+            setNewsRecyclerAdapter(Global.FEED_TYPE_SITE_NEWS);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

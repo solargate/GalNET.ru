@@ -14,9 +14,14 @@ public class RSSProcessTask extends AsyncTask<String, Void, List<RSSItem> > {
     DatabaseEngine de;
 
     private Context mContext;
+    private String feedType;
 
     public void setContext(Context mContext) {
         this.mContext = mContext;
+    }
+
+    public void setFeedType(String feedType) {
+        this.feedType = feedType;
     }
 
     @Override
@@ -41,7 +46,7 @@ public class RSSProcessTask extends AsyncTask<String, Void, List<RSSItem> > {
         de = new DatabaseEngine(mContext);
 
         for (int i = 0; i < rssItems.size(); i++) {
-            de.insertContentItem(rssItems.get(i));
+            de.insertContentItem(rssItems.get(i), feedType);
         }
     }
 }
