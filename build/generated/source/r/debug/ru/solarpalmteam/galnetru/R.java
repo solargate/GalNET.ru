@@ -2310,14 +2310,15 @@ containing a value of this type.
         public static final int abc_textfield_search_material=0x7f020044;
         public static final int design_fab_background=0x7f020045;
         public static final int design_snackbar_background=0x7f020046;
-        public static final int ic_menu_camera=0x7f020047;
-        public static final int ic_menu_gallery=0x7f020048;
-        public static final int ic_menu_manage=0x7f020049;
-        public static final int ic_menu_send=0x7f02004a;
-        public static final int ic_menu_share=0x7f02004b;
-        public static final int ic_menu_slideshow=0x7f02004c;
-        public static final int notification_template_icon_bg=0x7f02004e;
-        public static final int side_nav_bar=0x7f02004d;
+        public static final int ic_menu_camera=0x7f020049;
+        public static final int ic_menu_feed=0x7f020047;
+        public static final int ic_menu_gallery=0x7f02004a;
+        public static final int ic_menu_manage=0x7f02004b;
+        public static final int ic_menu_send=0x7f02004c;
+        public static final int ic_menu_share=0x7f02004d;
+        public static final int ic_menu_slideshow=0x7f02004e;
+        public static final int notification_template_icon_bg=0x7f02004f;
+        public static final int side_nav_bar=0x7f020048;
     }
     public static final class id {
         public static final int action0=0x7f0c0079;
@@ -2392,12 +2393,12 @@ containing a value of this type.
         public static final int middle=0x7f0c0031;
         public static final int mini=0x7f0c002f;
         public static final int multiply=0x7f0c0026;
-        public static final int nav_camera=0x7f0c0086;
-        public static final int nav_gallery=0x7f0c0087;
-        public static final int nav_manage=0x7f0c0089;
-        public static final int nav_send=0x7f0c008b;
-        public static final int nav_share=0x7f0c008a;
-        public static final int nav_slideshow=0x7f0c0088;
+        public static final int nav_feed_all=0x7f0c0086;
+        public static final int nav_feed_comm_goals=0x7f0c008a;
+        public static final int nav_feed_galnet_news=0x7f0c0087;
+        public static final int nav_feed_powerplay=0x7f0c0088;
+        public static final int nav_feed_site_news=0x7f0c008b;
+        public static final int nav_feed_weekly_report=0x7f0c0089;
         public static final int nav_view=0x7f0c006a;
         public static final int navigation_header_container=0x7f0c0070;
         public static final int never=0x7f0c0035;
@@ -2556,8 +2557,14 @@ containing a value of this type.
         public static final int app_name=0x7f060015;
         public static final int appbar_scrolling_view_behavior=0x7f060016;
         public static final int character_counter_pattern=0x7f060017;
-        public static final int navigation_drawer_close=0x7f060018;
-        public static final int navigation_drawer_open=0x7f060019;
+        public static final int feed_all=0x7f060018;
+        public static final int feed_comm_goals=0x7f060019;
+        public static final int feed_galnet_news=0x7f06001a;
+        public static final int feed_powerplay=0x7f06001b;
+        public static final int feed_site_news=0x7f06001c;
+        public static final int feed_weekly_report=0x7f06001d;
+        public static final int navigation_drawer_close=0x7f06001e;
+        public static final int navigation_drawer_open=0x7f06001f;
         public static final int status_bar_notification_info_overflow=0x7f060013;
     }
     public static final class style {

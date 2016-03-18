@@ -112,18 +112,17 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-            // TEST
+        if (id == R.id.nav_feed_all) {
+            setNewsRecyclerAdapter(Global.FEED_TYPE_ALL);
+        } else if (id == R.id.nav_feed_galnet_news) {
+            setNewsRecyclerAdapter(Global.FEED_TYPE_GALNET_NEWS);
+        } else if (id == R.id.nav_feed_powerplay) {
+            setNewsRecyclerAdapter(Global.FEED_TYPE_POWERPLAY);
+        } else if (id == R.id.nav_feed_weekly_report) {
+            setNewsRecyclerAdapter(Global.FEED_TYPE_WEEKLY_REPORT);
+        } else if (id == R.id.nav_feed_comm_goals) {
+            setNewsRecyclerAdapter(Global.FEED_TYPE_COMM_GOALS);
+        } else if (id == R.id.nav_feed_site_news) {
             setNewsRecyclerAdapter(Global.FEED_TYPE_SITE_NEWS);
         }
 

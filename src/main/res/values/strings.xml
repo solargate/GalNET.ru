@@ -5,4 +5,12 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <string name="feed_all">All News</string>
+    <string name="feed_galnet_news">GalNET News</string>
+    <string name="feed_powerplay">PowerPlay</string>
+    <string name="feed_weekly_report">Weekly Report</string>
+    <string name="feed_comm_goals">Community Goals</string>
+    <string name="feed_site_news">Site News</string>
+
 </resources>

@@ -289,6 +289,12 @@
     <string name="app_name">GalNET.ru</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
+    <string name="feed_all">All News</string>
+    <string name="feed_comm_goals">Community Goals</string>
+    <string name="feed_galnet_news">GalNET News</string>
+    <string name="feed_powerplay">PowerPlay</string>
+    <string name="feed_site_news">Site News</string>
+    <string name="feed_weekly_report">Weekly Report</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="status_bar_notification_info_overflow">999+</string>

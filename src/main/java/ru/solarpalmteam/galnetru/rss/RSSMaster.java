@@ -37,8 +37,8 @@ public class RSSMaster {
         task_POWERPLAY.setFeedType(Global.FEED_TYPE_POWERPLAY);
         task_POWERPLAY.execute(Global.RSS_FEED_POWERPLAY);
 
-        task_DAYLY_REPORT.setFeedType(Global.FEED_TYPE_DAYLY_REPORT);
-        task_DAYLY_REPORT.execute(Global.RSS_FEED_DAYLY_REPORT);
+        task_DAYLY_REPORT.setFeedType(Global.FEED_TYPE_WEEKLY_REPORT);
+        task_DAYLY_REPORT.execute(Global.RSS_FEED_WEEKLY_REPORT);
 
         task_COMM_GOALS.setFeedType(Global.FEED_TYPE_COMM_GOALS);
         task_COMM_GOALS.execute(Global.RSS_FEED_COMM_GOALS);

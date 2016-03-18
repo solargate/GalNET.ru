@@ -12,8 +12,8 @@ public class Util {
             case Global.FEED_TYPE_POWERPLAY:
                 result = Global.RSS_FEED_POWERPLAY;
                 break;
-            case Global.FEED_TYPE_DAYLY_REPORT:
-                result = Global.RSS_FEED_DAYLY_REPORT;
+            case Global.FEED_TYPE_WEEKLY_REPORT:
+                result = Global.RSS_FEED_WEEKLY_REPORT;
                 break;
             case Global.FEED_TYPE_COMM_GOALS:
                 result = Global.RSS_FEED_COMM_GOALS;
