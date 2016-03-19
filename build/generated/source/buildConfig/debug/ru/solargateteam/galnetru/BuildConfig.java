@@ -1,11 +1,11 @@
 /**
  * Automatically generated file. DO NOT MODIFY
  */
-package ru.solarpalmteam.galnetru.test;
+package ru.solargateteam.galnetru;
 
 public final class BuildConfig {
   public static final boolean DEBUG = Boolean.parseBoolean("true");
-  public static final String APPLICATION_ID = "ru.solarpalmteam.galnetru.test";
+  public static final String APPLICATION_ID = "ru.solargateteam.galnetru";
   public static final String BUILD_TYPE = "debug";
   public static final String FLAVOR = "";
   public static final int VERSION_CODE = 1;

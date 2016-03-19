@@ -1,4 +1,4 @@
-package ru.solarpalmteam.galnetru.rss;
+package ru.solargateteam.galnetru.rss;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import ru.solarpalmteam.galnetru.Global;
+import ru.solargateteam.galnetru.Global;
 
 public class RSSParseHandler extends DefaultHandler {
 

@@ -1,4 +1,4 @@
-package ru.solarpalmteam.galnetru;
+package ru.solargateteam.galnetru;
 
 import android.app.Application;
 

@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package ru.solarpalmteam.galnetru;
+package ru.solargateteam.galnetru;
 
 public final class R {
     public static final class anim {
@@ -2907,33 +2907,33 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background ru.solarpalmteam.galnetru:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit ru.solarpalmteam.galnetru:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked ru.solarpalmteam.galnetru:backgroundStacked}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEnd ru.solarpalmteam.galnetru:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetLeft ru.solarpalmteam.galnetru:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetRight ru.solarpalmteam.galnetru:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStart ru.solarpalmteam.galnetru:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout ru.solarpalmteam.galnetru:customNavigationLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions ru.solarpalmteam.galnetru:displayOptions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_divider ru.solarpalmteam.galnetru:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_elevation ru.solarpalmteam.galnetru:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_height ru.solarpalmteam.galnetru:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_hideOnContentScroll ru.solarpalmteam.galnetru:hideOnContentScroll}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeAsUpIndicator ru.solarpalmteam.galnetru:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout ru.solarpalmteam.galnetru:homeLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_icon ru.solarpalmteam.galnetru:icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle ru.solarpalmteam.galnetru:indeterminateProgressStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding ru.solarpalmteam.galnetru:itemPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_logo ru.solarpalmteam.galnetru:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode ru.solarpalmteam.galnetru:navigationMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_popupTheme ru.solarpalmteam.galnetru:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding ru.solarpalmteam.galnetru:progressBarPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle ru.solarpalmteam.galnetru:progressBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle ru.solarpalmteam.galnetru:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle ru.solarpalmteam.galnetru:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_title ru.solarpalmteam.galnetru:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle ru.solarpalmteam.galnetru:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_background ru.solargateteam.galnetru:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit ru.solargateteam.galnetru:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked ru.solargateteam.galnetru:backgroundStacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEnd ru.solargateteam.galnetru:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetLeft ru.solargateteam.galnetru:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetRight ru.solargateteam.galnetru:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStart ru.solargateteam.galnetru:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout ru.solargateteam.galnetru:customNavigationLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions ru.solargateteam.galnetru:displayOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_divider ru.solargateteam.galnetru:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_elevation ru.solargateteam.galnetru:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_height ru.solargateteam.galnetru:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_hideOnContentScroll ru.solargateteam.galnetru:hideOnContentScroll}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeAsUpIndicator ru.solargateteam.galnetru:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout ru.solargateteam.galnetru:homeLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_icon ru.solargateteam.galnetru:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle ru.solargateteam.galnetru:indeterminateProgressStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding ru.solargateteam.galnetru:itemPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_logo ru.solargateteam.galnetru:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode ru.solargateteam.galnetru:navigationMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_popupTheme ru.solargateteam.galnetru:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding ru.solargateteam.galnetru:progressBarPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle ru.solargateteam.galnetru:progressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle ru.solargateteam.galnetru:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle ru.solargateteam.galnetru:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_title ru.solargateteam.galnetru:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle ru.solargateteam.galnetru:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -2973,17 +2973,17 @@ containing a value of this type.
             0x7f01001a, 0x7f01001b, 0x7f0100c9
         };
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#background}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#background}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:background
+          @attr name ru.solargateteam.galnetru:background
         */
         public static final int ActionBar_background = 10;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2991,11 +2991,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ru.solarpalmteam.galnetru:backgroundSplit
+          @attr name ru.solargateteam.galnetru:backgroundSplit
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#backgroundStacked}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#backgroundStacked}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3003,11 +3003,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ru.solarpalmteam.galnetru:backgroundStacked
+          @attr name ru.solargateteam.galnetru:backgroundStacked
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3019,11 +3019,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:contentInsetEnd
+          @attr name ru.solargateteam.galnetru:contentInsetEnd
         */
         public static final int ActionBar_contentInsetEnd = 21;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3035,11 +3035,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:contentInsetLeft
+          @attr name ru.solargateteam.galnetru:contentInsetLeft
         */
         public static final int ActionBar_contentInsetLeft = 22;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3051,11 +3051,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:contentInsetRight
+          @attr name ru.solargateteam.galnetru:contentInsetRight
         */
         public static final int ActionBar_contentInsetRight = 23;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3067,21 +3067,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:contentInsetStart
+          @attr name ru.solargateteam.galnetru:contentInsetStart
         */
         public static final int ActionBar_contentInsetStart = 20;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#customNavigationLayout}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#customNavigationLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:customNavigationLayout
+          @attr name ru.solargateteam.galnetru:customNavigationLayout
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#displayOptions}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#displayOptions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3099,21 +3099,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
-          @attr name ru.solarpalmteam.galnetru:displayOptions
+          @attr name ru.solargateteam.galnetru:displayOptions
         */
         public static final int ActionBar_displayOptions = 3;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#divider}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#divider}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:divider
+          @attr name ru.solargateteam.galnetru:divider
         */
         public static final int ActionBar_divider = 9;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#elevation}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#elevation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3125,11 +3125,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:elevation
+          @attr name ru.solargateteam.galnetru:elevation
         */
         public static final int ActionBar_elevation = 24;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#height}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#height}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3141,11 +3141,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:height
+          @attr name ru.solargateteam.galnetru:height
         */
         public static final int ActionBar_height = 0;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#hideOnContentScroll}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#hideOnContentScroll}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3155,51 +3155,51 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:hideOnContentScroll
+          @attr name ru.solargateteam.galnetru:hideOnContentScroll
         */
         public static final int ActionBar_hideOnContentScroll = 19;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:homeAsUpIndicator
+          @attr name ru.solargateteam.galnetru:homeAsUpIndicator
         */
         public static final int ActionBar_homeAsUpIndicator = 26;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#homeLayout}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#homeLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:homeLayout
+          @attr name ru.solargateteam.galnetru:homeLayout
         */
         public static final int ActionBar_homeLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#icon}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#icon}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:icon
+          @attr name ru.solargateteam.galnetru:icon
         */
         public static final int ActionBar_icon = 7;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#indeterminateProgressStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#indeterminateProgressStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:indeterminateProgressStyle
+          @attr name ru.solargateteam.galnetru:indeterminateProgressStyle
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#itemPadding}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#itemPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3211,21 +3211,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:itemPadding
+          @attr name ru.solargateteam.galnetru:itemPadding
         */
         public static final int ActionBar_itemPadding = 18;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#logo}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#logo}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:logo
+          @attr name ru.solargateteam.galnetru:logo
         */
         public static final int ActionBar_logo = 8;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#navigationMode}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#navigationMode}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3239,21 +3239,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>listMode</code></td><td>1</td><td></td></tr>
 <tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name ru.solarpalmteam.galnetru:navigationMode
+          @attr name ru.solargateteam.galnetru:navigationMode
         */
         public static final int ActionBar_navigationMode = 2;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#popupTheme}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:popupTheme
+          @attr name ru.solargateteam.galnetru:popupTheme
         */
         public static final int ActionBar_popupTheme = 25;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#progressBarPadding}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#progressBarPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3265,21 +3265,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:progressBarPadding
+          @attr name ru.solargateteam.galnetru:progressBarPadding
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#progressBarStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#progressBarStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:progressBarStyle
+          @attr name ru.solargateteam.galnetru:progressBarStyle
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#subtitle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3289,21 +3289,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:subtitle
+          @attr name ru.solargateteam.galnetru:subtitle
         */
         public static final int ActionBar_subtitle = 4;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:subtitleTextStyle
+          @attr name ru.solargateteam.galnetru:subtitleTextStyle
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#title}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#title}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3313,17 +3313,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:title
+          @attr name ru.solargateteam.galnetru:title
         */
         public static final int ActionBar_title = 1;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:titleTextStyle
+          @attr name ru.solargateteam.galnetru:titleTextStyle
         */
         public static final int ActionBar_titleTextStyle = 5;
         /** Attributes that can be used with a ActionBarLayout.
@@ -3375,12 +3375,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background ru.solarpalmteam.galnetru:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit ru.solarpalmteam.galnetru:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_closeItemLayout ru.solarpalmteam.galnetru:closeItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_height ru.solarpalmteam.galnetru:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle ru.solarpalmteam.galnetru:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle ru.solarpalmteam.galnetru:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_background ru.solargateteam.galnetru:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit ru.solargateteam.galnetru:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_closeItemLayout ru.solargateteam.galnetru:closeItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_height ru.solargateteam.galnetru:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle ru.solargateteam.galnetru:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle ru.solargateteam.galnetru:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -3394,17 +3394,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01000e, 0x7f01001c
         };
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#background}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#background}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:background
+          @attr name ru.solargateteam.galnetru:background
         */
         public static final int ActionMode_background = 3;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -3412,21 +3412,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ru.solarpalmteam.galnetru:backgroundSplit
+          @attr name ru.solargateteam.galnetru:backgroundSplit
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#closeItemLayout}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#closeItemLayout}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:closeItemLayout
+          @attr name ru.solargateteam.galnetru:closeItemLayout
         */
         public static final int ActionMode_closeItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#height}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#height}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -3438,27 +3438,27 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:height
+          @attr name ru.solargateteam.galnetru:height
         */
         public static final int ActionMode_height = 0;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:subtitleTextStyle
+          @attr name ru.solargateteam.galnetru:subtitleTextStyle
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:titleTextStyle
+          @attr name ru.solargateteam.galnetru:titleTextStyle
         */
         public static final int ActionMode_titleTextStyle = 1;
         /** Attributes that can be used with a ActivityChooserView.
@@ -3467,8 +3467,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable ru.solarpalmteam.galnetru:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount ru.solarpalmteam.galnetru:initialActivityCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable ru.solargateteam.galnetru:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount ru.solargateteam.galnetru:initialActivityCount}</code></td><td></td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -3477,17 +3477,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01001d, 0x7f01001e
         };
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#expandActivityOverflowButtonDrawable}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#expandActivityOverflowButtonDrawable}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:expandActivityOverflowButtonDrawable
+          @attr name ru.solargateteam.galnetru:expandActivityOverflowButtonDrawable
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#initialActivityCount}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#initialActivityCount}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -3497,7 +3497,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:initialActivityCount
+          @attr name ru.solargateteam.galnetru:initialActivityCount
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a AlertDialog.
@@ -3507,11 +3507,11 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout ru.solarpalmteam.galnetru:buttonPanelSideLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listItemLayout ru.solarpalmteam.galnetru:listItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listLayout ru.solarpalmteam.galnetru:listLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout ru.solarpalmteam.galnetru:multiChoiceItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout ru.solarpalmteam.galnetru:singleChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout ru.solargateteam.galnetru:buttonPanelSideLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listItemLayout ru.solargateteam.galnetru:listItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listLayout ru.solargateteam.galnetru:listLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout ru.solargateteam.galnetru:multiChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout ru.solargateteam.galnetru:singleChoiceItemLayout}</code></td><td></td></tr>
            </table>
            @see #AlertDialog_android_layout
            @see #AlertDialog_buttonPanelSideLayout
@@ -3531,53 +3531,53 @@ containing a value of this type.
         */
         public static final int AlertDialog_android_layout = 0;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#buttonPanelSideLayout}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#buttonPanelSideLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:buttonPanelSideLayout
+          @attr name ru.solargateteam.galnetru:buttonPanelSideLayout
         */
         public static final int AlertDialog_buttonPanelSideLayout = 1;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#listItemLayout}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#listItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:listItemLayout
+          @attr name ru.solargateteam.galnetru:listItemLayout
         */
         public static final int AlertDialog_listItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#listLayout}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#listLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:listLayout
+          @attr name ru.solargateteam.galnetru:listLayout
         */
         public static final int AlertDialog_listLayout = 2;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#multiChoiceItemLayout}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#multiChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:multiChoiceItemLayout
+          @attr name ru.solargateteam.galnetru:multiChoiceItemLayout
         */
         public static final int AlertDialog_multiChoiceItemLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#singleChoiceItemLayout}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#singleChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:singleChoiceItemLayout
+          @attr name ru.solargateteam.galnetru:singleChoiceItemLayout
         */
         public static final int AlertDialog_singleChoiceItemLayout = 4;
         /** Attributes that can be used with a AppBarLayout.
@@ -3587,8 +3587,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_elevation ru.solarpalmteam.galnetru:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_expanded ru.solarpalmteam.galnetru:expanded}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_elevation ru.solargateteam.galnetru:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_expanded ru.solargateteam.galnetru:expanded}</code></td><td></td></tr>
            </table>
            @see #AppBarLayout_android_background
            @see #AppBarLayout_elevation
@@ -3604,7 +3604,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppBarLayout_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#elevation}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#elevation}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -3616,11 +3616,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:elevation
+          @attr name ru.solargateteam.galnetru:elevation
         */
         public static final int AppBarLayout_elevation = 1;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#expanded}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#expanded}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -3630,7 +3630,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:expanded
+          @attr name ru.solargateteam.galnetru:expanded
         */
         public static final int AppBarLayout_expanded = 2;
         /** Attributes that can be used with a AppBarLayout_LayoutParams.
@@ -3639,8 +3639,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollFlags ru.solarpalmteam.galnetru:layout_scrollFlags}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollInterpolator ru.solarpalmteam.galnetru:layout_scrollInterpolator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollFlags ru.solargateteam.galnetru:layout_scrollFlags}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollInterpolator ru.solargateteam.galnetru:layout_scrollInterpolator}</code></td><td></td></tr>
            </table>
            @see #AppBarLayout_LayoutParams_layout_scrollFlags
            @see #AppBarLayout_LayoutParams_layout_scrollInterpolator
@@ -3649,7 +3649,7 @@ containing a value of this type.
             0x7f010025, 0x7f010026
         };
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#layout_scrollFlags}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#layout_scrollFlags}
           attribute's value can be found in the {@link #AppBarLayout_LayoutParams} array.
 
 
@@ -3665,17 +3665,17 @@ containing a value of this type.
 <tr><td><code>enterAlwaysCollapsed</code></td><td>0x8</td><td></td></tr>
 <tr><td><code>snap</code></td><td>0x10</td><td></td></tr>
 </table>
-          @attr name ru.solarpalmteam.galnetru:layout_scrollFlags
+          @attr name ru.solargateteam.galnetru:layout_scrollFlags
         */
         public static final int AppBarLayout_LayoutParams_layout_scrollFlags = 0;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#layout_scrollInterpolator}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#layout_scrollInterpolator}
           attribute's value can be found in the {@link #AppBarLayout_LayoutParams} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:layout_scrollInterpolator
+          @attr name ru.solargateteam.galnetru:layout_scrollInterpolator
         */
         public static final int AppBarLayout_LayoutParams_layout_scrollInterpolator = 1;
         /** Attributes that can be used with a AppCompatTextView.
@@ -3685,7 +3685,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_textAllCaps ru.solarpalmteam.galnetru:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_textAllCaps ru.solargateteam.galnetru:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #AppCompatTextView_android_textAppearance
            @see #AppCompatTextView_textAllCaps
@@ -3700,14 +3700,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTextView_android_textAppearance = 0;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#textAllCaps}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name ru.solarpalmteam.galnetru:textAllCaps
+          @attr name ru.solargateteam.galnetru:textAllCaps
         */
         public static final int AppCompatTextView_textAllCaps = 1;
         /** Attributes that can be used with a ButtonBarLayout.
@@ -3716,7 +3716,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ButtonBarLayout_allowStacking ru.solarpalmteam.galnetru:allowStacking}</code></td><td></td></tr>
+           <tr><td><code>{@link #ButtonBarLayout_allowStacking ru.solargateteam.galnetru:allowStacking}</code></td><td></td></tr>
            </table>
            @see #ButtonBarLayout_allowStacking
          */
@@ -3724,7 +3724,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010028
         };
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#allowStacking}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#allowStacking}
           attribute's value can be found in the {@link #ButtonBarLayout} array.
 
 
@@ -3734,7 +3734,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:allowStacking
+          @attr name ru.solargateteam.galnetru:allowStacking
         */
         public static final int ButtonBarLayout_allowStacking = 0;
         /** Attributes that can be used with a CardView.
@@ -3743,17 +3743,17 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CardView_cardBackgroundColor ru.solarpalmteam.galnetru:cardBackgroundColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardCornerRadius ru.solarpalmteam.galnetru:cardCornerRadius}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardElevation ru.solarpalmteam.galnetru:cardElevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardMaxElevation ru.solarpalmteam.galnetru:cardMaxElevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardPreventCornerOverlap ru.solarpalmteam.galnetru:cardPreventCornerOverlap}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardUseCompatPadding ru.solarpalmteam.galnetru:cardUseCompatPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPadding ru.solarpalmteam.galnetru:contentPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingBottom ru.solarpalmteam.galnetru:contentPaddingBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingLeft ru.solarpalmteam.galnetru:contentPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingRight ru.solarpalmteam.galnetru:contentPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingTop ru.solarpalmteam.galnetru:contentPaddingTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardBackgroundColor ru.solargateteam.galnetru:cardBackgroundColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardCornerRadius ru.solargateteam.galnetru:cardCornerRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardElevation ru.solargateteam.galnetru:cardElevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardMaxElevation ru.solargateteam.galnetru:cardMaxElevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardPreventCornerOverlap ru.solargateteam.galnetru:cardPreventCornerOverlap}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardUseCompatPadding ru.solargateteam.galnetru:cardUseCompatPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPadding ru.solargateteam.galnetru:contentPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingBottom ru.solargateteam.galnetru:contentPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingLeft ru.solargateteam.galnetru:contentPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingRight ru.solargateteam.galnetru:contentPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingTop ru.solargateteam.galnetru:contentPaddingTop}</code></td><td></td></tr>
            </table>
            @see #CardView_cardBackgroundColor
            @see #CardView_cardCornerRadius
@@ -3773,7 +3773,7 @@ containing a value of this type.
             0x7f010031, 0x7f010032, 0x7f010033
         };
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#cardBackgroundColor}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#cardBackgroundColor}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -3784,11 +3784,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:cardBackgroundColor
+          @attr name ru.solargateteam.galnetru:cardBackgroundColor
         */
         public static final int CardView_cardBackgroundColor = 0;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#cardCornerRadius}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#cardCornerRadius}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -3800,11 +3800,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:cardCornerRadius
+          @attr name ru.solargateteam.galnetru:cardCornerRadius
         */
         public static final int CardView_cardCornerRadius = 1;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#cardElevation}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#cardElevation}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -3816,11 +3816,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:cardElevation
+          @attr name ru.solargateteam.galnetru:cardElevation
         */
         public static final int CardView_cardElevation = 2;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#cardMaxElevation}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#cardMaxElevation}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -3832,11 +3832,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:cardMaxElevation
+          @attr name ru.solargateteam.galnetru:cardMaxElevation
         */
         public static final int CardView_cardMaxElevation = 3;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#cardPreventCornerOverlap}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#cardPreventCornerOverlap}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -3846,11 +3846,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:cardPreventCornerOverlap
+          @attr name ru.solargateteam.galnetru:cardPreventCornerOverlap
         */
         public static final int CardView_cardPreventCornerOverlap = 5;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#cardUseCompatPadding}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#cardUseCompatPadding}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -3860,11 +3860,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:cardUseCompatPadding
+          @attr name ru.solargateteam.galnetru:cardUseCompatPadding
         */
         public static final int CardView_cardUseCompatPadding = 4;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#contentPadding}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#contentPadding}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -3876,11 +3876,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:contentPadding
+          @attr name ru.solargateteam.galnetru:contentPadding
         */
         public static final int CardView_contentPadding = 6;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#contentPaddingBottom}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#contentPaddingBottom}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -3892,11 +3892,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:contentPaddingBottom
+          @attr name ru.solargateteam.galnetru:contentPaddingBottom
         */
         public static final int CardView_contentPaddingBottom = 10;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#contentPaddingLeft}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#contentPaddingLeft}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -3908,11 +3908,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:contentPaddingLeft
+          @attr name ru.solargateteam.galnetru:contentPaddingLeft
         */
         public static final int CardView_contentPaddingLeft = 7;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#contentPaddingRight}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#contentPaddingRight}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -3924,11 +3924,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:contentPaddingRight
+          @attr name ru.solargateteam.galnetru:contentPaddingRight
         */
         public static final int CardView_contentPaddingRight = 8;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#contentPaddingTop}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#contentPaddingTop}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -3940,7 +3940,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:contentPaddingTop
+          @attr name ru.solargateteam.galnetru:contentPaddingTop
         */
         public static final int CardView_contentPaddingTop = 9;
         /** Attributes that can be used with a CollapsingAppBarLayout_LayoutParams.
@@ -3949,8 +3949,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseMode ru.solarpalmteam.galnetru:layout_collapseMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier ru.solarpalmteam.galnetru:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseMode ru.solargateteam.galnetru:layout_collapseMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier ru.solargateteam.galnetru:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
            </table>
            @see #CollapsingAppBarLayout_LayoutParams_layout_collapseMode
            @see #CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier
@@ -3959,7 +3959,7 @@ containing a value of this type.
             0x7f010034, 0x7f010035
         };
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#layout_collapseMode}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#layout_collapseMode}
           attribute's value can be found in the {@link #CollapsingAppBarLayout_LayoutParams} array.
 
 
@@ -3973,11 +3973,11 @@ containing a value of this type.
 <tr><td><code>pin</code></td><td>1</td><td></td></tr>
 <tr><td><code>parallax</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name ru.solarpalmteam.galnetru:layout_collapseMode
+          @attr name ru.solargateteam.galnetru:layout_collapseMode
         */
         public static final int CollapsingAppBarLayout_LayoutParams_layout_collapseMode = 0;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#layout_collapseParallaxMultiplier}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#layout_collapseParallaxMultiplier}
           attribute's value can be found in the {@link #CollapsingAppBarLayout_LayoutParams} array.
 
 
@@ -3987,7 +3987,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:layout_collapseParallaxMultiplier
+          @attr name ru.solargateteam.galnetru:layout_collapseParallaxMultiplier
         */
         public static final int CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier = 1;
         /** Attributes that can be used with a CollapsingToolbarLayout.
@@ -3996,20 +3996,20 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity ru.solarpalmteam.galnetru:collapsedTitleGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance ru.solarpalmteam.galnetru:collapsedTitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim ru.solarpalmteam.galnetru:contentScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity ru.solarpalmteam.galnetru:expandedTitleGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin ru.solarpalmteam.galnetru:expandedTitleMargin}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom ru.solarpalmteam.galnetru:expandedTitleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd ru.solarpalmteam.galnetru:expandedTitleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart ru.solarpalmteam.galnetru:expandedTitleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop ru.solarpalmteam.galnetru:expandedTitleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance ru.solarpalmteam.galnetru:expandedTitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim ru.solarpalmteam.galnetru:statusBarScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_title ru.solarpalmteam.galnetru:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled ru.solarpalmteam.galnetru:titleEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId ru.solarpalmteam.galnetru:toolbarId}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity ru.solargateteam.galnetru:collapsedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance ru.solargateteam.galnetru:collapsedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim ru.solargateteam.galnetru:contentScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity ru.solargateteam.galnetru:expandedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin ru.solargateteam.galnetru:expandedTitleMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom ru.solargateteam.galnetru:expandedTitleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd ru.solargateteam.galnetru:expandedTitleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart ru.solargateteam.galnetru:expandedTitleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop ru.solargateteam.galnetru:expandedTitleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance ru.solargateteam.galnetru:expandedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim ru.solargateteam.galnetru:statusBarScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_title ru.solargateteam.galnetru:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled ru.solargateteam.galnetru:titleEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId ru.solargateteam.galnetru:toolbarId}</code></td><td></td></tr>
            </table>
            @see #CollapsingToolbarLayout_collapsedTitleGravity
            @see #CollapsingToolbarLayout_collapsedTitleTextAppearance
@@ -4033,7 +4033,7 @@ containing a value of this type.
             0x7f010041, 0x7f010042
         };
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#collapsedTitleGravity}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#collapsedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -4054,21 +4054,21 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name ru.solarpalmteam.galnetru:collapsedTitleGravity
+          @attr name ru.solargateteam.galnetru:collapsedTitleGravity
         */
         public static final int CollapsingToolbarLayout_collapsedTitleGravity = 11;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#collapsedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#collapsedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:collapsedTitleTextAppearance
+          @attr name ru.solargateteam.galnetru:collapsedTitleTextAppearance
         */
         public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance = 7;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#contentScrim}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#contentScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -4079,11 +4079,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:contentScrim
+          @attr name ru.solargateteam.galnetru:contentScrim
         */
         public static final int CollapsingToolbarLayout_contentScrim = 8;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#expandedTitleGravity}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#expandedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -4104,11 +4104,11 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name ru.solarpalmteam.galnetru:expandedTitleGravity
+          @attr name ru.solargateteam.galnetru:expandedTitleGravity
         */
         public static final int CollapsingToolbarLayout_expandedTitleGravity = 12;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#expandedTitleMargin}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#expandedTitleMargin}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -4120,11 +4120,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:expandedTitleMargin
+          @attr name ru.solargateteam.galnetru:expandedTitleMargin
         */
         public static final int CollapsingToolbarLayout_expandedTitleMargin = 1;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#expandedTitleMarginBottom}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#expandedTitleMarginBottom}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -4136,11 +4136,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:expandedTitleMarginBottom
+          @attr name ru.solargateteam.galnetru:expandedTitleMarginBottom
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginBottom = 5;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#expandedTitleMarginEnd}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#expandedTitleMarginEnd}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -4152,11 +4152,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:expandedTitleMarginEnd
+          @attr name ru.solargateteam.galnetru:expandedTitleMarginEnd
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginEnd = 4;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#expandedTitleMarginStart}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#expandedTitleMarginStart}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -4168,11 +4168,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:expandedTitleMarginStart
+          @attr name ru.solargateteam.galnetru:expandedTitleMarginStart
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginStart = 2;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#expandedTitleMarginTop}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#expandedTitleMarginTop}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -4184,21 +4184,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:expandedTitleMarginTop
+          @attr name ru.solargateteam.galnetru:expandedTitleMarginTop
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginTop = 3;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#expandedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#expandedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:expandedTitleTextAppearance
+          @attr name ru.solargateteam.galnetru:expandedTitleTextAppearance
         */
         public static final int CollapsingToolbarLayout_expandedTitleTextAppearance = 6;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#statusBarScrim}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#statusBarScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -4209,11 +4209,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:statusBarScrim
+          @attr name ru.solargateteam.galnetru:statusBarScrim
         */
         public static final int CollapsingToolbarLayout_statusBarScrim = 9;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#title}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#title}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -4223,11 +4223,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:title
+          @attr name ru.solargateteam.galnetru:title
         */
         public static final int CollapsingToolbarLayout_title = 0;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#titleEnabled}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#titleEnabled}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -4237,17 +4237,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:titleEnabled
+          @attr name ru.solargateteam.galnetru:titleEnabled
         */
         public static final int CollapsingToolbarLayout_titleEnabled = 13;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#toolbarId}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#toolbarId}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:toolbarId
+          @attr name ru.solargateteam.galnetru:toolbarId
         */
         public static final int CollapsingToolbarLayout_toolbarId = 10;
         /** Attributes that can be used with a CompoundButton.
@@ -4257,8 +4257,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTint ru.solarpalmteam.galnetru:buttonTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTintMode ru.solarpalmteam.galnetru:buttonTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTint ru.solargateteam.galnetru:buttonTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTintMode ru.solargateteam.galnetru:buttonTintMode}</code></td><td></td></tr>
            </table>
            @see #CompoundButton_android_button
            @see #CompoundButton_buttonTint
@@ -4274,7 +4274,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CompoundButton_android_button = 0;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#buttonTint}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#buttonTint}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -4285,11 +4285,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:buttonTint
+          @attr name ru.solargateteam.galnetru:buttonTint
         */
         public static final int CompoundButton_buttonTint = 1;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#buttonTintMode}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#buttonTintMode}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -4305,7 +4305,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name ru.solarpalmteam.galnetru:buttonTintMode
+          @attr name ru.solargateteam.galnetru:buttonTintMode
         */
         public static final int CompoundButton_buttonTintMode = 2;
         /** Attributes that can be used with a CoordinatorLayout.
@@ -4314,8 +4314,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CoordinatorLayout_keylines ru.solarpalmteam.galnetru:keylines}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground ru.solarpalmteam.galnetru:statusBarBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_keylines ru.solargateteam.galnetru:keylines}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground ru.solargateteam.galnetru:statusBarBackground}</code></td><td></td></tr>
            </table>
            @see #CoordinatorLayout_keylines
            @see #CoordinatorLayout_statusBarBackground
@@ -4324,23 +4324,23 @@ containing a value of this type.
             0x7f010045, 0x7f010046
         };
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#keylines}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#keylines}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:keylines
+          @attr name ru.solargateteam.galnetru:keylines
         */
         public static final int CoordinatorLayout_keylines = 0;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#statusBarBackground}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#statusBarBackground}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:statusBarBackground
+          @attr name ru.solargateteam.galnetru:statusBarBackground
         */
         public static final int CoordinatorLayout_statusBarBackground = 1;
         /** Attributes that can be used with a CoordinatorLayout_LayoutParams.
@@ -4350,10 +4350,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CoordinatorLayout_LayoutParams_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchor ru.solarpalmteam.galnetru:layout_anchor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchorGravity ru.solarpalmteam.galnetru:layout_anchorGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_behavior ru.solarpalmteam.galnetru:layout_behavior}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_keyline ru.solarpalmteam.galnetru:layout_keyline}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchor ru.solargateteam.galnetru:layout_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchorGravity ru.solargateteam.galnetru:layout_anchorGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_behavior ru.solargateteam.galnetru:layout_behavior}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_keyline ru.solargateteam.galnetru:layout_keyline}</code></td><td></td></tr>
            </table>
            @see #CoordinatorLayout_LayoutParams_android_layout_gravity
            @see #CoordinatorLayout_LayoutParams_layout_anchor
@@ -4372,17 +4372,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CoordinatorLayout_LayoutParams_android_layout_gravity = 0;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#layout_anchor}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#layout_anchor}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:layout_anchor
+          @attr name ru.solargateteam.galnetru:layout_anchor
         */
         public static final int CoordinatorLayout_LayoutParams_layout_anchor = 2;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#layout_anchorGravity}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#layout_anchorGravity}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -4407,11 +4407,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name ru.solarpalmteam.galnetru:layout_anchorGravity
+          @attr name ru.solargateteam.galnetru:layout_anchorGravity
         */
         public static final int CoordinatorLayout_LayoutParams_layout_anchorGravity = 4;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#layout_behavior}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#layout_behavior}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -4421,11 +4421,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:layout_behavior
+          @attr name ru.solargateteam.galnetru:layout_behavior
         */
         public static final int CoordinatorLayout_LayoutParams_layout_behavior = 1;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#layout_keyline}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#layout_keyline}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -4435,7 +4435,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:layout_keyline
+          @attr name ru.solargateteam.galnetru:layout_keyline
         */
         public static final int CoordinatorLayout_LayoutParams_layout_keyline = 3;
         /** Attributes that can be used with a DrawerArrowToggle.
@@ -4444,14 +4444,14 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength ru.solarpalmteam.galnetru:arrowHeadLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength ru.solarpalmteam.galnetru:arrowShaftLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_barLength ru.solarpalmteam.galnetru:barLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_color ru.solarpalmteam.galnetru:color}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_drawableSize ru.solarpalmteam.galnetru:drawableSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars ru.solarpalmteam.galnetru:gapBetweenBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_spinBars ru.solarpalmteam.galnetru:spinBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_thickness ru.solarpalmteam.galnetru:thickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength ru.solargateteam.galnetru:arrowHeadLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength ru.solargateteam.galnetru:arrowShaftLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_barLength ru.solargateteam.galnetru:barLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_color ru.solargateteam.galnetru:color}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_drawableSize ru.solargateteam.galnetru:drawableSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars ru.solargateteam.galnetru:gapBetweenBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_spinBars ru.solargateteam.galnetru:spinBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_thickness ru.solargateteam.galnetru:thickness}</code></td><td></td></tr>
            </table>
            @see #DrawerArrowToggle_arrowHeadLength
            @see #DrawerArrowToggle_arrowShaftLength
@@ -4467,7 +4467,7 @@ containing a value of this type.
             0x7f01004f, 0x7f010050, 0x7f010051, 0x7f010052
         };
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#arrowHeadLength}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#arrowHeadLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4479,11 +4479,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:arrowHeadLength
+          @attr name ru.solargateteam.galnetru:arrowHeadLength
         */
         public static final int DrawerArrowToggle_arrowHeadLength = 4;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#arrowShaftLength}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#arrowShaftLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4495,11 +4495,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:arrowShaftLength
+          @attr name ru.solargateteam.galnetru:arrowShaftLength
         */
         public static final int DrawerArrowToggle_arrowShaftLength = 5;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#barLength}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#barLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4511,11 +4511,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:barLength
+          @attr name ru.solargateteam.galnetru:barLength
         */
         public static final int DrawerArrowToggle_barLength = 6;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#color}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#color}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4526,11 +4526,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:color
+          @attr name ru.solargateteam.galnetru:color
         */
         public static final int DrawerArrowToggle_color = 0;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#drawableSize}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#drawableSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4542,11 +4542,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:drawableSize
+          @attr name ru.solargateteam.galnetru:drawableSize
         */
         public static final int DrawerArrowToggle_drawableSize = 2;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#gapBetweenBars}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#gapBetweenBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4558,11 +4558,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:gapBetweenBars
+          @attr name ru.solargateteam.galnetru:gapBetweenBars
         */
         public static final int DrawerArrowToggle_gapBetweenBars = 3;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#spinBars}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#spinBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4572,11 +4572,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:spinBars
+          @attr name ru.solargateteam.galnetru:spinBars
         */
         public static final int DrawerArrowToggle_spinBars = 1;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#thickness}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#thickness}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4588,7 +4588,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:thickness
+          @attr name ru.solargateteam.galnetru:thickness
         */
         public static final int DrawerArrowToggle_thickness = 7;
         /** Attributes that can be used with a FloatingActionButton.
@@ -4597,13 +4597,13 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FloatingActionButton_backgroundTint ru.solarpalmteam.galnetru:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode ru.solarpalmteam.galnetru:backgroundTintMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_borderWidth ru.solarpalmteam.galnetru:borderWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_elevation ru.solarpalmteam.galnetru:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_fabSize ru.solarpalmteam.galnetru:fabSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ ru.solarpalmteam.galnetru:pressedTranslationZ}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_rippleColor ru.solarpalmteam.galnetru:rippleColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTint ru.solargateteam.galnetru:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode ru.solargateteam.galnetru:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_borderWidth ru.solargateteam.galnetru:borderWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_elevation ru.solargateteam.galnetru:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_fabSize ru.solargateteam.galnetru:fabSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ ru.solargateteam.galnetru:pressedTranslationZ}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_rippleColor ru.solargateteam.galnetru:rippleColor}</code></td><td></td></tr>
            </table>
            @see #FloatingActionButton_backgroundTint
            @see #FloatingActionButton_backgroundTintMode
@@ -4618,7 +4618,7 @@ containing a value of this type.
             0x7f010056, 0x7f010119, 0x7f01011a
         };
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#backgroundTint}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -4629,11 +4629,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:backgroundTint
+          @attr name ru.solargateteam.galnetru:backgroundTint
         */
         public static final int FloatingActionButton_backgroundTint = 5;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -4649,11 +4649,11 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name ru.solarpalmteam.galnetru:backgroundTintMode
+          @attr name ru.solargateteam.galnetru:backgroundTintMode
         */
         public static final int FloatingActionButton_backgroundTintMode = 6;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#borderWidth}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#borderWidth}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -4665,11 +4665,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:borderWidth
+          @attr name ru.solargateteam.galnetru:borderWidth
         */
         public static final int FloatingActionButton_borderWidth = 4;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#elevation}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#elevation}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -4681,11 +4681,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:elevation
+          @attr name ru.solargateteam.galnetru:elevation
         */
         public static final int FloatingActionButton_elevation = 0;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#fabSize}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#fabSize}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -4698,11 +4698,11 @@ containing a value of this type.
 <tr><td><code>normal</code></td><td>0</td><td></td></tr>
 <tr><td><code>mini</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name ru.solarpalmteam.galnetru:fabSize
+          @attr name ru.solargateteam.galnetru:fabSize
         */
         public static final int FloatingActionButton_fabSize = 2;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#pressedTranslationZ}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#pressedTranslationZ}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -4714,11 +4714,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:pressedTranslationZ
+          @attr name ru.solargateteam.galnetru:pressedTranslationZ
         */
         public static final int FloatingActionButton_pressedTranslationZ = 3;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#rippleColor}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#rippleColor}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -4729,7 +4729,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:rippleColor
+          @attr name ru.solargateteam.galnetru:rippleColor
         */
         public static final int FloatingActionButton_rippleColor = 1;
         /** Attributes that can be used with a ForegroundLinearLayout.
@@ -4740,7 +4740,7 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foreground android:foreground}</code></td><td></td></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundGravity android:foregroundGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding ru.solarpalmteam.galnetru:foregroundInsidePadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding ru.solargateteam.galnetru:foregroundInsidePadding}</code></td><td></td></tr>
            </table>
            @see #ForegroundLinearLayout_android_foreground
            @see #ForegroundLinearLayout_android_foregroundGravity
@@ -4762,7 +4762,7 @@ containing a value of this type.
         */
         public static final int ForegroundLinearLayout_android_foregroundGravity = 1;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#foregroundInsidePadding}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#foregroundInsidePadding}
           attribute's value can be found in the {@link #ForegroundLinearLayout} array.
 
 
@@ -4772,7 +4772,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:foregroundInsidePadding
+          @attr name ru.solargateteam.galnetru:foregroundInsidePadding
         */
         public static final int ForegroundLinearLayout_foregroundInsidePadding = 2;
         /** Attributes that can be used with a LinearLayoutCompat.
@@ -4786,10 +4786,10 @@ containing a value of this type.
            <tr><td><code>{@link #LinearLayoutCompat_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_divider ru.solarpalmteam.galnetru:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding ru.solarpalmteam.galnetru:dividerPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild ru.solarpalmteam.galnetru:measureWithLargestChild}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_showDividers ru.solarpalmteam.galnetru:showDividers}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_divider ru.solargateteam.galnetru:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding ru.solargateteam.galnetru:dividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild ru.solargateteam.galnetru:measureWithLargestChild}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_showDividers ru.solargateteam.galnetru:showDividers}</code></td><td></td></tr>
            </table>
            @see #LinearLayoutCompat_android_baselineAligned
            @see #LinearLayoutCompat_android_baselineAlignedChildIndex
@@ -4837,17 +4837,17 @@ containing a value of this type.
         */
         public static final int LinearLayoutCompat_android_weightSum = 4;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#divider}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#divider}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:divider
+          @attr name ru.solargateteam.galnetru:divider
         */
         public static final int LinearLayoutCompat_divider = 5;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#dividerPadding}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#dividerPadding}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -4859,11 +4859,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:dividerPadding
+          @attr name ru.solargateteam.galnetru:dividerPadding
         */
         public static final int LinearLayoutCompat_dividerPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#measureWithLargestChild}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#measureWithLargestChild}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -4873,11 +4873,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:measureWithLargestChild
+          @attr name ru.solargateteam.galnetru:measureWithLargestChild
         */
         public static final int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#showDividers}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#showDividers}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -4892,7 +4892,7 @@ containing a value of this type.
 <tr><td><code>middle</code></td><td>2</td><td></td></tr>
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name ru.solarpalmteam.galnetru:showDividers
+          @attr name ru.solargateteam.galnetru:showDividers
         */
         public static final int LinearLayoutCompat_showDividers = 7;
         /** Attributes that can be used with a LinearLayoutCompat_Layout.
@@ -5031,9 +5031,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout ru.solarpalmteam.galnetru:actionLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass ru.solarpalmteam.galnetru:actionProviderClass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass ru.solarpalmteam.galnetru:actionViewClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionLayout ru.solargateteam.galnetru:actionLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass ru.solargateteam.galnetru:actionProviderClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionViewClass ru.solargateteam.galnetru:actionViewClass}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td></td></tr>
@@ -5047,7 +5047,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction ru.solarpalmteam.galnetru:showAsAction}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction ru.solargateteam.galnetru:showAsAction}</code></td><td></td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -5075,17 +5075,17 @@ containing a value of this type.
             0x7f01005e
         };
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionLayout}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionLayout}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionLayout
+          @attr name ru.solargateteam.galnetru:actionLayout
         */
         public static final int MenuItem_actionLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionProviderClass}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionProviderClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -5095,11 +5095,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:actionProviderClass
+          @attr name ru.solargateteam.galnetru:actionProviderClass
         */
         public static final int MenuItem_actionProviderClass = 16;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionViewClass}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionViewClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -5109,7 +5109,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:actionViewClass
+          @attr name ru.solargateteam.galnetru:actionViewClass
         */
         public static final int MenuItem_actionViewClass = 15;
         /**
@@ -5191,7 +5191,7 @@ containing a value of this type.
         */
         public static final int MenuItem_android_visible = 4;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#showAsAction}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#showAsAction}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -5207,7 +5207,7 @@ containing a value of this type.
 <tr><td><code>withText</code></td><td>4</td><td></td></tr>
 <tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
-          @attr name ru.solarpalmteam.galnetru:showAsAction
+          @attr name ru.solargateteam.galnetru:showAsAction
         */
         public static final int MenuItem_showAsAction = 13;
         /** Attributes that can be used with a MenuView.
@@ -5223,7 +5223,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_preserveIconSpacing ru.solarpalmteam.galnetru:preserveIconSpacing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_preserveIconSpacing ru.solargateteam.galnetru:preserveIconSpacing}</code></td><td></td></tr>
            </table>
            @see #MenuView_android_headerBackground
            @see #MenuView_android_horizontalDivider
@@ -5281,7 +5281,7 @@ containing a value of this type.
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#preserveIconSpacing}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#preserveIconSpacing}
           attribute's value can be found in the {@link #MenuView} array.
 
 
@@ -5291,7 +5291,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:preserveIconSpacing
+          @attr name ru.solargateteam.galnetru:preserveIconSpacing
         */
         public static final int MenuView_preserveIconSpacing = 7;
         /** Attributes that can be used with a NavigationView.
@@ -5303,13 +5303,13 @@ containing a value of this type.
            <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_elevation ru.solarpalmteam.galnetru:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_headerLayout ru.solarpalmteam.galnetru:headerLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemBackground ru.solarpalmteam.galnetru:itemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemIconTint ru.solarpalmteam.galnetru:itemIconTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemTextAppearance ru.solarpalmteam.galnetru:itemTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemTextColor ru.solarpalmteam.galnetru:itemTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_menu ru.solarpalmteam.galnetru:menu}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_elevation ru.solargateteam.galnetru:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_headerLayout ru.solargateteam.galnetru:headerLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemBackground ru.solargateteam.galnetru:itemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemIconTint ru.solargateteam.galnetru:itemIconTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextAppearance ru.solargateteam.galnetru:itemTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextColor ru.solargateteam.galnetru:itemTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_menu ru.solargateteam.galnetru:menu}</code></td><td></td></tr>
            </table>
            @see #NavigationView_android_background
            @see #NavigationView_android_fitsSystemWindows
@@ -5346,7 +5346,7 @@ containing a value of this type.
         */
         public static final int NavigationView_android_maxWidth = 2;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#elevation}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#elevation}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -5358,31 +5358,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:elevation
+          @attr name ru.solargateteam.galnetru:elevation
         */
         public static final int NavigationView_elevation = 3;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#headerLayout}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#headerLayout}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:headerLayout
+          @attr name ru.solargateteam.galnetru:headerLayout
         */
         public static final int NavigationView_headerLayout = 9;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#itemBackground}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#itemBackground}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:itemBackground
+          @attr name ru.solargateteam.galnetru:itemBackground
         */
         public static final int NavigationView_itemBackground = 7;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#itemIconTint}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#itemIconTint}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -5393,21 +5393,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:itemIconTint
+          @attr name ru.solargateteam.galnetru:itemIconTint
         */
         public static final int NavigationView_itemIconTint = 5;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#itemTextAppearance}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#itemTextAppearance}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:itemTextAppearance
+          @attr name ru.solargateteam.galnetru:itemTextAppearance
         */
         public static final int NavigationView_itemTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#itemTextColor}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#itemTextColor}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -5418,17 +5418,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:itemTextColor
+          @attr name ru.solargateteam.galnetru:itemTextColor
         */
         public static final int NavigationView_itemTextColor = 6;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#menu}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#menu}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:menu
+          @attr name ru.solargateteam.galnetru:menu
         */
         public static final int NavigationView_menu = 4;
         /** Attributes that can be used with a PopupWindow.
@@ -5438,7 +5438,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PopupWindow_overlapAnchor ru.solarpalmteam.galnetru:overlapAnchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindow_overlapAnchor ru.solargateteam.galnetru:overlapAnchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindow_android_popupBackground
            @see #PopupWindow_overlapAnchor
@@ -5453,7 +5453,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int PopupWindow_android_popupBackground = 0;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#overlapAnchor}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#overlapAnchor}
           attribute's value can be found in the {@link #PopupWindow} array.
 
 
@@ -5463,7 +5463,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:overlapAnchor
+          @attr name ru.solargateteam.galnetru:overlapAnchor
         */
         public static final int PopupWindow_overlapAnchor = 1;
         /** Attributes that can be used with a PopupWindowBackgroundState.
@@ -5472,7 +5472,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor ru.solarpalmteam.galnetru:state_above_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor ru.solargateteam.galnetru:state_above_anchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindowBackgroundState_state_above_anchor
          */
@@ -5480,7 +5480,7 @@ containing a value of this type.
             0x7f010067
         };
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#state_above_anchor}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#state_above_anchor}
           attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
 
 
@@ -5490,7 +5490,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:state_above_anchor
+          @attr name ru.solargateteam.galnetru:state_above_anchor
         */
         public static final int PopupWindowBackgroundState_state_above_anchor = 0;
         /** Attributes that can be used with a RecyclerView.
@@ -5500,10 +5500,10 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #RecyclerView_android_orientation android:orientation}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_layoutManager ru.solarpalmteam.galnetru:layoutManager}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_reverseLayout ru.solarpalmteam.galnetru:reverseLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_spanCount ru.solarpalmteam.galnetru:spanCount}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_stackFromEnd ru.solarpalmteam.galnetru:stackFromEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_layoutManager ru.solargateteam.galnetru:layoutManager}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_reverseLayout ru.solargateteam.galnetru:reverseLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_spanCount ru.solargateteam.galnetru:spanCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_stackFromEnd ru.solargateteam.galnetru:stackFromEnd}</code></td><td></td></tr>
            </table>
            @see #RecyclerView_android_orientation
            @see #RecyclerView_layoutManager
@@ -5522,7 +5522,7 @@ containing a value of this type.
         */
         public static final int RecyclerView_android_orientation = 0;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#layoutManager}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#layoutManager}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -5532,11 +5532,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:layoutManager
+          @attr name ru.solargateteam.galnetru:layoutManager
         */
         public static final int RecyclerView_layoutManager = 1;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#reverseLayout}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#reverseLayout}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -5546,11 +5546,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:reverseLayout
+          @attr name ru.solargateteam.galnetru:reverseLayout
         */
         public static final int RecyclerView_reverseLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#spanCount}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#spanCount}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -5560,11 +5560,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:spanCount
+          @attr name ru.solargateteam.galnetru:spanCount
         */
         public static final int RecyclerView_spanCount = 2;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#stackFromEnd}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#stackFromEnd}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -5574,7 +5574,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:stackFromEnd
+          @attr name ru.solargateteam.galnetru:stackFromEnd
         */
         public static final int RecyclerView_stackFromEnd = 4;
         /** Attributes that can be used with a ScrimInsetsFrameLayout.
@@ -5583,7 +5583,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground ru.solarpalmteam.galnetru:insetForeground}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground ru.solargateteam.galnetru:insetForeground}</code></td><td></td></tr>
            </table>
            @see #ScrimInsetsFrameLayout_insetForeground
          */
@@ -5591,7 +5591,7 @@ containing a value of this type.
             0x7f01006c
         };
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#insetForeground}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#insetForeground}
           attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
 
 
@@ -5599,7 +5599,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ru.solarpalmteam.galnetru:insetForeground
+          @attr name ru.solargateteam.galnetru:insetForeground
         */
         public static final int ScrimInsetsFrameLayout_insetForeground = 0;
         /** Attributes that can be used with a ScrollingViewBehavior_Params.
@@ -5608,7 +5608,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrollingViewBehavior_Params_behavior_overlapTop ru.solarpalmteam.galnetru:behavior_overlapTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrollingViewBehavior_Params_behavior_overlapTop ru.solargateteam.galnetru:behavior_overlapTop}</code></td><td></td></tr>
            </table>
            @see #ScrollingViewBehavior_Params_behavior_overlapTop
          */
@@ -5616,7 +5616,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01006d
         };
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#behavior_overlapTop}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#behavior_overlapTop}
           attribute's value can be found in the {@link #ScrollingViewBehavior_Params} array.
 
 
@@ -5628,7 +5628,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:behavior_overlapTop
+          @attr name ru.solargateteam.galnetru:behavior_overlapTop
         */
         public static final int ScrollingViewBehavior_Params_behavior_overlapTop = 0;
         /** Attributes that can be used with a SearchView.
@@ -5641,19 +5641,19 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_closeIcon ru.solarpalmteam.galnetru:closeIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_commitIcon ru.solarpalmteam.galnetru:commitIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_defaultQueryHint ru.solarpalmteam.galnetru:defaultQueryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_goIcon ru.solarpalmteam.galnetru:goIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault ru.solarpalmteam.galnetru:iconifiedByDefault}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_layout ru.solarpalmteam.galnetru:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryBackground ru.solarpalmteam.galnetru:queryBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryHint ru.solarpalmteam.galnetru:queryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchHintIcon ru.solarpalmteam.galnetru:searchHintIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchIcon ru.solarpalmteam.galnetru:searchIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_submitBackground ru.solarpalmteam.galnetru:submitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_suggestionRowLayout ru.solarpalmteam.galnetru:suggestionRowLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_voiceIcon ru.solarpalmteam.galnetru:voiceIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_closeIcon ru.solargateteam.galnetru:closeIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_commitIcon ru.solargateteam.galnetru:commitIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_defaultQueryHint ru.solargateteam.galnetru:defaultQueryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_goIcon ru.solargateteam.galnetru:goIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault ru.solargateteam.galnetru:iconifiedByDefault}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_layout ru.solargateteam.galnetru:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryBackground ru.solargateteam.galnetru:queryBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryHint ru.solargateteam.galnetru:queryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchHintIcon ru.solargateteam.galnetru:searchHintIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchIcon ru.solargateteam.galnetru:searchIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_submitBackground ru.solargateteam.galnetru:submitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_suggestionRowLayout ru.solargateteam.galnetru:suggestionRowLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_voiceIcon ru.solargateteam.galnetru:voiceIcon}</code></td><td></td></tr>
            </table>
            @see #SearchView_android_focusable
            @see #SearchView_android_imeOptions
@@ -5705,27 +5705,27 @@ containing a value of this type.
         */
         public static final int SearchView_android_maxWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#closeIcon}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#closeIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:closeIcon
+          @attr name ru.solargateteam.galnetru:closeIcon
         */
         public static final int SearchView_closeIcon = 8;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#commitIcon}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#commitIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:commitIcon
+          @attr name ru.solargateteam.galnetru:commitIcon
         */
         public static final int SearchView_commitIcon = 13;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#defaultQueryHint}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#defaultQueryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -5735,21 +5735,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:defaultQueryHint
+          @attr name ru.solargateteam.galnetru:defaultQueryHint
         */
         public static final int SearchView_defaultQueryHint = 7;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#goIcon}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#goIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:goIcon
+          @attr name ru.solargateteam.galnetru:goIcon
         */
         public static final int SearchView_goIcon = 9;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#iconifiedByDefault}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#iconifiedByDefault}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -5759,31 +5759,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:iconifiedByDefault
+          @attr name ru.solargateteam.galnetru:iconifiedByDefault
         */
         public static final int SearchView_iconifiedByDefault = 5;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#layout}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#layout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:layout
+          @attr name ru.solargateteam.galnetru:layout
         */
         public static final int SearchView_layout = 4;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#queryBackground}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#queryBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:queryBackground
+          @attr name ru.solargateteam.galnetru:queryBackground
         */
         public static final int SearchView_queryBackground = 15;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#queryHint}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#queryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -5793,57 +5793,57 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:queryHint
+          @attr name ru.solargateteam.galnetru:queryHint
         */
         public static final int SearchView_queryHint = 6;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#searchHintIcon}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#searchHintIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:searchHintIcon
+          @attr name ru.solargateteam.galnetru:searchHintIcon
         */
         public static final int SearchView_searchHintIcon = 11;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#searchIcon}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#searchIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:searchIcon
+          @attr name ru.solargateteam.galnetru:searchIcon
         */
         public static final int SearchView_searchIcon = 10;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#submitBackground}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#submitBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:submitBackground
+          @attr name ru.solargateteam.galnetru:submitBackground
         */
         public static final int SearchView_submitBackground = 16;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#suggestionRowLayout}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#suggestionRowLayout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:suggestionRowLayout
+          @attr name ru.solargateteam.galnetru:suggestionRowLayout
         */
         public static final int SearchView_suggestionRowLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#voiceIcon}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#voiceIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:voiceIcon
+          @attr name ru.solargateteam.galnetru:voiceIcon
         */
         public static final int SearchView_voiceIcon = 12;
         /** Attributes that can be used with a SnackbarLayout.
@@ -5853,8 +5853,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SnackbarLayout_elevation ru.solarpalmteam.galnetru:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth ru.solarpalmteam.galnetru:maxActionInlineWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_elevation ru.solargateteam.galnetru:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth ru.solargateteam.galnetru:maxActionInlineWidth}</code></td><td></td></tr>
            </table>
            @see #SnackbarLayout_android_maxWidth
            @see #SnackbarLayout_elevation
@@ -5870,7 +5870,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SnackbarLayout_android_maxWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#elevation}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#elevation}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -5882,11 +5882,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:elevation
+          @attr name ru.solargateteam.galnetru:elevation
         */
         public static final int SnackbarLayout_elevation = 1;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#maxActionInlineWidth}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#maxActionInlineWidth}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -5898,7 +5898,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:maxActionInlineWidth
+          @attr name ru.solargateteam.galnetru:maxActionInlineWidth
         */
         public static final int SnackbarLayout_maxActionInlineWidth = 2;
         /** Attributes that can be used with a Spinner.
@@ -5910,7 +5910,7 @@ containing a value of this type.
            <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_popupTheme ru.solarpalmteam.galnetru:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_popupTheme ru.solargateteam.galnetru:popupTheme}</code></td><td></td></tr>
            </table>
            @see #Spinner_android_dropDownWidth
            @see #Spinner_android_popupBackground
@@ -5939,13 +5939,13 @@ containing a value of this type.
         */
         public static final int Spinner_android_prompt = 1;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#popupTheme}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:popupTheme
+          @attr name ru.solargateteam.galnetru:popupTheme
         */
         public static final int Spinner_popupTheme = 3;
         /** Attributes that can be used with a SwitchCompat.
@@ -5957,13 +5957,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_showText ru.solarpalmteam.galnetru:showText}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_splitTrack ru.solarpalmteam.galnetru:splitTrack}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchMinWidth ru.solarpalmteam.galnetru:switchMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchPadding ru.solarpalmteam.galnetru:switchPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchTextAppearance ru.solarpalmteam.galnetru:switchTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTextPadding ru.solarpalmteam.galnetru:thumbTextPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_track ru.solarpalmteam.galnetru:track}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_showText ru.solargateteam.galnetru:showText}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_splitTrack ru.solargateteam.galnetru:splitTrack}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchMinWidth ru.solargateteam.galnetru:switchMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchPadding ru.solargateteam.galnetru:switchPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchTextAppearance ru.solargateteam.galnetru:switchTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTextPadding ru.solargateteam.galnetru:thumbTextPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_track ru.solargateteam.galnetru:track}</code></td><td></td></tr>
            </table>
            @see #SwitchCompat_android_textOff
            @see #SwitchCompat_android_textOn
@@ -6000,7 +6000,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompat_android_thumb = 2;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#showText}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#showText}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -6010,11 +6010,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:showText
+          @attr name ru.solargateteam.galnetru:showText
         */
         public static final int SwitchCompat_showText = 9;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#splitTrack}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#splitTrack}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -6024,11 +6024,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:splitTrack
+          @attr name ru.solargateteam.galnetru:splitTrack
         */
         public static final int SwitchCompat_splitTrack = 8;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#switchMinWidth}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#switchMinWidth}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -6040,11 +6040,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:switchMinWidth
+          @attr name ru.solargateteam.galnetru:switchMinWidth
         */
         public static final int SwitchCompat_switchMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#switchPadding}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#switchPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -6056,21 +6056,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:switchPadding
+          @attr name ru.solargateteam.galnetru:switchPadding
         */
         public static final int SwitchCompat_switchPadding = 7;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#switchTextAppearance}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#switchTextAppearance}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:switchTextAppearance
+          @attr name ru.solargateteam.galnetru:switchTextAppearance
         */
         public static final int SwitchCompat_switchTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#thumbTextPadding}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#thumbTextPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -6082,17 +6082,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:thumbTextPadding
+          @attr name ru.solargateteam.galnetru:thumbTextPadding
         */
         public static final int SwitchCompat_thumbTextPadding = 4;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#track}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#track}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:track
+          @attr name ru.solargateteam.galnetru:track
         */
         public static final int SwitchCompat_track = 3;
         /** Attributes that can be used with a TabLayout.
@@ -6101,22 +6101,22 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #TabLayout_tabBackground ru.solarpalmteam.galnetru:tabBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabContentStart ru.solarpalmteam.galnetru:tabContentStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabGravity ru.solarpalmteam.galnetru:tabGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabIndicatorColor ru.solarpalmteam.galnetru:tabIndicatorColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabIndicatorHeight ru.solarpalmteam.galnetru:tabIndicatorHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMaxWidth ru.solarpalmteam.galnetru:tabMaxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMinWidth ru.solarpalmteam.galnetru:tabMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMode ru.solarpalmteam.galnetru:tabMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPadding ru.solarpalmteam.galnetru:tabPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingBottom ru.solarpalmteam.galnetru:tabPaddingBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingEnd ru.solarpalmteam.galnetru:tabPaddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingStart ru.solarpalmteam.galnetru:tabPaddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingTop ru.solarpalmteam.galnetru:tabPaddingTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabSelectedTextColor ru.solarpalmteam.galnetru:tabSelectedTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabTextAppearance ru.solarpalmteam.galnetru:tabTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabTextColor ru.solarpalmteam.galnetru:tabTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabBackground ru.solargateteam.galnetru:tabBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabContentStart ru.solargateteam.galnetru:tabContentStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabGravity ru.solargateteam.galnetru:tabGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorColor ru.solargateteam.galnetru:tabIndicatorColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorHeight ru.solargateteam.galnetru:tabIndicatorHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMaxWidth ru.solargateteam.galnetru:tabMaxWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMinWidth ru.solargateteam.galnetru:tabMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMode ru.solargateteam.galnetru:tabMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPadding ru.solargateteam.galnetru:tabPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingBottom ru.solargateteam.galnetru:tabPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingEnd ru.solargateteam.galnetru:tabPaddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingStart ru.solargateteam.galnetru:tabPaddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingTop ru.solargateteam.galnetru:tabPaddingTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabSelectedTextColor ru.solargateteam.galnetru:tabSelectedTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextAppearance ru.solargateteam.galnetru:tabTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextColor ru.solargateteam.galnetru:tabTextColor}</code></td><td></td></tr>
            </table>
            @see #TabLayout_tabBackground
            @see #TabLayout_tabContentStart
@@ -6142,17 +6142,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01008f, 0x7f010090, 0x7f010091, 0x7f010092
         };
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#tabBackground}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#tabBackground}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:tabBackground
+          @attr name ru.solargateteam.galnetru:tabBackground
         */
         public static final int TabLayout_tabBackground = 3;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#tabContentStart}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#tabContentStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6164,11 +6164,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:tabContentStart
+          @attr name ru.solargateteam.galnetru:tabContentStart
         */
         public static final int TabLayout_tabContentStart = 2;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#tabGravity}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#tabGravity}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6181,11 +6181,11 @@ containing a value of this type.
 <tr><td><code>fill</code></td><td>0</td><td></td></tr>
 <tr><td><code>center</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name ru.solarpalmteam.galnetru:tabGravity
+          @attr name ru.solargateteam.galnetru:tabGravity
         */
         public static final int TabLayout_tabGravity = 5;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#tabIndicatorColor}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#tabIndicatorColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6196,11 +6196,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:tabIndicatorColor
+          @attr name ru.solargateteam.galnetru:tabIndicatorColor
         */
         public static final int TabLayout_tabIndicatorColor = 0;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#tabIndicatorHeight}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#tabIndicatorHeight}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6212,11 +6212,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:tabIndicatorHeight
+          @attr name ru.solargateteam.galnetru:tabIndicatorHeight
         */
         public static final int TabLayout_tabIndicatorHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#tabMaxWidth}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#tabMaxWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6228,11 +6228,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:tabMaxWidth
+          @attr name ru.solargateteam.galnetru:tabMaxWidth
         */
         public static final int TabLayout_tabMaxWidth = 7;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#tabMinWidth}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#tabMinWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6244,11 +6244,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:tabMinWidth
+          @attr name ru.solargateteam.galnetru:tabMinWidth
         */
         public static final int TabLayout_tabMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#tabMode}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#tabMode}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6261,11 +6261,11 @@ containing a value of this type.
 <tr><td><code>scrollable</code></td><td>0</td><td></td></tr>
 <tr><td><code>fixed</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name ru.solarpalmteam.galnetru:tabMode
+          @attr name ru.solargateteam.galnetru:tabMode
         */
         public static final int TabLayout_tabMode = 4;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#tabPadding}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#tabPadding}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6277,11 +6277,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:tabPadding
+          @attr name ru.solargateteam.galnetru:tabPadding
         */
         public static final int TabLayout_tabPadding = 15;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#tabPaddingBottom}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#tabPaddingBottom}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6293,11 +6293,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:tabPaddingBottom
+          @attr name ru.solargateteam.galnetru:tabPaddingBottom
         */
         public static final int TabLayout_tabPaddingBottom = 14;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#tabPaddingEnd}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#tabPaddingEnd}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6309,11 +6309,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:tabPaddingEnd
+          @attr name ru.solargateteam.galnetru:tabPaddingEnd
         */
         public static final int TabLayout_tabPaddingEnd = 13;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#tabPaddingStart}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#tabPaddingStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6325,11 +6325,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:tabPaddingStart
+          @attr name ru.solargateteam.galnetru:tabPaddingStart
         */
         public static final int TabLayout_tabPaddingStart = 11;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#tabPaddingTop}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#tabPaddingTop}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6341,11 +6341,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:tabPaddingTop
+          @attr name ru.solargateteam.galnetru:tabPaddingTop
         */
         public static final int TabLayout_tabPaddingTop = 12;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#tabSelectedTextColor}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#tabSelectedTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6356,21 +6356,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:tabSelectedTextColor
+          @attr name ru.solargateteam.galnetru:tabSelectedTextColor
         */
         public static final int TabLayout_tabSelectedTextColor = 10;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#tabTextAppearance}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#tabTextAppearance}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:tabTextAppearance
+          @attr name ru.solargateteam.galnetru:tabTextAppearance
         */
         public static final int TabLayout_tabTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#tabTextColor}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#tabTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6381,7 +6381,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:tabTextColor
+          @attr name ru.solargateteam.galnetru:tabTextColor
         */
         public static final int TabLayout_tabTextColor = 9;
         /** Attributes that can be used with a TextAppearance.
@@ -6398,7 +6398,7 @@ containing a value of this type.
            <tr><td><code>{@link #TextAppearance_android_textSize android:textSize}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_textStyle android:textStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_typeface android:typeface}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextAppearance_textAllCaps ru.solarpalmteam.galnetru:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextAppearance_textAllCaps ru.solargateteam.galnetru:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #TextAppearance_android_shadowColor
            @see #TextAppearance_android_shadowDx
@@ -6464,14 +6464,14 @@ containing a value of this type.
         */
         public static final int TextAppearance_android_typeface = 1;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#textAllCaps}
           attribute's value can be found in the {@link #TextAppearance} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name ru.solarpalmteam.galnetru:textAllCaps
+          @attr name ru.solargateteam.galnetru:textAllCaps
         */
         public static final int TextAppearance_textAllCaps = 8;
         /** Attributes that can be used with a TextInputLayout.
@@ -6482,14 +6482,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #TextInputLayout_android_hint android:hint}</code></td><td></td></tr>
            <tr><td><code>{@link #TextInputLayout_android_textColorHint android:textColorHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterEnabled ru.solarpalmteam.galnetru:counterEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterMaxLength ru.solarpalmteam.galnetru:counterMaxLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance ru.solarpalmteam.galnetru:counterOverflowTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterTextAppearance ru.solarpalmteam.galnetru:counterTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_errorEnabled ru.solarpalmteam.galnetru:errorEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_errorTextAppearance ru.solarpalmteam.galnetru:errorTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled ru.solarpalmteam.galnetru:hintAnimationEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintTextAppearance ru.solarpalmteam.galnetru:hintTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterEnabled ru.solargateteam.galnetru:counterEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterMaxLength ru.solargateteam.galnetru:counterMaxLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance ru.solargateteam.galnetru:counterOverflowTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterTextAppearance ru.solargateteam.galnetru:counterTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorEnabled ru.solargateteam.galnetru:errorEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorTextAppearance ru.solargateteam.galnetru:errorTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled ru.solargateteam.galnetru:hintAnimationEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintTextAppearance ru.solargateteam.galnetru:hintTextAppearance}</code></td><td></td></tr>
            </table>
            @see #TextInputLayout_android_hint
            @see #TextInputLayout_android_textColorHint
@@ -6520,7 +6520,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int TextInputLayout_android_textColorHint = 0;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#counterEnabled}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#counterEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -6530,11 +6530,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:counterEnabled
+          @attr name ru.solargateteam.galnetru:counterEnabled
         */
         public static final int TextInputLayout_counterEnabled = 5;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#counterMaxLength}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#counterMaxLength}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -6544,31 +6544,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:counterMaxLength
+          @attr name ru.solargateteam.galnetru:counterMaxLength
         */
         public static final int TextInputLayout_counterMaxLength = 6;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#counterOverflowTextAppearance}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#counterOverflowTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:counterOverflowTextAppearance
+          @attr name ru.solargateteam.galnetru:counterOverflowTextAppearance
         */
         public static final int TextInputLayout_counterOverflowTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#counterTextAppearance}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#counterTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:counterTextAppearance
+          @attr name ru.solargateteam.galnetru:counterTextAppearance
         */
         public static final int TextInputLayout_counterTextAppearance = 7;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#errorEnabled}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#errorEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -6578,21 +6578,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:errorEnabled
+          @attr name ru.solargateteam.galnetru:errorEnabled
         */
         public static final int TextInputLayout_errorEnabled = 3;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#errorTextAppearance}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#errorTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:errorTextAppearance
+          @attr name ru.solargateteam.galnetru:errorTextAppearance
         */
         public static final int TextInputLayout_errorTextAppearance = 4;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#hintAnimationEnabled}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#hintAnimationEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -6602,17 +6602,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:hintAnimationEnabled
+          @attr name ru.solargateteam.galnetru:hintAnimationEnabled
         */
         public static final int TextInputLayout_hintAnimationEnabled = 9;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#hintTextAppearance}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#hintTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:hintTextAppearance
+          @attr name ru.solargateteam.galnetru:hintTextAppearance
         */
         public static final int TextInputLayout_hintTextAppearance = 2;
         /** Attributes that can be used with a Theme.
@@ -6621,116 +6621,116 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #Theme_actionBarDivider ru.solarpalmteam.galnetru:actionBarDivider}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarItemBackground ru.solarpalmteam.galnetru:actionBarItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarPopupTheme ru.solarpalmteam.galnetru:actionBarPopupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarSize ru.solarpalmteam.galnetru:actionBarSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarSplitStyle ru.solarpalmteam.galnetru:actionBarSplitStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarStyle ru.solarpalmteam.galnetru:actionBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabBarStyle ru.solarpalmteam.galnetru:actionBarTabBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabStyle ru.solarpalmteam.galnetru:actionBarTabStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabTextStyle ru.solarpalmteam.galnetru:actionBarTabTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTheme ru.solarpalmteam.galnetru:actionBarTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarWidgetTheme ru.solarpalmteam.galnetru:actionBarWidgetTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionButtonStyle ru.solarpalmteam.galnetru:actionButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionDropDownStyle ru.solarpalmteam.galnetru:actionDropDownStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionMenuTextAppearance ru.solarpalmteam.galnetru:actionMenuTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionMenuTextColor ru.solarpalmteam.galnetru:actionMenuTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeBackground ru.solarpalmteam.galnetru:actionModeBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCloseButtonStyle ru.solarpalmteam.galnetru:actionModeCloseButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCloseDrawable ru.solarpalmteam.galnetru:actionModeCloseDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCopyDrawable ru.solarpalmteam.galnetru:actionModeCopyDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCutDrawable ru.solarpalmteam.galnetru:actionModeCutDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeFindDrawable ru.solarpalmteam.galnetru:actionModeFindDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModePasteDrawable ru.solarpalmteam.galnetru:actionModePasteDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModePopupWindowStyle ru.solarpalmteam.galnetru:actionModePopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable ru.solarpalmteam.galnetru:actionModeSelectAllDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeShareDrawable ru.solarpalmteam.galnetru:actionModeShareDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeSplitBackground ru.solarpalmteam.galnetru:actionModeSplitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeStyle ru.solarpalmteam.galnetru:actionModeStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable ru.solarpalmteam.galnetru:actionModeWebSearchDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionOverflowButtonStyle ru.solarpalmteam.galnetru:actionOverflowButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionOverflowMenuStyle ru.solarpalmteam.galnetru:actionOverflowMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_activityChooserViewStyle ru.solarpalmteam.galnetru:activityChooserViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_alertDialogButtonGroupStyle ru.solarpalmteam.galnetru:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_alertDialogCenterButtons ru.solarpalmteam.galnetru:alertDialogCenterButtons}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_alertDialogStyle ru.solarpalmteam.galnetru:alertDialogStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_alertDialogTheme ru.solarpalmteam.galnetru:alertDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarDivider ru.solargateteam.galnetru:actionBarDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarItemBackground ru.solargateteam.galnetru:actionBarItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarPopupTheme ru.solargateteam.galnetru:actionBarPopupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarSize ru.solargateteam.galnetru:actionBarSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarSplitStyle ru.solargateteam.galnetru:actionBarSplitStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarStyle ru.solargateteam.galnetru:actionBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabBarStyle ru.solargateteam.galnetru:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabStyle ru.solargateteam.galnetru:actionBarTabStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabTextStyle ru.solargateteam.galnetru:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTheme ru.solargateteam.galnetru:actionBarTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarWidgetTheme ru.solargateteam.galnetru:actionBarWidgetTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionButtonStyle ru.solargateteam.galnetru:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionDropDownStyle ru.solargateteam.galnetru:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextAppearance ru.solargateteam.galnetru:actionMenuTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextColor ru.solargateteam.galnetru:actionMenuTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeBackground ru.solargateteam.galnetru:actionModeBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseButtonStyle ru.solargateteam.galnetru:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseDrawable ru.solargateteam.galnetru:actionModeCloseDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCopyDrawable ru.solargateteam.galnetru:actionModeCopyDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCutDrawable ru.solargateteam.galnetru:actionModeCutDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeFindDrawable ru.solargateteam.galnetru:actionModeFindDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModePasteDrawable ru.solargateteam.galnetru:actionModePasteDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModePopupWindowStyle ru.solargateteam.galnetru:actionModePopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable ru.solargateteam.galnetru:actionModeSelectAllDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeShareDrawable ru.solargateteam.galnetru:actionModeShareDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeSplitBackground ru.solargateteam.galnetru:actionModeSplitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeStyle ru.solargateteam.galnetru:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable ru.solargateteam.galnetru:actionModeWebSearchDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionOverflowButtonStyle ru.solargateteam.galnetru:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionOverflowMenuStyle ru.solargateteam.galnetru:actionOverflowMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_activityChooserViewStyle ru.solargateteam.galnetru:activityChooserViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogButtonGroupStyle ru.solargateteam.galnetru:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogCenterButtons ru.solargateteam.galnetru:alertDialogCenterButtons}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogStyle ru.solargateteam.galnetru:alertDialogStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogTheme ru.solargateteam.galnetru:alertDialogTheme}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_autoCompleteTextViewStyle ru.solarpalmteam.galnetru:autoCompleteTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_borderlessButtonStyle ru.solarpalmteam.galnetru:borderlessButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarButtonStyle ru.solarpalmteam.galnetru:buttonBarButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarNegativeButtonStyle ru.solarpalmteam.galnetru:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarNeutralButtonStyle ru.solarpalmteam.galnetru:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarPositiveButtonStyle ru.solarpalmteam.galnetru:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarStyle ru.solarpalmteam.galnetru:buttonBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonStyle ru.solarpalmteam.galnetru:buttonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonStyleSmall ru.solarpalmteam.galnetru:buttonStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_checkboxStyle ru.solarpalmteam.galnetru:checkboxStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_checkedTextViewStyle ru.solarpalmteam.galnetru:checkedTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorAccent ru.solarpalmteam.galnetru:colorAccent}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorButtonNormal ru.solarpalmteam.galnetru:colorButtonNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlActivated ru.solarpalmteam.galnetru:colorControlActivated}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlHighlight ru.solarpalmteam.galnetru:colorControlHighlight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlNormal ru.solarpalmteam.galnetru:colorControlNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorPrimary ru.solarpalmteam.galnetru:colorPrimary}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorPrimaryDark ru.solarpalmteam.galnetru:colorPrimaryDark}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorSwitchThumbNormal ru.solarpalmteam.galnetru:colorSwitchThumbNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_controlBackground ru.solarpalmteam.galnetru:controlBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dialogPreferredPadding ru.solarpalmteam.galnetru:dialogPreferredPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dialogTheme ru.solarpalmteam.galnetru:dialogTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dividerHorizontal ru.solarpalmteam.galnetru:dividerHorizontal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dividerVertical ru.solarpalmteam.galnetru:dividerVertical}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dropDownListViewStyle ru.solarpalmteam.galnetru:dropDownListViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight ru.solarpalmteam.galnetru:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextBackground ru.solarpalmteam.galnetru:editTextBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextColor ru.solarpalmteam.galnetru:editTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextStyle ru.solarpalmteam.galnetru:editTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_homeAsUpIndicator ru.solarpalmteam.galnetru:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_imageButtonStyle ru.solarpalmteam.galnetru:imageButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator ru.solarpalmteam.galnetru:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listDividerAlertDialog ru.solarpalmteam.galnetru:listDividerAlertDialog}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPopupWindowStyle ru.solarpalmteam.galnetru:listPopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeight ru.solarpalmteam.galnetru:listPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge ru.solarpalmteam.galnetru:listPreferredItemHeightLarge}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall ru.solarpalmteam.galnetru:listPreferredItemHeightSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft ru.solarpalmteam.galnetru:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight ru.solarpalmteam.galnetru:listPreferredItemPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelBackground ru.solarpalmteam.galnetru:panelBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListTheme ru.solarpalmteam.galnetru:panelMenuListTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListWidth ru.solarpalmteam.galnetru:panelMenuListWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_popupMenuStyle ru.solarpalmteam.galnetru:popupMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_popupWindowStyle ru.solarpalmteam.galnetru:popupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_radioButtonStyle ru.solarpalmteam.galnetru:radioButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_ratingBarStyle ru.solarpalmteam.galnetru:ratingBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_searchViewStyle ru.solarpalmteam.galnetru:searchViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_seekBarStyle ru.solarpalmteam.galnetru:seekBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_selectableItemBackground ru.solarpalmteam.galnetru:selectableItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless ru.solarpalmteam.galnetru:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle ru.solarpalmteam.galnetru:spinnerDropDownItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_spinnerStyle ru.solarpalmteam.galnetru:spinnerStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_switchStyle ru.solarpalmteam.galnetru:switchStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu ru.solarpalmteam.galnetru:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceListItem ru.solarpalmteam.galnetru:textAppearanceListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceListItemSmall ru.solarpalmteam.galnetru:textAppearanceListItemSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle ru.solarpalmteam.galnetru:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle ru.solarpalmteam.galnetru:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu ru.solarpalmteam.galnetru:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textColorAlertDialogListItem ru.solarpalmteam.galnetru:textColorAlertDialogListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textColorSearchUrl ru.solarpalmteam.galnetru:textColorSearchUrl}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle ru.solarpalmteam.galnetru:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_toolbarStyle ru.solarpalmteam.galnetru:toolbarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionBar ru.solarpalmteam.galnetru:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionBarOverlay ru.solarpalmteam.galnetru:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionModeOverlay ru.solarpalmteam.galnetru:windowActionModeOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedHeightMajor ru.solarpalmteam.galnetru:windowFixedHeightMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedHeightMinor ru.solarpalmteam.galnetru:windowFixedHeightMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedWidthMajor ru.solarpalmteam.galnetru:windowFixedWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedWidthMinor ru.solarpalmteam.galnetru:windowFixedWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowMinWidthMajor ru.solarpalmteam.galnetru:windowMinWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowMinWidthMinor ru.solarpalmteam.galnetru:windowMinWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowNoTitle ru.solarpalmteam.galnetru:windowNoTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_autoCompleteTextViewStyle ru.solargateteam.galnetru:autoCompleteTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_borderlessButtonStyle ru.solargateteam.galnetru:borderlessButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarButtonStyle ru.solargateteam.galnetru:buttonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarNegativeButtonStyle ru.solargateteam.galnetru:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarNeutralButtonStyle ru.solargateteam.galnetru:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarPositiveButtonStyle ru.solargateteam.galnetru:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarStyle ru.solargateteam.galnetru:buttonBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonStyle ru.solargateteam.galnetru:buttonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonStyleSmall ru.solargateteam.galnetru:buttonStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_checkboxStyle ru.solargateteam.galnetru:checkboxStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_checkedTextViewStyle ru.solargateteam.galnetru:checkedTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorAccent ru.solargateteam.galnetru:colorAccent}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorButtonNormal ru.solargateteam.galnetru:colorButtonNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlActivated ru.solargateteam.galnetru:colorControlActivated}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlHighlight ru.solargateteam.galnetru:colorControlHighlight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlNormal ru.solargateteam.galnetru:colorControlNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorPrimary ru.solargateteam.galnetru:colorPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorPrimaryDark ru.solargateteam.galnetru:colorPrimaryDark}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorSwitchThumbNormal ru.solargateteam.galnetru:colorSwitchThumbNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_controlBackground ru.solargateteam.galnetru:controlBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dialogPreferredPadding ru.solargateteam.galnetru:dialogPreferredPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dialogTheme ru.solargateteam.galnetru:dialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dividerHorizontal ru.solargateteam.galnetru:dividerHorizontal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dividerVertical ru.solargateteam.galnetru:dividerVertical}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dropDownListViewStyle ru.solargateteam.galnetru:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight ru.solargateteam.galnetru:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextBackground ru.solargateteam.galnetru:editTextBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextColor ru.solargateteam.galnetru:editTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextStyle ru.solargateteam.galnetru:editTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_homeAsUpIndicator ru.solargateteam.galnetru:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_imageButtonStyle ru.solargateteam.galnetru:imageButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator ru.solargateteam.galnetru:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listDividerAlertDialog ru.solargateteam.galnetru:listDividerAlertDialog}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPopupWindowStyle ru.solargateteam.galnetru:listPopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeight ru.solargateteam.galnetru:listPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge ru.solargateteam.galnetru:listPreferredItemHeightLarge}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall ru.solargateteam.galnetru:listPreferredItemHeightSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft ru.solargateteam.galnetru:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight ru.solargateteam.galnetru:listPreferredItemPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelBackground ru.solargateteam.galnetru:panelBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListTheme ru.solargateteam.galnetru:panelMenuListTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListWidth ru.solargateteam.galnetru:panelMenuListWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_popupMenuStyle ru.solargateteam.galnetru:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_popupWindowStyle ru.solargateteam.galnetru:popupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_radioButtonStyle ru.solargateteam.galnetru:radioButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_ratingBarStyle ru.solargateteam.galnetru:ratingBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_searchViewStyle ru.solargateteam.galnetru:searchViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_seekBarStyle ru.solargateteam.galnetru:seekBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackground ru.solargateteam.galnetru:selectableItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless ru.solargateteam.galnetru:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle ru.solargateteam.galnetru:spinnerDropDownItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_spinnerStyle ru.solargateteam.galnetru:spinnerStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_switchStyle ru.solargateteam.galnetru:switchStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu ru.solargateteam.galnetru:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItem ru.solargateteam.galnetru:textAppearanceListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItemSmall ru.solargateteam.galnetru:textAppearanceListItemSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle ru.solargateteam.galnetru:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle ru.solargateteam.galnetru:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu ru.solargateteam.galnetru:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textColorAlertDialogListItem ru.solargateteam.galnetru:textColorAlertDialogListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textColorSearchUrl ru.solargateteam.galnetru:textColorSearchUrl}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle ru.solargateteam.galnetru:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_toolbarStyle ru.solargateteam.galnetru:toolbarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionBar ru.solargateteam.galnetru:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionBarOverlay ru.solargateteam.galnetru:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionModeOverlay ru.solargateteam.galnetru:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedHeightMajor ru.solargateteam.galnetru:windowFixedHeightMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedHeightMinor ru.solargateteam.galnetru:windowFixedHeightMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedWidthMajor ru.solargateteam.galnetru:windowFixedWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedWidthMinor ru.solargateteam.galnetru:windowFixedWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowMinWidthMajor ru.solargateteam.galnetru:windowMinWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowMinWidthMinor ru.solargateteam.galnetru:windowMinWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowNoTitle ru.solargateteam.galnetru:windowNoTitle}</code></td><td></td></tr>
            </table>
            @see #Theme_actionBarDivider
            @see #Theme_actionBarItemBackground
@@ -6874,37 +6874,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010105, 0x7f010106
         };
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionBarDivider}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionBarDivider}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionBarDivider
+          @attr name ru.solargateteam.galnetru:actionBarDivider
         */
         public static final int Theme_actionBarDivider = 23;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionBarItemBackground}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionBarItemBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionBarItemBackground
+          @attr name ru.solargateteam.galnetru:actionBarItemBackground
         */
         public static final int Theme_actionBarItemBackground = 24;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionBarPopupTheme}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionBarPopupTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionBarPopupTheme
+          @attr name ru.solargateteam.galnetru:actionBarPopupTheme
         */
         public static final int Theme_actionBarPopupTheme = 17;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionBarSize}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionBarSize}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6924,111 +6924,111 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name ru.solarpalmteam.galnetru:actionBarSize
+          @attr name ru.solargateteam.galnetru:actionBarSize
         */
         public static final int Theme_actionBarSize = 22;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionBarSplitStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionBarSplitStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionBarSplitStyle
+          @attr name ru.solargateteam.galnetru:actionBarSplitStyle
         */
         public static final int Theme_actionBarSplitStyle = 19;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionBarStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionBarStyle
+          @attr name ru.solargateteam.galnetru:actionBarStyle
         */
         public static final int Theme_actionBarStyle = 18;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionBarTabBarStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionBarTabBarStyle
+          @attr name ru.solargateteam.galnetru:actionBarTabBarStyle
         */
         public static final int Theme_actionBarTabBarStyle = 13;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionBarTabStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionBarTabStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionBarTabStyle
+          @attr name ru.solargateteam.galnetru:actionBarTabStyle
         */
         public static final int Theme_actionBarTabStyle = 12;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionBarTabTextStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionBarTabTextStyle
+          @attr name ru.solargateteam.galnetru:actionBarTabTextStyle
         */
         public static final int Theme_actionBarTabTextStyle = 14;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionBarTheme}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionBarTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionBarTheme
+          @attr name ru.solargateteam.galnetru:actionBarTheme
         */
         public static final int Theme_actionBarTheme = 20;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionBarWidgetTheme}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionBarWidgetTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionBarWidgetTheme
+          @attr name ru.solargateteam.galnetru:actionBarWidgetTheme
         */
         public static final int Theme_actionBarWidgetTheme = 21;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionButtonStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionButtonStyle
+          @attr name ru.solargateteam.galnetru:actionButtonStyle
         */
         public static final int Theme_actionButtonStyle = 49;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionDropDownStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionDropDownStyle
+          @attr name ru.solargateteam.galnetru:actionDropDownStyle
         */
         public static final int Theme_actionDropDownStyle = 45;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionMenuTextAppearance}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionMenuTextAppearance}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionMenuTextAppearance
+          @attr name ru.solargateteam.galnetru:actionMenuTextAppearance
         */
         public static final int Theme_actionMenuTextAppearance = 25;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionMenuTextColor}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionMenuTextColor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7036,181 +7036,181 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionMenuTextColor
+          @attr name ru.solargateteam.galnetru:actionMenuTextColor
         */
         public static final int Theme_actionMenuTextColor = 26;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionModeBackground}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionModeBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionModeBackground
+          @attr name ru.solargateteam.galnetru:actionModeBackground
         */
         public static final int Theme_actionModeBackground = 29;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionModeCloseButtonStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionModeCloseButtonStyle
+          @attr name ru.solargateteam.galnetru:actionModeCloseButtonStyle
         */
         public static final int Theme_actionModeCloseButtonStyle = 28;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionModeCloseDrawable}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionModeCloseDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionModeCloseDrawable
+          @attr name ru.solargateteam.galnetru:actionModeCloseDrawable
         */
         public static final int Theme_actionModeCloseDrawable = 31;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionModeCopyDrawable}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionModeCopyDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionModeCopyDrawable
+          @attr name ru.solargateteam.galnetru:actionModeCopyDrawable
         */
         public static final int Theme_actionModeCopyDrawable = 33;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionModeCutDrawable}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionModeCutDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionModeCutDrawable
+          @attr name ru.solargateteam.galnetru:actionModeCutDrawable
         */
         public static final int Theme_actionModeCutDrawable = 32;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionModeFindDrawable}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionModeFindDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionModeFindDrawable
+          @attr name ru.solargateteam.galnetru:actionModeFindDrawable
         */
         public static final int Theme_actionModeFindDrawable = 37;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionModePasteDrawable}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionModePasteDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionModePasteDrawable
+          @attr name ru.solargateteam.galnetru:actionModePasteDrawable
         */
         public static final int Theme_actionModePasteDrawable = 34;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionModePopupWindowStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionModePopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionModePopupWindowStyle
+          @attr name ru.solargateteam.galnetru:actionModePopupWindowStyle
         */
         public static final int Theme_actionModePopupWindowStyle = 39;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionModeSelectAllDrawable}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionModeSelectAllDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionModeSelectAllDrawable
+          @attr name ru.solargateteam.galnetru:actionModeSelectAllDrawable
         */
         public static final int Theme_actionModeSelectAllDrawable = 35;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionModeShareDrawable}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionModeShareDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionModeShareDrawable
+          @attr name ru.solargateteam.galnetru:actionModeShareDrawable
         */
         public static final int Theme_actionModeShareDrawable = 36;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionModeSplitBackground}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionModeSplitBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionModeSplitBackground
+          @attr name ru.solargateteam.galnetru:actionModeSplitBackground
         */
         public static final int Theme_actionModeSplitBackground = 30;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionModeStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionModeStyle
+          @attr name ru.solargateteam.galnetru:actionModeStyle
         */
         public static final int Theme_actionModeStyle = 27;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionModeWebSearchDrawable}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionModeWebSearchDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionModeWebSearchDrawable
+          @attr name ru.solargateteam.galnetru:actionModeWebSearchDrawable
         */
         public static final int Theme_actionModeWebSearchDrawable = 38;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionOverflowButtonStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionOverflowButtonStyle
+          @attr name ru.solargateteam.galnetru:actionOverflowButtonStyle
         */
         public static final int Theme_actionOverflowButtonStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#actionOverflowMenuStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#actionOverflowMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:actionOverflowMenuStyle
+          @attr name ru.solargateteam.galnetru:actionOverflowMenuStyle
         */
         public static final int Theme_actionOverflowMenuStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#activityChooserViewStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#activityChooserViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:activityChooserViewStyle
+          @attr name ru.solargateteam.galnetru:activityChooserViewStyle
         */
         public static final int Theme_activityChooserViewStyle = 57;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#alertDialogButtonGroupStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#alertDialogButtonGroupStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:alertDialogButtonGroupStyle
+          @attr name ru.solargateteam.galnetru:alertDialogButtonGroupStyle
         */
         public static final int Theme_alertDialogButtonGroupStyle = 92;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#alertDialogCenterButtons}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#alertDialogCenterButtons}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7220,27 +7220,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:alertDialogCenterButtons
+          @attr name ru.solargateteam.galnetru:alertDialogCenterButtons
         */
         public static final int Theme_alertDialogCenterButtons = 93;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#alertDialogStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#alertDialogStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:alertDialogStyle
+          @attr name ru.solargateteam.galnetru:alertDialogStyle
         */
         public static final int Theme_alertDialogStyle = 91;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#alertDialogTheme}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#alertDialogTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:alertDialogTheme
+          @attr name ru.solargateteam.galnetru:alertDialogTheme
         */
         public static final int Theme_alertDialogTheme = 94;
         /**
@@ -7256,117 +7256,117 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_android_windowIsFloating = 0;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#autoCompleteTextViewStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#autoCompleteTextViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:autoCompleteTextViewStyle
+          @attr name ru.solargateteam.galnetru:autoCompleteTextViewStyle
         */
         public static final int Theme_autoCompleteTextViewStyle = 99;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#borderlessButtonStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#borderlessButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:borderlessButtonStyle
+          @attr name ru.solargateteam.galnetru:borderlessButtonStyle
         */
         public static final int Theme_borderlessButtonStyle = 54;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#buttonBarButtonStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#buttonBarButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:buttonBarButtonStyle
+          @attr name ru.solargateteam.galnetru:buttonBarButtonStyle
         */
         public static final int Theme_buttonBarButtonStyle = 51;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#buttonBarNegativeButtonStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#buttonBarNegativeButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:buttonBarNegativeButtonStyle
+          @attr name ru.solargateteam.galnetru:buttonBarNegativeButtonStyle
         */
         public static final int Theme_buttonBarNegativeButtonStyle = 97;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#buttonBarNeutralButtonStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#buttonBarNeutralButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:buttonBarNeutralButtonStyle
+          @attr name ru.solargateteam.galnetru:buttonBarNeutralButtonStyle
         */
         public static final int Theme_buttonBarNeutralButtonStyle = 98;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#buttonBarPositiveButtonStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#buttonBarPositiveButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:buttonBarPositiveButtonStyle
+          @attr name ru.solargateteam.galnetru:buttonBarPositiveButtonStyle
         */
         public static final int Theme_buttonBarPositiveButtonStyle = 96;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#buttonBarStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#buttonBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:buttonBarStyle
+          @attr name ru.solargateteam.galnetru:buttonBarStyle
         */
         public static final int Theme_buttonBarStyle = 50;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#buttonStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#buttonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:buttonStyle
+          @attr name ru.solargateteam.galnetru:buttonStyle
         */
         public static final int Theme_buttonStyle = 100;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#buttonStyleSmall}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#buttonStyleSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:buttonStyleSmall
+          @attr name ru.solargateteam.galnetru:buttonStyleSmall
         */
         public static final int Theme_buttonStyleSmall = 101;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#checkboxStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#checkboxStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:checkboxStyle
+          @attr name ru.solargateteam.galnetru:checkboxStyle
         */
         public static final int Theme_checkboxStyle = 102;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#checkedTextViewStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#checkedTextViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:checkedTextViewStyle
+          @attr name ru.solargateteam.galnetru:checkedTextViewStyle
         */
         public static final int Theme_checkedTextViewStyle = 103;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#colorAccent}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#colorAccent}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7377,11 +7377,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:colorAccent
+          @attr name ru.solargateteam.galnetru:colorAccent
         */
         public static final int Theme_colorAccent = 84;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#colorButtonNormal}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#colorButtonNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7392,11 +7392,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:colorButtonNormal
+          @attr name ru.solargateteam.galnetru:colorButtonNormal
         */
         public static final int Theme_colorButtonNormal = 88;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#colorControlActivated}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#colorControlActivated}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7407,11 +7407,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:colorControlActivated
+          @attr name ru.solargateteam.galnetru:colorControlActivated
         */
         public static final int Theme_colorControlActivated = 86;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#colorControlHighlight}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#colorControlHighlight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7422,11 +7422,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:colorControlHighlight
+          @attr name ru.solargateteam.galnetru:colorControlHighlight
         */
         public static final int Theme_colorControlHighlight = 87;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#colorControlNormal}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#colorControlNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7437,11 +7437,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:colorControlNormal
+          @attr name ru.solargateteam.galnetru:colorControlNormal
         */
         public static final int Theme_colorControlNormal = 85;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#colorPrimary}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#colorPrimary}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7452,11 +7452,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:colorPrimary
+          @attr name ru.solargateteam.galnetru:colorPrimary
         */
         public static final int Theme_colorPrimary = 82;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#colorPrimaryDark}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#colorPrimaryDark}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7467,11 +7467,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:colorPrimaryDark
+          @attr name ru.solargateteam.galnetru:colorPrimaryDark
         */
         public static final int Theme_colorPrimaryDark = 83;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#colorSwitchThumbNormal}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#colorSwitchThumbNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7482,21 +7482,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:colorSwitchThumbNormal
+          @attr name ru.solargateteam.galnetru:colorSwitchThumbNormal
         */
         public static final int Theme_colorSwitchThumbNormal = 89;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#controlBackground}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#controlBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:controlBackground
+          @attr name ru.solargateteam.galnetru:controlBackground
         */
         public static final int Theme_controlBackground = 90;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#dialogPreferredPadding}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#dialogPreferredPadding}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7508,51 +7508,51 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:dialogPreferredPadding
+          @attr name ru.solargateteam.galnetru:dialogPreferredPadding
         */
         public static final int Theme_dialogPreferredPadding = 43;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#dialogTheme}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#dialogTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:dialogTheme
+          @attr name ru.solargateteam.galnetru:dialogTheme
         */
         public static final int Theme_dialogTheme = 42;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#dividerHorizontal}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#dividerHorizontal}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:dividerHorizontal
+          @attr name ru.solargateteam.galnetru:dividerHorizontal
         */
         public static final int Theme_dividerHorizontal = 56;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#dividerVertical}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#dividerVertical}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:dividerVertical
+          @attr name ru.solargateteam.galnetru:dividerVertical
         */
         public static final int Theme_dividerVertical = 55;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#dropDownListViewStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#dropDownListViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:dropDownListViewStyle
+          @attr name ru.solargateteam.galnetru:dropDownListViewStyle
         */
         public static final int Theme_dropDownListViewStyle = 74;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#dropdownListPreferredItemHeight}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7564,21 +7564,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:dropdownListPreferredItemHeight
+          @attr name ru.solargateteam.galnetru:dropdownListPreferredItemHeight
         */
         public static final int Theme_dropdownListPreferredItemHeight = 46;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#editTextBackground}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#editTextBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:editTextBackground
+          @attr name ru.solargateteam.galnetru:editTextBackground
         */
         public static final int Theme_editTextBackground = 63;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#editTextColor}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#editTextColor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7586,71 +7586,71 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ru.solarpalmteam.galnetru:editTextColor
+          @attr name ru.solargateteam.galnetru:editTextColor
         */
         public static final int Theme_editTextColor = 62;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#editTextStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#editTextStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:editTextStyle
+          @attr name ru.solargateteam.galnetru:editTextStyle
         */
         public static final int Theme_editTextStyle = 104;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:homeAsUpIndicator
+          @attr name ru.solargateteam.galnetru:homeAsUpIndicator
         */
         public static final int Theme_homeAsUpIndicator = 48;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#imageButtonStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#imageButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:imageButtonStyle
+          @attr name ru.solargateteam.galnetru:imageButtonStyle
         */
         public static final int Theme_imageButtonStyle = 64;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#listChoiceBackgroundIndicator}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#listChoiceBackgroundIndicator}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:listChoiceBackgroundIndicator
+          @attr name ru.solargateteam.galnetru:listChoiceBackgroundIndicator
         */
         public static final int Theme_listChoiceBackgroundIndicator = 81;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#listDividerAlertDialog}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#listDividerAlertDialog}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:listDividerAlertDialog
+          @attr name ru.solargateteam.galnetru:listDividerAlertDialog
         */
         public static final int Theme_listDividerAlertDialog = 44;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#listPopupWindowStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#listPopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:listPopupWindowStyle
+          @attr name ru.solargateteam.galnetru:listPopupWindowStyle
         */
         public static final int Theme_listPopupWindowStyle = 75;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#listPreferredItemHeight}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#listPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7662,11 +7662,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:listPreferredItemHeight
+          @attr name ru.solargateteam.galnetru:listPreferredItemHeight
         */
         public static final int Theme_listPreferredItemHeight = 69;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#listPreferredItemHeightLarge}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#listPreferredItemHeightLarge}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7678,11 +7678,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:listPreferredItemHeightLarge
+          @attr name ru.solargateteam.galnetru:listPreferredItemHeightLarge
         */
         public static final int Theme_listPreferredItemHeightLarge = 71;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#listPreferredItemHeightSmall}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#listPreferredItemHeightSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7694,11 +7694,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:listPreferredItemHeightSmall
+          @attr name ru.solargateteam.galnetru:listPreferredItemHeightSmall
         */
         public static final int Theme_listPreferredItemHeightSmall = 70;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#listPreferredItemPaddingLeft}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#listPreferredItemPaddingLeft}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7710,11 +7710,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:listPreferredItemPaddingLeft
+          @attr name ru.solargateteam.galnetru:listPreferredItemPaddingLeft
         */
         public static final int Theme_listPreferredItemPaddingLeft = 72;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#listPreferredItemPaddingRight}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#listPreferredItemPaddingRight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7726,31 +7726,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:listPreferredItemPaddingRight
+          @attr name ru.solargateteam.galnetru:listPreferredItemPaddingRight
         */
         public static final int Theme_listPreferredItemPaddingRight = 73;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#panelBackground}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#panelBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:panelBackground
+          @attr name ru.solargateteam.galnetru:panelBackground
         */
         public static final int Theme_panelBackground = 78;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#panelMenuListTheme}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#panelMenuListTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:panelMenuListTheme
+          @attr name ru.solargateteam.galnetru:panelMenuListTheme
         */
         public static final int Theme_panelMenuListTheme = 80;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#panelMenuListWidth}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#panelMenuListWidth}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7762,181 +7762,181 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:panelMenuListWidth
+          @attr name ru.solargateteam.galnetru:panelMenuListWidth
         */
         public static final int Theme_panelMenuListWidth = 79;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#popupMenuStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:popupMenuStyle
+          @attr name ru.solargateteam.galnetru:popupMenuStyle
         */
         public static final int Theme_popupMenuStyle = 60;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#popupWindowStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#popupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:popupWindowStyle
+          @attr name ru.solargateteam.galnetru:popupWindowStyle
         */
         public static final int Theme_popupWindowStyle = 61;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#radioButtonStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#radioButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:radioButtonStyle
+          @attr name ru.solargateteam.galnetru:radioButtonStyle
         */
         public static final int Theme_radioButtonStyle = 105;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#ratingBarStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#ratingBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:ratingBarStyle
+          @attr name ru.solargateteam.galnetru:ratingBarStyle
         */
         public static final int Theme_ratingBarStyle = 106;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#searchViewStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#searchViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:searchViewStyle
+          @attr name ru.solargateteam.galnetru:searchViewStyle
         */
         public static final int Theme_searchViewStyle = 68;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#seekBarStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#seekBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:seekBarStyle
+          @attr name ru.solargateteam.galnetru:seekBarStyle
         */
         public static final int Theme_seekBarStyle = 107;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#selectableItemBackground}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#selectableItemBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:selectableItemBackground
+          @attr name ru.solargateteam.galnetru:selectableItemBackground
         */
         public static final int Theme_selectableItemBackground = 52;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#selectableItemBackgroundBorderless}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#selectableItemBackgroundBorderless}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:selectableItemBackgroundBorderless
+          @attr name ru.solargateteam.galnetru:selectableItemBackgroundBorderless
         */
         public static final int Theme_selectableItemBackgroundBorderless = 53;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#spinnerDropDownItemStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#spinnerDropDownItemStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:spinnerDropDownItemStyle
+          @attr name ru.solargateteam.galnetru:spinnerDropDownItemStyle
         */
         public static final int Theme_spinnerDropDownItemStyle = 47;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#spinnerStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#spinnerStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:spinnerStyle
+          @attr name ru.solargateteam.galnetru:spinnerStyle
         */
         public static final int Theme_spinnerStyle = 108;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#switchStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#switchStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:switchStyle
+          @attr name ru.solargateteam.galnetru:switchStyle
         */
         public static final int Theme_switchStyle = 109;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#textAppearanceLargePopupMenu}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#textAppearanceLargePopupMenu}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:textAppearanceLargePopupMenu
+          @attr name ru.solargateteam.galnetru:textAppearanceLargePopupMenu
         */
         public static final int Theme_textAppearanceLargePopupMenu = 40;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#textAppearanceListItem}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#textAppearanceListItem}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:textAppearanceListItem
+          @attr name ru.solargateteam.galnetru:textAppearanceListItem
         */
         public static final int Theme_textAppearanceListItem = 76;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#textAppearanceListItemSmall}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#textAppearanceListItemSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:textAppearanceListItemSmall
+          @attr name ru.solargateteam.galnetru:textAppearanceListItemSmall
         */
         public static final int Theme_textAppearanceListItemSmall = 77;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#textAppearanceSearchResultSubtitle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#textAppearanceSearchResultSubtitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:textAppearanceSearchResultSubtitle
+          @attr name ru.solargateteam.galnetru:textAppearanceSearchResultSubtitle
         */
         public static final int Theme_textAppearanceSearchResultSubtitle = 66;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#textAppearanceSearchResultTitle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#textAppearanceSearchResultTitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:textAppearanceSearchResultTitle
+          @attr name ru.solargateteam.galnetru:textAppearanceSearchResultTitle
         */
         public static final int Theme_textAppearanceSearchResultTitle = 65;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#textAppearanceSmallPopupMenu}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#textAppearanceSmallPopupMenu}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:textAppearanceSmallPopupMenu
+          @attr name ru.solargateteam.galnetru:textAppearanceSmallPopupMenu
         */
         public static final int Theme_textAppearanceSmallPopupMenu = 41;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#textColorAlertDialogListItem}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#textColorAlertDialogListItem}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7944,11 +7944,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ru.solarpalmteam.galnetru:textColorAlertDialogListItem
+          @attr name ru.solargateteam.galnetru:textColorAlertDialogListItem
         */
         public static final int Theme_textColorAlertDialogListItem = 95;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#textColorSearchUrl}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#textColorSearchUrl}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7956,31 +7956,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ru.solarpalmteam.galnetru:textColorSearchUrl
+          @attr name ru.solargateteam.galnetru:textColorSearchUrl
         */
         public static final int Theme_textColorSearchUrl = 67;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#toolbarNavigationButtonStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#toolbarNavigationButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:toolbarNavigationButtonStyle
+          @attr name ru.solargateteam.galnetru:toolbarNavigationButtonStyle
         */
         public static final int Theme_toolbarNavigationButtonStyle = 59;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#toolbarStyle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#toolbarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:toolbarStyle
+          @attr name ru.solargateteam.galnetru:toolbarStyle
         */
         public static final int Theme_toolbarStyle = 58;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#windowActionBar}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7990,11 +7990,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:windowActionBar
+          @attr name ru.solargateteam.galnetru:windowActionBar
         */
         public static final int Theme_windowActionBar = 2;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -8004,11 +8004,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:windowActionBarOverlay
+          @attr name ru.solargateteam.galnetru:windowActionBarOverlay
         */
         public static final int Theme_windowActionBarOverlay = 4;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#windowActionModeOverlay}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#windowActionModeOverlay}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -8018,11 +8018,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:windowActionModeOverlay
+          @attr name ru.solargateteam.galnetru:windowActionModeOverlay
         */
         public static final int Theme_windowActionModeOverlay = 5;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#windowFixedHeightMajor}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#windowFixedHeightMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -8037,11 +8037,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:windowFixedHeightMajor
+          @attr name ru.solargateteam.galnetru:windowFixedHeightMajor
         */
         public static final int Theme_windowFixedHeightMajor = 9;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#windowFixedHeightMinor}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#windowFixedHeightMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -8056,11 +8056,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:windowFixedHeightMinor
+          @attr name ru.solargateteam.galnetru:windowFixedHeightMinor
         */
         public static final int Theme_windowFixedHeightMinor = 7;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#windowFixedWidthMajor}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#windowFixedWidthMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -8075,11 +8075,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:windowFixedWidthMajor
+          @attr name ru.solargateteam.galnetru:windowFixedWidthMajor
         */
         public static final int Theme_windowFixedWidthMajor = 6;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#windowFixedWidthMinor}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#windowFixedWidthMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -8094,11 +8094,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:windowFixedWidthMinor
+          @attr name ru.solargateteam.galnetru:windowFixedWidthMinor
         */
         public static final int Theme_windowFixedWidthMinor = 8;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#windowMinWidthMajor}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#windowMinWidthMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -8113,11 +8113,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:windowMinWidthMajor
+          @attr name ru.solargateteam.galnetru:windowMinWidthMajor
         */
         public static final int Theme_windowMinWidthMajor = 10;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#windowMinWidthMinor}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#windowMinWidthMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -8132,11 +8132,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:windowMinWidthMinor
+          @attr name ru.solargateteam.galnetru:windowMinWidthMinor
         */
         public static final int Theme_windowMinWidthMinor = 11;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#windowNoTitle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#windowNoTitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -8146,7 +8146,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:windowNoTitle
+          @attr name ru.solargateteam.galnetru:windowNoTitle
         */
         public static final int Theme_windowNoTitle = 3;
         /** Attributes that can be used with a Toolbar.
@@ -8157,29 +8157,29 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseContentDescription ru.solarpalmteam.galnetru:collapseContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseIcon ru.solarpalmteam.galnetru:collapseIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEnd ru.solarpalmteam.galnetru:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetLeft ru.solarpalmteam.galnetru:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetRight ru.solarpalmteam.galnetru:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStart ru.solarpalmteam.galnetru:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logo ru.solarpalmteam.galnetru:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logoDescription ru.solarpalmteam.galnetru:logoDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_maxButtonHeight ru.solarpalmteam.galnetru:maxButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationContentDescription ru.solarpalmteam.galnetru:navigationContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationIcon ru.solarpalmteam.galnetru:navigationIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_popupTheme ru.solarpalmteam.galnetru:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitle ru.solarpalmteam.galnetru:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextAppearance ru.solarpalmteam.galnetru:subtitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextColor ru.solarpalmteam.galnetru:subtitleTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_title ru.solarpalmteam.galnetru:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginBottom ru.solarpalmteam.galnetru:titleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginEnd ru.solarpalmteam.galnetru:titleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginStart ru.solarpalmteam.galnetru:titleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginTop ru.solarpalmteam.galnetru:titleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargins ru.solarpalmteam.galnetru:titleMargins}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextAppearance ru.solarpalmteam.galnetru:titleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextColor ru.solarpalmteam.galnetru:titleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseContentDescription ru.solargateteam.galnetru:collapseContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseIcon ru.solargateteam.galnetru:collapseIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEnd ru.solargateteam.galnetru:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetLeft ru.solargateteam.galnetru:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetRight ru.solargateteam.galnetru:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStart ru.solargateteam.galnetru:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logo ru.solargateteam.galnetru:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logoDescription ru.solargateteam.galnetru:logoDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_maxButtonHeight ru.solargateteam.galnetru:maxButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationContentDescription ru.solargateteam.galnetru:navigationContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationIcon ru.solargateteam.galnetru:navigationIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_popupTheme ru.solargateteam.galnetru:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitle ru.solargateteam.galnetru:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextAppearance ru.solargateteam.galnetru:subtitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextColor ru.solargateteam.galnetru:subtitleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_title ru.solargateteam.galnetru:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginBottom ru.solargateteam.galnetru:titleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginEnd ru.solargateteam.galnetru:titleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginStart ru.solargateteam.galnetru:titleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginTop ru.solargateteam.galnetru:titleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargins ru.solargateteam.galnetru:titleMargins}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextAppearance ru.solargateteam.galnetru:titleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextColor ru.solargateteam.galnetru:titleTextColor}</code></td><td></td></tr>
            </table>
            @see #Toolbar_android_gravity
            @see #Toolbar_android_minHeight
@@ -8229,7 +8229,7 @@ containing a value of this type.
         */
         public static final int Toolbar_android_minHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#collapseContentDescription}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#collapseContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8239,21 +8239,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:collapseContentDescription
+          @attr name ru.solargateteam.galnetru:collapseContentDescription
         */
         public static final int Toolbar_collapseContentDescription = 19;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#collapseIcon}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#collapseIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:collapseIcon
+          @attr name ru.solargateteam.galnetru:collapseIcon
         */
         public static final int Toolbar_collapseIcon = 18;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8265,11 +8265,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:contentInsetEnd
+          @attr name ru.solargateteam.galnetru:contentInsetEnd
         */
         public static final int Toolbar_contentInsetEnd = 6;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8281,11 +8281,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:contentInsetLeft
+          @attr name ru.solargateteam.galnetru:contentInsetLeft
         */
         public static final int Toolbar_contentInsetLeft = 7;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8297,11 +8297,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:contentInsetRight
+          @attr name ru.solargateteam.galnetru:contentInsetRight
         */
         public static final int Toolbar_contentInsetRight = 8;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8313,21 +8313,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:contentInsetStart
+          @attr name ru.solargateteam.galnetru:contentInsetStart
         */
         public static final int Toolbar_contentInsetStart = 5;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#logo}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#logo}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:logo
+          @attr name ru.solargateteam.galnetru:logo
         */
         public static final int Toolbar_logo = 4;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#logoDescription}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#logoDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8337,11 +8337,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:logoDescription
+          @attr name ru.solargateteam.galnetru:logoDescription
         */
         public static final int Toolbar_logoDescription = 22;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#maxButtonHeight}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#maxButtonHeight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8353,11 +8353,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:maxButtonHeight
+          @attr name ru.solargateteam.galnetru:maxButtonHeight
         */
         public static final int Toolbar_maxButtonHeight = 17;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#navigationContentDescription}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#navigationContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8367,31 +8367,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:navigationContentDescription
+          @attr name ru.solargateteam.galnetru:navigationContentDescription
         */
         public static final int Toolbar_navigationContentDescription = 21;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#navigationIcon}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#navigationIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:navigationIcon
+          @attr name ru.solargateteam.galnetru:navigationIcon
         */
         public static final int Toolbar_navigationIcon = 20;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#popupTheme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:popupTheme
+          @attr name ru.solargateteam.galnetru:popupTheme
         */
         public static final int Toolbar_popupTheme = 9;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#subtitle}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8401,21 +8401,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:subtitle
+          @attr name ru.solargateteam.galnetru:subtitle
         */
         public static final int Toolbar_subtitle = 3;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#subtitleTextAppearance}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#subtitleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:subtitleTextAppearance
+          @attr name ru.solargateteam.galnetru:subtitleTextAppearance
         */
         public static final int Toolbar_subtitleTextAppearance = 11;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#subtitleTextColor}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#subtitleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8426,11 +8426,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:subtitleTextColor
+          @attr name ru.solargateteam.galnetru:subtitleTextColor
         */
         public static final int Toolbar_subtitleTextColor = 24;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#title}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#title}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8440,11 +8440,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:title
+          @attr name ru.solargateteam.galnetru:title
         */
         public static final int Toolbar_title = 2;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#titleMarginBottom}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#titleMarginBottom}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8456,11 +8456,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:titleMarginBottom
+          @attr name ru.solargateteam.galnetru:titleMarginBottom
         */
         public static final int Toolbar_titleMarginBottom = 16;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#titleMarginEnd}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#titleMarginEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8472,11 +8472,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:titleMarginEnd
+          @attr name ru.solargateteam.galnetru:titleMarginEnd
         */
         public static final int Toolbar_titleMarginEnd = 14;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#titleMarginStart}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#titleMarginStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8488,11 +8488,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:titleMarginStart
+          @attr name ru.solargateteam.galnetru:titleMarginStart
         */
         public static final int Toolbar_titleMarginStart = 13;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#titleMarginTop}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#titleMarginTop}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8504,11 +8504,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:titleMarginTop
+          @attr name ru.solargateteam.galnetru:titleMarginTop
         */
         public static final int Toolbar_titleMarginTop = 15;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#titleMargins}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#titleMargins}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8520,21 +8520,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:titleMargins
+          @attr name ru.solargateteam.galnetru:titleMargins
         */
         public static final int Toolbar_titleMargins = 12;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#titleTextAppearance}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#titleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:titleTextAppearance
+          @attr name ru.solargateteam.galnetru:titleTextAppearance
         */
         public static final int Toolbar_titleTextAppearance = 10;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#titleTextColor}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#titleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8545,7 +8545,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:titleTextColor
+          @attr name ru.solargateteam.galnetru:titleTextColor
         */
         public static final int Toolbar_titleTextColor = 23;
         /** Attributes that can be used with a View.
@@ -8556,9 +8556,9 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
            <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingEnd ru.solarpalmteam.galnetru:paddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingStart ru.solarpalmteam.galnetru:paddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_theme ru.solarpalmteam.galnetru:theme}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingEnd ru.solargateteam.galnetru:paddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingStart ru.solargateteam.galnetru:paddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_theme ru.solargateteam.galnetru:theme}</code></td><td></td></tr>
            </table>
            @see #View_android_focusable
            @see #View_android_theme
@@ -8583,7 +8583,7 @@ containing a value of this type.
         */
         public static final int View_android_theme = 0;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#paddingEnd}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#paddingEnd}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -8595,11 +8595,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:paddingEnd
+          @attr name ru.solargateteam.galnetru:paddingEnd
         */
         public static final int View_paddingEnd = 3;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#paddingStart}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#paddingStart}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -8611,17 +8611,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:paddingStart
+          @attr name ru.solargateteam.galnetru:paddingStart
         */
         public static final int View_paddingStart = 2;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#theme}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#theme}
           attribute's value can be found in the {@link #View} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ru.solarpalmteam.galnetru:theme
+          @attr name ru.solargateteam.galnetru:theme
         */
         public static final int View_theme = 4;
         /** Attributes that can be used with a ViewBackgroundHelper.
@@ -8631,8 +8631,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint ru.solarpalmteam.galnetru:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode ru.solarpalmteam.galnetru:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint ru.solargateteam.galnetru:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode ru.solargateteam.galnetru:backgroundTintMode}</code></td><td></td></tr>
            </table>
            @see #ViewBackgroundHelper_android_background
            @see #ViewBackgroundHelper_backgroundTint
@@ -8648,7 +8648,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ViewBackgroundHelper_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#backgroundTint}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -8659,11 +8659,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ru.solarpalmteam.galnetru:backgroundTint
+          @attr name ru.solargateteam.galnetru:backgroundTint
         */
         public static final int ViewBackgroundHelper_backgroundTint = 1;
         /**
-          <p>This symbol is the offset where the {@link ru.solarpalmteam.galnetru.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link ru.solargateteam.galnetru.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -8679,7 +8679,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name ru.solarpalmteam.galnetru:backgroundTintMode
+          @attr name ru.solargateteam.galnetru:backgroundTintMode
         */
         public static final int ViewBackgroundHelper_backgroundTintMode = 2;
         /** Attributes that can be used with a ViewStubCompat.

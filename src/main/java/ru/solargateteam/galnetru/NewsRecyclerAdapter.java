@@ -1,4 +1,4 @@
-package ru.solarpalmteam.galnetru;
+package ru.solargateteam.galnetru;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import ru.solarpalmteam.galnetru.rss.RSSItem;
+import ru.solargateteam.galnetru.rss.RSSItem;
 
 public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapter.NewsViewHolder>{
 

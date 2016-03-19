@@ -1,4 +1,4 @@
-package ru.solarpalmteam.galnetru.rss;
+package ru.solargateteam.galnetru.rss;
 
 public class RSSItem {
 

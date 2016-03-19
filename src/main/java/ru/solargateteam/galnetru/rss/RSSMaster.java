@@ -1,8 +1,8 @@
-package ru.solarpalmteam.galnetru.rss;
+package ru.solargateteam.galnetru.rss;
 
 import android.content.Context;
 
-import ru.solarpalmteam.galnetru.Global;
+import ru.solargateteam.galnetru.Global;
 
 // Головной класс для RSS, разруливает задачи
 public class RSSMaster {

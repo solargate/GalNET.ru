@@ -1,4 +1,4 @@
-package ru.solarpalmteam.galnetru.rss;
+package ru.solargateteam.galnetru.rss;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -6,8 +6,8 @@ import android.util.Log;
 
 import java.util.List;
 
-import ru.solarpalmteam.galnetru.DatabaseEngine;
-import ru.solarpalmteam.galnetru.Global;
+import ru.solargateteam.galnetru.DatabaseEngine;
+import ru.solargateteam.galnetru.Global;
 
 public class RSSProcessTask extends AsyncTask<String, Void, List<RSSItem> > {
 
