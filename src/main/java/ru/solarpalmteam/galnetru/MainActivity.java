@@ -26,8 +26,18 @@ public class MainActivity extends AppCompatActivity
     NewsRecyclerAdapter mAdapter;
     RecyclerView.LayoutManager mLayoutManager;
 
+    protected String currentFeedType;
+
+    public String getCurrentFeedType() {
+        return currentFeedType;
+    }
+
+    public void setCurrentFeedType(String currentFeedType) {
+        this.currentFeedType = currentFeedType;
+    }
+
     private void setNewsRecyclerAdapter(String feedType) {
-        mAdapter = new NewsRecyclerAdapter(de.readContent(feedType)); // TODO: Сделать более правильно
+        mAdapter = new NewsRecyclerAdapter(de.readContent(feedType));
         mRecyclerView.setAdapter(mAdapter);
     }
 
@@ -45,9 +55,9 @@ public class MainActivity extends AppCompatActivity
         mRecyclerView = (RecyclerView) findViewById(R.id.news_recycler_view);
         mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
-        //mAdapter = new NewsRecyclerAdapter(de.readContent(Global.FEED_TYPE_ALL)); // TODO: Сделать более правильно
-        //mRecyclerView.setAdapter(mAdapter);
-        setNewsRecyclerAdapter(Global.FEED_TYPE_ALL);
+
+        setCurrentFeedType(Global.FEED_TYPE_ALL);
+        setNewsRecyclerAdapter(getCurrentFeedType());
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -72,6 +82,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onResume() {
         super.onResume();
+        setNewsRecyclerAdapter(getCurrentFeedType());
     }
 
     @Override
@@ -113,17 +124,23 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_feed_all) {
-            setNewsRecyclerAdapter(Global.FEED_TYPE_ALL);
+            setCurrentFeedType(Global.FEED_TYPE_ALL);
+            setNewsRecyclerAdapter(getCurrentFeedType());
         } else if (id == R.id.nav_feed_galnet_news) {
-            setNewsRecyclerAdapter(Global.FEED_TYPE_GALNET_NEWS);
+            setCurrentFeedType(Global.FEED_TYPE_GALNET_NEWS);
+            setNewsRecyclerAdapter(getCurrentFeedType());
         } else if (id == R.id.nav_feed_powerplay) {
-            setNewsRecyclerAdapter(Global.FEED_TYPE_POWERPLAY);
+            setCurrentFeedType(Global.FEED_TYPE_POWERPLAY);
+            setNewsRecyclerAdapter(getCurrentFeedType());
         } else if (id == R.id.nav_feed_weekly_report) {
-            setNewsRecyclerAdapter(Global.FEED_TYPE_WEEKLY_REPORT);
+            setCurrentFeedType(Global.FEED_TYPE_WEEKLY_REPORT);
+            setNewsRecyclerAdapter(getCurrentFeedType());
         } else if (id == R.id.nav_feed_comm_goals) {
-            setNewsRecyclerAdapter(Global.FEED_TYPE_COMM_GOALS);
+            setCurrentFeedType(Global.FEED_TYPE_COMM_GOALS);
+            setNewsRecyclerAdapter(getCurrentFeedType());
         } else if (id == R.id.nav_feed_site_news) {
-            setNewsRecyclerAdapter(Global.FEED_TYPE_SITE_NEWS);
+            setCurrentFeedType(Global.FEED_TYPE_SITE_NEWS);
+            setNewsRecyclerAdapter(getCurrentFeedType());
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

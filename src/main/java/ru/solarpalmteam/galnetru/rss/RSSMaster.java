@@ -46,4 +46,5 @@ public class RSSMaster {
         task_SITE_NEWS.setFeedType(Global.FEED_TYPE_SITE_NEWS);
         task_SITE_NEWS.execute(Global.RSS_FEED_SITE_NEWS);
     }
+
 }

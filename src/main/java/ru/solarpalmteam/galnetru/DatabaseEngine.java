@@ -103,8 +103,8 @@ public class DatabaseEngine {
         private  static final String DB_SQL_SELECTBY_LINK = "select * from " + DB_TABLE_CONTENT +
                 " where " + FIELD_LINK + " = \"%1$s\"";
 
-        private  static final String DB_SQL_SELECTBY_FEED_TYPE = "select * from " + DB_TABLE_CONTENT +
-                " where " + FIELD_FEED_TYPE + " = \"%1$s\"";
+        //private  static final String DB_SQL_SELECTBY_FEED_TYPE = "select * from " + DB_TABLE_CONTENT +
+        //        " where " + FIELD_FEED_TYPE + " = \"%1$s\"";
 
         public DBHelper(Context context) {
             super(context, DB_NAME, null, DB_VERSION);
