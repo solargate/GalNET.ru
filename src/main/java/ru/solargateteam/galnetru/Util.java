@@ -2,29 +2,23 @@ package ru.solargateteam.galnetru;
 
 public class Util {
 
-    /*
-    public String getFeedURLByType(String feedType) { // TODO: Кривовато, подумать о рефакторинге
-        String result;
-        switch (feedType) {
-            case Global.FEED_TYPE_GALNET_NEWS:
-                result = Global.RSS_FEED_GALNET_NEWS;
-                break;
-            case Global.FEED_TYPE_POWERPLAY:
-                result = Global.RSS_FEED_POWERPLAY;
-                break;
-            case Global.FEED_TYPE_WEEKLY_REPORT:
-                result = Global.RSS_FEED_WEEKLY_REPORT;
-                break;
-            case Global.FEED_TYPE_COMM_GOALS:
-                result = Global.RSS_FEED_COMM_GOALS;
-                break;
-            case Global.FEED_TYPE_SITE_NEWS:
-                result = Global.RSS_FEED_SITE_NEWS;
-                break;
-            default:
-                throw new IllegalArgumentException("Feed Type is illegal");
+    // Хак на кривые ссылки
+    public static boolean checkURL(String url) {
+
+        if (url.charAt(url.length() - 1) == '0' ||
+                url.charAt(url.length() - 1) == '1' ||
+                url.charAt(url.length() - 1) == '2' ||
+                url.charAt(url.length() - 1) == '3' ||
+                url.charAt(url.length() - 1) == '4' ||
+                url.charAt(url.length() - 1) == '5' ||
+                url.charAt(url.length() - 1) == '6' ||
+                url.charAt(url.length() - 1) == '7' ||
+                url.charAt(url.length() - 1) == '8' ||
+                url.charAt(url.length() - 1) == '9') {
+            return true;
         }
-        return result;
+
+        return false;
     }
-    */
+
 }

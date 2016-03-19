@@ -66,8 +66,9 @@ public class RSSParseHandler extends DefaultHandler {
     @Override
     public void characters(char[] ch, int start, int length) throws SAXException {
         if (parsingTitle) {
-            if (currentItem != null)
-                currentItem.setTitle(new String(ch, start, length)); // TODO: Проверить! Почему-то ниже парсинги в false, а здесь нет
+            if (currentItem != null) {
+                currentItem.setTitle(new String(ch, start, length));
+            }
         } else if (parsingLink) {
             if (currentItem != null) {
                 currentItem.setLink(new String(ch, start, length));

@@ -1,11 +1,11 @@
 package ru.solargateteam.galnetru;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -15,9 +15,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import java.util.concurrent.ExecutionException;
+import java.util.List;
 
-import ru.solargateteam.galnetru.rss.RSSProcessTask;
+import ru.solargateteam.galnetru.rss.RSSItem;
+import ru.solargateteam.galnetru.rss.RSSReader;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -27,6 +28,8 @@ public class MainActivity extends AppCompatActivity
     RecyclerView mRecyclerView;
     NewsRecyclerAdapter mAdapter;
     RecyclerView.LayoutManager mLayoutManager;
+
+    SwipeRefreshLayout mSwipeRefreshLayout;
 
     protected String currentFeedType;
 
@@ -41,6 +44,11 @@ public class MainActivity extends AppCompatActivity
     private void setNewsRecyclerAdapter(String feedType) {
         mAdapter = new NewsRecyclerAdapter(de.readContent(feedType));
         mRecyclerView.setAdapter(mAdapter);
+    }
+
+    private void refreshNews() {
+       RefreshNewsTask task = new RefreshNewsTask();
+       task.execute();
     }
 
     @Override
@@ -61,31 +69,6 @@ public class MainActivity extends AppCompatActivity
         setCurrentFeedType(Global.FEED_TYPE_ALL);
         setNewsRecyclerAdapter(getCurrentFeedType());
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // TODO: TEST. Обработчик - чтение RSS
-
-                try {
-                    RSSProcessTask task = new RSSProcessTask();
-                    task.setContext(getApplicationContext());
-                    task.execute();
-
-                    Log.d(Global.TAG, "GET BEGIN!");
-
-                    task.get();
-
-                    Log.d(Global.TAG, "GET END!");
-
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                } catch (ExecutionException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -94,6 +77,14 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.content_main_swipe_refresh_layout);
+        mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                refreshNews();
+            }
+        });
     }
 
     @Override
@@ -163,5 +154,76 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private class RefreshNewsTask extends AsyncTask<Void, Void, String> {
+
+        DatabaseEngine de;
+
+        @Override
+        protected String doInBackground(Void... params) {
+
+            try {
+
+                RSSReader rssReader;
+                List<RSSItem> tempItems;
+
+                de = new DatabaseEngine(getApplicationContext());
+
+                rssReader = new RSSReader(Global.RSS_FEED_GALNET_NEWS);
+                tempItems = rssReader.getItems();
+                for (int i = 0; i < tempItems.size(); i++) {
+                    de.insertContentItem(tempItems.get(i), Global.FEED_TYPE_GALNET_NEWS);
+                }
+
+                tempItems.clear();
+
+                rssReader = new RSSReader(Global.RSS_FEED_POWERPLAY);
+                tempItems = rssReader.getItems();
+                for (int i = 0; i < tempItems.size(); i++) {
+                    de.insertContentItem(tempItems.get(i), Global.FEED_TYPE_POWERPLAY);
+                }
+
+                tempItems.clear();
+
+                rssReader = new RSSReader(Global.RSS_FEED_WEEKLY_REPORT);
+                tempItems = rssReader.getItems();
+                for (int i = 0; i < tempItems.size(); i++) {
+                    de.insertContentItem(tempItems.get(i), Global.FEED_TYPE_WEEKLY_REPORT);
+                }
+
+                tempItems.clear();
+
+                rssReader = new RSSReader(Global.RSS_FEED_COMM_GOALS);
+                tempItems = rssReader.getItems();
+                for (int i = 0; i < tempItems.size(); i++) {
+                    de.insertContentItem(tempItems.get(i), Global.FEED_TYPE_COMM_GOALS);
+                }
+
+                tempItems.clear();
+
+                rssReader = new RSSReader(Global.RSS_FEED_SITE_NEWS);
+                tempItems = rssReader.getItems();
+                for (int i = 0; i < tempItems.size(); i++) {
+                    de.insertContentItem(tempItems.get(i), Global.FEED_TYPE_SITE_NEWS);
+                }
+
+                de.close();
+
+                return Global.STATUS_OK;
+
+            } catch (Exception e) {
+                Log.e(Global.TAG, e.getMessage());
+            }
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+            mSwipeRefreshLayout.setRefreshing(false);
+            setNewsRecyclerAdapter(getCurrentFeedType());
+        }
     }
 }

@@ -3,6 +3,7 @@ package ru.solargateteam.galnetru;
 public class Global {
 
     public static final String TAG                    = "GalNET.ru";
+    public static final String STATUS_OK              = "OK";
 
     // RSS
     public static final String RSS_TAG_ITEM           = "item";

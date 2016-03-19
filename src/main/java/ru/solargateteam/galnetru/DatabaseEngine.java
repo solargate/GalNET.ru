@@ -5,8 +5,15 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.util.Log;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,6 +29,10 @@ public class DatabaseEngine {
         db = dbh.getWritableDatabase();
     }
 
+    public void close() {
+        dbh.close();
+    }
+
     private boolean checkContentExistsByLink(String link, String feedContent) {
         boolean result;
         Cursor c = db.rawQuery(String.format(DBHelper.DB_SQL_SELECTBY_LINK, link, feedContent), null);
@@ -30,17 +41,66 @@ public class DatabaseEngine {
         return result;
     }
 
+    private Bitmap getBitmapFromURL(String imageURL) {
+        try {
+
+            Log.d(Global.TAG, "2");
+
+            URL url = new URL(imageURL);
+
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setDoInput(true);
+            connection.connect();
+            InputStream input = connection.getInputStream();
+            Bitmap tmpBitmap = BitmapFactory.decodeStream(input);
+            return tmpBitmap;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
     public void insertContentItem(RSSItem rssItem, String feedContent) {
-        if (!checkContentExistsByLink(rssItem.getLink(), feedContent)) {
+
+        if (!checkContentExistsByLink(rssItem.getLink(), feedContent) &&
+                Util.checkURL(rssItem.getLink())) {
+
+
+            // TEST
+            byte[] bArray = new byte[0];
+
+            Log.d(Global.TAG, "1");
+
+            Bitmap tmpBitmap = getBitmapFromURL("http://galnet.ru/embed/img/banner/302.png");
+
+            Log.d(Global.TAG, "3");
+
+            ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            if (tmpBitmap != null) {
+                tmpBitmap.compress(Bitmap.CompressFormat.PNG, 100, bos);
+                bArray = bos.toByteArray();
+            }
+
+
             ContentValues cv = new ContentValues();
+
             cv.put(DBHelper.FIELD_KEY_GUID, rssItem.getGuid());
             cv.put(DBHelper.FIELD_TITLE, rssItem.getTitle());
             cv.put(DBHelper.FIELD_LINK, rssItem.getLink());
             cv.put(DBHelper.FIELD_DESCRIPTION, rssItem.getDescription());
             // TODO: Добавить pubdate
             cv.put(DBHelper.FIELD_FEED_TYPE, feedContent);
+
+            cv.put(DBHelper.FIELD_IMAGE, bArray);
+
+
+
+            db.beginTransaction();
             db.insert(DBHelper.DB_TABLE_CONTENT, null, cv);
-            Log.i(Global.TAG, "INSERT: " + rssItem.getTitle() + " " + feedContent);
+            db.setTransactionSuccessful();
+            db.endTransaction();
+
+            Log.i(Global.TAG, "INSERT: " + rssItem.getTitle() + " " + feedContent + " " + rssItem.getLink());
         }
     }
 
@@ -57,6 +117,8 @@ public class DatabaseEngine {
             selectionArgs = new String[] { feedType };
         }
 
+        db = dbh.getReadableDatabase();
+
         Cursor c = db.query(DBHelper.DB_TABLE_CONTENT, null, selection, selectionArgs, null, null, DBHelper.FIELD_PUBDATE);
 
         if (c != null) {
@@ -71,6 +133,9 @@ public class DatabaseEngine {
             }
             c.close();
         }
+
+        dbh.close();
+
         return returnList;
     }
 
@@ -87,6 +152,7 @@ public class DatabaseEngine {
         private static final String FIELD_DESCRIPTION = "description";
         private static final String FIELD_PUBDATE     = "pubdate";
         private static final String FIELD_FEED_TYPE   = "feedtype";
+        private static final String FIELD_IMAGE       = "image";
 
         private static final String DB_SQL_CREATE_CONTENT = "create table " + DB_TABLE_CONTENT + " (" +
                 FIELD_KEY_ID + " integer primary key autoincrement, " +
@@ -94,6 +160,7 @@ public class DatabaseEngine {
                 FIELD_TITLE + " text, " +
                 FIELD_LINK + " text, " +
                 FIELD_DESCRIPTION + " text, " +
+                FIELD_IMAGE + " blob, " +
                 FIELD_FEED_TYPE + " text, " +
                 FIELD_PUBDATE + " integer" +
                 ");";
