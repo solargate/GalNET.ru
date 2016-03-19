@@ -14,7 +14,7 @@ public class Global {
 
     public static final String RSS_FEED_GALNET_NEWS   = "http://galnet.ru/feed/1.rss";         // GalNET News
     public static final String RSS_FEED_POWERPLAY     = "http://galnet.ru/feed/4.rss";         // PowerPlay
-    public static final String RSS_FEED_WEEKLY_REPORT = "http://galnet.ru/news/by/tag/1.rss";  // Ежедневный отчет
+    public static final String RSS_FEED_WEEKLY_REPORT = "http://galnet.ru/news/by/tag/1.rss";  // Еженедельный отчет
     public static final String RSS_FEED_COMM_GOALS    = "http://galnet.ru/news/by/tag/32.rss"; // Общественные цели
     public static final String RSS_FEED_SITE_NEWS     = "http://galnet.ru/feed/2.rss";         // Новости ресурса
 

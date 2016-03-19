@@ -15,7 +15,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import ru.solargateteam.galnetru.rss.RSSMaster;
+import java.util.concurrent.ExecutionException;
+
+import ru.solargateteam.galnetru.rss.RSSProcessTask;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -64,8 +66,23 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 // TODO: TEST. Обработчик - чтение RSS
-                RSSMaster rssMaster = new RSSMaster(getApplicationContext());
-                rssMaster.startReadingRSS();
+
+                try {
+                    RSSProcessTask task = new RSSProcessTask();
+                    task.setContext(getApplicationContext());
+                    task.execute();
+
+                    Log.d(Global.TAG, "GET BEGIN!");
+
+                    task.get();
+
+                    Log.d(Global.TAG, "GET END!");
+
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                }
             }
         });
 

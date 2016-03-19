@@ -22,16 +22,16 @@ public class DatabaseEngine {
         db = dbh.getWritableDatabase();
     }
 
-    private boolean checkContentExistsByLink(String link) {
+    private boolean checkContentExistsByLink(String link, String feedContent) {
         boolean result;
-        Cursor c = db.rawQuery(String.format(DBHelper.DB_SQL_SELECTBY_LINK, link), null);
+        Cursor c = db.rawQuery(String.format(DBHelper.DB_SQL_SELECTBY_LINK, link, feedContent), null);
         result = (c.getCount() != 0);
         c.close();
         return result;
     }
 
     public void insertContentItem(RSSItem rssItem, String feedContent) {
-        if (!checkContentExistsByLink(rssItem.getLink())) {
+        if (!checkContentExistsByLink(rssItem.getLink(), feedContent)) {
             ContentValues cv = new ContentValues();
             cv.put(DBHelper.FIELD_KEY_GUID, rssItem.getGuid());
             cv.put(DBHelper.FIELD_TITLE, rssItem.getTitle());
@@ -40,7 +40,7 @@ public class DatabaseEngine {
             // TODO: Добавить pubdate
             cv.put(DBHelper.FIELD_FEED_TYPE, feedContent);
             db.insert(DBHelper.DB_TABLE_CONTENT, null, cv);
-            Log.i(Global.TAG, "INSERT: " + rssItem.getTitle());
+            Log.i(Global.TAG, "INSERT: " + rssItem.getTitle() + " " + feedContent);
         }
     }
 
@@ -101,7 +101,8 @@ public class DatabaseEngine {
         private static final String DB_SQL_DROP_CONTENT = "drop table " + DB_TABLE_CONTENT + ";";
 
         private  static final String DB_SQL_SELECTBY_LINK = "select * from " + DB_TABLE_CONTENT +
-                " where " + FIELD_LINK + " = \"%1$s\"";
+                " where " + FIELD_LINK + " = \"%1$s\"" +
+                " and " + FIELD_FEED_TYPE + " = \"%2$s\"";
 
         //private  static final String DB_SQL_SELECTBY_FEED_TYPE = "select * from " + DB_TABLE_CONTENT +
         //        " where " + FIELD_FEED_TYPE + " = \"%1$s\"";
