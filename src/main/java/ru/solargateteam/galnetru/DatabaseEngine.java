@@ -41,6 +41,7 @@ public class DatabaseEngine {
         return result;
     }
 
+    /*
     private Bitmap getBitmapFromURL(String imageURL) {
         try {
 
@@ -59,14 +60,15 @@ public class DatabaseEngine {
             return null;
         }
     }
+    */
 
     public void insertContentItem(RSSItem rssItem, String feedContent) {
 
         if (!checkContentExistsByLink(rssItem.getLink(), feedContent) &&
                 Util.checkURL(rssItem.getLink())) {
 
-
             // TEST
+            /*
             byte[] bArray = new byte[0];
 
             Log.d(Global.TAG, "1");
@@ -80,7 +82,7 @@ public class DatabaseEngine {
                 tmpBitmap.compress(Bitmap.CompressFormat.PNG, 100, bos);
                 bArray = bos.toByteArray();
             }
-
+            */
 
             ContentValues cv = new ContentValues();
 
@@ -91,9 +93,7 @@ public class DatabaseEngine {
             // TODO: Добавить pubdate
             cv.put(DBHelper.FIELD_FEED_TYPE, feedContent);
 
-            cv.put(DBHelper.FIELD_IMAGE, bArray);
-
-
+            //cv.put(DBHelper.FIELD_IMAGE, bArray);
 
             db.beginTransaction();
             db.insert(DBHelper.DB_TABLE_CONTENT, null, cv);
