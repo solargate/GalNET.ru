@@ -1,5 +1,7 @@
 package ru.solargateteam.galnetru;
 
+import android.app.PendingIntent;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -22,6 +24,8 @@ import ru.solargateteam.galnetru.rss.RSSReader;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    public final static String PARAM_PINTENT = "pendingIntent";
 
     DatabaseEngine de;
 
@@ -47,8 +51,18 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void refreshNews() {
-       RefreshNewsTask task = new RefreshNewsTask();
-       task.execute();
+       //RefreshNewsTask task = new RefreshNewsTask();
+       //task.execute();
+
+        PendingIntent pi;
+        Intent intent;
+
+        Log.d(Global.TAG, "1");
+        pi = createPendingResult(Global.NEWS_SERVICE_TASK_CODE, new Intent(), 0);
+        Log.d(Global.TAG, "2");
+        intent = new Intent(this, NewsService.class).putExtra(PARAM_PINTENT, pi);
+        Log.d(Global.TAG, "3");
+        startService(intent);
     }
 
     @Override
@@ -156,6 +170,21 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (resultCode == Global.NEWS_SERVICE_STATUS_OK) {
+
+            Log.d(Global.TAG, "NEWS_SERVICE_STATUS_OK");
+
+            mSwipeRefreshLayout.setRefreshing(false);
+            setNewsRecyclerAdapter(getCurrentFeedType());
+        }
+
+    }
+
+    /*
     private class RefreshNewsTask extends AsyncTask<Void, Void, String> {
 
         DatabaseEngine de;
@@ -226,4 +255,5 @@ public class MainActivity extends AppCompatActivity
             setNewsRecyclerAdapter(getCurrentFeedType());
         }
     }
+    */
 }
