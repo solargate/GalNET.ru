@@ -7,6 +7,8 @@ public class Global {
     public static final int NEWS_SERVICE_TASK_CODE    = 1;
     public static final int NEWS_SERVICE_STATUS_OK    = 1;
 
+    public static final String IMAGES_DIR             = "images";
+
     // RSS
     public static final String RSS_TAG_ITEM           = "item";
     public static final String RSS_TAG_TITLE          = "title";

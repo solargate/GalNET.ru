@@ -8,11 +8,12 @@ public class DBItem {
     private String description;
     private String guid;
     private String pubDate;
-    private byte[] image;
+    //private byte[] image;
+    private String imagePath;
 
     public DBItem() {
-        this.image = new byte[0];
-        this.image = null;
+        //this.image = new byte[0];
+        //this.image = null;
     }
 
     public int getId() {
@@ -63,6 +64,15 @@ public class DBItem {
         this.pubDate = pubDate;
     }
 
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
+    }
+
+    /*
     public byte[] getImage() {
         return image;
     }
@@ -70,4 +80,5 @@ public class DBItem {
     public void setImage(byte[] image) {
         this.image = image;
     }
+    */
 }

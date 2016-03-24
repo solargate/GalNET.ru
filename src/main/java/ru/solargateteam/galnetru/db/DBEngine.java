@@ -70,10 +70,10 @@ public class DBEngine {
 
         ContentValues cv = new ContentValues();
 
-        cv.put(DBHelper.FIELD_IMAGE, dbItem.getImage());
+        cv.put(DBHelper.FIELD_IMAGE_PATH, dbItem.getImagePath());
 
         db.beginTransaction();
-        db.update(DBHelper.DB_TABLE_CONTENT, cv, DBHelper.FIELD_LINK + " = ?", new String[]{dbItem.getLink()});
+        db.update(DBHelper.DB_TABLE_CONTENT, cv, DBHelper.FIELD_LINK + " = ?", new String[] { dbItem.getLink() } );
         db.setTransactionSuccessful();
         db.endTransaction();
 
@@ -103,10 +103,11 @@ public class DBEngine {
             if (c.moveToFirst()) {
                 do {
                     DBItem currentItem = new DBItem();
+                    currentItem.setId(c.getInt(c.getColumnIndex(DBHelper.FIELD_KEY_ID)));
                     currentItem.setTitle(c.getString(c.getColumnIndex(DBHelper.FIELD_TITLE)));
                     currentItem.setLink(c.getString(c.getColumnIndex(DBHelper.FIELD_LINK)));
                     currentItem.setDescription(c.getString(c.getColumnIndex(DBHelper.FIELD_DESCRIPTION)));
-                    currentItem.setImage(c.getBlob(c.getColumnIndex(DBHelper.FIELD_IMAGE)));
+                    currentItem.setImagePath(c.getString(c.getColumnIndex(DBHelper.FIELD_IMAGE_PATH)));
                     returnList.add(currentItem);
                 } while (c.moveToNext());
             }
@@ -131,7 +132,7 @@ public class DBEngine {
         private static final String FIELD_DESCRIPTION = "description";
         private static final String FIELD_PUBDATE     = "pubdate";
         private static final String FIELD_FEED_TYPE   = "feedtype";
-        private static final String FIELD_IMAGE       = "image";
+        private static final String FIELD_IMAGE_PATH  = "imagepath";
 
         private static final String DB_SQL_CREATE_CONTENT = "create table " + DB_TABLE_CONTENT + " (" +
                 FIELD_KEY_ID + " integer primary key autoincrement, " +
@@ -139,7 +140,7 @@ public class DBEngine {
                 FIELD_TITLE + " text, " +
                 FIELD_LINK + " text, " +
                 FIELD_DESCRIPTION + " text, " +
-                FIELD_IMAGE + " blob, " +
+                FIELD_IMAGE_PATH + " text, " +
                 FIELD_FEED_TYPE + " text, " +
                 FIELD_PUBDATE + " integer" +
                 ");";
