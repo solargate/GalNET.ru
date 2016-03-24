@@ -18,6 +18,7 @@ import android.view.MenuItem;
 
 import ru.solargateteam.galnetru.pref.PrefActivity;
 import ru.solargateteam.galnetru.pref.PrefEngine;
+import ru.solargateteam.galnetru.services.RSSService;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -53,9 +54,9 @@ public class MainActivity extends AppCompatActivity
         Intent intent;
 
         pi = createPendingResult(Global.NEWS_SERVICE_TASK_CODE, new Intent(), 0);
-        intent = new Intent(this, NewsService.class);
-        intent.setAction(NewsService.ACTION_FROM_ACTIVITY);
-        intent.putExtra(NewsService.PARAM_PINTENT_FROM_ACTIVITY, pi);
+        intent = new Intent(this, RSSService.class);
+        intent.setAction(RSSService.ACTION_FROM_ACTIVITY);
+        intent.putExtra(RSSService.PARAM_PINTENT_FROM_ACTIVITY, pi);
 
         startService(intent);
     }

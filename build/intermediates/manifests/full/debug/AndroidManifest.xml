@@ -34,8 +34,12 @@
         </activity>
 
         <service
-            android:name="ru.solargateteam.galnetru.NewsService"
+            android:name="ru.solargateteam.galnetru.services.RSSService"
             android:enabled="true"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="ru.solargateteam.galnetru.services.ImageService"
             android:exported="false" >
         </service>
     </application>
