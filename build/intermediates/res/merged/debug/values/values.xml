@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="pref_refresh_interval">
+        <item>1 minute</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>4 hours</item>
+        <item>6 hours</item>
+    </string-array>
+    <string-array name="pref_refresh_interval_values">
+        <item>1m</item>
+        <item>15m</item>
+        <item>30m</item>
+        <item>1h</item>
+        <item>4h</item>
+        <item>6h</item>
+    </string-array>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>
@@ -297,6 +313,11 @@
     <string name="feed_weekly_report">Weekly Report</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="pref_notification">Notifications</string>
+    <string name="pref_notification_description">Enable notifications</string>
+    <string name="pref_refresh_interval">Refresh interval</string>
+    <string name="pref_refresh_interval_default_value">1m</string>
+    <string name="pref_refresh_interval_description">News refresh interval</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>

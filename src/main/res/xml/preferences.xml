@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="PREF_REFRESH_INTERVAL"
+        android:title="@string/pref_refresh_interval"
+        android:summary="@string/pref_refresh_interval_description"
+        android:entries="@array/pref_refresh_interval"
+        android:entryValues="@array/pref_refresh_interval_values"
+        android:defaultValue="@string/pref_refresh_interval_default_value"
+        />
+
+    <CheckBoxPreference
+        android:key="PREF_USE_NOTIFICATION"
+        android:title="@string/pref_notification"
+        android:summary="@string/pref_notification_description"
+        android:defaultValue="true"
+        />
+
+</PreferenceScreen>

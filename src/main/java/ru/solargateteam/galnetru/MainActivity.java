@@ -16,10 +16,16 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import ru.solargateteam.galnetru.pref.PrefActivity;
+import ru.solargateteam.galnetru.pref.PrefEngine;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    public static final int SHOW_PREFERENCES = 1;
+
     DatabaseEngine de;
+    PrefEngine pe;
 
     RecyclerView mRecyclerView;
     NewsRecyclerAdapter mAdapter;
@@ -88,6 +94,9 @@ public class MainActivity extends AppCompatActivity
                 refreshNews();
             }
         });
+
+        pe = new PrefEngine(this);
+        pe.initDefaults(this);
     }
 
     @Override
@@ -122,6 +131,8 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Intent intent = new Intent(this, PrefActivity.class);
+            startActivityForResult(intent, SHOW_PREFERENCES);
             return true;
         }
 
