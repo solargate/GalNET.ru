@@ -1,10 +1,29 @@
 package ru.solargateteam.galnetru;
 
+import android.util.Log;
+
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 public class Util {
+
+    public static long getUnixTime(String dateString) {
+        long unixTime = 0;
+        DateFormat dateFormat = new SimpleDateFormat("EEE, d MMM yyyy HH:mm:ss Z", Locale.US);
+        try {
+            Date date = dateFormat.parse(dateString);
+            unixTime = date.getTime() / 1000;
+        } catch (ParseException e) {
+            Log.e(Global.TAG, "Wrong pubDate: " + dateString);
+        }
+        return unixTime;
+    }
 
     // Хак на кривые ссылки
     public static boolean checkURL(String url) {
-
         if (url.charAt(url.length() - 1) == '0' ||
                 url.charAt(url.length() - 1) == '1' ||
                 url.charAt(url.length() - 1) == '2' ||
@@ -17,7 +36,6 @@ public class Util {
                 url.charAt(url.length() - 1) == '9') {
             return true;
         }
-
         return false;
     }
 

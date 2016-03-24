@@ -90,7 +90,7 @@ public class DatabaseEngine {
             cv.put(DBHelper.FIELD_TITLE, rssItem.getTitle());
             cv.put(DBHelper.FIELD_LINK, rssItem.getLink());
             cv.put(DBHelper.FIELD_DESCRIPTION, rssItem.getDescription());
-            // TODO: Добавить pubdate
+            cv.put(DBHelper.FIELD_PUBDATE, Util.getUnixTime(rssItem.getPubDate()));
             cv.put(DBHelper.FIELD_FEED_TYPE, feedContent);
 
             //cv.put(DBHelper.FIELD_IMAGE, bArray);
@@ -119,7 +119,7 @@ public class DatabaseEngine {
 
         db = dbh.getReadableDatabase();
 
-        Cursor c = db.query(DBHelper.DB_TABLE_CONTENT, null, selection, selectionArgs, null, null, DBHelper.FIELD_PUBDATE);
+        Cursor c = db.query(DBHelper.DB_TABLE_CONTENT, null, selection, selectionArgs, null, null, DBHelper.FIELD_PUBDATE + " desc");
 
         if (c != null) {
             if (c.moveToFirst()) {
