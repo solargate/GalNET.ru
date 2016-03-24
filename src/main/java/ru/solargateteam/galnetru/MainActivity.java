@@ -16,6 +16,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import ru.solargateteam.galnetru.db.DBEngine;
 import ru.solargateteam.galnetru.pref.PrefActivity;
 import ru.solargateteam.galnetru.pref.PrefEngine;
 import ru.solargateteam.galnetru.services.RSSService;
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity
 
     public static final int SHOW_PREFERENCES = 1;
 
-    DatabaseEngine de;
+    DBEngine dbe;
     PrefEngine pe;
 
     RecyclerView mRecyclerView;
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void setNewsRecyclerAdapter(String feedType) {
-        mAdapter = new NewsRecyclerAdapter(de.readContent(feedType));
+        mAdapter = new NewsRecyclerAdapter(dbe.readContent(feedType));
         mRecyclerView.setAdapter(mAdapter);
     }
 
@@ -66,7 +67,7 @@ public class MainActivity extends AppCompatActivity
         Log.d(Global.TAG, "Create");
         super.onCreate(savedInstanceState);
 
-        de = new DatabaseEngine(this);
+        dbe = new DBEngine(this);
 
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);

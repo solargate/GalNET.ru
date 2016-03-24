@@ -1,35 +1,31 @@
-package ru.solargateteam.galnetru;
+package ru.solargateteam.galnetru.db;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.util.Log;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
+import ru.solargateteam.galnetru.Global;
+import ru.solargateteam.galnetru.Util;
 import ru.solargateteam.galnetru.rss.RSSItem;
 
-public class DatabaseEngine {
+public class DBEngine {
 
     DBHelper dbh;
     SQLiteDatabase db;
 
-    public DatabaseEngine(Context context) {
+    public DBEngine(Context context) {
         dbh = new DBHelper(context);
         db = dbh.getWritableDatabase();
     }
 
     public void close() {
+        Log.d(Global.TAG, "DB Close");
         dbh.close();
     }
 
@@ -41,48 +37,10 @@ public class DatabaseEngine {
         return result;
     }
 
-    /*
-    private Bitmap getBitmapFromURL(String imageURL) {
-        try {
-
-            Log.d(Global.TAG, "2");
-
-            URL url = new URL(imageURL);
-
-            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-            connection.setDoInput(true);
-            connection.connect();
-            InputStream input = connection.getInputStream();
-            Bitmap tmpBitmap = BitmapFactory.decodeStream(input);
-            return tmpBitmap;
-        } catch (IOException e) {
-            e.printStackTrace();
-            return null;
-        }
-    }
-    */
-
     public void insertContentItem(RSSItem rssItem, String feedContent) {
 
         if (!checkContentExistsByLink(rssItem.getLink(), feedContent) &&
                 Util.checkURL(rssItem.getLink())) {
-
-            // TEST
-            /*
-            byte[] bArray = new byte[0];
-
-            Log.d(Global.TAG, "1");
-
-            Bitmap tmpBitmap = getBitmapFromURL("http://galnet.ru/embed/img/banner/302.png");
-
-            Log.d(Global.TAG, "3");
-
-            ByteArrayOutputStream bos = new ByteArrayOutputStream();
-            if (tmpBitmap != null) {
-                tmpBitmap.compress(Bitmap.CompressFormat.PNG, 100, bos);
-                bArray = bos.toByteArray();
-            }
-            */
 
             ContentValues cv = new ContentValues();
 
@@ -104,8 +62,27 @@ public class DatabaseEngine {
         }
     }
 
-    public List<RSSItem> readContent(String feedType) {
-        List<RSSItem> returnList = new ArrayList<RSSItem>();
+    public void updateImage(DBItem dbItem) {
+
+        //db = dbh.getWritableDatabase();
+
+        Log.d(Global.TAG, "UPDATING IMAGE BEGIN, LINK " + dbItem.getLink());
+
+        ContentValues cv = new ContentValues();
+
+        cv.put(DBHelper.FIELD_IMAGE, dbItem.getImage());
+
+        db.beginTransaction();
+        db.update(DBHelper.DB_TABLE_CONTENT, cv, DBHelper.FIELD_LINK + " = ?", new String[]{dbItem.getLink()});
+        db.setTransactionSuccessful();
+        db.endTransaction();
+
+        Log.d(Global.TAG, "UPDATING IMAGE END");
+        //dbh.close();
+    }
+
+    public List<DBItem> readContent(String feedType) {
+        List<DBItem> returnList = new ArrayList<DBItem>();
         String selection = null;
         String[] selectionArgs = null;
 
@@ -117,24 +94,26 @@ public class DatabaseEngine {
             selectionArgs = new String[] { feedType };
         }
 
-        db = dbh.getReadableDatabase();
+        //db = dbh.getReadableDatabase();
 
-        Cursor c = db.query(DBHelper.DB_TABLE_CONTENT, null, selection, selectionArgs, null, null, DBHelper.FIELD_PUBDATE + " desc");
+        //Cursor c = db.query(DBHelper.DB_TABLE_CONTENT, null, selection, selectionArgs, null, null, DBHelper.FIELD_PUBDATE + " desc");
+        Cursor c = db.query(DBHelper.DB_TABLE_CONTENT, null, selection, selectionArgs, null, null, DBHelper.FIELD_KEY_ID);
 
         if (c != null) {
             if (c.moveToFirst()) {
                 do {
-                    RSSItem currentItem = new RSSItem();
+                    DBItem currentItem = new DBItem();
                     currentItem.setTitle(c.getString(c.getColumnIndex(DBHelper.FIELD_TITLE)));
                     currentItem.setLink(c.getString(c.getColumnIndex(DBHelper.FIELD_LINK)));
                     currentItem.setDescription(c.getString(c.getColumnIndex(DBHelper.FIELD_DESCRIPTION)));
+                    currentItem.setImage(c.getBlob(c.getColumnIndex(DBHelper.FIELD_IMAGE)));
                     returnList.add(currentItem);
                 } while (c.moveToNext());
             }
             c.close();
         }
 
-        dbh.close();
+        //dbh.close();
 
         return returnList;
     }

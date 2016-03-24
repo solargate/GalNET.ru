@@ -7,7 +7,7 @@ import android.util.Log;
 
 import java.util.List;
 
-import ru.solargateteam.galnetru.DatabaseEngine;
+import ru.solargateteam.galnetru.db.DBEngine;
 import ru.solargateteam.galnetru.Global;
 import ru.solargateteam.galnetru.rss.RSSItem;
 import ru.solargateteam.galnetru.rss.RSSReader;
@@ -17,7 +17,7 @@ public class RSSService extends IntentService {
     public static final String ACTION_FROM_ACTIVITY        = "ru.solargateteam.galnetru.action.FROM_ACTIVITY";
     public final static String PARAM_PINTENT_FROM_ACTIVITY = "ru.solargateteam.galnetru.pendingintent.FROM_ACTIVITY";
 
-    DatabaseEngine de;
+    DBEngine dbe;
 
     public RSSService() {
         super("RSSService");
@@ -62,12 +62,12 @@ public class RSSService extends IntentService {
             RSSReader rssReader;
             List<RSSItem> tempItems;
 
-            de = new DatabaseEngine(getApplicationContext());
+            dbe = new DBEngine(getApplicationContext());
 
             rssReader = new RSSReader(Global.RSS_FEED_GALNET_NEWS);
             tempItems = rssReader.getItems();
             for (int i = 0; i < tempItems.size(); i++) {
-                de.insertContentItem(tempItems.get(i), Global.FEED_TYPE_GALNET_NEWS);
+                dbe.insertContentItem(tempItems.get(i), Global.FEED_TYPE_GALNET_NEWS);
             }
 
             tempItems.clear();
@@ -75,7 +75,7 @@ public class RSSService extends IntentService {
             rssReader = new RSSReader(Global.RSS_FEED_POWERPLAY);
             tempItems = rssReader.getItems();
             for (int i = 0; i < tempItems.size(); i++) {
-                de.insertContentItem(tempItems.get(i), Global.FEED_TYPE_POWERPLAY);
+                dbe.insertContentItem(tempItems.get(i), Global.FEED_TYPE_POWERPLAY);
             }
 
             tempItems.clear();
@@ -83,7 +83,7 @@ public class RSSService extends IntentService {
             rssReader = new RSSReader(Global.RSS_FEED_WEEKLY_REPORT);
             tempItems = rssReader.getItems();
             for (int i = 0; i < tempItems.size(); i++) {
-                de.insertContentItem(tempItems.get(i), Global.FEED_TYPE_WEEKLY_REPORT);
+                dbe.insertContentItem(tempItems.get(i), Global.FEED_TYPE_WEEKLY_REPORT);
             }
 
             tempItems.clear();
@@ -91,7 +91,7 @@ public class RSSService extends IntentService {
             rssReader = new RSSReader(Global.RSS_FEED_COMM_GOALS);
             tempItems = rssReader.getItems();
             for (int i = 0; i < tempItems.size(); i++) {
-                de.insertContentItem(tempItems.get(i), Global.FEED_TYPE_COMM_GOALS);
+                dbe.insertContentItem(tempItems.get(i), Global.FEED_TYPE_COMM_GOALS);
             }
 
             tempItems.clear();
@@ -99,10 +99,10 @@ public class RSSService extends IntentService {
             rssReader = new RSSReader(Global.RSS_FEED_SITE_NEWS);
             tempItems = rssReader.getItems();
             for (int i = 0; i < tempItems.size(); i++) {
-                de.insertContentItem(tempItems.get(i), Global.FEED_TYPE_SITE_NEWS);
+                dbe.insertContentItem(tempItems.get(i), Global.FEED_TYPE_SITE_NEWS);
             }
 
-            de.close();
+            dbe.close();
 
         } catch (Exception e) {
             Log.e(Global.TAG, e.getMessage());

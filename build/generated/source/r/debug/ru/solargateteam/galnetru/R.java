@@ -2388,7 +2388,7 @@ containing a value of this type.
         public static final int imageView=0x7f0e0075;
         public static final int info=0x7f0e0085;
         public static final int item_touch_helper_previous_elevation=0x7f0e0005;
-        public static final int iv_image=0x7f0e0078;
+        public static final int iv_news_image=0x7f0e0078;
         public static final int left=0x7f0e0022;
         public static final int line1=0x7f0e007f;
         public static final int line3=0x7f0e0083;

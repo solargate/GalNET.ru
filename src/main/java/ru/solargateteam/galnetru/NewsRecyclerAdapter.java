@@ -1,32 +1,37 @@
 package ru.solargateteam.galnetru;
 
+import android.graphics.BitmapFactory;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
 
-import ru.solargateteam.galnetru.rss.RSSItem;
+import ru.solargateteam.galnetru.db.DBItem;
 
-public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapter.NewsViewHolder>{
+public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapter.NewsViewHolder> {
 
-    private List<RSSItem> listContent;
+    private List<DBItem> listContent;
 
     public static class NewsViewHolder extends RecyclerView.ViewHolder {
 
         public TextView tvTitle;
+        public ImageView ivImage;
         public TextView tvDescription;
 
         public NewsViewHolder(View v) {
             super(v);
             tvTitle = (TextView) v.findViewById(R.id.tv_news_title);
+            ivImage = (ImageView) v.findViewById(R.id.iv_news_image);
             tvDescription = (TextView) v.findViewById(R.id.tv_news_description);
         }
     }
 
-    public NewsRecyclerAdapter(List<RSSItem> listContent) {
+    public NewsRecyclerAdapter(List<DBItem> listContent) {
         this.listContent = listContent;
     }
 
@@ -39,6 +44,16 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
     @Override
     public void onBindViewHolder(NewsViewHolder holder, int position) {
         holder.tvTitle.setText(listContent.get(position).getTitle());
+
+        // TEST
+        Log.d(Global.TAG, "HOLDER IMAGE 1");
+        if (listContent.get(position).getImage() != null) {
+            Log.d(Global.TAG, "HOLDER IMAGE 2");
+            holder.ivImage.setImageBitmap(BitmapFactory.decodeByteArray(listContent.get(position).getImage(), 0, listContent.get(position).getImage().length));
+            Log.d(Global.TAG, "HOLDER IMAGE 3");
+        }
+        Log.d(Global.TAG, "HOLDER IMAGE 4");
+
         holder.tvDescription.setText(listContent.get(position).getLink());
     }
 
