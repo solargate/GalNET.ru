@@ -2,7 +2,6 @@ package ru.solargateteam.galnetru;
 
 import android.app.PendingIntent;
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
@@ -17,15 +16,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import java.util.List;
-
-import ru.solargateteam.galnetru.rss.RSSItem;
-import ru.solargateteam.galnetru.rss.RSSReader;
-
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
-    public final static String PARAM_PINTENT = "pendingIntent";
 
     DatabaseEngine de;
 
@@ -51,17 +43,14 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void refreshNews() {
-       //RefreshNewsTask task = new RefreshNewsTask();
-       //task.execute();
-
         PendingIntent pi;
         Intent intent;
 
-        Log.d(Global.TAG, "1");
         pi = createPendingResult(Global.NEWS_SERVICE_TASK_CODE, new Intent(), 0);
-        Log.d(Global.TAG, "2");
-        intent = new Intent(this, NewsService.class).putExtra(PARAM_PINTENT, pi);
-        Log.d(Global.TAG, "3");
+        intent = new Intent(this, NewsService.class);
+        intent.setAction(NewsService.ACTION_FROM_ACTIVITY);
+        intent.putExtra(NewsService.PARAM_PINTENT_FROM_ACTIVITY, pi);
+
         startService(intent);
     }
 
@@ -175,85 +164,9 @@ public class MainActivity extends AppCompatActivity
         super.onActivityResult(requestCode, resultCode, data);
 
         if (resultCode == Global.NEWS_SERVICE_STATUS_OK) {
-
-            Log.d(Global.TAG, "NEWS_SERVICE_STATUS_OK");
-
             mSwipeRefreshLayout.setRefreshing(false);
             setNewsRecyclerAdapter(getCurrentFeedType());
         }
 
     }
-
-    /*
-    private class RefreshNewsTask extends AsyncTask<Void, Void, String> {
-
-        DatabaseEngine de;
-
-        @Override
-        protected String doInBackground(Void... params) {
-
-            try {
-
-                RSSReader rssReader;
-                List<RSSItem> tempItems;
-
-                de = new DatabaseEngine(getApplicationContext());
-
-                rssReader = new RSSReader(Global.RSS_FEED_GALNET_NEWS);
-                tempItems = rssReader.getItems();
-                for (int i = 0; i < tempItems.size(); i++) {
-                    de.insertContentItem(tempItems.get(i), Global.FEED_TYPE_GALNET_NEWS);
-                }
-
-                tempItems.clear();
-
-                rssReader = new RSSReader(Global.RSS_FEED_POWERPLAY);
-                tempItems = rssReader.getItems();
-                for (int i = 0; i < tempItems.size(); i++) {
-                    de.insertContentItem(tempItems.get(i), Global.FEED_TYPE_POWERPLAY);
-                }
-
-                tempItems.clear();
-
-                rssReader = new RSSReader(Global.RSS_FEED_WEEKLY_REPORT);
-                tempItems = rssReader.getItems();
-                for (int i = 0; i < tempItems.size(); i++) {
-                    de.insertContentItem(tempItems.get(i), Global.FEED_TYPE_WEEKLY_REPORT);
-                }
-
-                tempItems.clear();
-
-                rssReader = new RSSReader(Global.RSS_FEED_COMM_GOALS);
-                tempItems = rssReader.getItems();
-                for (int i = 0; i < tempItems.size(); i++) {
-                    de.insertContentItem(tempItems.get(i), Global.FEED_TYPE_COMM_GOALS);
-                }
-
-                tempItems.clear();
-
-                rssReader = new RSSReader(Global.RSS_FEED_SITE_NEWS);
-                tempItems = rssReader.getItems();
-                for (int i = 0; i < tempItems.size(); i++) {
-                    de.insertContentItem(tempItems.get(i), Global.FEED_TYPE_SITE_NEWS);
-                }
-
-                de.close();
-
-                return Global.STATUS_OK;
-
-            } catch (Exception e) {
-                Log.e(Global.TAG, e.getMessage());
-            }
-
-            return null;
-        }
-
-        @Override
-        protected void onPostExecute(String s) {
-            super.onPostExecute(s);
-            mSwipeRefreshLayout.setRefreshing(false);
-            setNewsRecyclerAdapter(getCurrentFeedType());
-        }
-    }
-    */
 }
