@@ -8,7 +8,6 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Log;
 
-import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -18,6 +17,7 @@ import java.net.URL;
 import java.util.List;
 
 import ru.solargateteam.galnetru.Global;
+import ru.solargateteam.galnetru.JsoupParser;
 import ru.solargateteam.galnetru.db.DBEngine;
 import ru.solargateteam.galnetru.db.DBItem;
 
@@ -70,7 +70,15 @@ public class ImageService extends IntentService {
         for (DBItem item : itemsList) {
             if (item.getImagePath() == null) {
 
-                Bitmap image = getBitmapFromURL("http://galnet.ru/embed/img/banner/302.png");
+                String imageUrl = JsoupParser.getImageURL(item.getLink());
+                //Log.d(Global.TAG, "IMAGE URL: " + imageUrl);
+
+                Bitmap image;
+
+                if (imageUrl != null)
+                    image = getBitmapFromURL(imageUrl);
+                else
+                    image = null;
 
                 if (image != null) {
                     ContextWrapper cw = new ContextWrapper(getApplicationContext());
@@ -92,7 +100,7 @@ public class ImageService extends IntentService {
                         }
                     }
 
-                    Log.d(Global.TAG, "IMAGE PATH: " + dir.getAbsolutePath());
+                    //Log.d(Global.TAG, "IMAGE PATH: " + dir.getAbsolutePath());
                     item.setImagePath(dir.getAbsolutePath());
                     dbe.updateImage(item);
                 }
