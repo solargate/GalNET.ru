@@ -2562,19 +2562,20 @@ containing a value of this type.
         public static final int app_name=0x7f070015;
         public static final int appbar_scrolling_view_behavior=0x7f070016;
         public static final int character_counter_pattern=0x7f070017;
-        public static final int feed_all=0x7f070018;
-        public static final int feed_comm_goals=0x7f070019;
-        public static final int feed_galnet_news=0x7f07001a;
-        public static final int feed_powerplay=0x7f07001b;
-        public static final int feed_site_news=0x7f07001c;
-        public static final int feed_weekly_report=0x7f07001d;
-        public static final int navigation_drawer_close=0x7f07001e;
-        public static final int navigation_drawer_open=0x7f07001f;
-        public static final int pref_notification=0x7f070020;
-        public static final int pref_notification_description=0x7f070021;
-        public static final int pref_refresh_interval=0x7f070022;
-        public static final int pref_refresh_interval_default_value=0x7f070023;
-        public static final int pref_refresh_interval_description=0x7f070024;
+        public static final int err_no_network=0x7f070018;
+        public static final int feed_all=0x7f070019;
+        public static final int feed_comm_goals=0x7f07001a;
+        public static final int feed_galnet_news=0x7f07001b;
+        public static final int feed_powerplay=0x7f07001c;
+        public static final int feed_site_news=0x7f07001d;
+        public static final int feed_weekly_report=0x7f07001e;
+        public static final int navigation_drawer_close=0x7f07001f;
+        public static final int navigation_drawer_open=0x7f070020;
+        public static final int pref_notification=0x7f070021;
+        public static final int pref_notification_description=0x7f070022;
+        public static final int pref_refresh_interval=0x7f070023;
+        public static final int pref_refresh_interval_default_value=0x7f070024;
+        public static final int pref_refresh_interval_description=0x7f070025;
         public static final int status_bar_notification_info_overflow=0x7f070013;
     }
     public static final class style {

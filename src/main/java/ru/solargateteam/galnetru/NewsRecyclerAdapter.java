@@ -12,7 +12,6 @@ import android.widget.TextView;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.List;
 
 import ru.solargateteam.galnetru.db.DBItem;
@@ -50,36 +49,15 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
 
         holder.tvTitle.setText(listContent.get(position).getTitle());
 
-        // TEST
-        Log.d(Global.TAG, "HOLDER IMAGE 1");
         if (listContent.get(position).getImagePath() != null) {
-            Log.d(Global.TAG, "HOLDER IMAGE 2");
             try {
-                Log.d(Global.TAG, "HOLDER IMAGE 3");
                 File imageFile = new File(listContent.get(position).getImagePath(), listContent.get(position).getId() + ".png");
-                Log.d(Global.TAG, "HOLDER IMAGE 4");
                 Bitmap bitmap = BitmapFactory.decodeStream(new FileInputStream(imageFile));
-                Log.d(Global.TAG, "HOLDER IMAGE 5");
                 holder.ivImage.setImageBitmap(bitmap);
-
             } catch (Exception e) {
                 e.printStackTrace();
             }
-
-            //holder.ivImage.setImageBitmap(BitmapFactory.decodeByteArray(listContent.get(position).getImage(), 0, listContent.get(position).getImage().length));
-
         }
-        Log.d(Global.TAG, "HOLDER IMAGE 6");
-
-        /*
-        Log.d(Global.TAG, "HOLDER IMAGE 1");
-        if (listContent.get(position).getImage() != null) {
-            Log.d(Global.TAG, "HOLDER IMAGE 2");
-            holder.ivImage.setImageBitmap(BitmapFactory.decodeByteArray(listContent.get(position).getImage(), 0, listContent.get(position).getImage().length));
-            Log.d(Global.TAG, "HOLDER IMAGE 3");
-        }
-        Log.d(Global.TAG, "HOLDER IMAGE 4");
-        */
 
         holder.tvDescription.setText(listContent.get(position).getLink());
     }

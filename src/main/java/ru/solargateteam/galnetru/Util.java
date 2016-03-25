@@ -1,5 +1,8 @@
 package ru.solargateteam.galnetru;
 
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.util.Log;
 
 import java.text.DateFormat;
@@ -9,6 +12,12 @@ import java.util.Date;
 import java.util.Locale;
 
 public class Util {
+
+    public static boolean isNetwork(Context context) {
+        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo network = cm.getActiveNetworkInfo();
+        return (network != null && network.isConnected());
+    }
 
     public static long getUnixTime(String dateString) {
         long unixTime = 0;

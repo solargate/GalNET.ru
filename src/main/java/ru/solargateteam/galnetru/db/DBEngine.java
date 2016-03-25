@@ -51,8 +51,6 @@ public class DBEngine {
             cv.put(DBHelper.FIELD_PUBDATE, Util.getUnixTime(rssItem.getPubDate()));
             cv.put(DBHelper.FIELD_FEED_TYPE, feedContent);
 
-            //cv.put(DBHelper.FIELD_IMAGE, bArray);
-
             db.beginTransaction();
             db.insert(DBHelper.DB_TABLE_CONTENT, null, cv);
             db.setTransactionSuccessful();
@@ -63,11 +61,6 @@ public class DBEngine {
     }
 
     public void updateImage(DBItem dbItem) {
-
-        //db = dbh.getWritableDatabase();
-
-        Log.d(Global.TAG, "UPDATING IMAGE BEGIN, LINK " + dbItem.getLink());
-
         ContentValues cv = new ContentValues();
 
         cv.put(DBHelper.FIELD_IMAGE_PATH, dbItem.getImagePath());
@@ -76,9 +69,6 @@ public class DBEngine {
         db.update(DBHelper.DB_TABLE_CONTENT, cv, DBHelper.FIELD_LINK + " = ?", new String[] { dbItem.getLink() } );
         db.setTransactionSuccessful();
         db.endTransaction();
-
-        Log.d(Global.TAG, "UPDATING IMAGE END");
-        //dbh.close();
     }
 
     public List<DBItem> readContent(String feedType) {
@@ -94,9 +84,6 @@ public class DBEngine {
             selectionArgs = new String[] { feedType };
         }
 
-        //db = dbh.getReadableDatabase();
-
-        //Cursor c = db.query(DBHelper.DB_TABLE_CONTENT, null, selection, selectionArgs, null, null, DBHelper.FIELD_PUBDATE + " desc");
         Cursor c = db.query(DBHelper.DB_TABLE_CONTENT, null, selection, selectionArgs, null, null, DBHelper.FIELD_KEY_ID);
 
         if (c != null) {
@@ -113,9 +100,6 @@ public class DBEngine {
             }
             c.close();
         }
-
-        //dbh.close();
-
         return returnList;
     }
 
@@ -150,9 +134,6 @@ public class DBEngine {
         private  static final String DB_SQL_SELECTBY_LINK = "select * from " + DB_TABLE_CONTENT +
                 " where " + FIELD_LINK + " = \"%1$s\"" +
                 " and " + FIELD_FEED_TYPE + " = \"%2$s\"";
-
-        //private  static final String DB_SQL_SELECTBY_FEED_TYPE = "select * from " + DB_TABLE_CONTENT +
-        //        " where " + FIELD_FEED_TYPE + " = \"%1$s\"";
 
         public DBHelper(Context context) {
             super(context, DB_NAME, null, DB_VERSION);

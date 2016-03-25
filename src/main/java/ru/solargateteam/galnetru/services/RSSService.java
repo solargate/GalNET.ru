@@ -7,6 +7,7 @@ import android.util.Log;
 
 import java.util.List;
 
+import ru.solargateteam.galnetru.Util;
 import ru.solargateteam.galnetru.db.DBEngine;
 import ru.solargateteam.galnetru.Global;
 import ru.solargateteam.galnetru.rss.RSSItem;
@@ -43,11 +44,14 @@ public class RSSService extends IntentService {
 
             if (ACTION_FROM_ACTIVITY.equals(action)) {
                 PendingIntent pi = intent.getParcelableExtra(PARAM_PINTENT_FROM_ACTIVITY);
-                refreshNews();
 
-                startService(new Intent(RSSService.this, ImageService.class));
-
-                pi.send(Global.NEWS_SERVICE_STATUS_OK);
+                if (Util.isNetwork(getApplicationContext())) {
+                    refreshNews();
+                    startService(new Intent(RSSService.this, ImageService.class));
+                    pi.send(Global.NEWS_SERVICE_STATUS_OK);
+                } else {
+                    pi.send(Global.NEWS_SERVICE_STATUS_NON);
+                }
             }
 
         } catch (PendingIntent.CanceledException e) {

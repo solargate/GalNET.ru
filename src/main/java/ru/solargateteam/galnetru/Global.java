@@ -6,6 +6,7 @@ public class Global {
 
     public static final int NEWS_SERVICE_TASK_CODE    = 1;
     public static final int NEWS_SERVICE_STATUS_OK    = 1;
+    public static final int NEWS_SERVICE_STATUS_NON   = 2;
 
     public static final String IMAGES_DIR             = "images";
 

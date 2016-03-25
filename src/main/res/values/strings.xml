@@ -19,6 +19,8 @@
     <string name="pref_refresh_interval_description">News refresh interval</string>
     <string name="pref_refresh_interval_default_value">1h</string>
 
+    <string name="err_no_network">No network connection</string>
+
     <string-array name="pref_refresh_interval">
         <item>1 minute</item>
         <item>15 minutes</item>

@@ -305,6 +305,7 @@
     <string name="app_name">GalNET.ru</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
+    <string name="err_no_network">No network connection</string>
     <string name="feed_all">All News</string>
     <string name="feed_comm_goals">Community Goals</string>
     <string name="feed_galnet_news">GalNET News</string>

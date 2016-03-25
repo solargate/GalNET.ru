@@ -42,25 +42,8 @@ public class ImageService extends IntentService {
 
     @Override
     protected void onHandleIntent(Intent intent) {
-
         Log.d(Global.TAG, "ImageService onHandleIntent");
-
         processImages();
-
-        /*
-        if (intent != null) {
-            final String action = intent.getAction();
-            if (ACTION_FOO.equals(action)) {
-                final String param1 = intent.getStringExtra(EXTRA_PARAM1);
-                final String param2 = intent.getStringExtra(EXTRA_PARAM2);
-                handleActionFoo(param1, param2);
-            } else if (ACTION_BAZ.equals(action)) {
-                final String param1 = intent.getStringExtra(EXTRA_PARAM1);
-                final String param2 = intent.getStringExtra(EXTRA_PARAM2);
-                handleActionBaz(param1, param2);
-            }
-        }
-        */
     }
 
     private Bitmap getBitmapFromURL(String imageURL) { // http://galnet.ru/embed/img/banner/302.png
@@ -78,26 +61,6 @@ public class ImageService extends IntentService {
         }
     }
 
-    /*
-    private byte[] loadBitmap(String imageURL) { // http://galnet.ru/embed/img/banner/302.png
-
-        byte[] bArray = new byte[0];
-
-        Bitmap tmpBitmap = getBitmapFromURL(imageURL);
-
-        ByteArrayOutputStream bos = new ByteArrayOutputStream();
-        if (tmpBitmap != null) {
-            tmpBitmap.compress(Bitmap.CompressFormat.PNG, 100, bos);
-            bArray = bos.toByteArray();
-        }
-
-        if (bArray != null)
-            Log.d(Global.TAG, "bArray length: " + bArray.length);
-
-        return bArray;
-    }
-    */
-
     private void processImages() {
 
         DBEngine dbe = new DBEngine(getApplicationContext());
@@ -106,14 +69,10 @@ public class ImageService extends IntentService {
 
         for (DBItem item : itemsList) {
             if (item.getImagePath() == null) {
-                //Log.i(Global.TAG, "TTTTTTTTTTTTTTTTTTTTTTTT: " + item.getTitle());
-
-                //item.setImagePath(loadBitmap("http://galnet.ru/embed/img/banner/302.png"));
 
                 Bitmap image = getBitmapFromURL("http://galnet.ru/embed/img/banner/302.png");
 
                 if (image != null) {
-
                     ContextWrapper cw = new ContextWrapper(getApplicationContext());
                     File dir = cw.getDir(Global.IMAGES_DIR, Context.MODE_PRIVATE);
                     File path = new File(dir, item.getId() + ".png");
@@ -134,16 +93,11 @@ public class ImageService extends IntentService {
                     }
 
                     Log.d(Global.TAG, "IMAGE PATH: " + dir.getAbsolutePath());
-
                     item.setImagePath(dir.getAbsolutePath());
-
                     dbe.updateImage(item);
                 }
-
-                //dbe.updateImage(item);
             }
         }
-
         dbe.close();
     }
 }

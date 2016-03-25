@@ -15,6 +15,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import ru.solargateteam.galnetru.db.DBEngine;
 import ru.solargateteam.galnetru.pref.PrefActivity;
@@ -179,7 +180,10 @@ public class MainActivity extends AppCompatActivity
         if (resultCode == Global.NEWS_SERVICE_STATUS_OK) {
             mSwipeRefreshLayout.setRefreshing(false);
             setNewsRecyclerAdapter(getCurrentFeedType());
+        } else if (resultCode == Global.NEWS_SERVICE_STATUS_NON) {
+            Toast toast = Toast.makeText(getApplicationContext(), R.string.err_no_network, Toast.LENGTH_SHORT);
+            toast.show();
+            mSwipeRefreshLayout.setRefreshing(false);
         }
-
     }
 }
