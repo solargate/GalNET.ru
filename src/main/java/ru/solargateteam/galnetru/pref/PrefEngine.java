@@ -50,7 +50,7 @@ public class PrefEngine {
         return res;
     }
 
-    public boolean getUseNotification() {
+    public boolean isNotificationEnabled() {
         return sp.getBoolean(PREF_USE_NOTIFICATION, true);
     }
 }

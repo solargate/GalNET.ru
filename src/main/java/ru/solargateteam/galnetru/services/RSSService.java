@@ -9,6 +9,7 @@ import android.util.Log;
 import java.util.List;
 
 import ru.solargateteam.galnetru.util.AlarmSetter;
+import ru.solargateteam.galnetru.util.NotificationEngine;
 import ru.solargateteam.galnetru.util.Util;
 import ru.solargateteam.galnetru.db.DBEngine;
 import ru.solargateteam.galnetru.Global;
@@ -61,7 +62,12 @@ public class RSSService extends IntentService {
             } else if (ACTION_FROM_ALARM.equals(action) || ACTION_FROM_BOOT.equals(action)) {
 
                 if (Util.isNetwork(context)) {
+
                     refreshNews();
+
+                    NotificationEngine ne = new NotificationEngine(context);
+                    ne.processNotificationNewPost(context);
+
                     startService(new Intent(RSSService.this, ImageService.class));
                 }
             }

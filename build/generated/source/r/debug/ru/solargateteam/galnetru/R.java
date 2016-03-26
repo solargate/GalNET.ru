@@ -2314,16 +2314,17 @@ containing a value of this type.
         public static final int abc_textfield_search_material=0x7f020044;
         public static final int design_fab_background=0x7f020045;
         public static final int design_snackbar_background=0x7f020046;
-        public static final int ic_menu_camera=0x7f02004a;
+        public static final int ic_menu_camera=0x7f02004b;
         public static final int ic_menu_feed=0x7f020047;
-        public static final int ic_menu_gallery=0x7f02004b;
-        public static final int ic_menu_manage=0x7f02004c;
-        public static final int ic_menu_send=0x7f02004d;
-        public static final int ic_menu_share=0x7f02004e;
-        public static final int ic_menu_slideshow=0x7f02004f;
-        public static final int image_no_banner=0x7f020048;
-        public static final int notification_template_icon_bg=0x7f020050;
-        public static final int side_nav_bar=0x7f020049;
+        public static final int ic_menu_gallery=0x7f02004c;
+        public static final int ic_menu_manage=0x7f02004d;
+        public static final int ic_menu_send=0x7f02004e;
+        public static final int ic_menu_share=0x7f02004f;
+        public static final int ic_menu_slideshow=0x7f020050;
+        public static final int ic_notify=0x7f020048;
+        public static final int image_no_banner=0x7f020049;
+        public static final int notification_template_icon_bg=0x7f020051;
+        public static final int side_nav_bar=0x7f02004a;
     }
     public static final class id {
         public static final int action0=0x7f0e007a;
@@ -2572,11 +2573,13 @@ containing a value of this type.
         public static final int feed_weekly_report=0x7f07001e;
         public static final int navigation_drawer_close=0x7f07001f;
         public static final int navigation_drawer_open=0x7f070020;
-        public static final int pref_notification=0x7f070021;
-        public static final int pref_notification_description=0x7f070022;
-        public static final int pref_refresh_interval=0x7f070023;
-        public static final int pref_refresh_interval_default_value=0x7f070024;
-        public static final int pref_refresh_interval_description=0x7f070025;
+        public static final int notification_new_post_text=0x7f070021;
+        public static final int notification_new_post_title=0x7f070022;
+        public static final int pref_notification=0x7f070023;
+        public static final int pref_notification_description=0x7f070024;
+        public static final int pref_refresh_interval=0x7f070025;
+        public static final int pref_refresh_interval_default_value=0x7f070026;
+        public static final int pref_refresh_interval_description=0x7f070027;
         public static final int status_bar_notification_info_overflow=0x7f070013;
     }
     public static final class style {

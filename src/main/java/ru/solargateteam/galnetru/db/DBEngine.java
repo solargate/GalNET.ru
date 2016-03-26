@@ -50,6 +50,7 @@ public class DBEngine {
             cv.put(DBHelper.FIELD_DESCRIPTION, rssItem.getDescription());
             cv.put(DBHelper.FIELD_PUBDATE, Util.getUnixTime(rssItem.getPubDate()));
             cv.put(DBHelper.FIELD_FEED_TYPE, feedContent);
+            cv.put(DBHelper.FIELD_NEW_POST, DBHelper.NEW_POST_TRUE);
 
             db.beginTransaction();
             db.insert(DBHelper.DB_TABLE_CONTENT, null, cv);
@@ -67,6 +68,17 @@ public class DBEngine {
 
         db.beginTransaction();
         db.update(DBHelper.DB_TABLE_CONTENT, cv, DBHelper.FIELD_LINK + " = ?", new String[]{dbItem.getLink()});
+        db.setTransactionSuccessful();
+        db.endTransaction();
+    }
+
+    public void updateNewPostToOld() {
+        ContentValues cv = new ContentValues();
+
+        cv.put(DBHelper.FIELD_NEW_POST, DBHelper.NEW_POST_FALSE);
+
+        db.beginTransaction();
+        db.update(DBHelper.DB_TABLE_CONTENT, cv, DBHelper.FIELD_NEW_POST + " = ?", new String[]{Integer.toString(DBHelper.NEW_POST_TRUE)});
         db.setTransactionSuccessful();
         db.endTransaction();
     }
@@ -95,6 +107,7 @@ public class DBEngine {
                     currentItem.setLink(c.getString(c.getColumnIndex(DBHelper.FIELD_LINK)));
                     currentItem.setDescription(c.getString(c.getColumnIndex(DBHelper.FIELD_DESCRIPTION)));
                     currentItem.setImagePath(c.getString(c.getColumnIndex(DBHelper.FIELD_IMAGE_PATH)));
+                    currentItem.setNewPost(c.getInt(c.getColumnIndex(DBHelper.FIELD_NEW_POST)));
                     returnList.add(currentItem);
                 } while (c.moveToNext());
             }
@@ -102,6 +115,30 @@ public class DBEngine {
         }
         return returnList;
     }
+
+    public List<DBItem> readContentNew() {
+        List<DBItem> returnList = new ArrayList<DBItem>();
+
+        Cursor c = db.query(DBHelper.DB_TABLE_CONTENT, null, DBHelper.FIELD_NEW_POST + " = ?", new String[]{Integer.toString(DBHelper.NEW_POST_TRUE)}, null, null, DBHelper.FIELD_KEY_ID);
+
+        if (c != null) {
+            if (c.moveToFirst()) {
+                do {
+                    DBItem currentItem = new DBItem();
+                    currentItem.setId(c.getInt(c.getColumnIndex(DBHelper.FIELD_KEY_ID)));
+                    currentItem.setTitle(c.getString(c.getColumnIndex(DBHelper.FIELD_TITLE)));
+                    currentItem.setLink(c.getString(c.getColumnIndex(DBHelper.FIELD_LINK)));
+                    currentItem.setDescription(c.getString(c.getColumnIndex(DBHelper.FIELD_DESCRIPTION)));
+                    currentItem.setImagePath(c.getString(c.getColumnIndex(DBHelper.FIELD_IMAGE_PATH)));
+                    currentItem.setNewPost(c.getInt(c.getColumnIndex(DBHelper.FIELD_NEW_POST)));
+                    returnList.add(currentItem);
+                } while (c.moveToNext());
+            }
+            c.close();
+        }
+        return returnList;
+    }
+
 
     private class DBHelper extends SQLiteOpenHelper {
 
@@ -117,6 +154,10 @@ public class DBEngine {
         private static final String FIELD_PUBDATE     = "pubdate";
         private static final String FIELD_FEED_TYPE   = "feedtype";
         private static final String FIELD_IMAGE_PATH  = "imagepath";
+        private static final String FIELD_NEW_POST    = "newpost";
+
+        private static final int NEW_POST_TRUE  = 1;
+        private static final int NEW_POST_FALSE = 0;
 
         private static final String DB_SQL_CREATE_CONTENT = "create table " + DB_TABLE_CONTENT + " (" +
                 FIELD_KEY_ID + " integer primary key autoincrement, " +
@@ -126,7 +167,8 @@ public class DBEngine {
                 FIELD_DESCRIPTION + " text, " +
                 FIELD_IMAGE_PATH + " text, " +
                 FIELD_FEED_TYPE + " text, " +
-                FIELD_PUBDATE + " integer" +
+                FIELD_PUBDATE + " integer, " +
+                FIELD_NEW_POST + " integer" +
                 ");";
 
         private static final String DB_SQL_DROP_CONTENT = "drop table " + DB_TABLE_CONTENT + ";";

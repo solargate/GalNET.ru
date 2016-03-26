@@ -6,6 +6,9 @@
 
     <string name="action_settings">Settings</string>
 
+    <string name="notification_new_post_title">GalNET.ru news</string>
+    <string name="notification_new_post_text">new posts on GalNET.ru</string>
+
     <string name="feed_all">All News</string>
     <string name="feed_galnet_news">GalNET News</string>
     <string name="feed_powerplay">PowerPlay</string>

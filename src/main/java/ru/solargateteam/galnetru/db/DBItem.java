@@ -9,6 +9,7 @@ public class DBItem {
     private String guid;
     private String pubDate;
     private String imagePath;
+    private int    newPost;
 
     public DBItem() {
     }
@@ -67,5 +68,13 @@ public class DBItem {
 
     public void setImagePath(String imagePath) {
         this.imagePath = imagePath;
+    }
+
+    public int getNewPost() {
+        return newPost;
+    }
+
+    public void setNewPost(int newPost) {
+        this.newPost = newPost;
     }
 }

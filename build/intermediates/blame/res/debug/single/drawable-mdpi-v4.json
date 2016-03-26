@@ -160,6 +160,10 @@
         "source": "/home/solarwind/dev/android-studio-ws/GalNET.ru/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-mdpi/abc_list_selector_disabled_holo_dark.9.png"
     },
     {
+        "merged": "/home/solarwind/dev/android-studio-ws/GalNET.ru/build/intermediates/res/merged/debug/drawable-mdpi-v4/ic_notify.png",
+        "source": "/home/solarwind/dev/android-studio-ws/GalNET.ru/src/main/res/drawable-mdpi/ic_notify.png"
+    },
+    {
         "merged": "/home/solarwind/dev/android-studio-ws/GalNET.ru/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png",
         "source": "/home/solarwind/dev/android-studio-ws/GalNET.ru/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-mdpi/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
