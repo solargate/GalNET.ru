@@ -7,7 +7,7 @@ import android.util.Log;
 
 import java.util.List;
 
-import ru.solargateteam.galnetru.Util;
+import ru.solargateteam.galnetru.util.Util;
 import ru.solargateteam.galnetru.db.DBEngine;
 import ru.solargateteam.galnetru.Global;
 import ru.solargateteam.galnetru.rss.RSSItem;

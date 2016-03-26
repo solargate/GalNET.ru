@@ -1,4 +1,4 @@
-package ru.solargateteam.galnetru;
+package ru.solargateteam.galnetru.util;
 
 import android.support.annotation.Nullable;
 
@@ -10,17 +10,13 @@ public class JsoupParser {
 
     @Nullable
     public static String getImageURL(String newsURL) {
-
         try {
-
             Document doc = Jsoup.connect(newsURL).get();
             Elements img = doc.select("img.u-photo");
             return img.attr("src");
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         return null;
-
     }
 }

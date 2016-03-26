@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import ru.solargateteam.galnetru.Global;
-import ru.solargateteam.galnetru.Util;
+import ru.solargateteam.galnetru.util.Util;
 import ru.solargateteam.galnetru.rss.RSSItem;
 
 public class DBEngine {
@@ -66,7 +66,7 @@ public class DBEngine {
         cv.put(DBHelper.FIELD_IMAGE_PATH, dbItem.getImagePath());
 
         db.beginTransaction();
-        db.update(DBHelper.DB_TABLE_CONTENT, cv, DBHelper.FIELD_LINK + " = ?", new String[] { dbItem.getLink() } );
+        db.update(DBHelper.DB_TABLE_CONTENT, cv, DBHelper.FIELD_LINK + " = ?", new String[]{dbItem.getLink()});
         db.setTransactionSuccessful();
         db.endTransaction();
     }

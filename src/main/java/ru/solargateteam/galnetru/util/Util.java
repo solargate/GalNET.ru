@@ -1,4 +1,4 @@
-package ru.solargateteam.galnetru;
+package ru.solargateteam.galnetru.util;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -10,6 +10,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
+
+import ru.solargateteam.galnetru.Global;
 
 public class Util {
 

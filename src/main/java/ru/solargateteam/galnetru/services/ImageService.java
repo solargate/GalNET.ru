@@ -17,7 +17,7 @@ import java.net.URL;
 import java.util.List;
 
 import ru.solargateteam.galnetru.Global;
-import ru.solargateteam.galnetru.JsoupParser;
+import ru.solargateteam.galnetru.util.JsoupParser;
 import ru.solargateteam.galnetru.db.DBEngine;
 import ru.solargateteam.galnetru.db.DBItem;
 
@@ -53,8 +53,7 @@ public class ImageService extends IntentService {
             connection.setDoInput(true);
             connection.connect();
             InputStream input = connection.getInputStream();
-            Bitmap tmpBitmap = BitmapFactory.decodeStream(input);
-            return tmpBitmap;
+            return BitmapFactory.decodeStream(input);
         } catch (IOException e) {
             e.printStackTrace();
             return null;
@@ -71,7 +70,7 @@ public class ImageService extends IntentService {
             if (item.getImagePath() == null) {
 
                 String imageUrl = JsoupParser.getImageURL(item.getLink());
-                //Log.d(Global.TAG, "IMAGE URL: " + imageUrl);
+                Log.d(Global.TAG, "IMAGE URL: " + imageUrl);
 
                 Bitmap image;
 
