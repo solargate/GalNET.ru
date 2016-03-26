@@ -1,6 +1,8 @@
 package ru.solargateteam.galnetru.db;
 
-public class DBItem {
+import java.io.Serializable;
+
+public class DBItem implements Serializable {
 
     private int    id;
     private String title;

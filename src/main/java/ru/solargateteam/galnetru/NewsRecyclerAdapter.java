@@ -1,7 +1,10 @@
 package ru.solargateteam.galnetru;
 
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +17,7 @@ import java.io.FileInputStream;
 import java.util.List;
 
 import ru.solargateteam.galnetru.db.DBItem;
+import ru.solargateteam.galnetru.util.Util;
 
 public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapter.NewsViewHolder> {
 
@@ -25,11 +29,26 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
         public ImageView ivImage;
         public TextView tvDescription;
 
+        public View view;
+        public DBItem currentItem;
+
         public NewsViewHolder(View v) {
             super(v);
+
+            view = v;
+
             tvTitle = (TextView) v.findViewById(R.id.tv_news_title);
             ivImage = (ImageView) v.findViewById(R.id.iv_news_image);
             tvDescription = (TextView) v.findViewById(R.id.tv_news_description);
+
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(v.getContext(), PostActivity.class);
+                    intent.putExtra(PostActivity.PARAM_ITEM, currentItem);
+                    v.getContext().startActivity(intent);
+                }
+            });
         }
     }
 
@@ -61,6 +80,8 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
         }
 
         holder.tvDescription.setText(listContent.get(position).getLink());
+
+        holder.currentItem = listContent.get(position);
     }
 
     @Override

@@ -30,19 +30,19 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="ru.solargateteam.galnetru.PostActivity"
+            android:label="@string/app_name" />
+        <activity
             android:name="ru.solargateteam.galnetru.pref.PrefActivity"
-            android:label="@string/action_settings" >
-        </activity>
+            android:label="@string/action_settings" />
 
         <service
             android:name="ru.solargateteam.galnetru.services.RSSService"
             android:enabled="true"
-            android:exported="false" >
-        </service>
+            android:exported="false" />
         <service
             android:name="ru.solargateteam.galnetru.services.ImageService"
-            android:exported="false" >
-        </service>
+            android:exported="false" />
 
         <receiver
             android:name="ru.solargateteam.galnetru.receivers.AlarmReceiver"

@@ -20,6 +20,8 @@ public class RSSParseHandler extends DefaultHandler {
     private boolean parsingGUID;
     private boolean parsingPubDate;
 
+    StringBuffer descriptionBuffer;
+
     public RSSParseHandler() {
         rssItems = new ArrayList<RSSItem>();
     }
@@ -32,6 +34,7 @@ public class RSSParseHandler extends DefaultHandler {
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
         if (Global.RSS_TAG_ITEM.equals(qName)) {
             currentItem = new RSSItem();
+            descriptionBuffer = new StringBuffer();
         } else if (Global.RSS_TAG_TITLE.equals(qName)) {
             parsingTitle = true;
         } else if (Global.RSS_TAG_LINK.equals(qName)) {
@@ -50,6 +53,7 @@ public class RSSParseHandler extends DefaultHandler {
         if (Global.RSS_TAG_ITEM.equals(qName)) {
             rssItems.add(currentItem);
             currentItem = null;
+            descriptionBuffer = null;
         } else if (Global.RSS_TAG_TITLE.equals(qName)) {
             parsingTitle = false;
         } else if (Global.RSS_TAG_LINK.equals(qName)) {
@@ -76,8 +80,8 @@ public class RSSParseHandler extends DefaultHandler {
             }
         } else if (parsingDescription) {
             if (currentItem != null) {
-                currentItem.setDescription(new String(ch, start, length));
-                parsingDescription = false;
+                descriptionBuffer.append(ch, start, length);
+                currentItem.setDescription(descriptionBuffer.toString());
             }
         } else if (parsingGUID) {
             if (currentItem != null) {
