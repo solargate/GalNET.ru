@@ -2,11 +2,13 @@ package ru.solargateteam.galnetru.services;
 
 import android.app.IntentService;
 import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
 import java.util.List;
 
+import ru.solargateteam.galnetru.util.AlarmSetter;
 import ru.solargateteam.galnetru.util.Util;
 import ru.solargateteam.galnetru.db.DBEngine;
 import ru.solargateteam.galnetru.Global;
@@ -17,6 +19,8 @@ public class RSSService extends IntentService {
 
     public static final String ACTION_FROM_ACTIVITY        = "ru.solargateteam.galnetru.action.FROM_ACTIVITY";
     public final static String PARAM_PINTENT_FROM_ACTIVITY = "ru.solargateteam.galnetru.pendingintent.FROM_ACTIVITY";
+    public static final String ACTION_FROM_ALARM           = "ru.solargateteam.galnetru.action.FROM_ALARM";
+    public static final String ACTION_FROM_BOOT            = "ru.solargateteam.galnetru.action.FROM_BOOT";
 
     DBEngine dbe;
 
@@ -39,24 +43,34 @@ public class RSSService extends IntentService {
     @Override
     protected void onHandleIntent(Intent intent) {
 
+        Context context = getApplicationContext();
+
         try {
             final String action = intent.getAction();
 
             if (ACTION_FROM_ACTIVITY.equals(action)) {
                 PendingIntent pi = intent.getParcelableExtra(PARAM_PINTENT_FROM_ACTIVITY);
 
-                if (Util.isNetwork(getApplicationContext())) {
+                if (Util.isNetwork(context)) {
                     refreshNews();
                     startService(new Intent(RSSService.this, ImageService.class));
                     pi.send(Global.NEWS_SERVICE_STATUS_OK);
                 } else {
                     pi.send(Global.NEWS_SERVICE_STATUS_NON);
                 }
-            }
+            } else if (ACTION_FROM_ALARM.equals(action) || ACTION_FROM_BOOT.equals(action)) {
 
+                if (Util.isNetwork(context)) {
+                    refreshNews();
+                    startService(new Intent(RSSService.this, ImageService.class));
+                }
+            }
         } catch (PendingIntent.CanceledException e) {
             e.printStackTrace();
         }
+
+        AlarmSetter as = new AlarmSetter();
+        as.setRefreshAlarm(context);
     }
 
     private void refreshNews() {
