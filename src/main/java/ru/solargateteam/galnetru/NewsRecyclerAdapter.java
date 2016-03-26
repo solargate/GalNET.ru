@@ -1,10 +1,8 @@
 package ru.solargateteam.galnetru;
 
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +15,6 @@ import java.io.FileInputStream;
 import java.util.List;
 
 import ru.solargateteam.galnetru.db.DBItem;
-import ru.solargateteam.galnetru.util.Util;
 
 public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapter.NewsViewHolder> {
 

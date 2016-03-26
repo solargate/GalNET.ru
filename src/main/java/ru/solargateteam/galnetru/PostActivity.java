@@ -41,7 +41,8 @@ public class PostActivity extends AppCompatActivity {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-
+        } else {
+            ivImage.setImageResource(R.drawable.image_no_banner);
         }
 
         tvDescription.setText(item.getDescription());

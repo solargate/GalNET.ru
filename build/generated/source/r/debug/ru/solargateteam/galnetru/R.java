@@ -2314,17 +2314,19 @@ containing a value of this type.
         public static final int abc_textfield_search_material=0x7f020044;
         public static final int design_fab_background=0x7f020045;
         public static final int design_snackbar_background=0x7f020046;
-        public static final int ic_menu_camera=0x7f02004b;
+        public static final int ic_menu_camera=0x7f02004d;
         public static final int ic_menu_feed=0x7f020047;
-        public static final int ic_menu_gallery=0x7f02004c;
-        public static final int ic_menu_manage=0x7f02004d;
-        public static final int ic_menu_send=0x7f02004e;
-        public static final int ic_menu_share=0x7f02004f;
-        public static final int ic_menu_slideshow=0x7f020050;
+        public static final int ic_menu_gallery=0x7f02004e;
+        public static final int ic_menu_manage=0x7f02004f;
+        public static final int ic_menu_send=0x7f020050;
+        public static final int ic_menu_share=0x7f020051;
+        public static final int ic_menu_slideshow=0x7f020052;
         public static final int ic_notify=0x7f020048;
-        public static final int image_no_banner=0x7f020049;
-        public static final int notification_template_icon_bg=0x7f020051;
-        public static final int side_nav_bar=0x7f02004a;
+        public static final int ic_radio_hard=0x7f020049;
+        public static final int ic_radio_soft=0x7f02004a;
+        public static final int image_no_banner=0x7f02004b;
+        public static final int notification_template_icon_bg=0x7f020053;
+        public static final int side_nav_bar=0x7f02004c;
     }
     public static final class id {
         public static final int action0=0x7f0e007d;
@@ -2342,7 +2344,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0e0057;
         public static final int action_mode_bar_stub=0x7f0e0056;
         public static final int action_mode_close_button=0x7f0e003c;
-        public static final int action_settings=0x7f0e0090;
+        public static final int action_settings=0x7f0e0092;
         public static final int activity_chooser_view_content=0x7f0e003d;
         public static final int alertTitle=0x7f0e0049;
         public static final int always=0x7f0e0032;
@@ -2407,6 +2409,8 @@ containing a value of this type.
         public static final int nav_feed_powerplay=0x7f0e008c;
         public static final int nav_feed_site_news=0x7f0e008f;
         public static final int nav_feed_weekly_report=0x7f0e008d;
+        public static final int nav_radio_hard=0x7f0e0091;
+        public static final int nav_radio_soft=0x7f0e0090;
         public static final int nav_view=0x7f0e006a;
         public static final int navigation_header_container=0x7f0e0073;
         public static final int never=0x7f0e0035;
@@ -2584,8 +2588,10 @@ containing a value of this type.
         public static final int pref_refresh_interval=0x7f070025;
         public static final int pref_refresh_interval_default_value=0x7f070026;
         public static final int pref_refresh_interval_description=0x7f070027;
+        public static final int radio_hard=0x7f070028;
+        public static final int radio_soft=0x7f070029;
         public static final int status_bar_notification_info_overflow=0x7f070013;
-        public static final int title_activity_post=0x7f070028;
+        public static final int title_activity_post=0x7f07002a;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f0a007f;
