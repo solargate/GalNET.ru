@@ -3,7 +3,6 @@ package ru.solargateteam.galnetru;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -57,6 +56,8 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
             } catch (Exception e) {
                 e.printStackTrace();
             }
+        } else {
+            holder.ivImage.setImageResource(R.drawable.image_no_banner);
         }
 
         holder.tvDescription.setText(listContent.get(position).getLink());
