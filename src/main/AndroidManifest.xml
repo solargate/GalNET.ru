@@ -24,9 +24,9 @@
             </intent-filter>
         </activity>
 
-        <activity 
+        <activity
             android:name=".PostActivity"
-            android:label="@string/app_name"/>
+            android:label="@string/app_name" />
 
         <activity
             android:name=".pref.PrefActivity"
@@ -39,6 +39,12 @@
 
         <service
             android:name=".services.ImageService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name=".services.RadioService"
+            android:enabled="true"
             android:exported="false" />
 
         <receiver

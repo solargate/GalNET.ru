@@ -25,6 +25,7 @@ public class Global {
     public static final String RSS_FEED_COMM_NEWS     = "http://galnet.ru/feed/8.rss";         // Новости сообществ
     public static final String RSS_FEED_SITE_NEWS     = "http://galnet.ru/feed/2.rss";         // Новости ресурса
 
+    // Feed types
     public static final String FEED_TYPE_ALL          = "ALL";
     public static final String FEED_TYPE_GALNET_NEWS  = "GALNET_NEWS";
     public static final String FEED_TYPE_POWERPLAY    = "POWERPLAY";
@@ -32,4 +33,8 @@ public class Global {
     public static final String FEED_TYPE_COMM_GOALS   = "COMM_GOALS";
     public static final String FEED_TYPE_COMM_NEWS    = "COMM_NEWS";
     public static final String FEED_TYPE_SITE_NEWS    = "SITE_NEWS";
+
+    // Stream channels
+    public static final String STREAM_SOFT            = "http://galnet.ru/soft.mp3";
+    public static final String STREAM_HARD            = "http://galnet.ru/hard.mp3";
 }

@@ -21,6 +21,7 @@ import ru.solargateteam.galnetru.db.DBEngine;
 import ru.solargateteam.galnetru.pref.PrefActivity;
 import ru.solargateteam.galnetru.pref.PrefEngine;
 import ru.solargateteam.galnetru.services.RSSService;
+import ru.solargateteam.galnetru.services.RadioService;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -175,6 +176,12 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_feed_site_news) {
             setCurrentFeedType(Global.FEED_TYPE_SITE_NEWS);
             setNewsRecyclerAdapter(getCurrentFeedType());
+        } else if (id == R.id.nav_radio_soft) {
+
+            Intent intent = new Intent(this, RadioService.class);
+            intent.setAction(RadioService.ACTION_SOFT_PLAY);
+
+            startService(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

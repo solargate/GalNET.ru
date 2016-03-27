@@ -42,6 +42,11 @@
             android:exported="false" />
         <service
             android:name="ru.solargateteam.galnetru.services.ImageService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="ru.solargateteam.galnetru.services.RadioService"
+            android:enabled="true"
             android:exported="false" />
 
         <receiver
