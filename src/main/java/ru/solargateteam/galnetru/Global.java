@@ -22,6 +22,7 @@ public class Global {
     public static final String RSS_FEED_POWERPLAY     = "http://galnet.ru/feed/4.rss";         // PowerPlay
     public static final String RSS_FEED_WEEKLY_REPORT = "http://galnet.ru/news/by/tag/1.rss";  // Еженедельный отчет
     public static final String RSS_FEED_COMM_GOALS    = "http://galnet.ru/news/by/tag/32.rss"; // Общественные цели
+    public static final String RSS_FEED_COMM_NEWS     = "http://galnet.ru/feed/8.rss";         // Новости сообществ
     public static final String RSS_FEED_SITE_NEWS     = "http://galnet.ru/feed/2.rss";         // Новости ресурса
 
     public static final String FEED_TYPE_ALL          = "ALL";
@@ -29,5 +30,6 @@ public class Global {
     public static final String FEED_TYPE_POWERPLAY    = "POWERPLAY";
     public static final String FEED_TYPE_WEEKLY_REPORT = "DAYLY_REPORT";
     public static final String FEED_TYPE_COMM_GOALS   = "COMM_GOALS";
+    public static final String FEED_TYPE_COMM_NEWS    = "COMM_NEWS";
     public static final String FEED_TYPE_SITE_NEWS    = "SITE_NEWS";
 }

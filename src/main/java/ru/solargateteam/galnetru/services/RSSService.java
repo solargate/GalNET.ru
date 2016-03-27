@@ -120,6 +120,14 @@ public class RSSService extends IntentService {
 
             tempItems.clear();
 
+            rssReader = new RSSReader(Global.RSS_FEED_COMM_NEWS);
+            tempItems = rssReader.getItems();
+            for (int i = 0; i < tempItems.size(); i++) {
+                dbe.insertContentItem(tempItems.get(i), Global.FEED_TYPE_COMM_NEWS);
+            }
+
+            tempItems.clear();
+
             rssReader = new RSSReader(Global.RSS_FEED_SITE_NEWS);
             tempItems = rssReader.getItems();
             for (int i = 0; i < tempItems.size(); i++) {

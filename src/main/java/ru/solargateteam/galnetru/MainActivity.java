@@ -169,6 +169,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_feed_comm_goals) {
             setCurrentFeedType(Global.FEED_TYPE_COMM_GOALS);
             setNewsRecyclerAdapter(getCurrentFeedType());
+        } else if (id == R.id.nav_feed_comm_news) {
+            setCurrentFeedType(Global.FEED_TYPE_COMM_NEWS);
+            setNewsRecyclerAdapter(getCurrentFeedType());
         } else if (id == R.id.nav_feed_site_news) {
             setCurrentFeedType(Global.FEED_TYPE_SITE_NEWS);
             setNewsRecyclerAdapter(getCurrentFeedType());
