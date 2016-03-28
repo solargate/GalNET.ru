@@ -2,6 +2,7 @@ package ru.solargateteam.galnetru;
 
 import android.app.PendingIntent;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
@@ -101,6 +102,8 @@ public class MainActivity extends AppCompatActivity
 
         pe = new PrefEngine(this);
         pe.initDefaults(this);
+
+        //Typeface face = Typeface.createFromAsset(getAssets(), "fonts/JuraMedium.ttf");
     }
 
     @Override

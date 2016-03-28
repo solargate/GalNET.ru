@@ -2,6 +2,7 @@ package ru.solargateteam.galnetru;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -46,5 +47,9 @@ public class PostActivity extends AppCompatActivity {
         }
 
         tvDescription.setText(item.getDescription());
+
+        Typeface face = Typeface.createFromAsset(getAssets(), Global.FONT_JURA_BOLD);
+        tvTitle.setTypeface(face);
+        tvDescription.setTypeface(face);
     }
 }

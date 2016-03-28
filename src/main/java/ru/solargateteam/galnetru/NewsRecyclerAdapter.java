@@ -1,8 +1,10 @@
 package ru.solargateteam.galnetru;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Typeface;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -46,6 +48,10 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
                     v.getContext().startActivity(intent);
                 }
             });
+
+            Typeface face = Typeface.createFromAsset(v.getContext().getAssets(), Global.FONT_JURA_BOLD);
+            tvTitle.setTypeface(face);
+            tvDescription.setTypeface(face);
         }
     }
 
@@ -79,6 +85,8 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
         holder.tvDescription.setText(listContent.get(position).getLink());
 
         holder.currentItem = listContent.get(position);
+
+        //Typeface face = Typeface.createFromAsset(holder.view.get)
     }
 
     @Override
