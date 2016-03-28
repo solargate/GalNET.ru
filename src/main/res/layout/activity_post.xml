@@ -27,7 +27,7 @@
                 android:id="@+id/tv_post_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"/>
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
 
             <ImageView
                 android:id="@+id/iv_post_image"
