@@ -185,6 +185,11 @@ public class MainActivity extends AppCompatActivity
             intent.setAction(RadioService.ACTION_SOFT_PLAY);
 
             startService(intent);
+        } else if (id == R.id.nav_radio_hard) {
+            Intent intent = new Intent(this, RadioService.class);
+            intent.setAction(RadioService.ACTION_HARD_PLAY);
+
+            startService(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

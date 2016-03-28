@@ -1,73 +1,91 @@
 package ru.solargateteam.galnetru.services;
 
-import android.app.IntentService;
+import android.app.Service;
 import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.os.IBinder;
+import android.support.annotation.Nullable;
 import android.util.Log;
 
 import ru.solargateteam.galnetru.Global;
 
-public class RadioService extends IntentService implements MediaPlayer.OnPreparedListener {
+public class RadioService extends Service implements MediaPlayer.OnPreparedListener {
 
     public static final String ACTION_SOFT_PLAY = "ru.solargateteam.galnetru.action.SOFT_PLAY";
+    public static final String ACTION_HARD_PLAY = "ru.solargateteam.galnetru.action.HARD_PLAY";
 
     MediaPlayer mediaPlayer;
 
-    public RadioService() {
-        super("RadioService");
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+
+        Log.d(Global.TAG, "RadioService onStartCommand");
+
+        String action = intent.getAction();
+
+        releaseMediaPlayer();
+
+        try {
+
+            mediaPlayer = new MediaPlayer();
+
+            if (ACTION_SOFT_PLAY.equals(action)) {
+                mediaPlayer.setDataSource(Global.STREAM_SOFT);
+            } else if (ACTION_HARD_PLAY.equals(action)) {
+                mediaPlayer.setDataSource(Global.STREAM_HARD);
+            }
+
+            mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+
+            Log.d(Global.TAG, "prepareAsync");
+            mediaPlayer.setOnPreparedListener(this);
+            mediaPlayer.prepareAsync();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return START_STICKY;
     }
 
     @Override
-    protected void onHandleIntent(Intent intent) {
+    public void onDestroy() {
+        super.onDestroy();
 
-        Log.i(Global.TAG, "RadioService onHandleIntent");
+        Log.d(Global.TAG, "RadioService onDestroy");
 
-        final String action = intent.getAction();
-
-        if (ACTION_SOFT_PLAY.equals(action)) {
-
-            Log.i(Global.TAG, "RadioService onStartCommand start");
-
-            mediaPlayer = new MediaPlayer();
-            mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-
-            mediaPlayer.setOnPreparedListener(this);
-
-            try {
-
-                Log.i(Global.TAG, "RadioService onHandleIntent ACTION_SOFT_PLAY");
-
-                mediaPlayer.setDataSource(Global.STREAM_SOFT);
-                mediaPlayer.prepareAsync();
-
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
+        if (mediaPlayer.isPlaying()) {
+            mediaPlayer.stop();
         }
+        releaseMediaPlayer();
+    }
 
-        /*
-        if (intent != null) {
-            final String action = intent.getAction();
-            if (ACTION_FOO.equals(action)) {
-                final String param1 = intent.getStringExtra(EXTRA_PARAM1);
-                final String param2 = intent.getStringExtra(EXTRA_PARAM2);
-                handleActionFoo(param1, param2);
-            } else if (ACTION_BAZ.equals(action)) {
-                final String param1 = intent.getStringExtra(EXTRA_PARAM1);
-                final String param2 = intent.getStringExtra(EXTRA_PARAM2);
-                handleActionBaz(param1, param2);
-            }
-        }
-        */
+    @Nullable
+    @Override
+    public IBinder onBind(Intent intent) {
+        return null;
     }
 
     @Override
     public void onPrepared(MediaPlayer mp) {
 
-        Log.i(Global.TAG, "RadioService onPrepared");
+        Log.d(Global.TAG, "RadioService onPrepared");
 
         mp.start();
+    }
+
+    private void releaseMediaPlayer() {
+
+        Log.d(Global.TAG, "RadioService releaseMediaPlayer");
+
+        if (mediaPlayer != null) {
+            try {
+                mediaPlayer.release();
+                mediaPlayer = null;
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 }

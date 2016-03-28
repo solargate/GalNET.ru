@@ -96,7 +96,7 @@ public class DBEngine {
             selectionArgs = new String[] { feedType };
         }
 
-        Cursor c = db.query(DBHelper.DB_TABLE_CONTENT, null, selection, selectionArgs, null, null, DBHelper.FIELD_KEY_ID);
+        Cursor c = db.query(DBHelper.DB_TABLE_CONTENT, null, selection, selectionArgs, null, null, DBHelper.FIELD_PUBDATE + " desc");
 
         if (c != null) {
             if (c.moveToFirst()) {
@@ -119,7 +119,7 @@ public class DBEngine {
     public List<DBItem> readContentNew() {
         List<DBItem> returnList = new ArrayList<DBItem>();
 
-        Cursor c = db.query(DBHelper.DB_TABLE_CONTENT, null, DBHelper.FIELD_NEW_POST + " = ?", new String[]{Integer.toString(DBHelper.NEW_POST_TRUE)}, null, null, DBHelper.FIELD_KEY_ID);
+        Cursor c = db.query(DBHelper.DB_TABLE_CONTENT, null, DBHelper.FIELD_NEW_POST + " = ?", new String[]{Integer.toString(DBHelper.NEW_POST_TRUE)}, null, null, DBHelper.FIELD_PUBDATE + " desc");
 
         if (c != null) {
             if (c.moveToFirst()) {
