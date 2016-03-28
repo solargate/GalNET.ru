@@ -17,6 +17,7 @@ import java.io.FileInputStream;
 import java.util.List;
 
 import ru.solargateteam.galnetru.db.DBItem;
+import ru.solargateteam.galnetru.util.Util;
 
 public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapter.NewsViewHolder> {
 
@@ -68,7 +69,7 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
     @Override
     public void onBindViewHolder(NewsViewHolder holder, int position) {
 
-        holder.tvTitle.setText(listContent.get(position).getTitle());
+        holder.tvTitle.setText(Util.strProcessHTML(listContent.get(position).getTitle()));
 
         if (listContent.get(position).getImagePath() != null) {
             try {
@@ -82,7 +83,7 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
             holder.ivImage.setImageResource(R.drawable.image_no_banner);
         }
 
-        holder.tvDescription.setText(listContent.get(position).getLink());
+        holder.tvDescription.setText(Util.strProcessHTML(listContent.get(position).getDescription()));
 
         holder.currentItem = listContent.get(position);
 

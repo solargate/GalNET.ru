@@ -12,6 +12,7 @@ import java.io.File;
 import java.io.FileInputStream;
 
 import ru.solargateteam.galnetru.db.DBItem;
+import ru.solargateteam.galnetru.util.Util;
 
 public class PostActivity extends AppCompatActivity {
 
@@ -32,7 +33,7 @@ public class PostActivity extends AppCompatActivity {
         ivImage = (ImageView) findViewById(R.id.iv_post_image);
         tvDescription = (TextView) findViewById(R.id.tv_post_description);
 
-        tvTitle.setText(item.getTitle() + "\n");
+        tvTitle.setText(Util.strProcessHTML(item.getTitle()) + "\n");
 
         if (item.getImagePath() != null) {
             try {
@@ -46,7 +47,7 @@ public class PostActivity extends AppCompatActivity {
             ivImage.setImageResource(R.drawable.image_no_banner);
         }
 
-        tvDescription.setText(item.getDescription());
+        tvDescription.setText(Util.strProcessHTML(item.getDescription()));
 
         Typeface face = Typeface.createFromAsset(getAssets(), Global.FONT_JURA_BOLD);
         tvTitle.setTypeface(face);

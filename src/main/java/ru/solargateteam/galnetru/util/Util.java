@@ -15,6 +15,15 @@ import ru.solargateteam.galnetru.Global;
 
 public class Util {
 
+    public static String strProcessHTML(String inputString) {
+        return inputString.replaceAll("</p>", "")
+                .replaceAll("<p>", "\n")
+                .replaceAll("\n\n", "\n")
+                .replaceAll("&laquo;", "\"")
+                .replaceAll("&raquo;", "\"")
+                .replaceAll("&quot;", "\"");
+    }
+
     public static boolean isNetwork(Context context) {
         ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo network = cm.getActiveNetworkInfo();
