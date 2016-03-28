@@ -840,9 +840,11 @@ int string pref_refresh_interval 0x7f070026
 int string pref_refresh_interval_default_value 0x7f070027
 int string pref_refresh_interval_description 0x7f070028
 int string radio_hard 0x7f070029
-int string radio_soft 0x7f07002a
+int string radio_hard_playing 0x7f07002a
+int string radio_soft 0x7f07002b
+int string radio_soft_playing 0x7f07002c
 int string status_bar_notification_info_overflow 0x7f070013
-int string title_activity_post 0x7f07002b
+int string title_activity_post 0x7f07002d
 int style AlertDialog_AppCompat 0x7f0a007f
 int style AlertDialog_AppCompat_Light 0x7f0a0080
 int style Animation_AppCompat_Dialog 0x7f0a0081

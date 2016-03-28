@@ -16,6 +16,11 @@ public class RadioService extends Service implements MediaPlayer.OnPreparedListe
     public static final String ACTION_HARD_PLAY = "ru.solargateteam.galnetru.action.HARD_PLAY";
 
     MediaPlayer mediaPlayer;
+    String playerStatus;
+
+    public RadioService() {
+        this.playerStatus = "";
+    }
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
@@ -24,26 +29,33 @@ public class RadioService extends Service implements MediaPlayer.OnPreparedListe
 
         String action = intent.getAction();
 
-        releaseMediaPlayer();
+        if (playerStatus.equals(action)) {
+            releaseMediaPlayer();
+        } else {
 
-        try {
+            releaseMediaPlayer();
 
-            mediaPlayer = new MediaPlayer();
+            playerStatus = action;
 
-            if (ACTION_SOFT_PLAY.equals(action)) {
-                mediaPlayer.setDataSource(Global.STREAM_SOFT);
-            } else if (ACTION_HARD_PLAY.equals(action)) {
-                mediaPlayer.setDataSource(Global.STREAM_HARD);
+            try {
+
+                mediaPlayer = new MediaPlayer();
+
+                if (ACTION_SOFT_PLAY.equals(action)) {
+                    mediaPlayer.setDataSource(Global.STREAM_SOFT);
+                } else if (ACTION_HARD_PLAY.equals(action)) {
+                    mediaPlayer.setDataSource(Global.STREAM_HARD);
+                }
+
+                mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+
+                Log.d(Global.TAG, "prepareAsync");
+                mediaPlayer.setOnPreparedListener(this);
+                mediaPlayer.prepareAsync();
+
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-
-            mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-
-            Log.d(Global.TAG, "prepareAsync");
-            mediaPlayer.setOnPreparedListener(this);
-            mediaPlayer.prepareAsync();
-
-        } catch (Exception e) {
-            e.printStackTrace();
         }
 
         return START_STICKY;
@@ -83,6 +95,7 @@ public class RadioService extends Service implements MediaPlayer.OnPreparedListe
             try {
                 mediaPlayer.release();
                 mediaPlayer = null;
+                playerStatus = "";
             } catch (Exception e) {
                 e.printStackTrace();
             }

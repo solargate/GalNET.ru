@@ -19,6 +19,8 @@
 
     <string name="radio_soft">Radio SOFT</string>
     <string name="radio_hard">Radio HARD</string>
+    <string name="radio_soft_playing">GalNET.ru Radio SOFT is playing</string>
+    <string name="radio_hard_playing">GalNET.ru Radio HARD is playing</string>
 
     <string name="pref_notification">Notifications</string>
     <string name="pref_notification_description">Enable notifications</string>
