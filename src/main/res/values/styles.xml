@@ -17,7 +17,8 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="GalNETruTheme" parent="Theme.AppCompat.NoActionBar">
+    <style name="Theme.GalNETru" parent="Theme.AppCompat" >
+        <item name="colorAccent">@color/colorEDOrange</item>
         <item name="android:textColor">@color/colorEDOrange</item>
     </style>
 
