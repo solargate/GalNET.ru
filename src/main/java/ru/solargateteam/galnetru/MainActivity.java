@@ -2,7 +2,6 @@ package ru.solargateteam.galnetru;
 
 import android.app.PendingIntent;
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
@@ -16,6 +15,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import ru.solargateteam.galnetru.db.DBEngine;
@@ -37,6 +38,9 @@ public class MainActivity extends AppCompatActivity
     RecyclerView.LayoutManager mLayoutManager;
 
     SwipeRefreshLayout mSwipeRefreshLayout;
+
+    Button btnPlayRadioSoft;
+    Button btnPlayRadioHard;
 
     protected String currentFeedType;
 
@@ -72,6 +76,9 @@ public class MainActivity extends AppCompatActivity
 
         dbe = new DBEngine(this);
 
+        pe = new PrefEngine(this);
+        pe.initDefaults(this);
+
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -92,6 +99,28 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        View drawerHeader = navigationView.inflateHeaderView(R.layout.nav_header_main);
+
+        btnPlayRadioSoft = (Button) drawerHeader.findViewById(R.id.btnPlayRadioSoft);
+        btnPlayRadioSoft.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), RadioService.class);
+                intent.setAction(RadioService.ACTION_SOFT_PLAY);
+                startService(intent);
+            }
+        });
+
+        btnPlayRadioHard = (Button) drawerHeader.findViewById(R.id.btnPlayRadioHard);
+        btnPlayRadioHard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), RadioService.class);
+                intent.setAction(RadioService.ACTION_HARD_PLAY);
+                startService(intent);
+            }
+        });
+
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.content_main_swipe_refresh_layout);
         mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
@@ -99,9 +128,6 @@ public class MainActivity extends AppCompatActivity
                 refreshNews();
             }
         });
-
-        pe = new PrefEngine(this);
-        pe.initDefaults(this);
 
         //Typeface face = Typeface.createFromAsset(getAssets(), "fonts/JuraMedium.ttf");
     }
@@ -179,17 +205,6 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_feed_site_news) {
             setCurrentFeedType(Global.FEED_TYPE_SITE_NEWS);
             setNewsRecyclerAdapter(getCurrentFeedType());
-        } else if (id == R.id.nav_radio_soft) {
-
-            Intent intent = new Intent(this, RadioService.class);
-            intent.setAction(RadioService.ACTION_SOFT_PLAY);
-
-            startService(intent);
-        } else if (id == R.id.nav_radio_hard) {
-            Intent intent = new Intent(this, RadioService.class);
-            intent.setAction(RadioService.ACTION_HARD_PLAY);
-
-            startService(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

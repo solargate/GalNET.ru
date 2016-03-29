@@ -3,6 +3,7 @@
 
     <group
         android:checkableBehavior="single">
+
         <item
             android:id="@+id/nav_feed_all"
             android:icon="@drawable/ic_menu_feed"
@@ -31,18 +32,6 @@
             android:id="@+id/nav_feed_site_news"
             android:icon="@drawable/ic_menu_feed"
             android:title="@string/feed_site_news" />
-    </group>
-
-    <group
-        android:checkableBehavior="single" >
-        <item
-            android:id="@+id/nav_radio_soft"
-            android:icon="@drawable/ic_radio_soft"
-            android:title="@string/radio_soft"/>
-        <item
-            android:id="@+id/nav_radio_hard"
-            android:icon="@drawable/ic_radio_hard"
-            android:title="@string/radio_hard"/>
     </group>
 
 </menu>

@@ -11,26 +11,46 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
+    <!--
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:src="@android:drawable/sym_def_app_icon" />
+    -->
 
+    <Button
+        android:id="@+id/btnPlayRadioSoft"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:background="@drawable/ic_menu_radio_soft"/>
+
+    <Button
+        android:id="@+id/btnPlayRadioHard"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@drawable/ic_menu_radio_hard"/>
+
+    <!--
     <ImageView
-        android:id="@+id/imageViewTest"
+        android:id="@+id/ivRadioSoft"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:src="@android:drawable/ic_media_play" />
+        android:src="@drawable/ic_menu_radio_soft" />
 
     <ImageView
-        android:id="@+id/imageViewTest2"
+        android:id="@+id/ivRadioHard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:src="@drawable/ic_galnet_logo" />
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:src="@drawable/ic_menu_radio_hard" />
+    -->
 
     <!-- TODO: Тест заголовка
         <TextView
