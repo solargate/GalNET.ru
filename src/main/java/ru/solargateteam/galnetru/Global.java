@@ -4,7 +4,7 @@ package ru.solargateteam.galnetru;
 TODO: Список задач:
 - PostActivity во Fragment
 - PrefActivity во Fragment
-- Кнопка "Back" в связи с пунктами выше
+- Кнопка "Back" в связи с пунктами выше (анимированная). Показ фрагментов тоже анимированный
 - При чтении даты из RSS обрабатывать ее как Description
 - Добавить дату в CardView и в посты
 - Добавить скроллбар в RecyclerView
@@ -17,6 +17,7 @@ TODO: Список задач:
 - Тема оформления в Toolbar
 - About dialog
 - Иконка приложения
+- Иконки уведомлений
  */
 
 public class Global {

@@ -9,6 +9,7 @@ import android.graphics.Color;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.TaskStackBuilder;
 
+import java.util.Formatter;
 import java.util.List;
 
 import ru.solargateteam.galnetru.MainActivity;
@@ -17,9 +18,12 @@ import ru.solargateteam.galnetru.db.DBEngine;
 import ru.solargateteam.galnetru.db.DBItem;
 import ru.solargateteam.galnetru.pref.PrefEngine;
 
+import static java.lang.String.format;
+
 public class NotificationEngine {
 
     private static final int NOTIFICATION_ID_NEW_POST = 1;
+    private static final int NOTIFICATION_ID_RADIO    = 2;
 
     NotificationManager nm;
     DBEngine dbe;
@@ -35,6 +39,11 @@ public class NotificationEngine {
             showNotificationNewPost(context);
         else
             removeNotificationNewPost();
+    }
+
+    public void processNotificationRadio(Context context, String radioName) {
+        PrefEngine pe = new PrefEngine(context);
+        showNotificationRadio(context, radioName);
     }
 
     private void showNotificationNewPost(Context context) {
@@ -64,7 +73,6 @@ public class NotificationEngine {
             stackBuilder.addParentStack(MainActivity.class);
             stackBuilder.addNextIntent(resultIntent);
             PendingIntent resultPendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
-
             builder.setContentIntent(resultPendingIntent);
 
             nm.notify(NOTIFICATION_ID_NEW_POST, builder.build());
@@ -75,4 +83,29 @@ public class NotificationEngine {
     private void removeNotificationNewPost() {
         nm.cancel(NOTIFICATION_ID_NEW_POST);
     }
+
+    private void showNotificationRadio(Context context, String radioName) {
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(context);
+
+        builder.setSmallIcon(R.drawable.ic_notify)
+                .setContentTitle(String.valueOf(context.getString(R.string.notification_radio_title)))
+                .setContentText(format(String.valueOf(context.getString(R.string.notification_radio_text)), radioName))
+                        .setOngoing(true)
+                        .setShowWhen(false);
+
+        Intent resultIntent = new Intent(context, MainActivity.class);
+        TaskStackBuilder stackBuilder = TaskStackBuilder.create(context);
+        stackBuilder.addParentStack(MainActivity.class);
+        stackBuilder.addNextIntent(resultIntent);
+        PendingIntent resultPendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
+        builder.setContentIntent(resultPendingIntent);
+
+        nm.notify(NOTIFICATION_ID_RADIO, builder.build());
+
+    }
+
+    public void removeNotificationRadio() {
+        nm.cancel(NOTIFICATION_ID_RADIO);
+    }
+
 }

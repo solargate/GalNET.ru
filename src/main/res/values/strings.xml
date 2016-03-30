@@ -8,6 +8,8 @@
 
     <string name="notification_new_post_title">GalNET.ru news</string>
     <string name="notification_new_post_text">new posts on GalNET.ru</string>
+    <string name="notification_radio_title">GalNET.ru radio</string>
+    <string name="notification_radio_text">Radio %s is playing&#8230;</string>
 
     <string name="feed_all">All News</string>
     <string name="feed_galnet_news">GalNET News</string>

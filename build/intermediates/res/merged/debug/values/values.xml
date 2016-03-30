@@ -320,6 +320,8 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="notification_new_post_text">new posts on GalNET.ru</string>
     <string name="notification_new_post_title">GalNET.ru news</string>
+    <string name="notification_radio_text">Radio %s is playing…</string>
+    <string name="notification_radio_title">GalNET.ru radio</string>
     <string name="pref_galnet_font">GalNET font</string>
     <string name="pref_galnet_font_description">Use GalNET font</string>
     <string name="pref_notification">Notifications</string>

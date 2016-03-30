@@ -9,6 +9,7 @@ import android.support.annotation.Nullable;
 import android.util.Log;
 
 import ru.solargateteam.galnetru.Global;
+import ru.solargateteam.galnetru.util.NotificationEngine;
 
 public class RadioService extends Service implements MediaPlayer.OnPreparedListener {
 
@@ -17,6 +18,7 @@ public class RadioService extends Service implements MediaPlayer.OnPreparedListe
 
     MediaPlayer mediaPlayer;
     String playerStatus;
+    NotificationEngine ne;
 
     public RadioService() {
         this.playerStatus = "";
@@ -26,6 +28,8 @@ public class RadioService extends Service implements MediaPlayer.OnPreparedListe
     public int onStartCommand(Intent intent, int flags, int startId) {
 
         Log.d(Global.TAG, "RadioService onStartCommand");
+
+        ne = new NotificationEngine(getApplicationContext());
 
         String action = intent.getAction();
 
@@ -84,6 +88,8 @@ public class RadioService extends Service implements MediaPlayer.OnPreparedListe
 
         Log.d(Global.TAG, "RadioService onPrepared");
 
+        ne.processNotificationRadio(getApplicationContext(), getRadioName());
+
         mp.start();
     }
 
@@ -96,9 +102,19 @@ public class RadioService extends Service implements MediaPlayer.OnPreparedListe
                 mediaPlayer.release();
                 mediaPlayer = null;
                 playerStatus = "";
+                ne.removeNotificationRadio();
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
+    }
+
+    private String getRadioName() {
+        if (playerStatus.equals(ACTION_SOFT_PLAY)) {
+            return "SOFT";
+        } else if (playerStatus.equals(ACTION_HARD_PLAY)) {
+            return "HARD";
+        }
+        return "";
     }
 }
