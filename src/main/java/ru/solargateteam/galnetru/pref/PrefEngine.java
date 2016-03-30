@@ -10,6 +10,7 @@ public class PrefEngine {
 
     private static final String PREF_REFRESH_INTERVAL = "PREF_REFRESH_INTERVAL";
     private static final String PREF_USE_NOTIFICATION = "PREF_USE_NOTIFICATION";
+    private static final String PREF_USE_GALNET_FONT  = "PREF_USE_GALNET_FONT";
 
     SharedPreferences sp;
 
@@ -52,5 +53,9 @@ public class PrefEngine {
 
     public boolean isNotificationEnabled() {
         return sp.getBoolean(PREF_USE_NOTIFICATION, true);
+    }
+
+    public boolean useGalNETFont() {
+        return sp.getBoolean(PREF_USE_GALNET_FONT, false);
     }
 }

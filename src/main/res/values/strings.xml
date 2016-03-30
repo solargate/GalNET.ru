@@ -27,6 +27,8 @@
     <string name="pref_refresh_interval">Refresh interval</string>
     <string name="pref_refresh_interval_description">News refresh interval</string>
     <string name="pref_refresh_interval_default_value">1h</string>
+    <string name="pref_galnet_font">GalNET font</string>
+    <string name="pref_galnet_font_description">Use GalNET font</string>
 
     <string name="err_no_network">No network connection</string>
 

@@ -1,6 +1,5 @@
 package ru.solargateteam.galnetru;
 
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -17,6 +16,7 @@ import java.io.FileInputStream;
 import java.util.List;
 
 import ru.solargateteam.galnetru.db.DBItem;
+import ru.solargateteam.galnetru.pref.PrefEngine;
 import ru.solargateteam.galnetru.util.Util;
 
 public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapter.NewsViewHolder> {
@@ -50,9 +50,12 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
                 }
             });
 
-            Typeface face = Typeface.createFromAsset(v.getContext().getAssets(), Global.FONT_JURA_BOLD);
-            tvTitle.setTypeface(face);
-            tvDescription.setTypeface(face);
+            PrefEngine pe = new PrefEngine(v.getContext());
+            if (pe.useGalNETFont()) {
+                Typeface face = Typeface.createFromAsset(v.getContext().getAssets(), Global.FONT_JURA_BOLD);
+                tvTitle.setTypeface(face);
+                tvDescription.setTypeface(face);
+            }
         }
     }
 

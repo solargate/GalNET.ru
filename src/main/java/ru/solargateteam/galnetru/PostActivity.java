@@ -12,6 +12,7 @@ import java.io.File;
 import java.io.FileInputStream;
 
 import ru.solargateteam.galnetru.db.DBItem;
+import ru.solargateteam.galnetru.pref.PrefEngine;
 import ru.solargateteam.galnetru.util.Util;
 
 public class PostActivity extends AppCompatActivity {
@@ -49,8 +50,11 @@ public class PostActivity extends AppCompatActivity {
 
         tvDescription.setText(Util.strProcessHTML(item.getDescription()));
 
-        Typeface face = Typeface.createFromAsset(getAssets(), Global.FONT_JURA_BOLD);
-        tvTitle.setTypeface(face);
-        tvDescription.setTypeface(face);
+        PrefEngine pe = new PrefEngine(getApplicationContext());
+        if (pe.useGalNETFont()) {
+            Typeface face = Typeface.createFromAsset(getAssets(), Global.FONT_JURA_BOLD);
+            tvTitle.setTypeface(face);
+            tvDescription.setTypeface(face);
+        }
     }
 }
