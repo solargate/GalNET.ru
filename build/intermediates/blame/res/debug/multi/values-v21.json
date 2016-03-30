@@ -2182,33 +2182,41 @@
                     "startLine": 245,
                     "startColumn": 4,
                     "startOffset": 17866,
-                    "endLine": 252,
+                    "endLine": 253,
                     "endColumn": 12,
-                    "endOffset": 18339
+                    "endOffset": 18412
                 },
                 "from": {
                     "file": "D:\\dev\\android-studio-ws\\GalNET.ru\\src\\main\\res\\values-v21\\styles.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 982,
-                        "endLine": 28,
+                        "startOffset": 977,
+                        "endLine": 29,
                         "endColumn": 12,
-                        "endOffset": 1462
+                        "endOffset": 1531
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 253,
+                    "startLine": 254,
                     "startColumn": 4,
-                    "startOffset": 18344,
-                    "endLine": 263,
+                    "startOffset": 18417,
+                    "endLine": 264,
                     "endColumn": 12,
-                    "endOffset": 18979
+                    "endOffset": 19047
                 },
                 "from": {
-                    "file": "D:\\dev\\android-studio-ws\\GalNET.ru\\src\\main\\res\\values-v21\\styles.xml"
+                    "file": "D:\\dev\\android-studio-ws\\GalNET.ru\\src\\main\\res\\values-v21\\styles.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 329,
+                        "endLine": 19,
+                        "endColumn": 12,
+                        "endOffset": 969
+                    }
                 }
             }
         ]

@@ -1,5 +1,24 @@
 package ru.solargateteam.galnetru;
 
+/*
+TODO: Список задач:
+- PostActivity во Fragment
+- PrefActivity во Fragment
+- Кнопка "Back" в связи с пунктами выше
+- При чтении даты из RSS обрабатывать ее как Description
+- Добавить дату в CardView и в посты
+- Добавить скроллбар в RecyclerView
+- Пуржинг базы и картинок от старых постов
+- Уведомление о проигрывании радио
+- Буфферинг при старте плеера
+- Попробовать читать теги mp3 и выводить название песни
+- Кнопки радио в квадратные рамки. При нажатии инвертировать
+- Тема оформления в Navigation View
+- Тема оформления в Toolbar
+- About dialog
+- Иконка приложения
+ */
+
 public class Global {
 
     public static final String TAG                     = "GalNET.ru";
