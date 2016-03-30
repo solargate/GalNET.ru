@@ -32,6 +32,17 @@ public class Util {
         return (network != null && network.isConnected());
     }
 
+    public static String makeDateStringFromUnixTime(long unixTime) {
+        try {
+            DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy", Locale.US);
+            Date date = new Date(unixTime * 1000);
+            return dateFormat.format(date);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "";
+        }
+    }
+
     public static long getUnixTime(String dateString) {
         long unixTime = 0;
         DateFormat dateFormat = new SimpleDateFormat("EEE, d MMM yyyy HH:mm:ss Z", Locale.US);

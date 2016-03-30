@@ -9,7 +9,7 @@ public class DBItem implements Serializable {
     private String link;
     private String description;
     private String guid;
-    private String pubDate;
+    private long   pubDate;
     private String imagePath;
     private int    newPost;
 
@@ -56,11 +56,11 @@ public class DBItem implements Serializable {
         this.guid = guid;
     }
 
-    public String getPubDate() {
+    public long getPubDate() {
         return pubDate;
     }
 
-    public void setPubDate(String pubDate) {
+    public void setPubDate(long pubDate) {
         this.pubDate = pubDate;
     }
 

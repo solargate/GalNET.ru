@@ -107,6 +107,7 @@ public class DBEngine {
                     currentItem.setLink(c.getString(c.getColumnIndex(DBHelper.FIELD_LINK)));
                     currentItem.setDescription(c.getString(c.getColumnIndex(DBHelper.FIELD_DESCRIPTION)));
                     currentItem.setImagePath(c.getString(c.getColumnIndex(DBHelper.FIELD_IMAGE_PATH)));
+                    currentItem.setPubDate(c.getLong(c.getColumnIndex(DBHelper.FIELD_PUBDATE)));
                     currentItem.setNewPost(c.getInt(c.getColumnIndex(DBHelper.FIELD_NEW_POST)));
                     returnList.add(currentItem);
                 } while (c.moveToNext());
@@ -130,6 +131,7 @@ public class DBEngine {
                     currentItem.setLink(c.getString(c.getColumnIndex(DBHelper.FIELD_LINK)));
                     currentItem.setDescription(c.getString(c.getColumnIndex(DBHelper.FIELD_DESCRIPTION)));
                     currentItem.setImagePath(c.getString(c.getColumnIndex(DBHelper.FIELD_IMAGE_PATH)));
+                    currentItem.setPubDate(c.getLong(c.getColumnIndex(DBHelper.FIELD_PUBDATE)));
                     currentItem.setNewPost(c.getInt(c.getColumnIndex(DBHelper.FIELD_NEW_POST)));
                     returnList.add(currentItem);
                 } while (c.moveToNext());

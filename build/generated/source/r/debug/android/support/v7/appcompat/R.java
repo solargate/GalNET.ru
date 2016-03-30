@@ -377,8 +377,8 @@ public final class R {
 		public static final int abc_text_size_subtitle_material_toolbar = 0x7f090003;
 		public static final int abc_text_size_title_material = 0x7f09004b;
 		public static final int abc_text_size_title_material_toolbar = 0x7f090004;
-		public static final int disabled_alpha_material_dark = 0x7f090064;
-		public static final int disabled_alpha_material_light = 0x7f090065;
+		public static final int disabled_alpha_material_dark = 0x7f090065;
+		public static final int disabled_alpha_material_light = 0x7f090066;
 		public static final int highlight_alpha_material_colored = 0x7f090067;
 		public static final int highlight_alpha_material_dark = 0x7f090068;
 		public static final int highlight_alpha_material_light = 0x7f090069;

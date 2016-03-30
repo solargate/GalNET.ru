@@ -28,26 +28,36 @@
                 android:id="@+id/tv_news_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="3dp"
-                android:layout_marginLeft="3dp"
-                android:layout_marginRight="3dp"
+                android:layout_marginTop="@dimen/cardview_inner_margin"
+                android:layout_marginLeft="@dimen/cardview_inner_margin"
+                android:layout_marginRight="@dimen/cardview_inner_margin"
                 android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <!--
+            <TextView
+                android:id="@+id/tv_news_pubdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/cardview_inner_margin"
+                android:gravity="right"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+            -->
 
             <ImageView
                 android:id="@+id/iv_news_image"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="3dp"
-                android:layout_marginRight="3dp"
+                android:layout_marginLeft="@dimen/cardview_inner_margin"
+                android:layout_marginRight="@dimen/cardview_inner_margin"
                 android:adjustViewBounds="true" />
 
             <TextView
                 android:id="@+id/tv_news_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="3dp"
-                android:layout_marginRight="3dp"
-                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="@dimen/cardview_inner_margin"
+                android:layout_marginRight="@dimen/cardview_inner_margin"
+                android:layout_marginBottom="@dimen/cardview_inner_margin"
                 android:textAppearance="?android:attr/textAppearance"/>
 
         </LinearLayout>
