@@ -51,7 +51,9 @@
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorEDOrange">#e38d13</color>
+    <color name="colorBackground">#000000</color>
+    <color name="colorEDOrange">#E38D13</color>
+    <color name="colorFront">#FF212121</color>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="design_fab_shadow_end_color">@android:color/transparent</color>
@@ -214,7 +216,7 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">10dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="cardview_compat_inset_shadow">1dp</dimen>
     <dimen name="cardview_default_elevation">2dp</dimen>
@@ -1562,6 +1564,18 @@
     <style name="Theme.GalNETru" parent="Theme.AppCompat">
         <item name="colorAccent">@color/colorEDOrange</item>
         <item name="android:textColor">@color/colorEDOrange</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorPrimary">@color/colorFront</item>
+        <item name="android:colorForeground">@color/colorBackground</item>
+    </style>
+    <style name="Theme.GalNETru.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorAccent">@color/colorEDOrange</item>
+        <item name="android:textColor">@color/colorEDOrange</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorPrimary">@color/colorFront</item>
+        <item name="android:colorForeground">@color/colorBackground</item>
     </style>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>

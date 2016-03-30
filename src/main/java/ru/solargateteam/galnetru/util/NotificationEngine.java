@@ -55,7 +55,7 @@ public class NotificationEngine {
             builder.setSmallIcon(R.drawable.ic_notify)
                     .setContentTitle(String.valueOf(context.getString(R.string.notification_new_post_title)))
                     .setContentText(String.valueOf(text))
-                    .setDefaults(Notification.DEFAULT_SOUND | Notification.DEFAULT_LIGHTS)
+                    .setDefaults(Notification.DEFAULT_SOUND /*| Notification.DEFAULT_LIGHTS*/)
                     .setLights(Color.YELLOW, 0, 1)
                     .setAutoCancel(true);
 

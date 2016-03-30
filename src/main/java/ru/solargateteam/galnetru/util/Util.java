@@ -21,7 +21,9 @@ public class Util {
                 .replaceAll("\n\n", "\n")
                 .replaceAll("&laquo;", "\"")
                 .replaceAll("&raquo;", "\"")
-                .replaceAll("&quot;", "\"");
+                .replaceAll("&quot;", "\"")
+                .replaceAll("<b>", "")
+                .replaceAll("</b>", "");
     }
 
     public static boolean isNetwork(Context context) {

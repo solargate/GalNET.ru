@@ -13,29 +13,41 @@
         card_view:contentPaddingRight="5dp"
         card_view:contentPaddingTop="5dp"
         card_view:contentPaddingBottom="5dp"
-        card_view:cardCornerRadius="0dp">
+        card_view:cardElevation="0dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="0dp"
+        card_view:cardBackgroundColor="@color/colorBackground">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="@drawable/ic_card_border" >
 
             <TextView
                 android:id="@+id/tv_news_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"/>
 
             <ImageView
                 android:id="@+id/iv_news_image"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
                 android:adjustViewBounds="true" />
 
             <TextView
                 android:id="@+id/tv_news_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
                 android:textAppearance="?android:attr/textAppearance"/>
 
         </LinearLayout>
