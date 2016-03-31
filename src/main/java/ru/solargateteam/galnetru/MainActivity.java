@@ -47,13 +47,13 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        final DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         final ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        final NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
         View drawerHeader = navigationView.inflateHeaderView(R.layout.nav_header_main);
@@ -96,13 +96,13 @@ public class MainActivity extends AppCompatActivity
         //ft.addToBackStack(null);
         ft.commit();
 
-
         final View.OnClickListener originalToolbarListener = toggle.getToolbarNavigationClickListener();
 
         getSupportFragmentManager().addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
             @Override
             public void onBackStackChanged() {
                 if (getSupportFragmentManager().getBackStackEntryCount() > 0) {
+                    drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
                     toggle.setDrawerIndicatorEnabled(false);
                     toggle.setToolbarNavigationClickListener(new View.OnClickListener() {
                         @Override
@@ -111,6 +111,7 @@ public class MainActivity extends AppCompatActivity
                         }
                     });
                 } else {
+                    drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
                     toggle.setDrawerIndicatorEnabled(true);
                     toggle.setToolbarNavigationClickListener(originalToolbarListener);
                 }
