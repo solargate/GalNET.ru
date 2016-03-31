@@ -250,7 +250,7 @@
         <item name="colorPrimary">@color/colorFront</item>
         <item name="android:colorForeground">@color/colorBackground</item>
         <item name="android:statusBarColor">@color/colorFront</item>
-        <item name="android:navigationBarColor">@color/colorFront</item>
+        <item name="android:navigationBarColor">@color/colorBackground</item>
     </style>
     <style name="Theme.GalNETru.NoActionBar">
         <item name="windowActionBar">false</item>
@@ -260,7 +260,7 @@
         <item name="android:colorBackground">@color/colorBackground</item>
         <item name="colorPrimary">@color/colorFront</item>
         <item name="android:colorForeground">@color/colorBackground</item>
-        <item name="android:navigationBarColor">@color/colorFront</item>
+        <item name="android:navigationBarColor">@color/colorBackground</item>
         <item name="android:statusBarColor">@color/colorFront</item>
     </style>
 </resources>

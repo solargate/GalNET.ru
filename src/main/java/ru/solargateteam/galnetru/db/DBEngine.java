@@ -73,6 +73,9 @@ public class DBEngine {
     }
 
     public void updateNewPostToOld() {
+
+        Log.d(Global.TAG, "updateNewPostToOld");
+
         ContentValues cv = new ContentValues();
 
         cv.put(DBHelper.FIELD_NEW_POST, DBHelper.NEW_POST_FALSE);

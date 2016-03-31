@@ -20,6 +20,7 @@ public class PostActivity extends AppCompatActivity {
     public static final String PARAM_ITEM = "ru.solargateteam.galnetru.param.PARAM_ITEM";
 
     TextView tvTitle;
+    TextView tvPubDate;
     ImageView ivImage;
     TextView tvDescription;
 
@@ -31,10 +32,13 @@ public class PostActivity extends AppCompatActivity {
         DBItem item = (DBItem) getIntent().getSerializableExtra(PARAM_ITEM);
 
         tvTitle = (TextView) findViewById(R.id.tv_post_title);
+        tvPubDate = (TextView) findViewById(R.id.tv_post_pubdate);
         ivImage = (ImageView) findViewById(R.id.iv_post_image);
         tvDescription = (TextView) findViewById(R.id.tv_post_description);
 
-        tvTitle.setText(Util.strProcessHTML(item.getTitle()) + "\n");
+        tvTitle.setText(Util.strProcessHTML(item.getTitle()));
+
+        tvPubDate.setText(Util.makeDateStringFromUnixTime(item.getPubDate()));
 
         if (item.getImagePath() != null) {
             try {
