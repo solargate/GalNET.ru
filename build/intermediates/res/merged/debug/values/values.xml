@@ -1309,6 +1309,10 @@
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
     </style>
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
 
@@ -1570,9 +1574,9 @@
         <item name="android:colorBackground">@color/colorBackground</item>
         <item name="colorPrimary">@color/colorFront</item>
         <item name="android:colorForeground">@color/colorBackground</item>
-        <!--
+
         <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
-        -->
+
     </style>
     <style name="Theme.GalNETru.NoActionBar">
         <item name="windowActionBar">false</item>
@@ -1582,9 +1586,9 @@
         <item name="android:colorBackground">@color/colorBackground</item>
         <item name="colorPrimary">@color/colorFront</item>
         <item name="android:colorForeground">@color/colorBackground</item>
-        <!--
+
         <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
-        -->
+
     </style>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>

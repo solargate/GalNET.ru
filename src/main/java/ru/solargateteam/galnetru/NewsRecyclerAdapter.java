@@ -66,22 +66,7 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-
                     fragmentPostJump(currentItem);
-
-                    /*
-                    PostFragment fragmentPost = new PostFragment();
-                    fragmentPost.setItem(currentItem);
-                    android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-                    ft.replace(R.id.fMain, fragmentPost);
-                    ft.commit();
-                    */
-
-                    /*
-                    Intent intent = new Intent(v.getContext(), PostActivity.class);
-                    intent.putExtra(PostActivity.PARAM_ITEM, currentItem);
-                    v.getContext().startActivity(intent);
-                    */
                 }
             });
 
@@ -98,9 +83,6 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
             Bundle bundle = new Bundle();
             bundle.putSerializable(PostFragment.PARAM_ITEM, itemSelected);
             fragmentPost.setArguments(bundle);
-
-            Log.d(Global.TAG, "fragmentPostJump " + itemSelected.getTitle());
-
             switchPost(R.id.fMain, fragmentPost);
         }
 
