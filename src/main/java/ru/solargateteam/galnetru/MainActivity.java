@@ -1,5 +1,6 @@
 package ru.solargateteam.galnetru;
 
+import android.support.v4.app.FragmentTransaction;
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Bundle;
@@ -31,18 +32,19 @@ public class MainActivity extends AppCompatActivity
 
     public static final int SHOW_PREFERENCES = 1;
 
-    DBEngine dbe;
+    //DBEngine dbe;
     PrefEngine pe;
 
-    RecyclerView mRecyclerView;
-    NewsRecyclerAdapter mAdapter;
-    RecyclerView.LayoutManager mLayoutManager;
+    //RecyclerView mRecyclerView;
+    //NewsRecyclerAdapter mAdapter;
+    //RecyclerView.LayoutManager mLayoutManager;
 
-    SwipeRefreshLayout mSwipeRefreshLayout;
+    //SwipeRefreshLayout mSwipeRefreshLayout;
 
     Button btnPlayRadioSoft;
     Button btnPlayRadioHard;
 
+    /*
     protected String currentFeedType;
 
     public String getCurrentFeedType() {
@@ -52,12 +54,16 @@ public class MainActivity extends AppCompatActivity
     public void setCurrentFeedType(String currentFeedType) {
         this.currentFeedType = currentFeedType;
     }
+    */
 
+    /*
     private void setNewsRecyclerAdapter(String feedType) {
         mAdapter = new NewsRecyclerAdapter(dbe.readContent(feedType));
         mRecyclerView.setAdapter(mAdapter);
     }
+    */
 
+    /*
     private void refreshNews() {
         PendingIntent pi;
         Intent intent;
@@ -69,13 +75,14 @@ public class MainActivity extends AppCompatActivity
 
         startService(intent);
     }
+    */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.d(Global.TAG, "Create");
         super.onCreate(savedInstanceState);
 
-        dbe = new DBEngine(this);
+        //dbe = new DBEngine(this);
 
         pe = new PrefEngine(this);
         pe.initDefaults(this);
@@ -84,17 +91,20 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        mRecyclerView = (RecyclerView) findViewById(R.id.news_recycler_view);
-        mLayoutManager = new LinearLayoutManager(this);
-        mRecyclerView.setLayoutManager(mLayoutManager);
+        //mRecyclerView = (RecyclerView) findViewById(R.id.news_recycler_view);
+        //mLayoutManager = new LinearLayoutManager(this);
+        //mRecyclerView.setLayoutManager(mLayoutManager);
 
-        setCurrentFeedType(Global.FEED_TYPE_ALL);
-        setNewsRecyclerAdapter(getCurrentFeedType());
+        //setCurrentFeedType(Global.FEED_TYPE_ALL);
+
+        //setNewsRecyclerAdapter(getCurrentFeedType());
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setHomeButtonEnabled(true);
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
@@ -132,6 +142,7 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
+        /*
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.content_main_swipe_refresh_layout);
         mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
@@ -139,14 +150,30 @@ public class MainActivity extends AppCompatActivity
                 refreshNews();
             }
         });
-
+        */
         //Typeface face = Typeface.createFromAsset(getAssets(), "fonts/JuraMedium.ttf");
+
+        MainFragment fragmentMain = new MainFragment();;
+
+        Log.d(Global.TAG, " fragmentMain 1");
+
+        fragmentMain = new MainFragment();
+
+        android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.fMain, fragmentMain);
+        ft.commit();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        setNewsRecyclerAdapter(getCurrentFeedType());
+//        setNewsRecyclerAdapter(getCurrentFeedType());
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+//        dbe.updateNewPostToOld();
     }
 
     @Override
@@ -188,46 +215,48 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
+/*
         if (id == R.id.nav_feed_all) {
-            setCurrentFeedType(Global.FEED_TYPE_ALL);
-            setNewsRecyclerAdapter(getCurrentFeedType());
+            fragmentMain.setCurrentFeedType(Global.FEED_TYPE_ALL);
+            fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
         } else if (id == R.id.nav_feed_galnet_news) {
-            setCurrentFeedType(Global.FEED_TYPE_GALNET_NEWS);
-            setNewsRecyclerAdapter(getCurrentFeedType());
+            fragmentMain.setCurrentFeedType(Global.FEED_TYPE_GALNET_NEWS);
+            fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
         } else if (id == R.id.nav_feed_powerplay) {
-            setCurrentFeedType(Global.FEED_TYPE_POWERPLAY);
-            setNewsRecyclerAdapter(getCurrentFeedType());
+            fragmentMain.setCurrentFeedType(Global.FEED_TYPE_POWERPLAY);
+            fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
         } else if (id == R.id.nav_feed_weekly_report) {
-            setCurrentFeedType(Global.FEED_TYPE_WEEKLY_REPORT);
-            setNewsRecyclerAdapter(getCurrentFeedType());
+            fragmentMain.setCurrentFeedType(Global.FEED_TYPE_WEEKLY_REPORT);
+            fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
         } else if (id == R.id.nav_feed_comm_goals) {
-            setCurrentFeedType(Global.FEED_TYPE_COMM_GOALS);
-            setNewsRecyclerAdapter(getCurrentFeedType());
+            fragmentMain.setCurrentFeedType(Global.FEED_TYPE_COMM_GOALS);
+            fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
         } else if (id == R.id.nav_feed_comm_news) {
-            setCurrentFeedType(Global.FEED_TYPE_COMM_NEWS);
-            setNewsRecyclerAdapter(getCurrentFeedType());
+            fragmentMain.setCurrentFeedType(Global.FEED_TYPE_COMM_NEWS);
+            fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
         } else if (id == R.id.nav_feed_site_news) {
-            setCurrentFeedType(Global.FEED_TYPE_SITE_NEWS);
-            setNewsRecyclerAdapter(getCurrentFeedType());
+            fragmentMain.setCurrentFeedType(Global.FEED_TYPE_SITE_NEWS);
+            fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
         }
-
+*/
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 
+    /*
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
         if (resultCode == Global.NEWS_SERVICE_STATUS_OK) {
             mSwipeRefreshLayout.setRefreshing(false);
-            setNewsRecyclerAdapter(getCurrentFeedType());
+            fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
         } else if (resultCode == Global.NEWS_SERVICE_STATUS_NON) {
             Toast toast = Toast.makeText(getApplicationContext(), R.string.err_no_network, Toast.LENGTH_SHORT);
             toast.show();
             mSwipeRefreshLayout.setRefreshing(false);
         }
     }
+    */
 }

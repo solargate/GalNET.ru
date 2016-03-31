@@ -1570,6 +1570,9 @@
         <item name="android:colorBackground">@color/colorBackground</item>
         <item name="colorPrimary">@color/colorFront</item>
         <item name="android:colorForeground">@color/colorBackground</item>
+        <!--
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        -->
     </style>
     <style name="Theme.GalNETru.NoActionBar">
         <item name="windowActionBar">false</item>
@@ -1579,6 +1582,9 @@
         <item name="android:colorBackground">@color/colorBackground</item>
         <item name="colorPrimary">@color/colorFront</item>
         <item name="android:colorForeground">@color/colorBackground</item>
+        <!--
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        -->
     </style>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>

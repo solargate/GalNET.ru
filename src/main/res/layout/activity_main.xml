@@ -8,11 +8,48 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.GalNETru" />
+
+        <LinearLayout
+            android:id="@+id/main_content_fragments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+<!--
     <include
         layout="@layout/app_bar_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
+-->
     <!-- TODO: Перенести в стили -->
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
