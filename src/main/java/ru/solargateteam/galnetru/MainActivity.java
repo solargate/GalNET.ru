@@ -1,12 +1,9 @@
 package ru.solargateteam.galnetru;
 
-import android.support.v4.app.FragmentTransaction;
-import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.util.Log;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -20,10 +17,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import ru.solargateteam.galnetru.db.DBEngine;
 import ru.solargateteam.galnetru.pref.PrefActivity;
 import ru.solargateteam.galnetru.pref.PrefEngine;
-import ru.solargateteam.galnetru.services.RSSService;
 import ru.solargateteam.galnetru.services.RadioService;
 import ru.solargateteam.galnetru.util.Util;
 
@@ -32,57 +27,17 @@ public class MainActivity extends AppCompatActivity
 
     public static final int SHOW_PREFERENCES = 1;
 
-    //DBEngine dbe;
     PrefEngine pe;
 
-    //RecyclerView mRecyclerView;
-    //NewsRecyclerAdapter mAdapter;
-    //RecyclerView.LayoutManager mLayoutManager;
-
-    //SwipeRefreshLayout mSwipeRefreshLayout;
+    MainFragment fragmentMain;
 
     Button btnPlayRadioSoft;
     Button btnPlayRadioHard;
-
-    /*
-    protected String currentFeedType;
-
-    public String getCurrentFeedType() {
-        return currentFeedType;
-    }
-
-    public void setCurrentFeedType(String currentFeedType) {
-        this.currentFeedType = currentFeedType;
-    }
-    */
-
-    /*
-    private void setNewsRecyclerAdapter(String feedType) {
-        mAdapter = new NewsRecyclerAdapter(dbe.readContent(feedType));
-        mRecyclerView.setAdapter(mAdapter);
-    }
-    */
-
-    /*
-    private void refreshNews() {
-        PendingIntent pi;
-        Intent intent;
-
-        pi = createPendingResult(Global.NEWS_SERVICE_TASK_CODE, new Intent(), 0);
-        intent = new Intent(this, RSSService.class);
-        intent.setAction(RSSService.ACTION_FROM_ACTIVITY);
-        intent.putExtra(RSSService.PARAM_PINTENT_FROM_ACTIVITY, pi);
-
-        startService(intent);
-    }
-    */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.d(Global.TAG, "Create");
         super.onCreate(savedInstanceState);
-
-        //dbe = new DBEngine(this);
 
         pe = new PrefEngine(this);
         pe.initDefaults(this);
@@ -90,21 +45,12 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        //mRecyclerView = (RecyclerView) findViewById(R.id.news_recycler_view);
-        //mLayoutManager = new LinearLayoutManager(this);
-        //mRecyclerView.setLayoutManager(mLayoutManager);
-
-        //setCurrentFeedType(Global.FEED_TYPE_ALL);
-
-        //setNewsRecyclerAdapter(getCurrentFeedType());
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+        final ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        //getSupportActionBar().setHomeButtonEnabled(true);
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
@@ -142,38 +88,36 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        /*
-        mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.content_main_swipe_refresh_layout);
-        mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                refreshNews();
-            }
-        });
-        */
-        //Typeface face = Typeface.createFromAsset(getAssets(), "fonts/JuraMedium.ttf");
-
-        MainFragment fragmentMain = new MainFragment();;
-
         Log.d(Global.TAG, " fragmentMain 1");
 
         fragmentMain = new MainFragment();
-
         android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.fMain, fragmentMain);
+        //ft.addToBackStack(null);
         ft.commit();
-    }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-//        setNewsRecyclerAdapter(getCurrentFeedType());
-    }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-//        dbe.updateNewPostToOld();
+        final View.OnClickListener originalToolbarListener = toggle.getToolbarNavigationClickListener();
+
+        getSupportFragmentManager().addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
+            @Override
+            public void onBackStackChanged() {
+                if (getSupportFragmentManager().getBackStackEntryCount() > 0) {
+                    toggle.setDrawerIndicatorEnabled(false);
+                    toggle.setToolbarNavigationClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            getSupportFragmentManager().popBackStack();
+                        }
+                    });
+                } else {
+                    toggle.setDrawerIndicatorEnabled(true);
+                    toggle.setToolbarNavigationClickListener(originalToolbarListener);
+                }
+            }
+        });
+
+
     }
 
     @Override
@@ -215,7 +159,7 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-/*
+
         if (id == R.id.nav_feed_all) {
             fragmentMain.setCurrentFeedType(Global.FEED_TYPE_ALL);
             fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
@@ -238,25 +182,32 @@ public class MainActivity extends AppCompatActivity
             fragmentMain.setCurrentFeedType(Global.FEED_TYPE_SITE_NEWS);
             fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
         }
-*/
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 
-    /*
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
         if (resultCode == Global.NEWS_SERVICE_STATUS_OK) {
-            mSwipeRefreshLayout.setRefreshing(false);
+            fragmentMain.setSwipeRefreshState(false);
             fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
         } else if (resultCode == Global.NEWS_SERVICE_STATUS_NON) {
             Toast toast = Toast.makeText(getApplicationContext(), R.string.err_no_network, Toast.LENGTH_SHORT);
             toast.show();
-            mSwipeRefreshLayout.setRefreshing(false);
+            fragmentMain.setSwipeRefreshState(false);
         }
     }
-    */
+
+    public void switchPost(int id, Fragment fragment) {
+        android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.replace(id, fragment);
+        ft.addToBackStack(null);
+        ft.commit();
+    }
+
 }

@@ -1,10 +1,14 @@
 package ru.solargateteam.galnetru;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,10 +27,27 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
 
     private List<DBItem> listContent;
 
-    public static class NewsViewHolder extends RecyclerView.ViewHolder {
+    Context mContext;
+
+    public void switchPost(int id, Fragment fragment) {
+        if (mContext == null) {
+            Log.d(Global.TAG, "switchPost Context null");
+            return;
+        }
+        if (mContext instanceof MainActivity) {
+            MainActivity mainActivity = (MainActivity) mContext;
+            Fragment frag = fragment;
+
+            if (frag == null)
+                Log.d(Global.TAG, "frag null!!!!!!");
+
+            mainActivity.switchPost(id, frag);
+        }
+    }
+
+    public class NewsViewHolder extends RecyclerView.ViewHolder {
 
         public TextView tvTitle;
-        //public TextView tvPubDate;
         public ImageView ivImage;
         public TextView tvDescription;
 
@@ -39,16 +60,28 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
             view = v;
 
             tvTitle = (TextView) v.findViewById(R.id.tv_news_title);
-            //tvPubDate = (TextView) v.findViewById(R.id.tv_news_pubdate);
             ivImage = (ImageView) v.findViewById(R.id.iv_news_image);
             tvDescription = (TextView) v.findViewById(R.id.tv_news_description);
 
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
+                    fragmentPostJump(currentItem);
+
+                    /*
+                    PostFragment fragmentPost = new PostFragment();
+                    fragmentPost.setItem(currentItem);
+                    android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                    ft.replace(R.id.fMain, fragmentPost);
+                    ft.commit();
+                    */
+
+                    /*
                     Intent intent = new Intent(v.getContext(), PostActivity.class);
                     intent.putExtra(PostActivity.PARAM_ITEM, currentItem);
                     v.getContext().startActivity(intent);
+                    */
                 }
             });
 
@@ -59,9 +92,22 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
                 tvDescription.setTypeface(face);
             }
         }
+
+        private void fragmentPostJump(DBItem itemSelected) {
+            PostFragment fragmentPost = new PostFragment();
+            Bundle bundle = new Bundle();
+            bundle.putSerializable(PostFragment.PARAM_ITEM, itemSelected);
+            fragmentPost.setArguments(bundle);
+
+            Log.d(Global.TAG, "fragmentPostJump " + itemSelected.getTitle());
+
+            switchPost(R.id.fMain, fragmentPost);
+        }
+
     }
 
-    public NewsRecyclerAdapter(List<DBItem> listContent) {
+    public NewsRecyclerAdapter(Context context, List<DBItem> listContent) {
+        this.mContext = context;
         this.listContent = listContent;
     }
 
@@ -75,8 +121,6 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
     public void onBindViewHolder(NewsViewHolder holder, int position) {
 
         holder.tvTitle.setText(Util.strProcessHTML(listContent.get(position).getTitle()));
-
-        //holder.tvPubDate.setText(Util.makeDateStringFromUnixTime(listContent.get(position).getPubDate()));
 
         if (listContent.get(position).getImagePath() != null) {
             try {
@@ -93,8 +137,6 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
         holder.tvDescription.setText(Util.strProcessHTML(listContent.get(position).getDescription()));
 
         holder.currentItem = listContent.get(position);
-
-        //Typeface face = Typeface.createFromAsset(holder.view.get)
     }
 
     @Override

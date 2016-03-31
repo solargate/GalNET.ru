@@ -1,22 +1,20 @@
 package ru.solargateteam.galnetru;
 
-import android.support.v4.app.Fragment;
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import ru.solargateteam.galnetru.db.DBEngine;
 import ru.solargateteam.galnetru.services.RSSService;
 
-public class MainFragment extends Fragment{
+public class MainFragment extends Fragment {
 
     DBEngine dbe;
 
@@ -37,8 +35,12 @@ public class MainFragment extends Fragment{
     }
 
     public void setNewsRecyclerAdapter(String feedType) {
-        mAdapter = new NewsRecyclerAdapter(dbe.readContent(feedType));
+        mAdapter = new NewsRecyclerAdapter(getContext(), dbe.readContent(feedType));
         mRecyclerView.setAdapter(mAdapter);
+    }
+
+    public void setSwipeRefreshState(boolean state) {
+        mSwipeRefreshLayout.setRefreshing(state);
     }
 
     private void refreshNews() {
@@ -59,27 +61,13 @@ public class MainFragment extends Fragment{
 
         setCurrentFeedType(Global.FEED_TYPE_ALL);
 
-        Log.d(Global.TAG, "1");
-
         dbe = new DBEngine(getActivity());
 
-        Log.d(Global.TAG, "2");
-
         mRecyclerView = (RecyclerView) v.findViewById(R.id.news_recycler_view);
-
-        Log.d(Global.TAG, "3");
-
         mLayoutManager = new LinearLayoutManager(v.getContext());
-
-        Log.d(Global.TAG, "4");
-
         mRecyclerView.setLayoutManager(mLayoutManager);
 
-        Log.d(Global.TAG, "5");
-
         setNewsRecyclerAdapter(getCurrentFeedType());
-
-        Log.d(Global.TAG, "6");
 
         mSwipeRefreshLayout = (SwipeRefreshLayout) v.findViewById(R.id.content_main_swipe_refresh_layout);
         mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
@@ -89,23 +77,7 @@ public class MainFragment extends Fragment{
             }
         });
 
-        Log.d(Global.TAG, "7");
-
         return v;
-    }
-
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if (resultCode == Global.NEWS_SERVICE_STATUS_OK) {
-            mSwipeRefreshLayout.setRefreshing(false);
-            setNewsRecyclerAdapter(getCurrentFeedType());
-        } else if (resultCode == Global.NEWS_SERVICE_STATUS_NON) {
-            Toast toast = Toast.makeText(getActivity(), R.string.err_no_network, Toast.LENGTH_SHORT);
-            toast.show();
-            mSwipeRefreshLayout.setRefreshing(false);
-        }
     }
 
     @Override
