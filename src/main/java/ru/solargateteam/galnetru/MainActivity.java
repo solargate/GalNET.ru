@@ -24,6 +24,7 @@ import ru.solargateteam.galnetru.pref.PrefActivity;
 import ru.solargateteam.galnetru.pref.PrefEngine;
 import ru.solargateteam.galnetru.services.RSSService;
 import ru.solargateteam.galnetru.services.RadioService;
+import ru.solargateteam.galnetru.util.Util;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -105,9 +106,14 @@ public class MainActivity extends AppCompatActivity
         btnPlayRadioSoft.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), RadioService.class);
-                intent.setAction(RadioService.ACTION_SOFT_PLAY);
-                startService(intent);
+                if (Util.isNetwork(v.getContext())) {
+                    Intent intent = new Intent(v.getContext(), RadioService.class);
+                    intent.setAction(RadioService.ACTION_SOFT_PLAY);
+                    startService(intent);
+                } else {
+                    Toast toast = Toast.makeText(v.getContext(), R.string.err_no_network, Toast.LENGTH_SHORT);
+                    toast.show();
+                }
             }
         });
 
@@ -115,9 +121,14 @@ public class MainActivity extends AppCompatActivity
         btnPlayRadioHard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), RadioService.class);
-                intent.setAction(RadioService.ACTION_HARD_PLAY);
-                startService(intent);
+                if (Util.isNetwork(v.getContext())) {
+                    Intent intent = new Intent(v.getContext(), RadioService.class);
+                    intent.setAction(RadioService.ACTION_HARD_PLAY);
+                    startService(intent);
+                } else {
+                    Toast toast = Toast.makeText(v.getContext(), R.string.err_no_network, Toast.LENGTH_SHORT);
+                    toast.show();
+                }
             }
         });
 
