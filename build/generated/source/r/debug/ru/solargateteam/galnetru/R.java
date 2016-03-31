@@ -2603,7 +2603,6 @@ containing a value of this type.
         public static final int radio_soft=0x7f07002f;
         public static final int radio_soft_playing=0x7f070030;
         public static final int status_bar_notification_info_overflow=0x7f070013;
-        public static final int title_activity_post=0x7f070031;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f0a0081;

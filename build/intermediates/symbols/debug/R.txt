@@ -851,7 +851,6 @@ int string radio_hard_playing 0x7f07002e
 int string radio_soft 0x7f07002f
 int string radio_soft_playing 0x7f070030
 int string status_bar_notification_info_overflow 0x7f070013
-int string title_activity_post 0x7f070031
 int style AlertDialog_AppCompat 0x7f0a0081
 int style AlertDialog_AppCompat_Light 0x7f0a0082
 int style Animation_AppCompat_Dialog 0x7f0a0083

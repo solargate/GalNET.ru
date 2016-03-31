@@ -334,7 +334,6 @@
     <string name="radio_soft">Radio SOFT</string>
     <string name="radio_soft_playing">GalNET.ru Radio SOFT is playing</string>
     <string name="status_bar_notification_info_overflow">999+</string>
-    <string name="title_activity_post">PostActivity</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
