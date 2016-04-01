@@ -3,7 +3,6 @@
 
     <group
         android:checkableBehavior="single">
-
         <item
             android:id="@+id/nav_feed_all"
             android:icon="@drawable/ic_menu_feed"

@@ -2,10 +2,10 @@ package ru.solargateteam.galnetru;
 
 /*
 TODO: Список задач:
-- PostActivity во Fragment
++ PostActivity во Fragment
 - PrefActivity во Fragment
 - Кнопка "Back" в связи с пунктами выше (анимированная). Показ фрагментов тоже анимированный
-- Возврат из поста на ту же позицию в Recycler View
++ Возврат из поста на ту же позицию в Recycler View
 - Обработка первого запуска
 - Правильное обновления статуса "новый" у новостей (как всех при первом запуске и закрытии, так и конкретного при чтении)
 + При чтении даты из RSS обрабатывать ее как Description
@@ -21,6 +21,7 @@ TODO: Список задач:
 - About dialog
 - Иконка приложения
 - Иконки уведомлений
+- Текст новости justify: https://github.com/bluejamesbond/TextJustify-Android
  */
 
 public class Global {

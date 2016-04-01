@@ -18,7 +18,7 @@ public class Util {
     public static String strProcessHTML(String inputString) {
         return inputString.replaceAll("</p>", "")
                 .replaceAll("<p>", "\n")
-                .replaceAll("\n\n", "\n")
+                .replaceAll("\n\n\n", "\n\n")
                 .replaceAll("&laquo;", "\"")
                 .replaceAll("&raquo;", "\"")
                 .replaceAll("&quot;", "\"")

@@ -216,12 +216,12 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <dimen name="activity_horizontal_margin">10dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">8dp</dimen>
+    <dimen name="activity_vertical_margin">8dp</dimen>
     <dimen name="cardview_compat_inset_shadow">1dp</dimen>
     <dimen name="cardview_default_elevation">2dp</dimen>
     <dimen name="cardview_default_radius">2dp</dimen>
-    <dimen name="cardview_inner_margin">4dp</dimen>
+    <dimen name="cardview_inner_margin">6dp</dimen>
     <dimen name="design_appbar_elevation">4dp</dimen>
     <dimen name="design_fab_border_width">0.5dp</dimen>
     <dimen name="design_fab_content_size">24dp</dimen>
@@ -257,7 +257,7 @@
     <item format="float" name="highlight_alpha_material_light" type="dimen">0.12</item>
     <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
     <dimen name="nav_header_height">160dp</dimen>
-    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
     <dimen name="notification_large_icon_height">64dp</dimen>
     <dimen name="notification_large_icon_width">64dp</dimen>
     <dimen name="notification_subtext_size">12dp</dimen>
@@ -315,6 +315,7 @@
     <string name="feed_galnet_news">GalNET News</string>
     <string name="feed_powerplay">PowerPlay</string>
     <string name="feed_site_news">Site News</string>
+    <string name="feed_title">Feeds</string>
     <string name="feed_weekly_report">Weekly Report</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -1309,10 +1310,6 @@
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
     </style>
-    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
-        <item name="spinBars">true</item>
-        <item name="color">@android:color/white</item>
-    </style>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
 
@@ -1571,24 +1568,21 @@
     <style name="Theme.GalNETru" parent="Theme.AppCompat">
         <item name="colorAccent">@color/colorEDOrange</item>
         <item name="android:textColor">@color/colorEDOrange</item>
+        <item name="android:textColorPrimary">@color/colorEDOrange</item>
         <item name="android:colorBackground">@color/colorBackground</item>
         <item name="colorPrimary">@color/colorFront</item>
         <item name="android:colorForeground">@color/colorBackground</item>
-
-        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
-
+        <item name="android:windowBackground">@color/colorBackground</item>
     </style>
     <style name="Theme.GalNETru.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="colorAccent">@color/colorEDOrange</item>
         <item name="android:textColor">@color/colorEDOrange</item>
+        <item name="android:textColorPrimary">@color/colorEDOrange</item>
         <item name="android:colorBackground">@color/colorBackground</item>
         <item name="colorPrimary">@color/colorFront</item>
         <item name="android:colorForeground">@color/colorBackground</item>
-
-        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
-
     </style>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>

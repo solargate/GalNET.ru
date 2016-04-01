@@ -20,32 +20,22 @@
     <style name="Theme.GalNETru" parent="Theme.AppCompat" >
         <item name="colorAccent">@color/colorEDOrange</item>
         <item name="android:textColor">@color/colorEDOrange</item>
+        <item name="android:textColorPrimary">@color/colorEDOrange</item>
         <item name="android:colorBackground">@color/colorBackground</item>
         <item name="colorPrimary">@color/colorFront</item>
         <item name="android:colorForeground">@color/colorBackground</item>
-
-        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
-
+        <item name="android:windowBackground">@color/colorBackground</item>
     </style>
-
-
-    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
-        <item name="spinBars">true</item>
-        <item name="color">@android:color/white</item>
-    </style>
-
 
     <style name="Theme.GalNETru.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="colorAccent">@color/colorEDOrange</item>
         <item name="android:textColor">@color/colorEDOrange</item>
+        <item name="android:textColorPrimary">@color/colorEDOrange</item>
         <item name="android:colorBackground">@color/colorBackground</item>
         <item name="colorPrimary">@color/colorFront</item>
         <item name="android:colorForeground">@color/colorBackground</item>
-
-        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
-
     </style>
 
 </resources>
