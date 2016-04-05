@@ -1084,7 +1084,15 @@
                     "endOffset": 18266
                 },
                 "from": {
-                    "file": "/home/solarwind/dev/android-studio-ws/GalNET.ru/src/main/res/values-v21/styles.xml"
+                    "file": "/home/solarwind/dev/android-studio-ws/GalNET.ru/src/main/res/values-v21/styles.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 748,
+                        "endLine": 25,
+                        "endColumn": 12,
+                        "endOffset": 1459
+                    }
                 }
             },
             {

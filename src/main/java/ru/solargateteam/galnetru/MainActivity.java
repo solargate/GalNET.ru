@@ -215,7 +215,5 @@ public class MainActivity extends AppCompatActivity
         ft.replace(id, fragment);
         ft.addToBackStack(null);
         ft.commit();
-
-        //ToolbarColorizeHelper.colorizeToolbar((Toolbar) findViewById(R.id.toolbar), getResources().getColor(R.color.colorEDOrange), MainActivity.this);
-    }
+   }
 }

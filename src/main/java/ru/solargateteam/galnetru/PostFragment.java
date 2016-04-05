@@ -64,6 +64,7 @@ public class PostFragment extends Fragment {
             if (pe.useGalNETFont()) {
                 Typeface face = Typeface.createFromAsset(getActivity().getAssets(), Global.FONT_JURA_BOLD);
                 tvTitle.setTypeface(face);
+                tvPubDate.setTypeface(face);
                 tvDescription.setTypeface(face);
             }
         }

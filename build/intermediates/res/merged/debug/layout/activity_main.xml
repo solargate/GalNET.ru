@@ -46,6 +46,9 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         android:background="@color/colorFront"
-        app:menu="@menu/activity_main_drawer" />
+        android:theme="@style/Theme.GalNETru"
+        app:menu="@menu/activity_main_drawer"
+        app:itemIconTint="@color/colorEDOrange"
+        app:itemTextColor="@color/colorEDOrange"/>
 
 </android.support.v4.widget.DrawerLayout>
