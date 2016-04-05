@@ -24,4 +24,5 @@
         <item name="android:navigationBarColor">@color/colorBackground</item>
         <item name="android:windowBackground">@color/colorBackground</item>
     </style>
+
 </resources>

@@ -20,6 +20,7 @@ import android.widget.Toast;
 import ru.solargateteam.galnetru.pref.PrefActivity;
 import ru.solargateteam.galnetru.pref.PrefEngine;
 import ru.solargateteam.galnetru.services.RadioService;
+import ru.solargateteam.galnetru.util.ToolbarColorizeHelper;
 import ru.solargateteam.galnetru.util.Util;
 
 public class MainActivity extends AppCompatActivity
@@ -91,7 +92,6 @@ public class MainActivity extends AppCompatActivity
         fragmentMain = new MainFragment();
         android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.fMain, fragmentMain);
-        //ft.addToBackStack(null);
         ft.commit();
 
         final View.OnClickListener originalToolbarListener = toggle.getToolbarNavigationClickListener();
@@ -108,15 +108,21 @@ public class MainActivity extends AppCompatActivity
                             getSupportFragmentManager().popBackStack();
                         }
                     });
+                    ToolbarColorizeHelper.colorizeToolbar((Toolbar) findViewById(R.id.toolbar), getResources().getColor(R.color.colorEDOrange), MainActivity.this);
                 } else {
                     drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
                     toggle.setDrawerIndicatorEnabled(true);
                     toggle.setToolbarNavigationClickListener(originalToolbarListener);
+                    ToolbarColorizeHelper.colorizeToolbar((Toolbar) findViewById(R.id.toolbar), getResources().getColor(R.color.colorEDOrange), MainActivity.this);
                 }
             }
         });
+    }
 
-        //final Drawable upArrow = getResources().getDrawable(R.drawable.ab)
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+        ToolbarColorizeHelper.colorizeToolbar((Toolbar) findViewById(R.id.toolbar), getResources().getColor(R.color.colorEDOrange), MainActivity.this);
     }
 
     @Override
@@ -133,6 +139,9 @@ public class MainActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
+
+        //ToolbarColorizeHelper.colorizeToolbar((Toolbar) findViewById(R.id.toolbar), getResources().getColor(R.color.colorEDOrange), MainActivity.this);
+
         return true;
     }
 
@@ -206,5 +215,7 @@ public class MainActivity extends AppCompatActivity
         ft.replace(id, fragment);
         ft.addToBackStack(null);
         ft.commit();
+
+        //ToolbarColorizeHelper.colorizeToolbar((Toolbar) findViewById(R.id.toolbar), getResources().getColor(R.color.colorEDOrange), MainActivity.this);
     }
 }
