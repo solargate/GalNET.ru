@@ -306,7 +306,7 @@
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="err_no_network">No network connection</string>
-    <string name="feed_all">All News</string>
+    <string name="feed_all">All Feeds</string>
     <string name="feed_comm_goals">Community Goals</string>
     <string name="feed_comm_news">Community News</string>
     <string name="feed_galnet_news">GalNET News</string>
@@ -327,7 +327,7 @@
     <string name="pref_refresh_interval">Refresh interval</string>
     <string name="pref_refresh_interval_default_value">1h</string>
     <string name="pref_refresh_interval_description">News refresh interval</string>
-    <string name="radio_buffering_descriprion">…</string>
+    <string name="radio_buffering_descriprion">Buffering…</string>
     <string name="radio_buffering_title">Please wait</string>
     <string name="radio_hard">Radio HARD</string>
     <string name="radio_hard_playing">GalNET.ru Radio HARD is playing</string>

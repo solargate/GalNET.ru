@@ -8,12 +8,12 @@
         "source": "D:\\dev\\android-studio-ws\\GalNET.ru\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
-        "merged": "D:\\dev\\android-studio-ws\\GalNET.ru\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
-        "source": "D:\\dev\\android-studio-ws\\GalNET.ru\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png"
-    },
-    {
         "merged": "D:\\dev\\android-studio-ws\\GalNET.ru\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_menu_radio_soft.png",
         "source": "D:\\dev\\android-studio-ws\\GalNET.ru\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_menu_radio_soft.png"
+    },
+    {
+        "merged": "D:\\dev\\android-studio-ws\\GalNET.ru\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "D:\\dev\\android-studio-ws\\GalNET.ru\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxxhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
         "merged": "D:\\dev\\android-studio-ws\\GalNET.ru\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png",
