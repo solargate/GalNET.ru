@@ -33,7 +33,7 @@ import android.widget.ImageButton;
  * Helper class that iterates through Toolbar views, and sets dynamically icons and texts color
  * Created by chomi3 on 2015-01-19.
  */
-public class ToolbarColorizeHelper {
+public class ToolbarColorizer {
 
     /**
      * Use this method to colorize toolbar icons to the desired target color

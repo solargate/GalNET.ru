@@ -20,7 +20,7 @@ import android.widget.Toast;
 import ru.solargateteam.galnetru.pref.PrefActivity;
 import ru.solargateteam.galnetru.pref.PrefEngine;
 import ru.solargateteam.galnetru.services.RadioService;
-import ru.solargateteam.galnetru.util.ToolbarColorizeHelper;
+import ru.solargateteam.galnetru.util.ToolbarColorizer;
 import ru.solargateteam.galnetru.util.Util;
 
 public class MainActivity extends AppCompatActivity
@@ -108,12 +108,12 @@ public class MainActivity extends AppCompatActivity
                             getSupportFragmentManager().popBackStack();
                         }
                     });
-                    ToolbarColorizeHelper.colorizeToolbar((Toolbar) findViewById(R.id.toolbar), getResources().getColor(R.color.colorEDOrange), MainActivity.this);
+                    ToolbarColorizer.colorizeToolbar((Toolbar) findViewById(R.id.toolbar), getResources().getColor(R.color.colorEDOrange), MainActivity.this);
                 } else {
                     drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
                     toggle.setDrawerIndicatorEnabled(true);
                     toggle.setToolbarNavigationClickListener(originalToolbarListener);
-                    ToolbarColorizeHelper.colorizeToolbar((Toolbar) findViewById(R.id.toolbar), getResources().getColor(R.color.colorEDOrange), MainActivity.this);
+                    ToolbarColorizer.colorizeToolbar((Toolbar) findViewById(R.id.toolbar), getResources().getColor(R.color.colorEDOrange), MainActivity.this);
                 }
             }
         });
@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onPostResume() {
         super.onPostResume();
-        ToolbarColorizeHelper.colorizeToolbar((Toolbar) findViewById(R.id.toolbar), getResources().getColor(R.color.colorEDOrange), MainActivity.this);
+        ToolbarColorizer.colorizeToolbar((Toolbar) findViewById(R.id.toolbar), getResources().getColor(R.color.colorEDOrange), MainActivity.this);
     }
 
     @Override
@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
 
-        //ToolbarColorizeHelper.colorizeToolbar((Toolbar) findViewById(R.id.toolbar), getResources().getColor(R.color.colorEDOrange), MainActivity.this);
+        //ToolbarColorizer.colorizeToolbar((Toolbar) findViewById(R.id.toolbar), getResources().getColor(R.color.colorEDOrange), MainActivity.this);
 
         return true;
     }
