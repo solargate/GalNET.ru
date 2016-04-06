@@ -35,9 +35,15 @@ public class RadioService extends Service implements MediaPlayer.OnPreparedListe
 
         ne = new NotificationEngine(getApplicationContext());
 
+        Log.d(Global.TAG, "6");
+
         String action = intent.getAction();
 
+        Log.d(Global.TAG, "7");
+
         pi = intent.getParcelableExtra(PARAM_PINTENT_FROM_ACTIVITY);
+
+        Log.d(Global.TAG, "8");
 
         if (playerStatus.equals(action)) {
             releaseMediaPlayer();
@@ -48,6 +54,8 @@ public class RadioService extends Service implements MediaPlayer.OnPreparedListe
             playerStatus = action;
 
             try {
+
+                pi.send(Global.RADIO_SERVICE_STATUS_START);
 
                 mediaPlayer = new MediaPlayer();
 
@@ -98,7 +106,7 @@ public class RadioService extends Service implements MediaPlayer.OnPreparedListe
 
         try {
             mp.start();
-            pi.send(Global.RADIO_SERVICE_STATUS_START);
+            pi.send(Global.RADIO_SERVICE_STATUS_PREP);
         } catch (Exception e) {
             e.printStackTrace();
         }

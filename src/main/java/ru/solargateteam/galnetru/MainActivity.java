@@ -41,6 +41,22 @@ public class MainActivity extends AppCompatActivity
     Button btnPlayRadioSoft;
     Button btnPlayRadioHard;
 
+    private String currentRadioType;
+
+    public String getCurrentRadioType() {
+
+        Log.d(Global.TAG, "getCurrentRadioType - " + currentRadioType);
+
+        return currentRadioType;
+    }
+
+    public void setCurrentRadioType(String currentRadioType) {
+        this.currentRadioType = currentRadioType;
+
+        Log.d(Global.TAG, "setCurrentRadioType - " + currentRadioType);
+
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.d(Global.TAG, "Create");
@@ -69,18 +85,7 @@ public class MainActivity extends AppCompatActivity
         btnPlayRadioSoft.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (Util.isNetwork(v.getContext())) {
-                    PendingIntent pi;
-                    pi = createPendingResult(Global.RADIO_SERVICE_TASK_CODE, new Intent(), 0);
-                    Intent intent = new Intent(v.getContext(), RadioService.class);
-                    intent.setAction(RadioService.ACTION_SOFT_PLAY);
-                    intent.putExtra(RadioService.PARAM_PINTENT_FROM_ACTIVITY, pi);
-                    startService(intent);
-                    progressDialog = ProgressDialog.show(MainActivity.this, getString(R.string.radio_buffering_title), getString(R.string.radio_buffering_descriprion), true);
-                } else {
-                    Toast toast = Toast.makeText(v.getContext(), R.string.err_no_network, Toast.LENGTH_SHORT);
-                    toast.show();
-                }
+                playRadio(RadioService.ACTION_SOFT_PLAY);
             }
         });
 
@@ -88,18 +93,7 @@ public class MainActivity extends AppCompatActivity
         btnPlayRadioHard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (Util.isNetwork(v.getContext())) {
-                    PendingIntent pi;
-                    pi = createPendingResult(Global.RADIO_SERVICE_TASK_CODE, new Intent(), 0);
-                    Intent intent = new Intent(v.getContext(), RadioService.class);
-                    intent.setAction(RadioService.ACTION_HARD_PLAY);
-                    intent.putExtra(RadioService.PARAM_PINTENT_FROM_ACTIVITY, pi);
-                    startService(intent);
-                    progressDialog = ProgressDialog.show(MainActivity.this, getString(R.string.radio_buffering_title), getString(R.string.radio_buffering_descriprion), true);
-                } else {
-                    Toast toast = Toast.makeText(v.getContext(), R.string.err_no_network, Toast.LENGTH_SHORT);
-                    toast.show();
-                }
+                playRadio(RadioService.ACTION_HARD_PLAY);
             }
         });
 
@@ -135,12 +129,70 @@ public class MainActivity extends AppCompatActivity
                 ObjectAnimator.ofFloat(drawerArrow, "progress", drawerState ? 0 : 1).start();
             }
         });
+
+        ToolbarColorizer.colorizeToolbar((Toolbar) findViewById(R.id.toolbar), getResources().getColor(R.color.colorEDOrange), MainActivity.this);
+
+        if (savedInstanceState != null) {
+            setCurrentRadioType(savedInstanceState.getString("currentRadioType"));
+        }
+
+        syncRadioButtons();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        Log.d(Global.TAG, "onResume");
+
+        syncRadioButtons();
+
+/*
+        if (RadioService.ACTION_SOFT_PLAY.equals(getCurrentRadioType())) {
+            btnPlayRadioSoft.setBackgroundResource(R.drawable.ic_menu_radio_soft_play);
+            btnPlayRadioHard.setBackgroundResource(R.drawable.ic_menu_radio_hard);
+        } else if (RadioService.ACTION_HARD_PLAY.equals(getCurrentRadioType())) {
+            btnPlayRadioSoft.setBackgroundResource(R.drawable.ic_menu_radio_soft);
+            btnPlayRadioHard.setBackgroundResource(R.drawable.ic_menu_radio_hard_play);
+        }
+*/
     }
 
     @Override
     protected void onPostResume() {
         super.onPostResume();
-        ToolbarColorizer.colorizeToolbar((Toolbar) findViewById(R.id.toolbar), getResources().getColor(R.color.colorEDOrange), MainActivity.this);
+
+        Log.d(Global.TAG, "onPostResume");
+
+        //ToolbarColorizer.colorizeToolbar((Toolbar) findViewById(R.id.toolbar), getResources().getColor(R.color.colorEDOrange), MainActivity.this);
+/*
+        if (RadioService.ACTION_SOFT_PLAY.equals(getCurrentRadioType())) {
+            btnPlayRadioSoft.setBackgroundResource(R.drawable.ic_menu_radio_soft_play);
+            btnPlayRadioHard.setBackgroundResource(R.drawable.ic_menu_radio_hard);
+        } else if (RadioService.ACTION_HARD_PLAY.equals(getCurrentRadioType())) {
+            btnPlayRadioSoft.setBackgroundResource(R.drawable.ic_menu_radio_soft);
+            btnPlayRadioHard.setBackgroundResource(R.drawable.ic_menu_radio_hard_play);
+        }
+*/
+
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString("currentRadioType", getCurrentRadioType());
+
+
+        Log.d(Global.TAG, "onSaveInstanceState");
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        setCurrentRadioType(savedInstanceState.getString("currentRadioType"));
+
+        Log.d(Global.TAG, "onRestoreInstanceState");
     }
 
     @Override
@@ -223,11 +275,23 @@ public class MainActivity extends AppCompatActivity
             toast.show();
             fragmentMain.setSwipeRefreshState(false);
         } else if (resultCode == Global.RADIO_SERVICE_STATUS_START) {
-            if (progressDialog.isShowing())
+
+            syncRadioButtons();
+
+            progressDialog = ProgressDialog.show(MainActivity.this, getString(R.string.radio_buffering_title), getString(R.string.radio_buffering_descriprion), true);
+        } else if (resultCode == Global.RADIO_SERVICE_STATUS_PREP) {
+            if (progressDialog != null && progressDialog.isShowing())
                 progressDialog.dismiss();
+
         } else if (resultCode == Global.RADIO_SERVICE_STATUS_STOP) {
-            if (progressDialog.isShowing())
+            if (progressDialog != null && progressDialog.isShowing())
                 progressDialog.dismiss();
+
+            syncRadioButtons();
+
+            //btnPlayRadioSoft.setBackgroundResource(R.drawable.ic_menu_radio_soft);
+            //btnPlayRadioHard.setBackgroundResource(R.drawable.ic_menu_radio_hard);
+            //setCurrentRadioType("");
         }
     }
 
@@ -238,4 +302,65 @@ public class MainActivity extends AppCompatActivity
         ft.addToBackStack(null);
         ft.commit();
    }
+
+    private void playRadio(String action) {
+        if (Util.isNetwork(MainActivity.this)) {
+
+            if (action.equals(getCurrentRadioType()))
+                setCurrentRadioType("");
+            else
+            setCurrentRadioType(action);
+
+            PendingIntent pi;
+
+            Log.d(Global.TAG, "1");
+
+            pi = createPendingResult(Global.RADIO_SERVICE_TASK_CODE, new Intent(), 0);
+
+            Log.d(Global.TAG, "2");
+
+            Intent intent = new Intent(MainActivity.this, RadioService.class);
+
+            Log.d(Global.TAG, "3");
+
+            intent.setAction(action);
+
+            Log.d(Global.TAG, "4");
+
+            intent.putExtra(RadioService.PARAM_PINTENT_FROM_ACTIVITY, pi);
+
+            Log.d(Global.TAG, "5");
+
+            startService(intent);
+
+        } else {
+
+            syncRadioButtons();
+
+            Toast toast = Toast.makeText(MainActivity.this, R.string.err_no_network, Toast.LENGTH_SHORT);
+            toast.show();
+        }
+    }
+
+    private void syncRadioButtons() {
+
+        if (RadioService.ACTION_SOFT_PLAY.equals(getCurrentRadioType())) {
+
+            Log.d(Global.TAG, "ACTION_SOFT_PLAY");
+
+            btnPlayRadioSoft.setBackgroundResource(R.drawable.ic_menu_radio_soft_play);
+            btnPlayRadioHard.setBackgroundResource(R.drawable.ic_menu_radio_hard);
+        } else if (RadioService.ACTION_HARD_PLAY.equals(getCurrentRadioType())) {
+
+            Log.d(Global.TAG, "ACTION_HARD_PLAY");
+
+            btnPlayRadioSoft.setBackgroundResource(R.drawable.ic_menu_radio_soft);
+            btnPlayRadioHard.setBackgroundResource(R.drawable.ic_menu_radio_hard_play);
+        } else if ("".equals(getCurrentRadioType())) {
+            btnPlayRadioSoft.setBackgroundResource(R.drawable.ic_menu_radio_soft);
+            btnPlayRadioHard.setBackgroundResource(R.drawable.ic_menu_radio_hard);
+
+        }
+
+    }
 }

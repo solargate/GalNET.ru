@@ -34,7 +34,8 @@ public class Global {
 
     public static final int RADIO_SERVICE_TASK_CODE    = 2;
     public static final int RADIO_SERVICE_STATUS_START = 3;
-    public static final int RADIO_SERVICE_STATUS_STOP  = 4;
+    public static final int RADIO_SERVICE_STATUS_PREP  = 4;
+    public static final int RADIO_SERVICE_STATUS_STOP  = 5;
 
     public static final String IMAGES_DIR              = "images";
 
