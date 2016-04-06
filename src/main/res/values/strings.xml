@@ -13,7 +13,7 @@
     <string name="notification_radio_text">Radio %s is playing&#8230;</string>
 
     <string name="feed_title">Feeds</string>
-    <string name="feed_all">All News</string>
+    <string name="feed_all">All Feeds</string>
     <string name="feed_galnet_news">GalNET News</string>
     <string name="feed_powerplay">PowerPlay</string>
     <string name="feed_weekly_report">Weekly Report</string>

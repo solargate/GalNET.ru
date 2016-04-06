@@ -20,6 +20,7 @@ public class RSSParseHandler extends DefaultHandler {
     private boolean parsingGUID;
     private boolean parsingPubDate;
 
+    StringBuffer titleBuffer;
     StringBuffer linkBuffer;
     StringBuffer descriptionBuffer;
     StringBuffer pubDateBuffer;
@@ -36,6 +37,7 @@ public class RSSParseHandler extends DefaultHandler {
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
         if (Global.RSS_TAG_ITEM.equals(qName)) {
             currentItem = new RSSItem();
+            titleBuffer = new StringBuffer();
             linkBuffer = new StringBuffer();
             descriptionBuffer = new StringBuffer();
             pubDateBuffer = new StringBuffer();
@@ -57,6 +59,7 @@ public class RSSParseHandler extends DefaultHandler {
         if (Global.RSS_TAG_ITEM.equals(qName)) {
             rssItems.add(currentItem);
             currentItem = null;
+            titleBuffer = null;
             linkBuffer = null;
             descriptionBuffer = null;
             pubDateBuffer = null;
@@ -77,7 +80,8 @@ public class RSSParseHandler extends DefaultHandler {
     public void characters(char[] ch, int start, int length) throws SAXException {
         if (parsingTitle) {
             if (currentItem != null) {
-                currentItem.setTitle(new String(ch, start, length));
+                titleBuffer.append(ch, start, length);
+                currentItem.setTitle(titleBuffer.toString());
             }
         } else if (parsingLink) {
             if (currentItem != null) {

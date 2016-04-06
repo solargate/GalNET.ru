@@ -24,8 +24,6 @@ public class RadioService extends Service implements MediaPlayer.OnPreparedListe
 
     PendingIntent pi;
 
-    //ProgressDialog progressDialog;
-
     public RadioService() {
         this.playerStatus = "";
     }
