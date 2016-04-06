@@ -1,11 +1,13 @@
 package ru.solargateteam.galnetru;
 
+import android.animation.ObjectAnimator;
 import android.app.PendingIntent;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v7.graphics.drawable.DrawerArrowDrawable;
 import android.util.Log;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -48,7 +50,7 @@ public class MainActivity extends AppCompatActivity
         pe.initDefaults(this);
 
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -120,13 +122,17 @@ public class MainActivity extends AppCompatActivity
                             getSupportFragmentManager().popBackStack();
                         }
                     });
-                    ToolbarColorizer.colorizeToolbar((Toolbar) findViewById(R.id.toolbar), getResources().getColor(R.color.colorEDOrange), MainActivity.this);
+
                 } else {
                     drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
                     toggle.setDrawerIndicatorEnabled(true);
                     toggle.setToolbarNavigationClickListener(originalToolbarListener);
-                    ToolbarColorizer.colorizeToolbar((Toolbar) findViewById(R.id.toolbar), getResources().getColor(R.color.colorEDOrange), MainActivity.this);
                 }
+                DrawerArrowDrawable drawerArrow = new DrawerArrowDrawable(getBaseContext());
+                drawerArrow.setColor(getResources().getColor(R.color.colorEDOrange));
+                toolbar.setNavigationIcon(drawerArrow);
+                boolean drawerState = getSupportFragmentManager().getBackStackEntryCount() == 0;
+                ObjectAnimator.ofFloat(drawerArrow, "progress", drawerState ? 0 : 1).start();
             }
         });
     }
@@ -227,6 +233,7 @@ public class MainActivity extends AppCompatActivity
 
     public void switchPost(int id, Fragment fragment) {
         android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out);
         ft.replace(id, fragment);
         ft.addToBackStack(null);
         ft.commit();
