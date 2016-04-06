@@ -13,7 +13,7 @@ TODO: Список задач:
 - Добавить скроллбар в RecyclerView
 - Пуржинг базы и картинок от старых постов
 + Уведомление о проигрывании радио
-- Буфферинг при старте плеера
++ Буфферинг при старте плеера
 - Попробовать читать теги mp3 и выводить название песни
 - Кнопки радио в квадратные рамки. При нажатии инвертировать
 - Тема оформления в Navigation View
@@ -31,6 +31,10 @@ public class Global {
     public static final int NEWS_SERVICE_TASK_CODE     = 1;
     public static final int NEWS_SERVICE_STATUS_OK     = 1;
     public static final int NEWS_SERVICE_STATUS_NON    = 2;
+
+    public static final int RADIO_SERVICE_TASK_CODE    = 2;
+    public static final int RADIO_SERVICE_STATUS_START = 3;
+    public static final int RADIO_SERVICE_STATUS_STOP  = 4;
 
     public static final String IMAGES_DIR              = "images";
 

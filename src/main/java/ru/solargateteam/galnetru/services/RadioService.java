@@ -1,5 +1,6 @@
 package ru.solargateteam.galnetru.services;
 
+import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Intent;
 import android.media.AudioManager;
@@ -13,12 +14,17 @@ import ru.solargateteam.galnetru.util.NotificationEngine;
 
 public class RadioService extends Service implements MediaPlayer.OnPreparedListener {
 
-    public static final String ACTION_SOFT_PLAY = "ru.solargateteam.galnetru.action.SOFT_PLAY";
-    public static final String ACTION_HARD_PLAY = "ru.solargateteam.galnetru.action.HARD_PLAY";
+    public static final String ACTION_SOFT_PLAY            = "ru.solargateteam.galnetru.action.SOFT_PLAY";
+    public static final String ACTION_HARD_PLAY            = "ru.solargateteam.galnetru.action.HARD_PLAY";
+    public final static String PARAM_PINTENT_FROM_ACTIVITY = "ru.solargateteam.galnetru.pendingintent.RADIO_FROM_ACTIVITY";
 
     MediaPlayer mediaPlayer;
     String playerStatus;
     NotificationEngine ne;
+
+    PendingIntent pi;
+
+    //ProgressDialog progressDialog;
 
     public RadioService() {
         this.playerStatus = "";
@@ -32,6 +38,8 @@ public class RadioService extends Service implements MediaPlayer.OnPreparedListe
         ne = new NotificationEngine(getApplicationContext());
 
         String action = intent.getAction();
+
+        pi = intent.getParcelableExtra(PARAM_PINTENT_FROM_ACTIVITY);
 
         if (playerStatus.equals(action)) {
             releaseMediaPlayer();
@@ -90,7 +98,12 @@ public class RadioService extends Service implements MediaPlayer.OnPreparedListe
 
         ne.processNotificationRadio(getApplicationContext(), getRadioName());
 
-        mp.start();
+        try {
+            mp.start();
+            pi.send(Global.RADIO_SERVICE_STATUS_START);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     private void releaseMediaPlayer() {
@@ -103,6 +116,7 @@ public class RadioService extends Service implements MediaPlayer.OnPreparedListe
                 mediaPlayer = null;
                 playerStatus = "";
                 ne.removeNotificationRadio();
+                pi.send(Global.RADIO_SERVICE_STATUS_STOP);
             } catch (Exception e) {
                 e.printStackTrace();
             }

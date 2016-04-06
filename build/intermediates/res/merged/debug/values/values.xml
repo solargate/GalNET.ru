@@ -327,6 +327,8 @@
     <string name="pref_refresh_interval">Refresh interval</string>
     <string name="pref_refresh_interval_default_value">1h</string>
     <string name="pref_refresh_interval_description">News refresh interval</string>
+    <string name="radio_buffering_descriprion">Buffering...</string>
+    <string name="radio_buffering_title">Please wait</string>
     <string name="radio_hard">Radio HARD</string>
     <string name="radio_hard_playing">GalNET.ru Radio HARD is playing</string>
     <string name="radio_soft">Radio SOFT</string>

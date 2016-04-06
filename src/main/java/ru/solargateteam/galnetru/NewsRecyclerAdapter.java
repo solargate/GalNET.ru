@@ -42,7 +42,7 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
 
         public TextView tvTitle;
         public ImageView ivImage;
-        public TextView tvDescription;
+        //public TextView tvDescription;
 
         public View view;
         public DBItem currentItem;
@@ -54,7 +54,7 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
 
             tvTitle = (TextView) v.findViewById(R.id.tv_news_title);
             ivImage = (ImageView) v.findViewById(R.id.iv_news_image);
-            tvDescription = (TextView) v.findViewById(R.id.tv_news_description);
+            //tvDescription = (TextView) v.findViewById(R.id.tv_news_description);
 
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -67,7 +67,7 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
             if (pe.useGalNETFont()) {
                 Typeface face = Typeface.createFromAsset(v.getContext().getAssets(), Global.FONT_JURA_BOLD);
                 tvTitle.setTypeface(face);
-                tvDescription.setTypeface(face);
+                //tvDescription.setTypeface(face);
             }
         }
 
@@ -109,7 +109,7 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
             holder.ivImage.setImageResource(R.drawable.image_no_banner);
         }
 
-        holder.tvDescription.setText(Util.strProcessHTML(listContent.get(position).getDescription()));
+        //holder.tvDescription.setText(Util.strProcessHTML(listContent.get(position).getDescription()));
 
         holder.currentItem = listContent.get(position);
     }

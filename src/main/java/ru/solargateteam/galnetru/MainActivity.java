@@ -1,5 +1,7 @@
 package ru.solargateteam.galnetru;
 
+import android.app.PendingIntent;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -31,6 +33,8 @@ public class MainActivity extends AppCompatActivity
     PrefEngine pe;
 
     MainFragment fragmentMain;
+
+    ProgressDialog progressDialog;
 
     Button btnPlayRadioSoft;
     Button btnPlayRadioHard;
@@ -64,9 +68,13 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 if (Util.isNetwork(v.getContext())) {
+                    PendingIntent pi;
+                    pi = createPendingResult(Global.RADIO_SERVICE_TASK_CODE, new Intent(), 0);
                     Intent intent = new Intent(v.getContext(), RadioService.class);
                     intent.setAction(RadioService.ACTION_SOFT_PLAY);
+                    intent.putExtra(RadioService.PARAM_PINTENT_FROM_ACTIVITY, pi);
                     startService(intent);
+                    progressDialog = ProgressDialog.show(MainActivity.this, getString(R.string.radio_buffering_title), getString(R.string.radio_buffering_descriprion), true);
                 } else {
                     Toast toast = Toast.makeText(v.getContext(), R.string.err_no_network, Toast.LENGTH_SHORT);
                     toast.show();
@@ -79,9 +87,13 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 if (Util.isNetwork(v.getContext())) {
+                    PendingIntent pi;
+                    pi = createPendingResult(Global.RADIO_SERVICE_TASK_CODE, new Intent(), 0);
                     Intent intent = new Intent(v.getContext(), RadioService.class);
                     intent.setAction(RadioService.ACTION_HARD_PLAY);
+                    intent.putExtra(RadioService.PARAM_PINTENT_FROM_ACTIVITY, pi);
                     startService(intent);
+                    progressDialog = ProgressDialog.show(MainActivity.this, getString(R.string.radio_buffering_title), getString(R.string.radio_buffering_descriprion), true);
                 } else {
                     Toast toast = Toast.makeText(v.getContext(), R.string.err_no_network, Toast.LENGTH_SHORT);
                     toast.show();
@@ -139,9 +151,6 @@ public class MainActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
-
-        //ToolbarColorizer.colorizeToolbar((Toolbar) findViewById(R.id.toolbar), getResources().getColor(R.color.colorEDOrange), MainActivity.this);
-
         return true;
     }
 
@@ -207,6 +216,12 @@ public class MainActivity extends AppCompatActivity
             Toast toast = Toast.makeText(getApplicationContext(), R.string.err_no_network, Toast.LENGTH_SHORT);
             toast.show();
             fragmentMain.setSwipeRefreshState(false);
+        } else if (resultCode == Global.RADIO_SERVICE_STATUS_START) {
+            if (progressDialog.isShowing())
+                progressDialog.dismiss();
+        } else if (resultCode == Global.RADIO_SERVICE_STATUS_STOP) {
+            if (progressDialog.isShowing())
+                progressDialog.dismiss();
         }
     }
 
