@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,6 +28,10 @@ public class MainFragment extends Fragment {
     protected String currentFeedType;
 
     public String getCurrentFeedType() {
+
+        if (currentFeedType == null)
+            this.currentFeedType = Global.FEED_TYPE_ALL;
+
         return currentFeedType;
     }
 
@@ -35,8 +40,17 @@ public class MainFragment extends Fragment {
     }
 
     public void setNewsRecyclerAdapter(String feedType) {
+
+        Log.d(Global.TAG, "setNewsRecyclerAdapter 1");
+        Log.d(Global.TAG, "setNewsRecyclerAdapter 1 feedType " + feedType);
+
         mAdapter = new NewsRecyclerAdapter(getContext(), dbe.readContent(feedType));
+
+        Log.d(Global.TAG, "setNewsRecyclerAdapter 2");
+
         mRecyclerView.setAdapter(mAdapter);
+
+        Log.d(Global.TAG, "setNewsRecyclerAdapter 3");
     }
 
     public void setSwipeRefreshState(boolean state) {
@@ -59,9 +73,15 @@ public class MainFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.main_fragment, null);
 
-        setCurrentFeedType(Global.FEED_TYPE_ALL);
+        //setCurrentFeedType(Global.FEED_TYPE_ALL);
+
+        Log.d(Global.TAG, "onCreateView 1");
+
+        Log.d(Global.TAG, getCurrentFeedType());
 
         dbe = new DBEngine(getActivity());
+
+        Log.d(Global.TAG, "onCreateView 2");
 
         mRecyclerView = (RecyclerView) v.findViewById(R.id.news_recycler_view);
         mLayoutManager = new LinearLayoutManager(v.getContext());

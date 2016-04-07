@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity
     Button btnPlayRadioSoft;
     Button btnPlayRadioHard;
 
+    NavigationView navigationView;
+
     private String currentRadioType;
 
     public String getCurrentRadioType() {
@@ -70,7 +72,7 @@ public class MainActivity extends AppCompatActivity
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        final NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
         View drawerHeader = navigationView.inflateHeaderView(R.layout.nav_header_main);
@@ -92,9 +94,18 @@ public class MainActivity extends AppCompatActivity
         });
 
         fragmentMain = new MainFragment();
+
+        //fragmentMain.setCurrentFeedType(Global.FEED_TYPE_ALL);
+
+        Log.d(Global.TAG, "MainActivity getCurrentFeedType - " + fragmentMain.getCurrentFeedType());
+
+        //fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
+
         android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.fMain, fragmentMain);
         ft.commit();
+
+        //fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
 
         final View.OnClickListener originalToolbarListener = toggle.getToolbarNavigationClickListener();
 
@@ -126,11 +137,16 @@ public class MainActivity extends AppCompatActivity
 
         ToolbarColorizer.colorizeToolbar((Toolbar) findViewById(R.id.toolbar), getResources().getColor(R.color.colorEDOrange), MainActivity.this);
 
-        if (savedInstanceState != null) {
-            setCurrentRadioType(savedInstanceState.getString("currentRadioType"));
-        }
+        //fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
 
-        syncRadioButtons();
+        syncNavigationBar();
+
+        //if (savedInstanceState != null) {
+        //    fragmentMain.setCurrentFeedType(savedInstanceState.getString("currentFeedType"));
+        //    setCurrentRadioType(savedInstanceState.getString("currentRadioType"));
+        //}
+
+        //syncRadioButtons();
     }
 
     @Override
@@ -141,6 +157,7 @@ public class MainActivity extends AppCompatActivity
 
         //getRadioStatus();
         syncRadioButtons();
+        syncNavigationBar();
     }
 
     @Override
@@ -158,6 +175,7 @@ public class MainActivity extends AppCompatActivity
 
         getRadioStatus();
         syncRadioButtons();
+        syncNavigationBar();
     }
 
     @Override
@@ -221,29 +239,34 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_feed_all) {
             fragmentMain.setCurrentFeedType(Global.FEED_TYPE_ALL);
-            fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
+            //fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
         } else if (id == R.id.nav_feed_galnet_news) {
             fragmentMain.setCurrentFeedType(Global.FEED_TYPE_GALNET_NEWS);
-            fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
+            //fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
         } else if (id == R.id.nav_feed_powerplay) {
             fragmentMain.setCurrentFeedType(Global.FEED_TYPE_POWERPLAY);
-            fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
+            //fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
         } else if (id == R.id.nav_feed_weekly_report) {
             fragmentMain.setCurrentFeedType(Global.FEED_TYPE_WEEKLY_REPORT);
-            fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
+            //fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
         } else if (id == R.id.nav_feed_comm_goals) {
             fragmentMain.setCurrentFeedType(Global.FEED_TYPE_COMM_GOALS);
-            fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
+            //fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
         } else if (id == R.id.nav_feed_comm_news) {
             fragmentMain.setCurrentFeedType(Global.FEED_TYPE_COMM_NEWS);
-            fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
+            //fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
         } else if (id == R.id.nav_feed_site_news) {
             fragmentMain.setCurrentFeedType(Global.FEED_TYPE_SITE_NEWS);
-            fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
+            //fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
         }
+
+        fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
+
+        syncNavigationBar();
+
         return true;
     }
 
@@ -330,5 +353,44 @@ public class MainActivity extends AppCompatActivity
 
         }
 
+    }
+
+    private void syncNavigationBar() {
+
+        Log.d(Global.TAG, "syncNavigationBar");
+
+        int itemNum = 0;
+        switch (fragmentMain.getCurrentFeedType()) {
+            case Global.FEED_TYPE_ALL:
+                itemNum = 0;
+                break;
+            case Global.FEED_TYPE_GALNET_NEWS:
+                itemNum = 1;
+                break;
+            case Global.FEED_TYPE_POWERPLAY:
+                itemNum = 2;
+                break;
+            case Global.FEED_TYPE_WEEKLY_REPORT:
+                itemNum = 3;
+                break;
+            case Global.FEED_TYPE_COMM_GOALS:
+                itemNum = 4;
+                break;
+            case Global.FEED_TYPE_COMM_NEWS:
+                itemNum = 5;
+                break;
+            case Global.FEED_TYPE_SITE_NEWS:
+                itemNum = 6;
+                break;
+            default:
+                itemNum = 0;
+                break;
+        }
+
+        Log.d(Global.TAG, "syncNavigationBar " + itemNum);
+
+        navigationView.getMenu().getItem(itemNum).setChecked(true);
+
+        //fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
     }
 }
