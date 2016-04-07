@@ -16,6 +16,7 @@ public class RadioService extends Service implements MediaPlayer.OnPreparedListe
 
     public static final String ACTION_SOFT_PLAY            = "ru.solargateteam.galnetru.action.SOFT_PLAY";
     public static final String ACTION_HARD_PLAY            = "ru.solargateteam.galnetru.action.HARD_PLAY";
+    public static final String ACTION_CHECK_STATUS         = "ru.solargateteam.galnetru.action.CHECK_STATUS";
     public final static String PARAM_PINTENT_FROM_ACTIVITY = "ru.solargateteam.galnetru.pendingintent.RADIO_FROM_ACTIVITY";
 
     MediaPlayer mediaPlayer;
@@ -35,44 +36,51 @@ public class RadioService extends Service implements MediaPlayer.OnPreparedListe
 
         ne = new NotificationEngine(getApplicationContext());
 
-        Log.d(Global.TAG, "6");
-
         String action = intent.getAction();
-
-        Log.d(Global.TAG, "7");
-
         pi = intent.getParcelableExtra(PARAM_PINTENT_FROM_ACTIVITY);
 
-        Log.d(Global.TAG, "8");
-
-        if (playerStatus.equals(action)) {
-            releaseMediaPlayer();
-        } else {
-
-            releaseMediaPlayer();
-
-            playerStatus = action;
-
+        if (action.equals(ACTION_CHECK_STATUS)) {
             try {
-
-                pi.send(Global.RADIO_SERVICE_STATUS_START);
-
-                mediaPlayer = new MediaPlayer();
-
-                if (ACTION_SOFT_PLAY.equals(action)) {
-                    mediaPlayer.setDataSource(Global.STREAM_SOFT);
-                } else if (ACTION_HARD_PLAY.equals(action)) {
-                    mediaPlayer.setDataSource(Global.STREAM_HARD);
+                if (playerStatus.equals(ACTION_SOFT_PLAY)) {
+                    pi.send(Global.RADIO_SERVICE_STATUS_SOFT);
+                } else if (playerStatus.equals(ACTION_HARD_PLAY)) {
+                    pi.send(Global.RADIO_SERVICE_STATUS_HARD);
+                } else if (playerStatus == null || playerStatus.equals("")) {
+                    pi.send(Global.RADIO_SERVICE_STATUS_NULL);
                 }
-
-                mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-
-                Log.d(Global.TAG, "prepareAsync");
-                mediaPlayer.setOnPreparedListener(this);
-                mediaPlayer.prepareAsync();
-
             } catch (Exception e) {
                 e.printStackTrace();
+            }
+        } else {
+            if (playerStatus.equals(action)) {
+                releaseMediaPlayer();
+            } else {
+
+                releaseMediaPlayer();
+
+                playerStatus = action;
+
+                try {
+
+                    pi.send(Global.RADIO_SERVICE_STATUS_START);
+
+                    mediaPlayer = new MediaPlayer();
+
+                    if (ACTION_SOFT_PLAY.equals(action)) {
+                        mediaPlayer.setDataSource(Global.STREAM_SOFT);
+                    } else if (ACTION_HARD_PLAY.equals(action)) {
+                        mediaPlayer.setDataSource(Global.STREAM_HARD);
+                    }
+
+                    mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+
+                    Log.d(Global.TAG, "prepareAsync");
+                    mediaPlayer.setOnPreparedListener(this);
+                    mediaPlayer.prepareAsync();
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         }
 

@@ -44,22 +44,16 @@ public class MainActivity extends AppCompatActivity
     private String currentRadioType;
 
     public String getCurrentRadioType() {
-
-        Log.d(Global.TAG, "getCurrentRadioType - " + currentRadioType);
-
         return currentRadioType;
     }
 
     public void setCurrentRadioType(String currentRadioType) {
         this.currentRadioType = currentRadioType;
-
-        Log.d(Global.TAG, "setCurrentRadioType - " + currentRadioType);
-
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Log.d(Global.TAG, "Create");
+        Log.d(Global.TAG, "onCreate");
         super.onCreate(savedInstanceState);
 
         pe = new PrefEngine(this);
@@ -145,17 +139,8 @@ public class MainActivity extends AppCompatActivity
 
         Log.d(Global.TAG, "onResume");
 
+        //getRadioStatus();
         syncRadioButtons();
-
-/*
-        if (RadioService.ACTION_SOFT_PLAY.equals(getCurrentRadioType())) {
-            btnPlayRadioSoft.setBackgroundResource(R.drawable.ic_menu_radio_soft_play);
-            btnPlayRadioHard.setBackgroundResource(R.drawable.ic_menu_radio_hard);
-        } else if (RadioService.ACTION_HARD_PLAY.equals(getCurrentRadioType())) {
-            btnPlayRadioSoft.setBackgroundResource(R.drawable.ic_menu_radio_soft);
-            btnPlayRadioHard.setBackgroundResource(R.drawable.ic_menu_radio_hard_play);
-        }
-*/
     }
 
     @Override
@@ -163,25 +148,23 @@ public class MainActivity extends AppCompatActivity
         super.onPostResume();
 
         Log.d(Global.TAG, "onPostResume");
+    }
 
-        //ToolbarColorizer.colorizeToolbar((Toolbar) findViewById(R.id.toolbar), getResources().getColor(R.color.colorEDOrange), MainActivity.this);
-/*
-        if (RadioService.ACTION_SOFT_PLAY.equals(getCurrentRadioType())) {
-            btnPlayRadioSoft.setBackgroundResource(R.drawable.ic_menu_radio_soft_play);
-            btnPlayRadioHard.setBackgroundResource(R.drawable.ic_menu_radio_hard);
-        } else if (RadioService.ACTION_HARD_PLAY.equals(getCurrentRadioType())) {
-            btnPlayRadioSoft.setBackgroundResource(R.drawable.ic_menu_radio_soft);
-            btnPlayRadioHard.setBackgroundResource(R.drawable.ic_menu_radio_hard_play);
-        }
-*/
+    @Override
+    protected void onRestart() {
+        super.onRestart();
 
+        Log.d(Global.TAG, "onRestart");
+
+        getRadioStatus();
+        syncRadioButtons();
     }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
+        outState.putString("currentFeedType", fragmentMain.getCurrentFeedType());
         outState.putString("currentRadioType", getCurrentRadioType());
-
 
         Log.d(Global.TAG, "onSaveInstanceState");
     }
@@ -190,6 +173,7 @@ public class MainActivity extends AppCompatActivity
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
 
+        fragmentMain.setCurrentFeedType(savedInstanceState.getString("currentFeedType"));
         setCurrentRadioType(savedInstanceState.getString("currentRadioType"));
 
         Log.d(Global.TAG, "onRestoreInstanceState");
@@ -275,9 +259,7 @@ public class MainActivity extends AppCompatActivity
             toast.show();
             fragmentMain.setSwipeRefreshState(false);
         } else if (resultCode == Global.RADIO_SERVICE_STATUS_START) {
-
             syncRadioButtons();
-
             progressDialog = ProgressDialog.show(MainActivity.this, getString(R.string.radio_buffering_title), getString(R.string.radio_buffering_descriprion), true);
         } else if (resultCode == Global.RADIO_SERVICE_STATUS_PREP) {
             if (progressDialog != null && progressDialog.isShowing())
@@ -286,12 +268,13 @@ public class MainActivity extends AppCompatActivity
         } else if (resultCode == Global.RADIO_SERVICE_STATUS_STOP) {
             if (progressDialog != null && progressDialog.isShowing())
                 progressDialog.dismiss();
-
             syncRadioButtons();
-
-            //btnPlayRadioSoft.setBackgroundResource(R.drawable.ic_menu_radio_soft);
-            //btnPlayRadioHard.setBackgroundResource(R.drawable.ic_menu_radio_hard);
-            //setCurrentRadioType("");
+        } else if (resultCode == Global.RADIO_SERVICE_STATUS_SOFT) {
+            setCurrentRadioType(RadioService.ACTION_SOFT_PLAY);
+        } else if (resultCode == Global.RADIO_SERVICE_STATUS_HARD) {
+            setCurrentRadioType(RadioService.ACTION_HARD_PLAY);
+        } else if (resultCode == Global.RADIO_SERVICE_STATUS_NULL) {
+            setCurrentRadioType("");
         }
     }
 
@@ -305,55 +288,40 @@ public class MainActivity extends AppCompatActivity
 
     private void playRadio(String action) {
         if (Util.isNetwork(MainActivity.this)) {
-
             if (action.equals(getCurrentRadioType()))
                 setCurrentRadioType("");
             else
             setCurrentRadioType(action);
 
             PendingIntent pi;
-
-            Log.d(Global.TAG, "1");
-
             pi = createPendingResult(Global.RADIO_SERVICE_TASK_CODE, new Intent(), 0);
-
-            Log.d(Global.TAG, "2");
-
             Intent intent = new Intent(MainActivity.this, RadioService.class);
-
-            Log.d(Global.TAG, "3");
-
             intent.setAction(action);
-
-            Log.d(Global.TAG, "4");
-
             intent.putExtra(RadioService.PARAM_PINTENT_FROM_ACTIVITY, pi);
-
-            Log.d(Global.TAG, "5");
-
             startService(intent);
 
         } else {
-
             syncRadioButtons();
-
             Toast toast = Toast.makeText(MainActivity.this, R.string.err_no_network, Toast.LENGTH_SHORT);
             toast.show();
         }
     }
 
+    private void getRadioStatus() {
+        PendingIntent pi;
+        pi = createPendingResult(Global.RADIO_SERVICE_TASK_CODE, new Intent(), 0);
+        Intent intent = new Intent(MainActivity.this, RadioService.class);
+        intent.setAction(RadioService.ACTION_CHECK_STATUS);
+        intent.putExtra(RadioService.PARAM_PINTENT_FROM_ACTIVITY, pi);
+        startService(intent);
+    }
+
     private void syncRadioButtons() {
 
         if (RadioService.ACTION_SOFT_PLAY.equals(getCurrentRadioType())) {
-
-            Log.d(Global.TAG, "ACTION_SOFT_PLAY");
-
             btnPlayRadioSoft.setBackgroundResource(R.drawable.ic_menu_radio_soft_play);
             btnPlayRadioHard.setBackgroundResource(R.drawable.ic_menu_radio_hard);
         } else if (RadioService.ACTION_HARD_PLAY.equals(getCurrentRadioType())) {
-
-            Log.d(Global.TAG, "ACTION_HARD_PLAY");
-
             btnPlayRadioSoft.setBackgroundResource(R.drawable.ic_menu_radio_soft);
             btnPlayRadioHard.setBackgroundResource(R.drawable.ic_menu_radio_hard_play);
         } else if ("".equals(getCurrentRadioType())) {

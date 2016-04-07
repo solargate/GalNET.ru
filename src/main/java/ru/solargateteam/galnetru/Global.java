@@ -36,6 +36,9 @@ public class Global {
     public static final int RADIO_SERVICE_STATUS_START = 3;
     public static final int RADIO_SERVICE_STATUS_PREP  = 4;
     public static final int RADIO_SERVICE_STATUS_STOP  = 5;
+    public static final int RADIO_SERVICE_STATUS_SOFT  = 6;
+    public static final int RADIO_SERVICE_STATUS_HARD  = 7;
+    public static final int RADIO_SERVICE_STATUS_NULL  = 8;
 
     public static final String IMAGES_DIR              = "images";
 
