@@ -7,7 +7,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,7 +24,7 @@ public class MainFragment extends Fragment {
 
     SwipeRefreshLayout mSwipeRefreshLayout;
 
-    protected String currentFeedType;
+    private String currentFeedType;
 
     public String getCurrentFeedType() {
 
@@ -39,18 +38,9 @@ public class MainFragment extends Fragment {
         this.currentFeedType = currentFeedType;
     }
 
-    public void setNewsRecyclerAdapter(String feedType) {
-
-        Log.d(Global.TAG, "setNewsRecyclerAdapter 1");
-        Log.d(Global.TAG, "setNewsRecyclerAdapter 1 feedType " + feedType);
-
-        mAdapter = new NewsRecyclerAdapter(getContext(), dbe.readContent(feedType));
-
-        Log.d(Global.TAG, "setNewsRecyclerAdapter 2");
-
+    public void setNewsRecyclerAdapter() {
+        mAdapter = new NewsRecyclerAdapter(getContext(), dbe.readContent(getCurrentFeedType()));
         mRecyclerView.setAdapter(mAdapter);
-
-        Log.d(Global.TAG, "setNewsRecyclerAdapter 3");
     }
 
     public void setSwipeRefreshState(boolean state) {
@@ -72,22 +62,12 @@ public class MainFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.main_fragment, null);
-
-        //setCurrentFeedType(Global.FEED_TYPE_ALL);
-
-        Log.d(Global.TAG, "onCreateView 1");
-
-        Log.d(Global.TAG, getCurrentFeedType());
-
         dbe = new DBEngine(getActivity());
-
-        Log.d(Global.TAG, "onCreateView 2");
-
         mRecyclerView = (RecyclerView) v.findViewById(R.id.news_recycler_view);
         mLayoutManager = new LinearLayoutManager(v.getContext());
         mRecyclerView.setLayoutManager(mLayoutManager);
 
-        setNewsRecyclerAdapter(getCurrentFeedType());
+        setNewsRecyclerAdapter();
 
         mSwipeRefreshLayout = (SwipeRefreshLayout) v.findViewById(R.id.content_main_swipe_refresh_layout);
         mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {

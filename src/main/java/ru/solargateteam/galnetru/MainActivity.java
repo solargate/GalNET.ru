@@ -95,17 +95,13 @@ public class MainActivity extends AppCompatActivity
 
         fragmentMain = new MainFragment();
 
-        //fragmentMain.setCurrentFeedType(Global.FEED_TYPE_ALL);
+        fragmentMain.setCurrentFeedType(Global.FEED_TYPE_ALL);
 
         Log.d(Global.TAG, "MainActivity getCurrentFeedType - " + fragmentMain.getCurrentFeedType());
-
-        //fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
 
         android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.fMain, fragmentMain);
         ft.commit();
-
-        //fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
 
         final View.OnClickListener originalToolbarListener = toggle.getToolbarNavigationClickListener();
 
@@ -137,16 +133,8 @@ public class MainActivity extends AppCompatActivity
 
         ToolbarColorizer.colorizeToolbar((Toolbar) findViewById(R.id.toolbar), getResources().getColor(R.color.colorEDOrange), MainActivity.this);
 
-        //fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
-
-        syncNavigationBar();
-
-        //if (savedInstanceState != null) {
-        //    fragmentMain.setCurrentFeedType(savedInstanceState.getString("currentFeedType"));
-        //    setCurrentRadioType(savedInstanceState.getString("currentRadioType"));
-        //}
-
-        //syncRadioButtons();
+        getRadioStatus();
+        syncRadioButtons();
     }
 
     @Override
@@ -154,10 +142,6 @@ public class MainActivity extends AppCompatActivity
         super.onResume();
 
         Log.d(Global.TAG, "onResume");
-
-        //getRadioStatus();
-        syncRadioButtons();
-        syncNavigationBar();
     }
 
     @Override
@@ -165,6 +149,8 @@ public class MainActivity extends AppCompatActivity
         super.onPostResume();
 
         Log.d(Global.TAG, "onPostResume");
+
+        syncNavigationBar();
     }
 
     @Override
@@ -178,6 +164,7 @@ public class MainActivity extends AppCompatActivity
         syncNavigationBar();
     }
 
+    /*
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
@@ -196,6 +183,7 @@ public class MainActivity extends AppCompatActivity
 
         Log.d(Global.TAG, "onRestoreInstanceState");
     }
+    */
 
     @Override
     public void onBackPressed() {
@@ -239,28 +227,21 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_feed_all) {
             fragmentMain.setCurrentFeedType(Global.FEED_TYPE_ALL);
-            //fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
         } else if (id == R.id.nav_feed_galnet_news) {
             fragmentMain.setCurrentFeedType(Global.FEED_TYPE_GALNET_NEWS);
-            //fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
         } else if (id == R.id.nav_feed_powerplay) {
             fragmentMain.setCurrentFeedType(Global.FEED_TYPE_POWERPLAY);
-            //fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
         } else if (id == R.id.nav_feed_weekly_report) {
             fragmentMain.setCurrentFeedType(Global.FEED_TYPE_WEEKLY_REPORT);
-            //fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
         } else if (id == R.id.nav_feed_comm_goals) {
             fragmentMain.setCurrentFeedType(Global.FEED_TYPE_COMM_GOALS);
-            //fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
         } else if (id == R.id.nav_feed_comm_news) {
             fragmentMain.setCurrentFeedType(Global.FEED_TYPE_COMM_NEWS);
-            //fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
         } else if (id == R.id.nav_feed_site_news) {
             fragmentMain.setCurrentFeedType(Global.FEED_TYPE_SITE_NEWS);
-            //fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
         }
 
-        fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
+        //fragmentMain.setNewsRecyclerAdapter();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -276,7 +257,7 @@ public class MainActivity extends AppCompatActivity
 
         if (resultCode == Global.NEWS_SERVICE_STATUS_OK) {
             fragmentMain.setSwipeRefreshState(false);
-            fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
+            //fragmentMain.setNewsRecyclerAdapter();
         } else if (resultCode == Global.NEWS_SERVICE_STATUS_NON) {
             Toast toast = Toast.makeText(getApplicationContext(), R.string.err_no_network, Toast.LENGTH_SHORT);
             toast.show();
@@ -299,6 +280,9 @@ public class MainActivity extends AppCompatActivity
         } else if (resultCode == Global.RADIO_SERVICE_STATUS_NULL) {
             setCurrentRadioType("");
         }
+
+        syncRadioButtons();
+        syncNavigationBar();
     }
 
     public void switchPost(int id, Fragment fragment) {
@@ -350,16 +334,12 @@ public class MainActivity extends AppCompatActivity
         } else if ("".equals(getCurrentRadioType())) {
             btnPlayRadioSoft.setBackgroundResource(R.drawable.ic_menu_radio_soft);
             btnPlayRadioHard.setBackgroundResource(R.drawable.ic_menu_radio_hard);
-
         }
 
     }
 
     private void syncNavigationBar() {
-
-        Log.d(Global.TAG, "syncNavigationBar");
-
-        int itemNum = 0;
+        int itemNum;
         switch (fragmentMain.getCurrentFeedType()) {
             case Global.FEED_TYPE_ALL:
                 itemNum = 0;
@@ -387,10 +367,9 @@ public class MainActivity extends AppCompatActivity
                 break;
         }
 
-        Log.d(Global.TAG, "syncNavigationBar " + itemNum);
+        //Log.d(Global.TAG, "syncNavigationBar " + itemNum);
 
         navigationView.getMenu().getItem(itemNum).setChecked(true);
-
-        //fragmentMain.setNewsRecyclerAdapter(fragmentMain.getCurrentFeedType());
+        fragmentMain.setNewsRecyclerAdapter();
     }
 }
