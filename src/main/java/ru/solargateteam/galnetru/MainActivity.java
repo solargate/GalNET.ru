@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity
     Button btnPlayRadioSoft;
     Button btnPlayRadioHard;
 
+    Toolbar toolbar;
     NavigationView navigationView;
 
     private String currentRadioType;
@@ -62,7 +63,7 @@ public class MainActivity extends AppCompatActivity
         pe.initDefaults(this);
 
         setContentView(R.layout.activity_main);
-        final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -335,7 +336,6 @@ public class MainActivity extends AppCompatActivity
             btnPlayRadioSoft.setBackgroundResource(R.drawable.ic_menu_radio_soft);
             btnPlayRadioHard.setBackgroundResource(R.drawable.ic_menu_radio_hard);
         }
-
     }
 
     private void syncNavigationBar() {
@@ -370,6 +370,10 @@ public class MainActivity extends AppCompatActivity
         //Log.d(Global.TAG, "syncNavigationBar " + itemNum);
 
         navigationView.getMenu().getItem(itemNum).setChecked(true);
+
+        //toolbar.setSubtitle(navigationView.getMenu().getItem(itemNum).getTitle());
+        toolbar.setTitle(navigationView.getMenu().getItem(itemNum).getTitle());
+
         fragmentMain.setNewsRecyclerAdapter();
     }
 }
