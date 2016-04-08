@@ -1,6 +1,7 @@
 package ru.solargateteam.galnetru;
 
 import android.animation.ObjectAnimator;
+import android.app.AlertDialog;
 import android.app.PendingIntent;
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -218,6 +219,8 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(this, PrefActivity.class);
             startActivityForResult(intent, SHOW_PREFERENCES);
             return true;
+        } else if (id == R.id.action_about) {
+            showAbout();
         }
 
         return super.onOptionsItemSelected(item);
@@ -378,5 +381,16 @@ public class MainActivity extends AppCompatActivity
         toolbar.setTitle(navigationView.getMenu().getItem(itemNum).getTitle());
 
         fragmentMain.setNewsRecyclerAdapter();
+    }
+
+    protected void showAbout() {
+        View messageView = getLayoutInflater().inflate(R.layout.about, null, false);
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setIcon(R.mipmap.ic_launcher);
+        builder.setTitle(R.string.app_name);
+        builder.setView(messageView);
+        builder.create();
+        builder.show();
     }
 }
