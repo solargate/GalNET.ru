@@ -6,6 +6,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -43,6 +44,7 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
         public TextView tvTitle;
         public ImageView ivImage;
         //public TextView tvDescription;
+        public CardView cvNews;
 
         public View view;
         public DBItem currentItem;
@@ -55,6 +57,7 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
             tvTitle = (TextView) v.findViewById(R.id.tv_news_title);
             ivImage = (ImageView) v.findViewById(R.id.iv_news_image);
             //tvDescription = (TextView) v.findViewById(R.id.tv_news_description);
+            cvNews = (CardView) v.findViewById(R.id.news_card_view);
 
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -110,6 +113,9 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
         }
 
         //holder.tvDescription.setText(Util.strProcessHTML(listContent.get(position).getDescription()));
+
+        // TODO: Выделение цветом новых постов
+        //holder.cvNews.setCardBackgroundColor(mContext.getResources().getColor(R.color.colorFront));
 
         holder.currentItem = listContent.get(position);
     }
