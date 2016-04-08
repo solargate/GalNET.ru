@@ -98,8 +98,6 @@ public class MainActivity extends AppCompatActivity
 
         fragmentMain.setCurrentFeedType(Global.FEED_TYPE_ALL);
 
-        Log.d(Global.TAG, "MainActivity getCurrentFeedType - " + fragmentMain.getCurrentFeedType());
-
         android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.fMain, fragmentMain);
         ft.commit();
@@ -152,6 +150,11 @@ public class MainActivity extends AppCompatActivity
         Log.d(Global.TAG, "onPostResume");
 
         syncNavigationBar();
+
+        if (pe.isFirstStart()) {
+            fragmentMain.setSwipeRefreshState(true);
+            fragmentMain.refreshNews();
+        }
     }
 
     @Override

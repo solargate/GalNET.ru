@@ -12,6 +12,9 @@ public class PrefEngine {
     private static final String PREF_USE_NOTIFICATION = "PREF_USE_NOTIFICATION";
     private static final String PREF_USE_GALNET_FONT  = "PREF_USE_GALNET_FONT";
 
+    // Hidden
+    private static final String PREF_FIRST_START      = "PREF_FIRST_START";
+
     SharedPreferences sp;
 
     public PrefEngine(Context context) {
@@ -57,5 +60,14 @@ public class PrefEngine {
 
     public boolean useGalNETFont() {
         return sp.getBoolean(PREF_USE_GALNET_FONT, false);
+    }
+
+    public boolean isFirstStart() {
+        if (sp.getBoolean(PREF_FIRST_START, true)) {
+            sp.edit().putBoolean(PREF_FIRST_START, false).commit();
+            return true;
+        }
+
+        return false;
     }
 }

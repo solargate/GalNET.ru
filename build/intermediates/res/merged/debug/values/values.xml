@@ -323,7 +323,7 @@
     <string name="pref_galnet_font">GalNET font</string>
     <string name="pref_galnet_font_description">Use GalNET font</string>
     <string name="pref_notification">Notifications</string>
-    <string name="pref_notification_description">Enable notifications</string>
+    <string name="pref_notification_description">Enable notifications about new posts</string>
     <string name="pref_refresh_interval">Refresh interval</string>
     <string name="pref_refresh_interval_default_value">1h</string>
     <string name="pref_refresh_interval_description">News refresh interval</string>

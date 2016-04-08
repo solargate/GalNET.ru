@@ -43,11 +43,15 @@ public class MainFragment extends Fragment {
         mRecyclerView.setAdapter(mAdapter);
     }
 
-    public void setSwipeRefreshState(boolean state) {
-        mSwipeRefreshLayout.setRefreshing(state);
+    public void setSwipeRefreshState(final boolean state) {
+        mSwipeRefreshLayout.post(new Runnable() {
+            @Override public void run() {
+                mSwipeRefreshLayout.setRefreshing(state);
+            }
+        });
     }
 
-    private void refreshNews() {
+    public void refreshNews() {
         PendingIntent pi;
         Intent intent;
 
