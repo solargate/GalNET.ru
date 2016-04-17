@@ -21,7 +21,7 @@
         android:key="PREF_USE_GALNET_FONT"
         android:title="@string/pref_galnet_font"
         android:summary="@string/pref_galnet_font_description"
-        android:defaultValue="false"
+        android:defaultValue="true"
         />
 
 </PreferenceScreen>
