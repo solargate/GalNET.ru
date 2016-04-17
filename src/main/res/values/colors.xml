@@ -3,4 +3,5 @@
     <color name="colorEDOrange">#E38D13</color>
     <color name="colorBackground">#000000</color>
     <color name="colorFront">#FF212121</color>
+    <color name="colorWhite">#FFFFFF</color>
 </resources>
