@@ -169,27 +169,6 @@ public class MainActivity extends AppCompatActivity
         syncNavigationBar();
     }
 
-    /*
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-        outState.putString("currentFeedType", fragmentMain.getCurrentFeedType());
-        outState.putString("currentRadioType", getCurrentRadioType());
-
-        Log.d(Global.TAG, "onSaveInstanceState");
-    }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-
-        fragmentMain.setCurrentFeedType(savedInstanceState.getString("currentFeedType"));
-        setCurrentRadioType(savedInstanceState.getString("currentRadioType"));
-
-        Log.d(Global.TAG, "onRestoreInstanceState");
-    }
-    */
-
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

@@ -29,9 +29,9 @@ public class PrefEngine {
         int res;
         String value = sp.getString(PREF_REFRESH_INTERVAL, "1h");
         switch (value) {
-            case "1m":
+            /*case "1m":
                 res = 1;
-                break;
+                break;*/
             case "15m":
                 res = 15;
                 break;
@@ -59,7 +59,7 @@ public class PrefEngine {
     }
 
     public boolean useGalNETFont() {
-        return sp.getBoolean(PREF_USE_GALNET_FONT, false);
+        return sp.getBoolean(PREF_USE_GALNET_FONT, true);
     }
 
     public boolean isFirstStart() {

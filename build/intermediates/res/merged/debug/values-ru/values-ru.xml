@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="pref_refresh_interval">
+        <item>1 минута</item>
+        <item>15 минут</item>
+        <item>30 минут</item>
+        <item>1 час</item>
+        <item>4 часа</item>
+        <item>6 часов</item>
+    </string-array>
+    <string-array name="pref_refresh_interval_values">
+        <item>1m</item>
+        <item>15m</item>
+        <item>30m</item>
+        <item>1h</item>
+        <item>4h</item>
+        <item>6h</item>
+    </string-array>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Перейти на главный экран"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
     <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
@@ -19,5 +35,39 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Открыть доступ"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Открыть доступ пользователю %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Свернуть"</string>
+    <string name="about_app_contacts">Контакты: <a href="mailto:solargate.team@gmail.com">solargate.team@gmail.com</a></string>
+    <string name="about_app_credits">Программа не имеет отношения к Frontier Developments plc. Вся используемая информация получена из общедоступных источников. Все права на материалы принадлежат их авторам.</string>
+    <string name="about_app_description">Эта программа является клиентом к сайту galnet.ru. Весь контент предоставляется сообществом.</string>
+    <string name="action_about">О программе</string>
+    <string name="action_settings">Настройки</string>
+    <string name="app_name">GalNET.ru</string>
+    <string name="err_no_network">Нет сети</string>
+    <string name="feed_all">Все ленты</string>
+    <string name="feed_comm_goals">Общественные цели</string>
+    <string name="feed_comm_news">Новости сообществ</string>
+    <string name="feed_galnet_news">GalNET News</string>
+    <string name="feed_powerplay">PowerPlay</string>
+    <string name="feed_site_news">Новости ресурса</string>
+    <string name="feed_title">Ленты</string>
+    <string name="feed_weekly_report">Еженедельный отчет</string>
+    <string name="navigation_drawer_close">Закрыть меню</string>
+    <string name="navigation_drawer_open">Открыть меню</string>
+    <string name="notification_new_post_text">новых постов GalNET.ru</string>
+    <string name="notification_new_post_title">GalNET.ru news</string>
+    <string name="notification_radio_text">Радио %s в эфире…</string>
+    <string name="notification_radio_title">GalNET.ru радио</string>
+    <string name="pref_galnet_font">Шрифт GalNET</string>
+    <string name="pref_galnet_font_description">Использоватьт шрифт GalNET</string>
+    <string name="pref_notification">Уведомления</string>
+    <string name="pref_notification_description">Уведомления о новых постах</string>
+    <string name="pref_refresh_interval">Интервал обновлений</string>
+    <string name="pref_refresh_interval_default_value">1h</string>
+    <string name="pref_refresh_interval_description">Интервал обновлений новостей</string>
+    <string name="radio_buffering_descriprion">Буферизация…</string>
+    <string name="radio_buffering_title">Пожалуйста, подождите</string>
+    <string name="radio_hard">Радио HARD</string>
+    <string name="radio_hard_playing">GalNET.ru Радио HARD в эфире</string>
+    <string name="radio_soft">Радио SOFT</string>
+    <string name="radio_soft_playing">GalNET.ru Радио SOFT в эфире</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">">999"</string>
 </resources>
