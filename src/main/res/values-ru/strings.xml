@@ -39,7 +39,7 @@
     <string name="pref_refresh_interval_description">Интервал обновлений новостей</string>
     <string name="pref_refresh_interval_default_value">1h</string>
     <string name="pref_galnet_font">Шрифт GalNET</string>
-    <string name="pref_galnet_font_description">Использоватьт шрифт GalNET</string>
+    <string name="pref_galnet_font_description">Использовать шрифт GalNET</string>
 
     <string name="err_no_network">Нет сети</string>
 
