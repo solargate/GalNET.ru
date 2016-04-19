@@ -36,52 +36,60 @@ public class RadioService extends Service implements MediaPlayer.OnPreparedListe
 
         ne = new NotificationEngine(getApplicationContext());
 
-        String action = intent.getAction();
-        pi = intent.getParcelableExtra(PARAM_PINTENT_FROM_ACTIVITY);
+        if (intent != null) {
 
-        if (action.equals(ACTION_CHECK_STATUS)) {
-            try {
-                if (playerStatus.equals(ACTION_SOFT_PLAY)) {
-                    pi.send(Global.RADIO_SERVICE_STATUS_SOFT);
-                } else if (playerStatus.equals(ACTION_HARD_PLAY)) {
-                    pi.send(Global.RADIO_SERVICE_STATUS_HARD);
-                } else if (playerStatus == null || playerStatus.equals("")) {
-                    pi.send(Global.RADIO_SERVICE_STATUS_NULL);
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        } else {
-            if (playerStatus.equals(action)) {
-                releaseMediaPlayer();
-            } else {
+            //ne = new NotificationEngine(getApplicationContext());
 
-                releaseMediaPlayer();
+            String action = intent.getAction();
+            pi = intent.getParcelableExtra(PARAM_PINTENT_FROM_ACTIVITY);
 
-                playerStatus = action;
-
+            if (action.equals(ACTION_CHECK_STATUS)) {
                 try {
-
-                    pi.send(Global.RADIO_SERVICE_STATUS_START);
-
-                    mediaPlayer = new MediaPlayer();
-
-                    if (ACTION_SOFT_PLAY.equals(action)) {
-                        mediaPlayer.setDataSource(Global.STREAM_SOFT);
-                    } else if (ACTION_HARD_PLAY.equals(action)) {
-                        mediaPlayer.setDataSource(Global.STREAM_HARD);
+                    if (playerStatus.equals(ACTION_SOFT_PLAY)) {
+                        pi.send(Global.RADIO_SERVICE_STATUS_SOFT);
+                    } else if (playerStatus.equals(ACTION_HARD_PLAY)) {
+                        pi.send(Global.RADIO_SERVICE_STATUS_HARD);
+                    } else if (playerStatus == null || playerStatus.equals("")) {
+                        pi.send(Global.RADIO_SERVICE_STATUS_NULL);
                     }
-
-                    mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-
-                    Log.d(Global.TAG, "prepareAsync");
-                    mediaPlayer.setOnPreparedListener(this);
-                    mediaPlayer.prepareAsync();
-
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
+            } else {
+                if (playerStatus.equals(action)) {
+                    releaseMediaPlayer();
+                } else {
+
+                    releaseMediaPlayer();
+
+                    playerStatus = action;
+
+                    try {
+
+                        pi.send(Global.RADIO_SERVICE_STATUS_START);
+
+                        mediaPlayer = new MediaPlayer();
+
+                        if (ACTION_SOFT_PLAY.equals(action)) {
+                            mediaPlayer.setDataSource(Global.STREAM_SOFT);
+                        } else if (ACTION_HARD_PLAY.equals(action)) {
+                            mediaPlayer.setDataSource(Global.STREAM_HARD);
+                        }
+
+                        mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+
+                        Log.d(Global.TAG, "prepareAsync");
+                        mediaPlayer.setOnPreparedListener(this);
+                        mediaPlayer.prepareAsync();
+
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
             }
+        } else {
+            Log.d(Global.TAG, "RadioService stopSelf");
+            stopSelf(startId);
         }
 
         return START_STICKY;
@@ -93,10 +101,15 @@ public class RadioService extends Service implements MediaPlayer.OnPreparedListe
 
         Log.d(Global.TAG, "RadioService onDestroy");
 
-        if (mediaPlayer.isPlaying()) {
-            mediaPlayer.stop();
+        if (ne != null)
+            ne.removeNotificationRadio();
+
+        if (mediaPlayer != null) {
+            if (mediaPlayer.isPlaying()) {
+                mediaPlayer.stop();
+            }
+            releaseMediaPlayer();
         }
-        releaseMediaPlayer();
     }
 
     @Nullable
