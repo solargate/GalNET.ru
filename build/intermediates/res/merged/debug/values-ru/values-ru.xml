@@ -57,7 +57,7 @@
     <string name="notification_radio_text">Радио %s в эфире…</string>
     <string name="notification_radio_title">GalNET.ru радио</string>
     <string name="pref_galnet_font">Шрифт GalNET</string>
-    <string name="pref_galnet_font_description">Использоватьт шрифт GalNET</string>
+    <string name="pref_galnet_font_description">Использовать шрифт GalNET</string>
     <string name="pref_notification">Уведомления</string>
     <string name="pref_notification_description">Уведомления о новых постах</string>
     <string name="pref_refresh_interval">Интервал обновлений</string>

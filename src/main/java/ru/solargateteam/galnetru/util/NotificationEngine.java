@@ -21,8 +21,8 @@ import static java.lang.String.format;
 
 public class NotificationEngine {
 
-    private static final int NOTIFICATION_ID_NEW_POST = 1;
-    private static final int NOTIFICATION_ID_RADIO    = 2;
+    public static final int NOTIFICATION_ID_NEW_POST = 1;
+    public static final int NOTIFICATION_ID_RADIO    = 2;
 
     NotificationManager nm;
     DBEngine dbe;
@@ -40,10 +40,12 @@ public class NotificationEngine {
             removeNotificationNewPost();
     }
 
+    /*
     public void processNotificationRadio(Context context, String radioName) {
         PrefEngine pe = new PrefEngine(context);
         showNotificationRadio(context, radioName);
     }
+    */
 
     private void showNotificationNewPost(Context context) {
 
@@ -83,6 +85,7 @@ public class NotificationEngine {
         nm.cancel(NOTIFICATION_ID_NEW_POST);
     }
 
+    /*
     private void showNotificationRadio(Context context, String radioName) {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context);
 
@@ -105,6 +108,31 @@ public class NotificationEngine {
 
     public void removeNotificationRadio() {
         nm.cancel(NOTIFICATION_ID_RADIO);
+    }
+    */
+
+    public Notification buildRadioNotification(Context context, String radioName) {
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(context);
+
+        builder.setContentTitle(String.valueOf(context.getString(R.string.notification_radio_title)))
+                .setContentText(format(String.valueOf(context.getString(R.string.notification_radio_text)), radioName))
+                .setOngoing(true)
+                .setShowWhen(false);
+
+        if (radioName.equals("SOFT")) {
+            builder.setSmallIcon(R.drawable.ic_notify_radio_soft);
+        } else if (radioName.equals("HARD")) {
+            builder.setSmallIcon(R.drawable.ic_notify_radio_hard);
+        }
+
+        Intent resultIntent = new Intent(context, MainActivity.class);
+        TaskStackBuilder stackBuilder = TaskStackBuilder.create(context);
+        stackBuilder.addParentStack(MainActivity.class);
+        stackBuilder.addNextIntent(resultIntent);
+        PendingIntent resultPendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
+        builder.setContentIntent(resultPendingIntent);
+
+        return builder.build();
     }
 
 }

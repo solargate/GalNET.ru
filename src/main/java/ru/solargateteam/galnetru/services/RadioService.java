@@ -1,16 +1,22 @@
 package ru.solargateteam.galnetru.services;
 
+import android.app.Notification;
 import android.app.PendingIntent;
 import android.app.Service;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.net.ConnectivityManager;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
 import ru.solargateteam.galnetru.Global;
 import ru.solargateteam.galnetru.util.NotificationEngine;
+import ru.solargateteam.galnetru.util.Util;
 
 public class RadioService extends Service implements MediaPlayer.OnPreparedListener {
 
@@ -34,7 +40,21 @@ public class RadioService extends Service implements MediaPlayer.OnPreparedListe
 
         Log.d(Global.TAG, "RadioService onStartCommand");
 
-        ne = new NotificationEngine(getApplicationContext());
+        Context context;
+
+        context = getApplicationContext();
+
+        ne = new NotificationEngine(context);
+
+        context.registerReceiver(new BroadcastReceiver() {
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                boolean networkStatus = Util.isNetwork(context);
+                if (!networkStatus) {
+                    stopSelf();
+                }
+            }
+        }, new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION));
 
         if (intent != null) {
 
@@ -101,8 +121,10 @@ public class RadioService extends Service implements MediaPlayer.OnPreparedListe
 
         Log.d(Global.TAG, "RadioService onDestroy");
 
-        if (ne != null)
-            ne.removeNotificationRadio();
+        //if (ne != null)
+        //    ne.removeNotificationRadio();
+
+        stopForeground(true);
 
         if (mediaPlayer != null) {
             if (mediaPlayer.isPlaying()) {
@@ -123,11 +145,14 @@ public class RadioService extends Service implements MediaPlayer.OnPreparedListe
 
         Log.d(Global.TAG, "RadioService onPrepared");
 
-        ne.processNotificationRadio(getApplicationContext(), getRadioName());
+        //ne.processNotificationRadio(getApplicationContext(), getRadioName());
 
         try {
             mp.start();
             pi.send(Global.RADIO_SERVICE_STATUS_PREP);
+
+            startForeground(NotificationEngine.NOTIFICATION_ID_RADIO, ne.buildRadioNotification(getApplicationContext(), getRadioName()));
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -142,7 +167,10 @@ public class RadioService extends Service implements MediaPlayer.OnPreparedListe
                 mediaPlayer.release();
                 mediaPlayer = null;
                 playerStatus = "";
-                ne.removeNotificationRadio();
+
+                //ne.removeNotificationRadio();
+                stopForeground(true);
+
                 pi.send(Global.RADIO_SERVICE_STATUS_STOP);
             } catch (Exception e) {
                 e.printStackTrace();
