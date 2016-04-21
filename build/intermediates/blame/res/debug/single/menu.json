@@ -1,18 +1,10 @@
 [
     {
-        "merged": "/home/solarwind/dev/android-studio-ws/GalNET.ru/D:\\dev\\android-studio-ws\\GalNET.ru\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main_drawer.xml",
-        "source": "/home/solarwind/dev/android-studio-ws/GalNET.ru/D:\\dev\\android-studio-ws\\GalNET.ru\\src\\main\\res\\menu\\activity_main_drawer.xml"
+        "merged": "D:\\dev\\android-studio-ws\\GalNET.ru\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main_drawer.xml",
+        "source": "D:\\dev\\android-studio-ws\\GalNET.ru\\src\\main\\res\\menu\\activity_main_drawer.xml"
     },
     {
-        "merged": "/home/solarwind/dev/android-studio-ws/GalNET.ru/build/intermediates/res/merged/debug/menu/main.xml",
-        "source": "/home/solarwind/dev/android-studio-ws/GalNET.ru/src/main/res/menu/main.xml"
-    },
-    {
-        "merged": "/home/solarwind/dev/android-studio-ws/GalNET.ru/D:\\dev\\android-studio-ws\\GalNET.ru\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
-        "source": "/home/solarwind/dev/android-studio-ws/GalNET.ru/D:\\dev\\android-studio-ws\\GalNET.ru\\src\\main\\res\\menu\\main.xml"
-    },
-    {
-        "merged": "/home/solarwind/dev/android-studio-ws/GalNET.ru/build/intermediates/res/merged/debug/menu/activity_main_drawer.xml",
-        "source": "/home/solarwind/dev/android-studio-ws/GalNET.ru/src/main/res/menu/activity_main_drawer.xml"
+        "merged": "D:\\dev\\android-studio-ws\\GalNET.ru\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "D:\\dev\\android-studio-ws\\GalNET.ru\\src\\main\\res\\menu\\main.xml"
     }
 ]
