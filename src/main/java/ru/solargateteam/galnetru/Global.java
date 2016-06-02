@@ -54,8 +54,8 @@ public class Global {
     public static final String STREAM_HARD             = "http://galnet.ru/hard.mp3";
 
     // Fonts
-    public static final String FONT_JURA_BOOK          = "JuraBook.ttf";
+    //public static final String FONT_JURA_BOOK          = "JuraBook.ttf";
     public static final String FONT_JURA_BOLD          = "JuraDemiBold.ttf";
-    public static final String FONT_JURA_LIGHT         = "JuraLight.ttf";
-    public static final String FONT_JURA_MEDIUM        = "JuraMedium.ttf";
+    //public static final String FONT_JURA_LIGHT         = "JuraLight.ttf";
+    //public static final String FONT_JURA_MEDIUM        = "JuraMedium.ttf";
 }

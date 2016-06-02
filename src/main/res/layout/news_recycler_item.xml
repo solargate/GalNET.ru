@@ -38,6 +38,9 @@
                 android:id="@+id/tv_news_pubdate"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardview_inner_margin"
+                android:layout_marginLeft="@dimen/cardview_inner_margin"
+                android:layout_marginRight="@dimen/cardview_inner_margin"
                 android:gravity="right"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/colorWhite"/>

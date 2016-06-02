@@ -27,6 +27,8 @@
     <string name="feed_empire">Empire</string>
     <string name="feed_federation">Federation</string>
     <string name="feed_alliance">Alliance</string>
+    <string name="feed_site_news">Site News</string>
+
     <string name="radio_soft">Radio SOFT</string>
     <string name="radio_hard">Radio HARD</string>
     <string name="radio_soft_playing">GalNET.ru Radio SOFT is playing</string>

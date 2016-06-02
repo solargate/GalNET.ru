@@ -319,6 +319,7 @@
     <string name="feed_federation">Federation</string>
     <string name="feed_galnet_news">GalNET News</string>
     <string name="feed_powerplay">PowerPlay</string>
+    <string name="feed_site_news">Site News</string>
     <string name="feed_title">Feeds</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>

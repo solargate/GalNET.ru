@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +17,7 @@ import android.widget.TextView;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.util.ArrayList;
 import java.util.List;
 
 import ru.solargateteam.galnetru.db.DBItem;
@@ -88,8 +90,21 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
     }
 
     public NewsRecyclerAdapter(Context context, List<DBItem> listContent) {
+
+        List<DBItem> tmpList = new ArrayList<DBItem>();
+        String descPrev = "";
+
+        for (int i = 0; i < listContent.size(); i++) {
+            DBItem tmpItem = listContent.get(i);
+            if (!descPrev.equals(tmpItem.getDescription())) {
+                tmpList.add(tmpItem);
+                descPrev = tmpItem.getDescription();
+            }
+        }
+
         this.mContext = context;
-        this.listContent = listContent;
+        //this.listContent = listContent;
+        this.listContent = tmpList;
     }
 
     @Override
@@ -111,6 +126,7 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
                 Bitmap bitmap = BitmapFactory.decodeStream(new FileInputStream(imageFile));
                 holder.ivImage.setImageBitmap(bitmap);
             } catch (Exception e) {
+                Log.d(Global.TAG, "PIC: " + listContent.get(position).getImagePath());
                 e.printStackTrace();
             }
         } else {
