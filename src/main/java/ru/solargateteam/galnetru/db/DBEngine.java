@@ -90,16 +90,21 @@ public class DBEngine {
         List<DBItem> returnList = new ArrayList<DBItem>();
         String selection = null;
         String[] selectionArgs = null;
+        // TODO: Проверить группировку!
+        String groupBy = null;
 
         if (feedType.equals(Global.FEED_TYPE_ALL)) {
             selection = null;
             selectionArgs = null;
+            groupBy = DBHelper.FIELD_DESCRIPTION;
         } else {
             selection = DBHelper.FIELD_FEED_TYPE + " = ?";
             selectionArgs = new String[] { feedType };
+            groupBy = null;
         }
 
-        Cursor c = db.query(DBHelper.DB_TABLE_CONTENT, null, selection, selectionArgs, null, null, DBHelper.FIELD_PUBDATE + " desc");
+        //Cursor c = db.query(DBHelper.DB_TABLE_CONTENT, null, selection, selectionArgs, null, null, DBHelper.FIELD_PUBDATE + " desc");
+        Cursor c = db.query(DBHelper.DB_TABLE_CONTENT, null, selection, selectionArgs, groupBy, null, DBHelper.FIELD_PUBDATE + " desc");
 
         if (c != null) {
             if (c.moveToFirst()) {

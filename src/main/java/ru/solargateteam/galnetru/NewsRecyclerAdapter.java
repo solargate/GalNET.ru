@@ -42,6 +42,7 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
     public class NewsViewHolder extends RecyclerView.ViewHolder {
 
         public TextView tvTitle;
+        public TextView tvPubDate;
         public ImageView ivImage;
         //public TextView tvDescription;
         public CardView cvNews;
@@ -55,6 +56,7 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
             view = v;
 
             tvTitle = (TextView) v.findViewById(R.id.tv_news_title);
+            tvPubDate = (TextView) v.findViewById(R.id.tv_news_pubdate);
             ivImage = (ImageView) v.findViewById(R.id.iv_news_image);
             //tvDescription = (TextView) v.findViewById(R.id.tv_news_description);
             cvNews = (CardView) v.findViewById(R.id.news_card_view);
@@ -70,6 +72,7 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
             if (pe.useGalNETFont()) {
                 Typeface face = Typeface.createFromAsset(v.getContext().getAssets(), Global.FONT_JURA_BOLD);
                 tvTitle.setTypeface(face);
+                tvPubDate.setTypeface(face);
                 //tvDescription.setTypeface(face);
             }
         }
@@ -99,6 +102,8 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
     public void onBindViewHolder(NewsViewHolder holder, int position) {
 
         holder.tvTitle.setText(Util.strProcessHTML(listContent.get(position).getTitle()));
+
+        holder.tvPubDate.setText(Util.makeDateStringFromUnixTime(listContent.get(position).getPubDate()));
 
         if (listContent.get(position).getImagePath() != null) {
             try {

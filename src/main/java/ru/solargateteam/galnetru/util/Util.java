@@ -23,7 +23,8 @@ public class Util {
                 .replaceAll("&raquo;", "\"")
                 .replaceAll("&quot;", "\"")
                 .replaceAll("<b>", "")
-                .replaceAll("</b>", "");
+                .replaceAll("</b>", "")
+                .replaceAll("<hr/>", "");
     }
 
     public static boolean isNetwork(Context context) {
@@ -34,7 +35,7 @@ public class Util {
 
     public static String makeDateStringFromUnixTime(long unixTime) {
         try {
-            DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy", Locale.US);
+            DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy HH:mm", Locale.US);
             Date date = new Date(unixTime * 1000);
             return dateFormat.format(date);
         } catch (Exception e) {
