@@ -43,13 +43,15 @@
     <string name="app_name">GalNET.ru</string>
     <string name="err_no_network">Нет сети</string>
     <string name="feed_all">Все ленты</string>
+    <string name="feed_alliance">Альянс</string>
     <string name="feed_comm_goals">Общественные цели</string>
     <string name="feed_comm_news">Новости сообществ</string>
+    <string name="feed_empire">Империя</string>
+    <string name="feed_federation">Федерация</string>
     <string name="feed_galnet_news">GalNET News</string>
     <string name="feed_powerplay">PowerPlay</string>
     <string name="feed_site_news">Новости ресурса</string>
     <string name="feed_title">Ленты</string>
-    <string name="feed_weekly_report">Еженедельный отчет</string>
     <string name="navigation_drawer_close">Закрыть меню</string>
     <string name="navigation_drawer_open">Открыть меню</string>
     <string name="notification_new_post_text">новых постов GalNET.ru</string>

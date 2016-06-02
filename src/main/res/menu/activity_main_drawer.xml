@@ -15,10 +15,10 @@
             android:id="@+id/nav_feed_powerplay"
             android:icon="@drawable/ic_menu_feed"
             android:title="@string/feed_powerplay" />
-        <item
+        <!--<item
             android:id="@+id/nav_feed_weekly_report"
             android:icon="@drawable/ic_menu_feed"
-            android:title="@string/feed_weekly_report" />
+            android:title="@string/feed_weekly_report" />-->
         <item
             android:id="@+id/nav_feed_comm_goals"
             android:icon="@drawable/ic_menu_feed"
@@ -27,6 +27,18 @@
             android:id="@+id/nav_feed_comm_news"
             android:icon="@drawable/ic_menu_feed"
             android:title="@string/feed_comm_news" />
+        <item
+            android:id="@+id/nav_feed_empire"
+            android:icon="@drawable/ic_menu_feed"
+            android:title="@string/feed_empire" />
+        <item
+            android:id="@+id/nav_feed_federation"
+            android:icon="@drawable/ic_menu_feed"
+            android:title="@string/feed_federation" />
+        <item
+            android:id="@+id/nav_feed_aliance"
+            android:icon="@drawable/ic_menu_feed"
+            android:title="@string/feed_alliance" />
         <item
             android:id="@+id/nav_feed_site_news"
             android:icon="@drawable/ic_menu_feed"

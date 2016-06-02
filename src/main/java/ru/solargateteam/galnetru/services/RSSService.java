@@ -102,13 +102,13 @@ public class RSSService extends IntentService {
                 dbe.insertContentItem(tempItems.get(i), Global.FEED_TYPE_POWERPLAY);
             }
 
-            tempItems.clear();
+            //tempItems.clear();
 
-            rssReader = new RSSReader(Global.RSS_FEED_WEEKLY_REPORT);
-            tempItems = rssReader.getItems();
-            for (int i = 0; i < tempItems.size(); i++) {
-                dbe.insertContentItem(tempItems.get(i), Global.FEED_TYPE_WEEKLY_REPORT);
-            }
+            //rssReader = new RSSReader(Global.RSS_FEED_WEEKLY_REPORT);
+            //tempItems = rssReader.getItems();
+            //for (int i = 0; i < tempItems.size(); i++) {
+            //    dbe.insertContentItem(tempItems.get(i), Global.FEED_TYPE_WEEKLY_REPORT);
+            //}
 
             tempItems.clear();
 
@@ -124,6 +124,30 @@ public class RSSService extends IntentService {
             tempItems = rssReader.getItems();
             for (int i = 0; i < tempItems.size(); i++) {
                 dbe.insertContentItem(tempItems.get(i), Global.FEED_TYPE_COMM_NEWS);
+            }
+
+            tempItems.clear();
+
+            rssReader = new RSSReader(Global.RSS_FEED_EMPIRE);
+            tempItems = rssReader.getItems();
+            for (int i = 0; i < tempItems.size(); i++) {
+                dbe.insertContentItem(tempItems.get(i), Global.FEED_TYPE_EMPIRE);
+            }
+
+            tempItems.clear();
+
+            rssReader = new RSSReader(Global.RSS_FEED_FEDERATION);
+            tempItems = rssReader.getItems();
+            for (int i = 0; i < tempItems.size(); i++) {
+                dbe.insertContentItem(tempItems.get(i), Global.FEED_TYPE_FEDERATION);
+            }
+
+            tempItems.clear();
+
+            rssReader = new RSSReader(Global.RSS_FEED_ALLIANCE);
+            tempItems = rssReader.getItems();
+            for (int i = 0; i < tempItems.size(); i++) {
+                dbe.insertContentItem(tempItems.get(i), Global.FEED_TYPE_ALLIANCE);
             }
 
             tempItems.clear();

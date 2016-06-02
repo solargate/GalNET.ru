@@ -7,7 +7,6 @@
     android:paddingLeft="5dp"
     android:paddingRight="5dp"
     android:paddingTop="5dp"
-    tools:context="ru.solargateteam.galnetru.PostActivity"
     android:orientation="vertical">
 
     <ScrollView

@@ -26,20 +26,27 @@ public class Global {
     public static final String RSS_TAG_GUID            = "guid";
     public static final String RSS_TAG_PUBDATE         = "pubDate";
 
+    // TODO: Переделать всю систему фидов на динамические
     public static final String RSS_FEED_GALNET_NEWS    = "http://galnet.ru/feed/1.rss";         // GalNET News
     public static final String RSS_FEED_POWERPLAY      = "http://galnet.ru/feed/4.rss";         // PowerPlay
-    public static final String RSS_FEED_WEEKLY_REPORT  = "http://galnet.ru/news/by/tag/1.rss";  // Еженедельный отчет
+    //public static final String RSS_FEED_WEEKLY_REPORT  = "http://galnet.ru/news/by/tag/1.rss";  // Еженедельный отчет
     public static final String RSS_FEED_COMM_GOALS     = "http://galnet.ru/news/by/tag/32.rss"; // Общественные цели
     public static final String RSS_FEED_COMM_NEWS      = "http://galnet.ru/feed/8.rss";         // Новости сообществ
+    public static final String RSS_FEED_EMPIRE         = "http://galnet.ru/news/by/tag/73.rss"; // Империя
+    public static final String RSS_FEED_FEDERATION     = "http://galnet.ru/news/by/tag/58.rss"; // Федерация
+    public static final String RSS_FEED_ALLIANCE       = "http://galnet.ru/news/by/tag/75.rss"; // Альянс
     public static final String RSS_FEED_SITE_NEWS      = "http://galnet.ru/feed/2.rss";         // Новости ресурса
 
     // Feed types
     public static final String FEED_TYPE_ALL           = "ALL";
     public static final String FEED_TYPE_GALNET_NEWS   = "GALNET_NEWS";
     public static final String FEED_TYPE_POWERPLAY     = "POWERPLAY";
-    public static final String FEED_TYPE_WEEKLY_REPORT = "DAYLY_REPORT";
+    //public static final String FEED_TYPE_WEEKLY_REPORT = "DAYLY_REPORT";
     public static final String FEED_TYPE_COMM_GOALS    = "COMM_GOALS";
     public static final String FEED_TYPE_COMM_NEWS     = "COMM_NEWS";
+    public static final String FEED_TYPE_EMPIRE        = "EMPIRE";
+    public static final String FEED_TYPE_FEDERATION    = "FEDERATION";
+    public static final String FEED_TYPE_ALLIANCE      = "ALIANCE";
     public static final String FEED_TYPE_SITE_NEWS     = "SITE_NEWS";
 
     // Stream channels

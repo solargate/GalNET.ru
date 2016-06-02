@@ -224,12 +224,18 @@ public class MainActivity extends AppCompatActivity
             fragmentMain.setCurrentFeedType(Global.FEED_TYPE_GALNET_NEWS);
         } else if (id == R.id.nav_feed_powerplay) {
             fragmentMain.setCurrentFeedType(Global.FEED_TYPE_POWERPLAY);
-        } else if (id == R.id.nav_feed_weekly_report) {
-            fragmentMain.setCurrentFeedType(Global.FEED_TYPE_WEEKLY_REPORT);
+        //} else if (id == R.id.nav_feed_weekly_report) {
+        //    fragmentMain.setCurrentFeedType(Global.FEED_TYPE_WEEKLY_REPORT);
         } else if (id == R.id.nav_feed_comm_goals) {
             fragmentMain.setCurrentFeedType(Global.FEED_TYPE_COMM_GOALS);
         } else if (id == R.id.nav_feed_comm_news) {
             fragmentMain.setCurrentFeedType(Global.FEED_TYPE_COMM_NEWS);
+        } else if (id == R.id.nav_feed_empire) {
+            fragmentMain.setCurrentFeedType(Global.FEED_TYPE_EMPIRE);
+        } else if (id == R.id.nav_feed_federation) {
+            fragmentMain.setCurrentFeedType(Global.FEED_TYPE_FEDERATION);
+        } else if (id == R.id.nav_feed_aliance) {
+            fragmentMain.setCurrentFeedType(Global.FEED_TYPE_ALLIANCE);
         } else if (id == R.id.nav_feed_site_news) {
             fragmentMain.setCurrentFeedType(Global.FEED_TYPE_SITE_NEWS);
         }
@@ -342,17 +348,26 @@ public class MainActivity extends AppCompatActivity
             case Global.FEED_TYPE_POWERPLAY:
                 itemNum = 2;
                 break;
-            case Global.FEED_TYPE_WEEKLY_REPORT:
+            //case Global.FEED_TYPE_WEEKLY_REPORT:
+            //    itemNum = 3;
+            //    break;
+            case Global.FEED_TYPE_COMM_GOALS:
                 itemNum = 3;
                 break;
-            case Global.FEED_TYPE_COMM_GOALS:
+            case Global.FEED_TYPE_COMM_NEWS:
                 itemNum = 4;
                 break;
-            case Global.FEED_TYPE_COMM_NEWS:
+            case Global.FEED_TYPE_EMPIRE:
                 itemNum = 5;
                 break;
-            case Global.FEED_TYPE_SITE_NEWS:
+            case Global.FEED_TYPE_FEDERATION:
                 itemNum = 6;
+                break;
+            case Global.FEED_TYPE_ALLIANCE:
+                itemNum = 7;
+                break;
+            case Global.FEED_TYPE_SITE_NEWS:
+                itemNum = 8;
                 break;
             default:
                 itemNum = 0;
