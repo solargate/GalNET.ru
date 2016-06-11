@@ -2482,7 +2482,6 @@ containing a value of this type.
         public static final int topPanel=0x7f0e0047;
         public static final int tv_news_pubdate=0x7f0e007d;
         public static final int tv_news_title=0x7f0e007c;
-        public static final int tv_post_description=0x7f0e008f;
         public static final int tv_post_pubdate=0x7f0e008d;
         public static final int tv_post_title=0x7f0e008c;
         public static final int up=0x7f0e0009;
@@ -2490,6 +2489,7 @@ containing a value of this type.
         public static final int view_offset_helper=0x7f0e000a;
         public static final int withText=0x7f0e0036;
         public static final int wrap_content=0x7f0e0039;
+        public static final int wv_post_description=0x7f0e008f;
     }
     public static final class integer {
         public static final int abc_config_activityDefaultDur=0x7f0b0002;

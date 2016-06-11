@@ -15,12 +15,32 @@ import ru.solargateteam.galnetru.Global;
 
 public class Util {
 
+    public static String strProcessForWebView(String inputString, boolean useGalnetFont) {
+        String returnString;
+        returnString  = "<html><head><meta charset=\"utf-8\">";
+        returnString += "<style type=\"text/css\">";
+        if (useGalnetFont) {
+            returnString += "@font-face {font-family: GalNET; src: url(\"file:///android_asset/" + Global.FONT_JURA_BOLD + "\")}";
+            returnString += "body {color: #E38D13; font-family: GalNET; text-align: justify;}";
+        }
+        else
+            returnString += "body {color: #E38D13; text-align: justify;}";
+        returnString += "img{display: inline; height: auto; max-width: 100%;}";
+        returnString += "</style>";
+        returnString += "</head>";
+        returnString += inputString;
+        returnString += "</body></html>";
+        return returnString;
+    }
+
     public static String strProcessHTML(String inputString) {
         return inputString.replaceAll("</p>", "")
                 .replaceAll("<p>", "\n")
                 .replaceAll("\n\n\n", "\n\n")
                 .replaceAll("&laquo;", "\"")
                 .replaceAll("&raquo;", "\"")
+                .replaceAll("&ldquo;", "\"")
+                .replaceAll("&rdquo;", "\"")
                 .replaceAll("&quot;", "\"")
                 .replaceAll("<b>", "")
                 .replaceAll("</b>", "")

@@ -2,12 +2,14 @@ package ru.solargateteam.galnetru;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -25,7 +27,8 @@ public class PostFragment extends Fragment {
     TextView tvTitle;
     TextView tvPubDate;
     ImageView ivImage;
-    TextView tvDescription;
+    //TextView tvDescription;
+    WebView wvDescription;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -40,7 +43,12 @@ public class PostFragment extends Fragment {
             tvTitle = (TextView) v.findViewById(R.id.tv_post_title);
             tvPubDate = (TextView) v.findViewById(R.id.tv_post_pubdate);
             ivImage = (ImageView) v.findViewById(R.id.iv_post_image);
-            tvDescription = (TextView) v.findViewById(R.id.tv_post_description);
+            //tvDescription = (TextView) v.findViewById(R.id.tv_post_description);
+
+            wvDescription = (WebView) v.findViewById(R.id.wv_post_description);
+            //wvDescription.setWebViewClient(new WebViewClient());
+            wvDescription.getSettings().setJavaScriptEnabled(false);
+            wvDescription.setBackgroundColor(Color.TRANSPARENT);
 
             tvTitle.setText(Util.strProcessHTML(item.getTitle()));
 
@@ -58,15 +66,15 @@ public class PostFragment extends Fragment {
                 ivImage.setImageResource(R.drawable.image_no_banner);
             }
 
-            tvDescription.setText(Util.strProcessHTML(item.getDescription()));
-
             PrefEngine pe = new PrefEngine(getActivity());
             if (pe.useGalNETFont()) {
                 Typeface face = Typeface.createFromAsset(getActivity().getAssets(), Global.FONT_JURA_BOLD);
                 tvTitle.setTypeface(face);
                 tvPubDate.setTypeface(face);
-                tvDescription.setTypeface(face);
+                //tvDescription.setTypeface(face);
             }
+
+            wvDescription.loadDataWithBaseURL(null, Util.strProcessForWebView(item.getDescription(), pe.useGalNETFont()), "text/html", "utf-8", null);
         }
 
         return v;

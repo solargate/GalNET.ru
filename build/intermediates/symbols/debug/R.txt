@@ -740,7 +740,6 @@ int id top 0x7f0e0025
 int id topPanel 0x7f0e0047
 int id tv_news_pubdate 0x7f0e007d
 int id tv_news_title 0x7f0e007c
-int id tv_post_description 0x7f0e008f
 int id tv_post_pubdate 0x7f0e008d
 int id tv_post_title 0x7f0e008c
 int id up 0x7f0e0009
@@ -748,6 +747,7 @@ int id useLogo 0x7f0e0014
 int id view_offset_helper 0x7f0e000a
 int id withText 0x7f0e0036
 int id wrap_content 0x7f0e0039
+int id wv_post_description 0x7f0e008f
 int integer abc_config_activityDefaultDur 0x7f0b0002
 int integer abc_config_activityShortDur 0x7f0b0003
 int integer abc_max_action_buttons 0x7f0b0000
