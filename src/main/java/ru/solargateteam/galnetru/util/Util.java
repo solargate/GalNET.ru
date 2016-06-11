@@ -12,6 +12,7 @@ import java.util.Date;
 import java.util.Locale;
 
 import ru.solargateteam.galnetru.Global;
+import ru.solargateteam.galnetru.R;
 
 public class Util {
 
@@ -21,7 +22,7 @@ public class Util {
         returnString += "<style type=\"text/css\">";
         if (useGalnetFont) {
             returnString += "@font-face {font-family: GalNET; src: url(\"file:///android_asset/" + Global.FONT_JURA_BOLD + "\")}";
-            returnString += "body {color: #E38D13; font-family: GalNET; text-align: justify;}";
+            returnString += "body {color: " + R.color.colorEDOrange + "; font-family: GalNET; text-align: justify;}";
         }
         else
             returnString += "body {color: #E38D13; text-align: justify;}";
