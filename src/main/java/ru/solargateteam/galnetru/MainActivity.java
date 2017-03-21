@@ -28,6 +28,7 @@ import ru.solargateteam.galnetru.services.RadioService;
 import ru.solargateteam.galnetru.util.ToolbarColorizer;
 import ru.solargateteam.galnetru.util.Util;
 
+// TODO: Перевести все на новую Android Studio, Gradle и новые версии библиотек
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
